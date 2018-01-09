@@ -26,7 +26,7 @@ class RocketMap extends Scanner
         $params[':time'] = date_format($date, 'Y-m-d H:i:s');
 
         if ($oSwLat != 0) {
-            $conds[] = "NOT (latitude > :oswLat AND lolongituden > :oswLng AND latitude < :oneLat AND longitude < :oneLng)";
+            $conds[] = "NOT (latitude > :oswLat AND longitude > :oswLng AND latitude < :oneLat AND longitude < :oneLng)";
             $params[':oswLat'] = $oSwLat;
             $params[':oswLng'] = $oSwLng;
             $params[':oneLat'] = $oNeLat;
@@ -37,9 +37,16 @@ class RocketMap extends Scanner
             $conds[] = "last_modified > :lastUpdated";
             $params[':lastUpdated'] = date_format($date, 'Y-m-d H:i:s');
         }
-        if ($eids != null) {
-            $conds[] = "pokemon_id NOT IN ( :ids )";
-            $params[':ids'] = $eids;
+        if (count($eids)) {
+            $pkmn_in = '';
+            $i = 1;
+            foreach ($eids as $id) {
+                $params[':qry_' . $i . "_"] = $id;
+                $pkmn_in .= ':qry_' . $i . "_,";
+                $i++;
+            }
+            $pkmn_in = substr($pkmn_in, 0, -1);
+            $conds[] = "pokemon_id NOT IN ( $pkmn_in )";
         }
 
         return $this->query_active($select, $conds, $params);
@@ -65,7 +72,17 @@ class RocketMap extends Scanner
         $date->setTimezone(new \DateTimeZone('UTC'));
         $date->setTimestamp(time());
         $params[':time'] = date_format($date, 'Y-m-d H:i:s');
-        $params[':ids'] = $ids;
+        if (count($ids)) {
+            $pkmn_in = '';
+            $i = 1;
+            foreach ($ids as $id) {
+                $params[':qry_' . $i . "_"] = $id;
+                $pkmn_in .= ':qry_' . $i . "_,";
+                $i++;
+            }
+            $pkmn_in = substr($pkmn_in, 0, -1);
+            $conds[] = "pokemon_id IN ( $pkmn_in )";
+        }
 
         return $this->query_active($select, $conds, $params);
     }
@@ -336,7 +353,7 @@ class RocketMap extends Scanner
             $date = new \DateTime();
             $date->setTimezone(new \DateTimeZone('UTC'));
             $date->setTimestamp($tstamp);
-            $conds[] = "last_scanned > :lastUpdated";
+            $conds[] = "gym.last_scanned > :lastUpdated";
             $params[':lastUpdated'] = date_format($date, 'Y-m-d H:i:s');
         }
 
@@ -353,7 +370,13 @@ class RocketMap extends Scanner
 
         $gyms = $this->query_gyms($conds, $params);
         $gym = $gyms[0];
-        $gym["pokemon"] = $this->query_gym_defenders($gymId);
+
+        $select = "gymmember.gym_id, pokemon_id, cp AS pokemon_cp, move_1, move_2, iv_attack, iv_defense, iv_stamina";
+        global $noTrainerName;
+        if (!$noTrainerName) {
+            $select .= ", trainer_name, level AS trainer_level";
+        }
+        $gym["pokemon"] = $this->query_gym_defenders($gymId, $select);
         return $gym;
     }
 
@@ -420,21 +443,12 @@ class RocketMap extends Scanner
         return $data;
     }
 
-    private function query_gym_defenders($gymId)
+    private function query_gym_defenders($gymId, $select)
     {
         global $db;
 
 
-        $query = "SELECT gymmember.gym_id, 
-        pokemon_id, 
-        cp AS pokemon_cp, 
-        trainer_name, 
-        level AS trainer_level, 
-        move_1, 
-        move_2, 
-        iv_attack, 
-        iv_defense, 
-        iv_stamina 
+        $query = "SELECT :select 
         FROM gymmember 
         JOIN gympokemon 
         ON gymmember.pokemon_uid = gympokemon.pokemon_uid 
@@ -447,6 +461,7 @@ class RocketMap extends Scanner
         GROUP BY name 
         ORDER BY gympokemon.cp DESC";
 
+        $query = str_replace(":select", $select, $query);
         $gym_defenders = $db->query($query, [":gymId" => $gymId])->fetchAll(\PDO::FETCH_ASSOC);
 
         $data = array();
@@ -475,6 +490,94 @@ class RocketMap extends Scanner
             $data[] = $defender;
 
             unset($gym_defenders[$i]);
+            $i++;
+        }
+        return $data;
+    }
+
+    public function get_gyms_api($swLat, $swLng, $neLat, $neLng)
+    {
+        $conds = array();
+        $params = array();
+
+        $conds[] = "latitude > :swLat AND longitude > :swLng AND latitude < :neLat AND longitude < :neLng";
+        $params[':swLat'] = $swLat;
+        $params[':swLng'] = $swLng;
+        $params[':neLat'] = $neLat;
+        $params[':neLng'] = $neLng;
+
+        global $sendRaidData;
+        if (!$sendRaidData) {
+            return $this->query_gyms_api($conds, $params);
+        } else {
+            return $this->query_raids_api($conds, $params);
+        }
+    }
+
+    public function query_gyms_api($conds, $params)
+    {
+        global $db;
+
+        $query = "SELECT gym.gym_id, 
+        latitude, 
+        longitude,
+        name
+        FROM gym
+        LEFT JOIN gymdetails
+        ON gym.gym_id = gymdetails.gym_id
+        WHERE :conditions";
+
+        $query = str_replace(":conditions", join(" AND ", $conds), $query);
+        $gyms = $db->query($query, $params)->fetchAll(\PDO::FETCH_ASSOC);
+
+        $data = array();
+        $i = 0;
+
+        foreach ($gyms as $gym) {
+            $gym["latitude"] = floatval($gym["latitude"]);
+            $gym["longitude"] = floatval($gym["longitude"]);
+            $data[] = $gym;
+
+            unset($gyms[$i]);
+            $i++;
+        }
+        return $data;
+    }
+
+    public function query_raids_api($conds, $params)
+    {
+        global $db;
+
+        $query = "SELECT gym.gym_id, 
+        latitude, 
+        longitude,
+        name,
+        level AS raid_level, 
+        pokemon_id AS raid_pokemon_id, 
+        cp AS raid_pokemon_cp, 
+        move_1 AS raid_pokemon_move_1, 
+        move_2 AS raid_pokemon_move_2, 
+        Unix_timestamp(Convert_tz(start, '+00:00', @@global.time_zone)) AS raid_start, 
+        Unix_timestamp(Convert_tz(end, '+00:00', @@global.time_zone)) AS raid_end
+        FROM gym
+        LEFT JOIN gymdetails
+        ON gym.gym_id = gymdetails.gym_id
+        LEFT JOIN raid 
+        ON gym.gym_id = raid.gym_id
+        WHERE :conditions";
+
+        $query = str_replace(":conditions", join(" AND ", $conds), $query);
+        $gyms = $db->query($query, $params)->fetchAll(\PDO::FETCH_ASSOC);
+
+        $data = array();
+        $i = 0;
+
+        foreach ($gyms as $gym) {
+            $gym["latitude"] = floatval($gym["latitude"]);
+            $gym["longitude"] = floatval($gym["longitude"]);
+            $data[] = $gym;
+
+            unset($gyms[$i]);
             $i++;
         }
         return $data;

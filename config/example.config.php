@@ -78,6 +78,7 @@ $noGyms = false;                                                    // true/fals
 $enableGyms = 'false';                                              // true/false
 $noGymSidebar = false;                                              // true/false
 $gymSidebar = 'true';                                               // true/false
+$noTrainerName = false;                                             // true/false
 
 $noRaids = false;                                                   // true/false
 $enableRaids = 'false';                                             // true/false
@@ -125,6 +126,9 @@ $notifyRarity = '[]';                                               // "Common",
 $noNotifyIv = false;                                                // true/false
 $notifyIv = '""';                                                   // "" for empty or a number
 
+$noNotifyLevel = false;                                                // true/false
+$notifyLevel = '""';                                                   // "" for empty or a number
+
 $noNotifyRaid = false;                                              // true/false
 $notifyRaid = 5;                                                    // O to disable
 
@@ -149,6 +153,15 @@ $gymStyle = 'ingame';                                               // ingame, s
 
 $noLocationStyle = false;                                           // true/false
 $locationStyle = 'none';                                            // none, google, red, red_animated, blue, blue_animated, yellow, yellow_animated, pokesition, pokeball
+
+$osmTileServer = 'tile.openstreetmap.org';                          // osm tile server (no trailing slash)
+
+//-----------------------------------------------
+// Raid API
+//-----------------------------------------------------
+
+$raidApiKey = '';                                                   // Raid API Key, '' to deny access
+$sendRaidData = false;                                              // Send Raid data, false to only send gym data
 
 
 //-----------------------------------------------------

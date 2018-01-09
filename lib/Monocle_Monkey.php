@@ -33,9 +33,16 @@ class Monocle_Monkey extends Monocle
             $conds[] = "updated > :lastUpdated";
             $params[':lastUpdated'] = $tstamp;
         }
-        if ($eids != null) {
-            $conds[] = "pokemon_id NOT IN ( :ids )";
-            $params[':ids'] = $eids;
+        if (count($eids)) {
+            $pkmn_in = '';
+            $i = 1;
+            foreach ($eids as $id) {
+                $params[':qry_' . $i . "_"] = $id;
+                $pkmn_in .= ':qry_' . $i . "_,";
+                $i++;
+            }
+            $pkmn_in = substr($pkmn_in, 0, -1);
+            $conds[] = "pokemon_id NOT IN ( $pkmn_in )";
         }
 
         return $this->query_active($select, $conds, $params);
@@ -67,6 +74,34 @@ class Monocle_Monkey extends Monocle
         return $this->query_stops($conds, $params);
     }
 
+    public function query_stops($conds, $params)
+    {
+        global $db;
+
+        $query = "SELECT external_id AS pokestop_id,
+        name AS pokestop_name,
+        lat AS latitude,
+        lon AS longitude
+        FROM pokestops
+        WHERE :conditions";
+
+        $query = str_replace(":conditions", join(" AND ", $conds), $query);
+        $pokestops = $db->query($query, $params)->fetchAll(\PDO::FETCH_ASSOC);
+
+        $data = array();
+        $i = 0;
+
+        foreach ($pokestops as $pokestop) {
+            $pokestop["latitude"] = floatval($pokestop["latitude"]);
+            $pokestop["longitude"] = floatval($pokestop["longitude"]);
+            $data[] = $pokestop;
+
+            unset($pokestops[$i]);
+            $i++;
+        }
+        return $data;
+    }
+
     public function get_gym($gymId)
     {
         $conds = array();
@@ -77,7 +112,13 @@ class Monocle_Monkey extends Monocle
 
         $gyms = $this->query_gyms($conds, $params);
         $gym = $gyms[0];
-        $gym["pokemon"] = $this->query_gym_defenders($gymId);
+
+        $select = "gd.pokemon_id, gd.cp AS pokemon_cp, gd.move_1, gd.move_2, gd.nickname, gd.atk_iv AS iv_attack, gd.def_iv AS iv_defense, gd.sta_iv AS iv_stamina, gd.cp AS pokemon_cp";
+        global $noTrainerName;
+        if (!$noTrainerName) {
+            $select .= ", gd.owner_name AS trainer_name";
+        }
+        $gym["pokemon"] = $this->query_gym_defenders($gymId, $select);
         return $gym;
     }
 
@@ -167,25 +208,17 @@ class Monocle_Monkey extends Monocle
         return $data;
     }
 
-    private function query_gym_defenders($gymId)
+    private function query_gym_defenders($gymId, $select)
     {
         global $db;
 
 
-        $query = "SELECT gd.pokemon_id,
-        gd.cp AS pokemon_cp,
-        gd.move_1,
-        gd.move_2,
-        gd.nickname,
-        gd.atk_iv AS iv_attack,
-        gd.def_iv AS iv_defense,
-        gd.sta_iv AS iv_stamina,
-        gd.cp AS pokemon_cp,
-        gd.owner_name AS trainer_name
+        $query = "SELECT :select
       FROM gym_defenders gd
       LEFT JOIN forts f ON gd.fort_id = f.id
       WHERE f.external_id = :gymId";
 
+        $query = str_replace(":select", $select, $query);
         $gym_defenders = $db->query($query, [":gymId" => $gymId])->fetchAll(\PDO::FETCH_ASSOC);
 
         $data = array();
@@ -202,7 +235,6 @@ class Monocle_Monkey extends Monocle
             $defender["iv_attack"] = floatval($defender["iv_attack"]);
             $defender["iv_defense"] = floatval($defender["iv_defense"]);
             $defender["iv_stamina"] = floatval($defender["iv_stamina"]);
-            $defender["trainer_level"] = "";
 
             $defender['move_1_name'] = i8ln($this->moves[$defender['move_1']]['name']);
             $defender['move_1_damage'] = $this->moves[$defender['move_1']]['damage'];
@@ -219,6 +251,89 @@ class Monocle_Monkey extends Monocle
             $data[] = $defender;
 
             unset($gym_defenders[$i]);
+            $i++;
+        }
+        return $data;
+    }
+
+    public function get_gyms_api($swLat, $swLng, $neLat, $neLng)
+    {
+        $conds = array();
+        $params = array();
+
+        $conds[] = "f.lat > :swLat AND f.lon > :swLng AND f.lat < :neLat AND f.lon < :neLng";
+        $params[':swLat'] = $swLat;
+        $params[':swLng'] = $swLng;
+        $params[':neLat'] = $neLat;
+        $params[':neLng'] = $neLng;
+
+        global $sendRaidData;
+        if (!$sendRaidData) {
+            return $this->query_gyms_api($conds, $params);
+        } else {
+            return $this->query_raids_api($conds, $params);
+        }
+    }
+
+    public function query_gyms_api($conds, $params)
+    {
+        global $db;
+
+        $query = "SELECT f.external_id AS gym_id,
+        f.lat AS latitude,
+        f.lon AS longitude,
+        name
+        FROM forts f
+        WHERE :conditions";
+
+        $query = str_replace(":conditions", join(" AND ", $conds), $query);
+        $gyms = $db->query($query, $params)->fetchAll(\PDO::FETCH_ASSOC);
+
+        $data = array();
+        $i = 0;
+
+        foreach ($gyms as $gym) {
+            $gym["latitude"] = floatval($gym["latitude"]);
+            $gym["longitude"] = floatval($gym["longitude"]);
+            $data[] = $gym;
+
+            unset($gyms[$i]);
+            $i++;
+        }
+        return $data;
+    }
+
+    public function query_raids_api($conds, $params)
+    {
+        global $db;
+
+        $query = "SELECT f.external_id AS gym_id,
+        f.lat AS latitude,
+        f.lon AS longitude,
+        name,
+        level AS raid_level,
+        pokemon_id AS raid_pokemon_id,
+        time_battle AS raid_start,
+        time_end AS raid_end,
+        cp AS raid_pokemon_cp,
+        move_1 AS raid_pokemon_move_1,
+        move_2 AS raid_pokemon_move_2
+        FROM forts f
+        LEFT JOIN raids r ON r.fort_id = f.id
+        WHERE :conditions";
+
+        $query = str_replace(":conditions", join(" AND ", $conds), $query);
+        $gyms = $db->query($query, $params)->fetchAll(\PDO::FETCH_ASSOC);
+
+        $data = array();
+        $i = 0;
+
+        foreach ($gyms as $gym) {
+            $gym["latitude"] = floatval($gym["latitude"]);
+            $gym["longitude"] = floatval($gym["longitude"]);
+            $data[] = $gym;
+
+            unset($gyms[$i]);
             $i++;
         }
         return $data;
