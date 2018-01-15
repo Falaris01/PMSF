@@ -493,7 +493,11 @@ function pokemonLabel(item) {
         '<a href="https://pokewiki.de/' + name + '" target="_blank" title="' + i8ln('View in Pokedex') + '">#' + id + '</a>' +
         '</small>' +
         '</div>' +
-        '<small>' + typesDisplay + '</small>' +
+        '<span>' +
+        weatherIcon +
+        '</div>' +
+        typesDisplay +
+        '</span>' +
         '<div>' +
         i8ln('Disappears at') + ' ' + getTimeStr(disappearTime) +
         ' <span class="label-countdown" disappears-at="' + disappearTime + '">(00m00s)</span>' +
