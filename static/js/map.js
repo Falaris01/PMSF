@@ -124,6 +124,14 @@ function excludePokemon(id) { // eslint-disable-line no-unused-vars
     clearStaleMarkers()
 }
 
+function exMinIV(id) { // eslint-disable-line no-unused-vars
+    $selectExcludeMinIV.val(
+        $selectExcludeMinIV.val().split(',').concat(id).join(',')
+    ).trigger('change')
+    $('label[for="exclude-min-iv"] .pokemon-list .pokemon-icon-sprite[data-value="' + id + '"]').addClass('active')
+    clearStaleMarkers()
+}
+
 function notifyAboutPokemon(id) { // eslint-disable-line no-unused-vars
     $selectPokemonNotify.val(
         $selectPokemonNotify.val().split(',').concat(id).join(',')
@@ -503,9 +511,10 @@ function pokemonLabel(item) {
         '</div>' +
         details +
         '<div>' +
-        '<a href="javascript:excludePokemon(' + id + ')"><i class="fa fa-thumbs-down" style="font-size:20px;color:black"></i></a>&nbsp&nbsp&nbsp&nbsp' +
-        '<a href="javascript:notifyAboutPokemon(' + id + ')">' + notifyIcon +
-        '<a href="javascript:removePokemonMarker(\'' + encounterId + '\')"><i class="fa fa-trash" style="font-size:20px;color:black"></i></a>&nbsp&nbsp&nbsp&nbsp' +
+        '<a href="javascript:exMinIV(' + id + ') "title="' + i8ln('Exclude this Pokemon from MinIV/Lvl') + '"><i class="fa fa-thumbs-up" style="font-size:20px;color:black"></i></a>&nbsp&nbsp&nbsp&nbsp' +
+        '<a href="javascript:excludePokemon(' + id + ') "title="' + i8ln('Hide this Pokemon') + '"><i class="fa fa-thumbs-down" style="font-size:20px;color:black"></i></a>&nbsp&nbsp&nbsp&nbsp' +
+        '<a href="javascript:notifyAboutPokemon(' + id + ') "title="' + i8ln('Notifiy about this Pokemon') + '">' + notifyIcon +
+        '<a href="javascript:removePokemonMarker(\'' + encounterId + '\') "title="' + i8ln('Remove THIS Pokemon from the map') + '"><i class="fa fa-trash" style="font-size:20px;color:black"></i></a>&nbsp&nbsp&nbsp&nbsp' +
         '<a href="javascript:void(0);" onclick="javascript:toggleOtherPokemon(' + id + ');" title="' + i8ln('Toggle display of other Pokemon') + '"><i class="fa fa-search-minus" style="font-size:20px;color:black"></i></a>&nbsp&nbsp&nbsp&nbsp' +
         '<a href="javascript:void(0)" onclick="javascript:openMapDirections(' + latitude + ', ' + longitude + ')" title="' + i8ln('View in Maps') + '"><i class="fa fa-road" style="font-size:20px;color:black"></a>' +
         '</div>'
