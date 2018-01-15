@@ -473,7 +473,7 @@ function pokemonLabel(item) {
     }
     var weatherIcon = ''
     if (weatherBoostedCondition !== 0) {
-        weatherIcon = ' <img src="static/weather/' + weatherBoostedCondition + '.png" style="position:absolute;margin:auto;width:35px;height:auto;"/> '
+        weatherIcon = ' <img src="static/weather/' + weatherBoostedCondition + '.png" style="float:right;margin:auto;width:35px;height:auto;right:10px;"/> '
     }
     var contentstring =
         '<div>' +
