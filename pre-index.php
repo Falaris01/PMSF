@@ -16,7 +16,7 @@ if ($blockIframe) {
 <html lang="<?= $locale ?>">
 <head>
     <meta charset="utf-8">
-    <title><?= $title ?></title>
+    <title>PokemonGo Braunschweig</title>
     <meta name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -127,18 +127,11 @@ if ($blockIframe) {
     <!-- Header -->
     <header id="header">
         <a href="#nav"><span class="label"><?php echo i8ln('Options') ?></span></a>
-
-        <h1><a href="#"><?= $title ?></a></h1>
         <?php
-        if ($discordUrl != "") {
-            echo '<a href="' . $discordUrl . '" target="_blank" style="margin-bottom: 5px; vertical-align: middle;padding:0 5px;">
-            <img src="static/images/discord.png" border="0" style="float: right;">
-        </a>';
-        }
         if ($paypalUrl != "") {
-            echo '<a href="' . $paypalUrl . '" target="_blank" style="margin-bottom: 5px; vertical-align: middle; padding:0 5px;">
-            <img src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/btn_donate_74x21.png" border="0" name="submit"
-                 title="PayPal - The safer, easier way to pay online!" alt="Donate" style="float: right;">
+            echo '<a href="' . $paypalUrl . '"  target="_blank" style="vertical-align: middle;">
+            <img src="static/images/spenden.gif" border="0" name="submit"
+                 title="PayPal - The safer, easier way to pay online!" alt="Donate" style="float: right; display: inline-block; max-width:100%; height:auto;">
         </a>';
         }
         ?>
@@ -146,6 +139,20 @@ if ($blockIframe) {
     </header>
     <!-- NAV -->
     <nav id="nav">
+        <div>
+            <center>
+                <a href="https://pokemon-go-fans.de/" target="_blank" style="margin-top: 5px; vertical-align: middle;padding:0 5px;">
+                <img src="static/images/pogonews.png" title="https://pokemon-go-fans.de/" border="0" style="display: inline-block; margin-top: 10px; max-width:100%; height:auto;">
+                </a>
+            </center>
+        </div>
+        <div>
+            <center>
+                <a href="https://discord.gg/YhufHkY" target="_blank" style="margin-top: 5px; vertical-align: middle;padding:0 5px;">
+                <img src="static/images/pogobsdiscord.png" border="0" title="PokémonGo Braunschweig Discord" style="display: inline-block; margin-top: 5px; max-width:100%; height:auto;">
+                </a>
+            </center>
+        </div>
         <div id="nav-accordion">
             <?php
             if (!$noPokemon) {
@@ -198,7 +205,7 @@ if ($blockIframe) {
                                             <?php
                                             pokemonFilterImages($noPokemonNumbers); ?>
                                         </div>
-                                        <a href="#" class="select-all">All</a><a href="#" class="hide-all">None</a>
+                                        <a href="#" class="select-all"><?php echo i8ln('All') ?></a><a href="#" class="hide-all"><?php echo i8ln('None') ?></a>
                                     </label>
                                 </div>
                                 <?php
@@ -532,7 +539,7 @@ if ($blockIframe) {
                 ?>
                 <div class="form-control hide-select-2">
                     <label for="notify-pokemon">
-                        <h3><?php i8ln('Notify of Pokemon') ?></h3><a href="#" class="select-all"><?php i8ln('All') ?></a>/<a href="#" class="hide-all"><?php i8ln('None') ?></a>
+                        <h3><?php echo i8ln('Notify of Pokemon') ?></h3><a href="#" class="select-all"><?php echo i8ln('All') ?></a>/<a href="#" class="hide-all"><?php echo i8ln('None') ?></a>
                         <div style="max-height:165px;overflow-y:auto;">
                             <input id="notify-pokemon" type="text" readonly="true"/>
                             <?php
