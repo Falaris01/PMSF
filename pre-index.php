@@ -183,7 +183,7 @@ if ($blockIframe) {
                                 ?>
                                 <div class="form-control hide-select-2">
                                     <label for="exclude-pokemon">
-                                        <div class="pokemon-container">
+                                        <div class="pokemon-container" style="height:240px;">
                                             <input id="exclude-pokemon" type="text" readonly="true">
                                             <?php
                                             pokemonFilterImages($noPokemonNumbers); ?>
@@ -200,7 +200,7 @@ if ($blockIframe) {
                                 ?>
                                 <div class="form-control hide-select-2">
                                     <label for="exclude-min-iv">
-                                        <div class="pokemon-container">
+                                        <div class="pokemon-container" style="height:240px;">
                                             <input id="exclude-min-iv" type="text" readonly="true">
                                             <?php
                                             pokemonFilterImages($noPokemonNumbers); ?>
