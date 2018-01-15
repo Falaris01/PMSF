@@ -477,7 +477,7 @@ function pokemonLabel(item) {
     }
     var contentstring =
         '<div>' +
-        '<b>' + weatherIcon + name + '</b>'
+        '<b>' + name + '</b>'
     if (gender !== undefined && id !== 201) {
         contentstring += ' ' + genderType[gender - 1] + ''
     }
@@ -490,12 +490,11 @@ function pokemonLabel(item) {
     }
     contentstring += '<span> - </span>' +
         '<small>' +
-        '<a href="https://pokewiki.de/' + name + '" target="_blank" title="' + i8ln('View in Pokedex') + '">#' + id + '</a>' +
+        '<a href="https://pokewiki.de/' + name + '" target="_blank" title="' + i8ln('View in Pokedex') + '">#' + id + '</a> ' +
+        weatherIcon +
         '</small>' +
         '</div>' +
         '<span>' +
-        weatherIcon +
-        '</div>' +
         typesDisplay +
         '</span>' +
         '<div>' +
