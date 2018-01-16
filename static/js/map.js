@@ -85,6 +85,8 @@ var iconpath = null
 
 var gymTypes = ['Uncontested', 'Mystic', 'Valor', 'Instinct']
 var triggerGyms = Store.get('triggerGyms')
+var noExGyms
+var noParkInfo
 
 
 createjs.Sound.registerSound('static/sounds/ding.mp3', 'ding')
@@ -578,7 +580,7 @@ function gymLabel(item) {
     }
 
     var park = ''
-    if (item['park'] !== 'None' && item['park'] !== undefined) {
+    if ((item['park'] !== 'None' && item['park'] !== undefined) && (noParkInfo === false)) {
         park = i8ln('Park') + ': ' + item['park']
     }
 
@@ -617,6 +619,9 @@ function gymLabel(item) {
             nameStr +
             raidStr +
             '<div>' +
+            park +
+            '</div>' +
+            '<div>' +
             i8ln('Location') + '<a href="javascript:void(0);" onclick="javascript:openMapDirections(' + latitude + ',' + longitude + ');" title="' + i8ln('View in Maps') + '">' + latitude.toFixed(6) + ' , ' + longitude.toFixed(7) + '</a>' +
             '</div>' +
             '<div>' +
@@ -652,6 +657,9 @@ function gymLabel(item) {
             nameStr +
             raidStr +
             '<div><b>' + freeSlots + ' ' + i8ln('Free Slots') + '</b></div>' +
+            '<div>' +
+            park +
+            '</div>' +
             gymCp +
             '<div>' +
             memberStr +
@@ -665,9 +673,6 @@ function gymLabel(item) {
             '</div>' +
             '<div>' +
             lastScannedStr +
-            '</div>' +
-            '<div>' +
-            park +
             '</div>' +
             '</center>' +
             '</div>'
@@ -930,7 +935,7 @@ function getGymMarkerIcon(item) {
         teamStr = gymTypes[item['team_id']] + '_' + getGymLevel(item)
     }
     var exIcon = ''
-    if ((park !== 'None' && park !== undefined) || triggerGyms.includes(item['gym_id'])) {
+    if ((((park !== 'None' && park !== undefined) || triggerGyms.includes(item['gym_id'])) && (noExGyms === false))) {
         exIcon = '<img src="static/images/ex.png" style="position:absolute;right:25px;bottom:2px;"/>'
     }
     if (item['raid_pokemon_id'] != null && item.raid_end > Date.now()) {
@@ -948,7 +953,6 @@ function getGymMarkerIcon(item) {
     } else {
         return '<div>' +
             '<img src="static/forts/' + Store.get('gymMarkerStyle') + '/' + teamStr + '.png" style="width:48px;height: auto;"/>' +
-            exIcon +
             '</div>'
     }
 }
@@ -2099,7 +2103,7 @@ function showGymDetails(id) { // eslint-disable-line no-unused-vars
         }
 
         var park = ''
-        if (result['park'] !== 'None' && result['park'] !== undefined) {
+        if (((result['park'] !== 'None' && result['park'] !== undefined) && (noParkInfo === false))) {
             park = i8ln('Park') + ': ' + result['park']
         }
 

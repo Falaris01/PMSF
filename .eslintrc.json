@@ -104,6 +104,7 @@
     "icons": true,
     "mapType": true,
     "getIv": true,
-    "triggerGyms": true
+    "triggerGyms": true,
+    "i8ln": false
   }
 }
