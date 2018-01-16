@@ -577,6 +577,11 @@ function gymLabel(item) {
         }
     }
 
+    var park = ''
+    if (item['park'] !== 'None' && item['park'] !== undefined) {
+        park = 'Park: ' + item['park']
+    }
+
     var memberStr = ''
     for (i = 0; i < members.length; i++) {
         memberStr +=
@@ -621,6 +626,9 @@ function gymLabel(item) {
             '<div>' +
             lastScannedStr +
             '</div>' +
+            '<div>' +
+            park +
+            '</div>' +
             '</center>' +
             '</div>'
     } else {
@@ -657,6 +665,9 @@ function gymLabel(item) {
             '</div>' +
             '<div>' +
             lastScannedStr +
+            '</div>' +
+            '<div>' +
+            park +
             '</div>' +
             '</center>' +
             '</div>'
@@ -905,6 +916,7 @@ function getGymLevel(item) {
 }
 
 function getGymMarkerIcon(item) {
+    var park = item['park']
     var level = item.raid_level
     var team = item.team_id
     var teamStr = ''
@@ -918,7 +930,7 @@ function getGymMarkerIcon(item) {
         teamStr = gymTypes[item['team_id']] + '_' + getGymLevel(item)
     }
     var exIcon = ''
-    if (triggerGyms.includes(item['gym_id'])) {
+    if ((park !== 'None' && park !== undefined) || triggerGyms.includes(item['gym_id'])) {
         exIcon = '<img src="static/images/ex.png" style="position:absolute;right:25px;bottom:2px;"/>'
     }
     if (item['raid_pokemon_id'] != null && item.raid_end > Date.now()) {
@@ -942,11 +954,12 @@ function getGymMarkerIcon(item) {
 }
 
 function setupGymMarker(item) {
+    var park = item['park']
     var zValue = 1
     if ((item['raid_level'] !== null && item.raid_end > Date.now()) || (item['raid_pokemon_id'] != null && item.raid_end > Date.now())) {
         zValue += 1
     }
-    if (triggerGyms.includes(item['gym_id'])) {
+    if ((park !== 'None' && park !== undefined) || triggerGyms.includes(item['gym_id'])) {
         zValue += 2
     }
     var marker = new RichMarker({
@@ -2085,6 +2098,11 @@ function showGymDetails(id) { // eslint-disable-line no-unused-vars
                 '</center>'
         }
 
+        var park = ''
+        if (result['park'] !== 'None' && result['park'] !== undefined) {
+            park = 'Park: ' + result['park']
+        }
+
         var raidSpawned = result['raid_level'] != null
         var raidStarted = result['raid_pokemon_id'] != null
 
@@ -2143,6 +2161,9 @@ function showGymDetails(id) { // eslint-disable-line no-unused-vars
             '</div>' +
             raidStr +
             gymLevelStr +
+            '<div>' +
+            park +
+            '</div>' +
             '<div style="font-size: .7em">' +
             i8ln('Last Modified') + ' : ' + lastModifiedStr +
             '</div>' +

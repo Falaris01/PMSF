@@ -181,7 +181,7 @@ $locationStyle = 'none';                                            // none, goo
 
 $osmTileServer = 'tile.openstreetmap.org';                          // osm tile server (no trailing slash)
 
-$triggerGyms = '[]';                                                //Enter gym_ids to mark a gym as being eligble for ex-raids. Example: '["79869655897987698557688.16", "796968568586967965544434.17"]'
+$triggerGyms = '[]';                                                // Add Gyms that the OSM-Query doesn't take care of like '["fdf86d8fd8d96fd6.15", "gf9sgsgsdgsdg6s89.11"]'
 
 //-----------------------------------------------------
 // Raid API
