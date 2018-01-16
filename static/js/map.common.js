@@ -1046,7 +1046,7 @@ var StoreOptions = {
         },
     'iconNotifySizeModifier':
         {
-            default: 45,
+            default: iconNotifySizeModifier,
             type: StoreTypes.Number
         },
     'searchMarkerStyle':
