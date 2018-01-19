@@ -10,7 +10,7 @@ class Monocle_Alternate extends Monocle
         $conds = array();
         $params = array();
 
-        $select = "pokemon_id, expire_timestamp AS disappear_time, encounter_id, lat AS latitude, lon AS longitude, gender, form";
+        $select = "pokemon_id, expire_timestamp AS disappear_time, encounter_id, lat AS latitude, lon AS longitude, gender, form, weight";
         global $noHighLevelData;
         if (!$noHighLevelData) {
             $select .= ", atk_iv AS individual_attack, def_iv AS individual_defense, sta_iv AS individual_stamina, move_1, move_2, cp, level, weather_boosted_condition";
@@ -59,6 +59,38 @@ class Monocle_Alternate extends Monocle
             } else {
                 $conds[] = '(level >= ' . $minlevel . ' OR pokemon_id IN(' . $exminiv . ') )';
             }
+        }
+
+        return $this->query_active($select, $conds, $params);
+    }
+
+    public function get_active_by_id($ids, $swLat, $swLng, $neLat, $neLng)
+    {
+        $conds = array();
+        $params = array();
+
+        $select = "pokemon_id, expire_timestamp AS disappear_time, encounter_id, lat AS latitude, lon AS longitude, gender, form, weight";
+        global $noHighLevelData;
+        if (!$noHighLevelData) {
+            $select .= ", atk_iv AS individual_attack, def_iv AS individual_defense, sta_iv AS individual_stamina, move_1, move_2, cp, level";
+        }
+
+        $conds[] = "lat > :swLat AND lon > :swLng AND lat < :neLat AND lon < :neLng AND expire_timestamp > :time";
+        $params[':swLat'] = $swLat;
+        $params[':swLng'] = $swLng;
+        $params[':neLat'] = $neLat;
+        $params[':neLng'] = $neLng;
+        $params[':time'] = time();
+        if (count($ids)) {
+            $pkmn_in = '';
+            $i = 1;
+            foreach ($ids as $id) {
+                $params[':qry_' . $i . "_"] = $id;
+                $pkmn_in .= ':qry_' . $i . "_,";
+                $i++;
+            }
+            $pkmn_in = substr($pkmn_in, 0, -1);
+            $conds[] = "pokemon_id IN ( $pkmn_in )";
         }
 
         return $this->query_active($select, $conds, $params);
