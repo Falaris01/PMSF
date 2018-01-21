@@ -64,7 +64,7 @@ class Monocle_Alternate extends Monocle
         return $this->query_active($select, $conds, $params);
     }
 
-    public function get_active_by_id($ids, $swLat, $swLng, $neLat, $neLng)
+public function get_active($eids, $miniv, $minlevel, $exminiv, $swLat, $swLng, $neLat, $neLng, $tstamp = 0, $oSwLat = 0, $oSwLng = 0, $oNeLat = 0, $oNeLng = 0)
     {
         $conds = array();
         $params = array();
