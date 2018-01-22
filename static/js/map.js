@@ -633,9 +633,6 @@ function gymLabel(item) {
             '<div>' +
             lastScannedStr +
             '</div>' +
-            '<div>' +
-            park +
-            '</div>' +
             '</center>' +
             '</div>'
     } else {
