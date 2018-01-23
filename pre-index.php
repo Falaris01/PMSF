@@ -215,6 +215,7 @@ if ($blockIframe) {
                             <?php
                         } ?>
                     </div>
+
                     <div class="form-row min-stats-row">
                         <?php
                         if (!$noMinIV) {
