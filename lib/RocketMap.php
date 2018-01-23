@@ -4,14 +4,14 @@ namespace Scanner;
 
 class RocketMap extends Scanner
 {
-    private $cp_multiplier;
+    private $cpMultiplier;
     public function __construct()
     {
         parent::__construct();
-        $this->set_cp_multiplier();
+        $this->setCpMultiplier();
     }
 
-    public function get_active($eids, $miniv, $minlevel, $exminiv, $swLat, $swLng, $neLat, $neLng, $tstamp = 0, $oSwLat = 0, $oSwLng = 0, $oNeLat = 0, $oNeLng = 0)
+    public function get_active($eids, $minIv, $minLevel, $exMinIv, $swLat, $swLng, $neLat, $neLng, $tstamp = 0, $oSwLat = 0, $oSwLng = 0, $oNeLat = 0, $oNeLng = 0)
     {
         global $db;
         $conds = array();
@@ -57,24 +57,24 @@ class RocketMap extends Scanner
             $conds[] = "pokemon_id NOT IN ( $pkmn_in )";
         }
         $float = $db->info()['driver'] == 'pgsql' ? "::float" : "";
-        if (!empty($miniv) && !is_nan((float)$miniv) && $miniv != 0) {
-            if (empty($exminiv)) {
-                $conds[] = '((individual_attack + individual_defense + individual_stamina)' . $float . ' / 45) * 100 >= ' . $miniv;
+        if (!empty($minIv) && !is_nan((float)$minIv) && $minIv != 0) {
+            if (empty($exMinIv)) {
+                $conds[] = '((individual_attack' . $float . ' + individual_defense' . $float . ' + individual_stamina' . $float . ')' . $float . ' / 45.00) * 100.00 >= ' . $minIv;
             } else {
-                $conds[] = '(((individual_attack + individual_defense + individual_stamina)' . $float . ' / 45) * 100 >= ' . $miniv . ' OR pokemon_id IN(' . $exminiv . ') )';
+                $conds[] = '(((individual_attack' . $float . ' + individual_defense' . $float . ' + individual_stamina' . $float . ')' . $float . ' / 45.00) * 100.00 >= ' . $minIv . ' OR pokemon_id IN(' . $exMinIv . ') )';
             }
         }
-        if (!empty($minlevel) && !is_nan((float)$minlevel) && $minlevel != 0) {
-            if (empty($exminiv)) {
-                $conds[] = '(cp_multiplier >= ' . $this->cp_multiplier[$minlevel];
+        if (!empty($minLevel) && !is_nan((float)$minLevel) && $minLevel != 0) {
+            if (empty($exMinIv)) {
+                $conds[] = 'cp_multiplier >= ' . $this->cp_multiplier[$minLevel];
             } else {
-                $conds[] = '(cp_multiplier >= ' . $this->cp_multiplier[$minlevel] . ' OR pokemon_id IN(' . $exminiv . ') )';
+                $conds[] = '(cp_multiplier >= ' . $this->cp_multiplier[$minLevel] . ' OR pokemon_id IN(' . $exMinIv . ') )';
             }
         }
         return $this->query_active($select, $conds, $params);
     }
 
-    public function get_active_by_id($miniv, $minlevel, $exminiv, $ids, $swLat, $swLng, $neLat, $neLng)
+    public function get_active_by_id($ids, $minIv, $minLevel, $exMinIv, $swLat, $swLng, $neLat, $neLng)
     {
         global $db;
         $conds = array();
@@ -107,18 +107,18 @@ class RocketMap extends Scanner
             $conds[] = "pokemon_id IN ( $pkmn_in )";
         }
         $float = $db->info()['driver'] == 'pgsql' ? "::float" : "";
-        if (!empty($miniv) && !is_nan((float)$miniv) && $miniv != 0) {
-            if (empty($exminiv)) {
-                $conds[] = '((individual_attack + individual_defense + individual_stamina)' . $float . ' / 45) * 100 >= ' . $miniv;
+        if (!empty($minIv) && !is_nan((float)$minIv) && $minIv != 0) {
+            if (empty($exMinIv)) {
+                $conds[] = '((individual_attack' . $float . ' + individual_defense' . $float . ' + individual_stamina' . $float . ')' . $float . ' / 45.00) * 100.00 >= ' . $minIv;
             } else {
-                $conds[] = '(((individual_attack + individual_defense + individual_stamina)' . $float . ' / 45) * 100 >= ' . $miniv . ' OR pokemon_id IN(' . $exminiv . ') )';
+                $conds[] = '(((individual_attack' . $float . ' + individual_defense' . $float . ' + individual_stamina' . $float . ')' . $float . ' / 45.00) * 100.00 >= ' . $minIv . ' OR pokemon_id IN(' . $exMinIv . ') )';
             }
         }
-        if (!empty($minlevel) && !is_nan((float)$minlevel) && $minlevel != 0) {
-            if (empty($exminiv)) {
-                $conds[] = '(cp_multiplier >= ' . $this->cp_multiplier[$minlevel];
+        if (!empty($minLevel) && !is_nan((float)$minLevel) && $minLevel != 0) {
+            if (empty($exMinIv)) {
+                $conds[] = 'cp_multiplier >= ' . $this->cp_multiplier[$minLevel];
             } else {
-                $conds[] = '(cp_multiplier >= ' . $this->cp_multiplier[$minlevel] . ' OR pokemon_id IN(' . $exminiv . ') )';
+                $conds[] = '(cp_multiplier >= ' . $this->cp_multiplier[$minLevel] . ' OR pokemon_id IN(' . $exMinIv . ') )';
             }
         }
         return $this->query_active($select, $conds, $params);
@@ -624,9 +624,9 @@ class RocketMap extends Scanner
         }
         return $data;
     }
-    private function set_cp_multiplier()
+    private function setCpMultiplier()
     {
-        $this->cp_multiplier = array(
+        $this->cpMultiplier = array(
             1 =>0.094,
             2 =>0.16639787,
             3 =>0.21573247,

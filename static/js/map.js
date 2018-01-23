@@ -129,14 +129,6 @@ function excludePokemon(id) { // eslint-disable-line no-unused-vars
     clearStaleMarkers()
 }
 
-function exMinIV(id) { // eslint-disable-line no-unused-vars
-    $selectExcludeMinIV.val(
-        $selectExcludeMinIV.val().split(',').concat(id).join(',')
-    ).trigger('change')
-    $('label[for="exclude-min-iv"] .pokemon-list .pokemon-icon-sprite[data-value="' + id + '"]').addClass('active')
-    clearStaleMarkers()
-}
-
 function notifyAboutPokemon(id) { // eslint-disable-line no-unused-vars
     $selectPokemonNotify.val(
         $selectPokemonNotify.val().split(',').concat(id).join(',')
@@ -945,7 +937,7 @@ function getGymMarkerIcon(item) {
         teamStr = gymTypes[item['team_id']] + '_' + getGymLevel(item)
     }
     var exIcon = ''
-    if ((((park !== 'None' && park !== undefined && onlyTriggerGyms === false && park) || triggerGyms.includes(item['gym_id'])) && (noExGyms === false))) {
+    if ((((park !== 'None' && park !== undefined && onlyTriggerGyms === false && park) || (item['sponsor'] !== undefined && item['sponsor'] > 0) || triggerGyms.includes(item['gym_id'])) && (noExGyms === false))) {
         exIcon = '<img src="static/images/ex.png" style="position:absolute;right:25px;bottom:2px;"/>'
     }
     if (item['raid_pokemon_id'] != null && item.raid_end > Date.now()) {
@@ -1405,10 +1397,10 @@ function loadRawData() {
             'lastslocs': lastslocs,
             'spawnpoints': loadSpawnpoints,
             'lastspawns': lastspawns,
-            'miniv': loadMinIV,
-            'prevminiv': prevMinIV,
-            'minlevel': loadMinLevel,
-            'prevminlevel': prevMinLevel,
+            'minIV': loadMinIV,
+            'prevMinIV': prevMinIV,
+            'minLevel': loadMinLevel,
+            'prevMinLevel': prevMinLevel,
             'swLat': swLat,
             'swLng': swLng,
             'neLat': neLat,
@@ -1419,7 +1411,7 @@ function loadRawData() {
             'oNeLng': oNeLng,
             'reids': String(reincludedPokemon),
             'eids': String(excludedPokemon),
-            'exminiv': String(excludedMinIV),
+            'exMinIV': String(excludedMinIV),
             'token': token
         },
         dataType: 'json',
@@ -1793,8 +1785,8 @@ function updateMap() {
         lastslocs = result.lastslocs
         lastspawns = result.lastspawns
 
-        prevMinIV = result.preminiv
-        prevMinLevel = result.preminlevel
+        prevMinIV = result.preMinIV
+        prevMinLevel = result.preMinLevel
         reids = result.reids
         if (reids instanceof Array) {
             reincludedPokemon = reids.filter(function (e) {
