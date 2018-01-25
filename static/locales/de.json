@@ -1087,5 +1087,6 @@
   "Cloudy":"Bedeckt",
   "Windy":"Windig",
   "Snow":"Schnee",
-  "Fog":"Nebel"
+  "Fog":"Nebel",
+  "Weather Conditions": "Wetterkarte"
 }
