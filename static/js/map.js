@@ -479,7 +479,17 @@ function pokemonLabel(item) {
             '<div>' +
             pMove1 + ' / ' + pMove2 +
             '</div>'
+
+        if (weight != null) {
+            details += i8ln('Weight') + ': ' + weight.toFixed(2) + 'kg'
+        }
+        if (height != null) {
+            details += ' | ' + i8ln('Height') + ': ' + height.toFixed(2) + 'm'
+        }
+        details +=
+            '</div>'
     }
+
     var contentstring =
         '<div>' +
         '<b>' + name + '</b>'
