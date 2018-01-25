@@ -435,4 +435,34 @@ class Monocle extends Scanner
         }
         return $data;
     }
+    public function get_weather_by_cell_id($cell_id)
+    {
+        global $db;
+        $query = "SELECT * FROM weather WHERE `s2_cell_id` = :cell_id";
+        $params = [':cell_id' => $cell_id];
+        $weather_info = $db->query($query, $params)->fetchAll(\PDO::FETCH_ASSOC);
+        if ($weather_info) {
+            return $weather_info[0];
+        } else {
+            return null;
+        }
+    }
+    public function get_weather($updated=null)
+    {
+        global $db;
+        $query = "SELECT * FROM weather WHERE :conditions ORDER BY id ASC";
+        $conds[] = "updated > :time";
+        if ($updated) {
+            $params[':time'] = $updated;
+        } else {
+            // show all weather
+            $params[':time'] = 0;
+        }
+        $query = str_replace(":conditions", join(" AND ", $conds), $query);
+        $weathers = $db->query($query, $params)->fetchAll(\PDO::FETCH_ASSOC);
+        foreach ($weathers as $weather) {
+            $data["weather_".$weather['s2_cell_id']] = $weather;
+        }
+        return $data;
+    }
 }

@@ -122,11 +122,6 @@ module.exports = function (grunt) {
         phplint: {
             files: ['**.php', '**/*.php', '!node_modules/**']
         },
-        shell: {
-            php: {
-                command: 'php -f scripts/generate_static_icons.php'
-            }
-        },
         htmlmin: {
             dist: {
                 options: {
@@ -156,12 +151,9 @@ module.exports = function (grunt) {
     grunt.registerTask('json', ['newer:minjson']);
     grunt.registerTask('php-lint', ['newer:phplint']);
     grunt.registerTask('html-build', ['htmlmin', 'cacheBust']);
-    grunt.registerTask('icons-build', ['shell:php']);
 
-    grunt.registerTask('build', ['clean', 'js-build', 'css-build', 'json', 'html-build', 'icons-build']);
+    grunt.registerTask('build', ['clean', 'js-build', 'css-build', 'json', 'html-build']);
     grunt.registerTask('lint', ['js-lint', 'php-lint']);
-
-
     grunt.registerTask('default', ['build', 'watch']);
 
 };

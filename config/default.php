@@ -97,6 +97,15 @@ $minIV = '0';                                                       // "0" for e
 $noMinLevel = false;                                                // true/false
 $minLevel = '0';                                                    // "0" for empty or a number
 
+$noExcludeMinIV = false;                                            // true/false
+$excludeMinIV = '[131, 143, 147, 148, 149, 248]';                   // [] for empty
+
+$noMinIV = false;                                                   // true/false
+$minIV = '0';                                                       // "0" for empty or a number
+
+$noMinLevel = false;                                                // true/false
+$minLevel = '0';                                                    // "0" for empty or a number
+
 $noGyms = false;                                                    // true/false
 $enableGyms = 'false';                                              // true/false
 $noGymSidebar = false;                                              // true/false
@@ -194,18 +203,13 @@ $noParkInfo = false;                                                // Do not di
 $raidApiKey = '';                                                   // Raid API Key, '' to deny access
 $sendRaidData = false;                                              // Send Raid data, false to only send gym data
 
-
 //-----------------------------------------------------
-// DEBUGGING
+// Weather Config
 //-----------------------------------------------------
 
-// Do not enable unless requested
+$noWeatherOverlay = false;                                          // true/false
+$enableWeatherOverlay = 'false';                                    // true/false
 
-$enableDebug = false;
-
-//-----------------------------------------------------
-// WEATHER CONFIG
-//-----------------------------------------------------
 $weather = [
     0 => null,
     1 => 'clear',
@@ -217,6 +221,13 @@ $weather = [
     7 => 'fog'
 ];
 
+//-----------------------------------------------------
+// DEBUGGING
+//-----------------------------------------------------
+
+// Do not enable unless requested
+
+$enableDebug = false;
 
 //-----------------------------------------------------
 // DATABASE CONFIG
