@@ -523,7 +523,7 @@ function pokemonLabel(item) {
 
     var weatherIcon = ''
     if (weatherBoostedCondition !== 0) {
-        weatherIcon = ' <img src="static/weather/' + weatherBoostedCondition + '.png" style="float:right;margin:auto;width:35px;height:auto;right:10px;"/> '
+        weatherIcon = ' <img src="static/weather/i-' + weatherBoostedCondition + '.png" style="float:right;margin:auto;width:35px;height:auto;right:10px;"/> '
     }
 
     var contentstring =
@@ -1958,8 +1958,8 @@ function drawWeatherOverlay(weather) {
             }
             center = bounds.getCenter()
 
-            var overlayIconSize = new google.maps.Size(30, 30)
-            var scaledIconCenterOffset = new google.maps.Point(15, 15)
+            var overlayIconSize = new google.maps.Size(100, 100)
+            var scaledIconCenterOffset = new google.maps.Point(45, 45)
             var image = 'static/weather/i-' + item.condition + '.png'
             var marker = new google.maps.Marker({
                 position: {
