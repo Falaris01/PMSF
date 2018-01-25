@@ -202,6 +202,23 @@ $noParkInfo = false;                                                // Do not di
 $raidApiKey = '';                                                   // Raid API Key, '' to deny access
 $sendRaidData = false;                                              // Send Raid data, false to only send gym data
 
+//-----------------------------------------------------
+// Weather Config
+//-----------------------------------------------------
+
+$noWeatherOverlay = false;                                          // true/false
+$enableWeatherOverlay = 'false';                                    // true/false
+
+$weather = [
+    0 => null,
+    1 => 'clear',
+    2 => 'rain',
+    3 => 'partly_cloudy',
+    4 => 'cloudy',
+    5 => 'windy',
+    6 => 'snow',
+    7 => 'fog'
+];
 
 //-----------------------------------------------------
 // DEBUGGING

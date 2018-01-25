@@ -1255,5 +1255,13 @@
   "Hide Pokemon": "Verbergen",
   "Excl. Min IV/Lvl": "Immer anzeigen",
   "All": "Alle",
-  "None": "Keine"
+  "None": "Keine",
+  "Weather":"Wetter",
+  "Clear":"Klar",
+  "Rain":"Regen",
+  "Partly Cloudy":"Teilweise bewölkt",
+  "Cloudy":"Bedeckt",
+  "Windy":"Windig",
+  "Snow":"Schnee",
+  "Fog":"Nebel"
 }
