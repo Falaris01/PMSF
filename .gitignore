@@ -36,4 +36,3 @@ config/*
 /static/dist/
 package-lock.json
 index.php
-/static/spawns/*/*.png

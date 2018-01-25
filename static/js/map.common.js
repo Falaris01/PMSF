@@ -1152,13 +1152,8 @@ function setupPokemonMarker(item, map, isBounceDisabled) {
         iconSize += Store.get('iconNotifySizeModifier')
     }
     var pokemonIndex = item['pokemon_id'] - 1
-    // var icon = getGoogleSprite(pokemonIndex, pokemonSprites, iconSize)
-    var displayHeight = Math.max(iconSize, 3)
-    var sprite = pokemonSprites
-    var scale = displayHeight / sprite.iconHeight
-    var scaledIconSize = new google.maps.Size(scale * sprite.iconWidth, scale * sprite.iconHeight)
-    var scaledSpriteSize = new google.maps.Size(scale * sprite.iconWidth, scale * sprite.iconWidth)
-    var scaledIconCenterOffset = new google.maps.Point(scale * sprite.iconWidth / 2, scale * sprite.iconHeight / 2)
+    var icon = getGoogleSprite(pokemonIndex, pokemonSprites, iconSize)
+
     var animationDisabled = false
     if (isBounceDisabled === true) {
         animationDisabled = true
@@ -1171,13 +1166,7 @@ function setupPokemonMarker(item, map, isBounceDisabled) {
         },
         zIndex: 9999,
         map: map,
-        icon: {
-            url: 'static/spawns/' + item['weather_boosted_condition'] + '/' + item['pokemon_id'] + '.png',
-            size: scaledIconSize,
-            scaledSize: scaledSpriteSize,
-            origin: new google.maps.Point(0, 0),
-            anchor: scaledIconCenterOffset
-        },
+        icon: icon,
         animationDisabled: animationDisabled
     })
 }

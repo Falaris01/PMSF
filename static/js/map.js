@@ -447,7 +447,6 @@ function pokemonLabel(item) {
     var cp = item['cp']
     var cpMultiplier = item['cp_multiplier']
     var level = item['level']
-    var weatherBoostedCondition = item['weather_boosted_condition']
 
     $.each(types, function (index, type) {
         typesDisplay += getTypeSpan(type)
@@ -481,15 +480,6 @@ function pokemonLabel(item) {
             pMove1 + ' / ' + pMove2 +
             '</div>'
     }
-    if (weight != null && height != null) {
-        details += ' | ' + i8ln('Weight') + ': ' + weight.toFixed(2) + 'kg | ' + i8ln('Height') + ': ' + height.toFixed(2) + 'm'
-        details +=
-            '</div>'
-    }
-    var weatherIcon = ''
-    if (weatherBoostedCondition !== 0) {
-        weatherIcon = ' <img src="static/weather/' + weatherBoostedCondition + '.png" style="float:right;margin:auto;width:35px;height:auto;right:10px;"/> '
-    }
     var contentstring =
         '<div>' +
         '<b>' + name + '</b>'
@@ -506,7 +496,6 @@ function pokemonLabel(item) {
     contentstring += '<span> - </span>' +
         '<small>' +
         '<a href="https://pokemon.gameinfo.io/' + languageSite + '/pokemon/' + id + '" target="_blank" title="' + i8ln('View in Pokedex') + '">#' + id + '</a>' +
-        weatherIcon +
         '</small>' +
         '</div>' +
         '<span>' +
