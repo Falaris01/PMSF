@@ -1850,7 +1850,7 @@ function updateMap() {
             var currentCell = $('#currentWeather').data('current-cell')
             if ((currentWeather) && (currentCell !== currentWeather.s2_cell_id)) {
                 $('#currentWeather').data('current-cell', currentWeather.s2_cell_id)
-                $('#currentWeather').html('<img src="static/weather/' + currentWeather.condition + '.png" alt="">')
+                $('#currentWeather').html('<img src="static/weather/i-' + currentWeather.condition + '.png" alt="">')
             } else if (!currentWeather) {
                 $('#currentWeather').data('current-cell', '')
                 $('#currentWeather').html('')
