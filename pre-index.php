@@ -148,7 +148,7 @@ if ($blockIframe) {
         ?>
         <?php if (!$noWeatherOverlay) {
             ?>
-        <span id="currentWeather" style="float:right;"></span>
+        <div id="currentWeather"></div>
         <?php
         } ?>
         <a href="#stats" id="statsToggle" class="statsNav" style="float: right;"><span class="label"><?php echo i8ln('Stats') ?></span></a>
@@ -445,7 +445,7 @@ if ($blockIframe) {
                 </div>';
                 } ?>
             <?php
-            if (!$noWeatherOverlay) {
+            if (!$noSpawnPoints) {
                 echo '<div class="form-control switch-container">
                     <h3> '.i8ln('Spawn Points').' </h3>
                     <div class="onoffswitch">
