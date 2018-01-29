@@ -203,7 +203,6 @@ $raidApiKey = '';                                                   // Raid API 
 $sendRaidData = false;                                              // Send Raid data, false to only send gym data
 
 //-----------------------------------------------------
-
 // Weather Config
 //-----------------------------------------------------
 

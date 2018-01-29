@@ -58,8 +58,8 @@ var locationMarker
 var rangeMarkers = ['pokemon', 'pokestop', 'gym']
 var storeZoom = true
 var scanPath
-var weather
 var moves
+var weather
 var boostedMons // eslint-disable-line no-unused-vars
 var osmTileServer
 

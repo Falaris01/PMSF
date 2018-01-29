@@ -34,6 +34,5 @@ config/*
 !config/example.config.php
 !config/default.php
 /static/dist/
-/static/icons-pokemon/
 package-lock.json
 index.php
