@@ -57,8 +57,8 @@ var locationMarker
 var rangeMarkers = ['pokemon', 'pokestop', 'gym']
 var storeZoom = true
 var scanPath
-var weather
 var moves
+var weather
 var boostedMons // eslint-disable-line no-unused-vars
 var osmTileServer
 
@@ -283,6 +283,21 @@ function initMap() { // eslint-disable-line no-unused-vars
 
     createMyLocationButton()
     initSidebar()
+
+    var locale = window.navigator.userLanguage || window.navigator.language
+    moment.locale(locale)
+
+    if (language === 'jp') {
+        languageSite = 'ja'
+    } else if (language === 'pt_br') {
+        languageSite = 'pt-br'
+    } else if (language === 'zh_tw') {
+        languageSite = 'zh-tw'
+    } else {
+        languageSite = language
+    }
+
+    updateWeatherOverlay()
 }
 
 function updateLocationMarker(style) {
@@ -488,13 +503,12 @@ function pokemonLabel(item) {
             '<div>' +
             pMove1 + ' / ' + pMove2 +
             '</div>'
-
-        if (weatherBoostedCondition !== 0) {
-            details +=
-                '<div>' +
-                i8ln('Weather') + ': ' + i8ln(weather[weatherBoostedCondition]) +
-                '</div>'
-        }
+    }
+    if (weatherBoostedCondition !== 0) {
+        details +=
+            '<div>' +
+            i8ln('Weather') + ': ' + i8ln(weather[weatherBoostedCondition]) +
+            '</div>'
         if (weight != null) {
             details += i8ln('Weight') + ': ' + weight.toFixed(2) + 'kg'
         }
