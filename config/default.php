@@ -48,7 +48,7 @@ $locale = "en";                                                     // Display l
 
 /* Google Maps Key */
 
-$gmapsKey = "";                                                     // Google Maps API Key
+$gmapsKey = [""];                                                     // Google Maps API Key ["KEY1","KEY2"]
 
 /* Google Analytics */
 
@@ -204,6 +204,7 @@ $raidApiKey = '';                                                   // Raid API 
 $sendRaidData = false;                                              // Send Raid data, false to only send gym data
 
 //-----------------------------------------------------
+
 // Weather Config
 //-----------------------------------------------------
 
@@ -220,6 +221,23 @@ $weather = [
     6 => 'snow',
     7 => 'fog'
 ];
+
+$weatherColors = [
+    'grey',
+    '#fdfd96',
+    'darkblue',
+    'grey',
+    'darkgrey',
+    'purple',
+    'white',
+    'black'
+];
+
+// Areas
+//-----------------------------------------------------
+
+$noAreas = false;
+$areas = [];                                                   // [[latitude,longitude,zoom,name],[latitude,longitude,zoom,name]]
 
 //-----------------------------------------------------
 // DEBUGGING

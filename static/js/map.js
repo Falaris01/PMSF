@@ -59,6 +59,7 @@ var storeZoom = true
 var scanPath
 var weather
 var moves
+var boostedMons // eslint-disable-line no-unused-vars
 var osmTileServer
 
 var oSwLat
@@ -102,7 +103,7 @@ var cpMultiplier = [0.094, 0.16639787, 0.21573247, 0.25572005, 0.29024988, 0.321
 var weatherArray = []
 var weatherPolys = []
 var weatherMarkers = []
-var weatherColors = ['grey', 'yellow', 'darkblue', 'grey', 'darkgrey', 'purple', 'white', 'black']
+var weatherColors
 
 var S2
 
@@ -386,9 +387,7 @@ function initSidebar() {
     }
     var path = window.location.protocol + '//' + window.location.hostname + port + window.location.pathname
     var r = new RegExp('^(?:[a-z]+:)?//', 'i')
-    var urlSprite = r.test(Store.get('spritefile')) ? Store.get('spritefile') : path + Store.get('spritefile')
     var urlSpriteLarge = r.test(Store.get('spritefileLarge')) ? Store.get('spritefileLarge') : path + Store.get('spritefileLarge')
-    document.body.style.setProperty('--sprite', 'url(' + urlSprite + ')')
     document.body.style.setProperty('--sprite-large', 'url(' + urlSpriteLarge + ')')
     iconpath = r.test(Store.get('icons')) ? Store.get('icons') : path + Store.get('icons')
 }
@@ -591,7 +590,7 @@ function gymLabel(item) {
         raidStr += '<div>' + i8ln('End') + ': <b>' + raidEndStr + '</b> <span class="label-countdown" disappears-at="' + item['raid_end'] + '" end>(00m00s)</span></div>'
 
         if (raidStarted) {
-            raidIcon = '<i class="pokemon-large-raid-sprite n' + item.raid_pokemon_id + '"></i>'
+            raidIcon = '<i class="pokemon-sprite-large n' + item.raid_pokemon_id + '"></i>'
         } else {
             var raidEgg = ''
             if (item['raid_level'] <= 2) {
@@ -964,7 +963,7 @@ function getGymMarkerIcon(item) {
     if (item['raid_pokemon_id'] != null && item.raid_end > Date.now()) {
         return '<div style="position:relative;">' +
             '<img src="static/forts/' + Store.get('gymMarkerStyle') + '/' + teamStr + '.png" style="width:55px;height:auto;"/>' +
-            '<img src="' + iconpath + item.raid_pokemon_id + '.png" style="width:55px;height:auto;position:absolute;right:10px;bottom:15px;"/>' +
+            '<i class="pokemon-raid-sprite n' + item.raid_pokemon_id + '"></i>' +
             exIcon +
             '</div>'
     } else if (item['raid_level'] !== null && item.raid_end > Date.now()) {
@@ -2324,7 +2323,7 @@ function showGymDetails(id) { // eslint-disable-line no-unused-vars
             raidStr += '<div>' + i8ln('End') + ': <b>' + raidEndStr + '</b> <span class="label-countdown" disappears-at="' + result['raid_end'] + '" end>(00m00s)</span></div>'
 
             if (raidStarted) {
-                raidIcon = '<i class="pokemon-large-raid-sprite n' + result.raid_pokemon_id + '"></i>'
+                raidIcon = '<i class="pokemon-sprite-large n' + result.raid_pokemon_id + '"></i>'
             } else {
                 var raidEgg = ''
                 if (result['raid_level'] <= 2) {
@@ -2460,7 +2459,7 @@ function showGymDetails(id) { // eslint-disable-line no-unused-vars
             pokemonHtml =
                 '<center class="team-' + result.team_id + '-text">' +
                 'Gym Leader:<br>' +
-                '<i class="pokemon-large-sprite n' + result.guard_pokemon_id + '"></i><br>' +
+                '<i class="pokemon-sprite-large n' + result.guard_pokemon_id + '"></i><br>' +
                 '<b class="team-' + result.team_id + '-text">' + result.guard_pokemon_name + '</b>' +
                 '<p style="font-size: .75em margin: 5px">' +
                 'No additional gym information is available for this gym. Make sure you are collecting detailed gym info. If you have detailed gym info collection running, this gym\'s Pokemon information may be out of date.' +
@@ -2826,7 +2825,7 @@ $(function () {
         if (!state.id) {
             return state.text
         }
-        var $state = $('<span><i class="pokemon-sprite n' + state.element.value.toString() + '"></i> ' + state.text + '</span>')
+        var $state = $('<span><i class="pokemon-raid-sprite n' + state.element.value.toString() + '" style="display: inline-block;position: relative;top: 6px; right: 0px;"></i> ' + state.text + '</span>')
         return $state
     }
 
@@ -2835,7 +2834,8 @@ $(function () {
     })
 
     $.getJSON('static/dist/data/weather.min.json').done(function (data) {
-        weather = data
+        weather = data.weather
+        boostedMons = data.boosted_mons
     })
 
     $selectExclude = $('#exclude-pokemon')
@@ -2861,6 +2861,14 @@ $(function () {
         var parent = $(this).parent()
         parent.find('.pokemon-list .pokemon-icon-sprite').removeClass('active')
         parent.find('input').val('').trigger('change')
+    })
+    $('.area-go-to').on('click', function (e) {
+        e.preventDefault()
+        var lat = $(this).data('lat')
+        var lng = $(this).data('lng')
+        var zoom = $(this).data('zoom')
+        map.setCenter(new google.maps.LatLng(lat, lng))
+        map.setZoom(zoom)
     })
 
     $raidNotify.select2({
@@ -2927,7 +2935,9 @@ $(function () {
         // setup list change behavior now that we have the list to work from
         $selectExclude.on('change', function (e) {
             buffer = excludedPokemon
-            excludedPokemon = $selectExclude.val().split(',').map(Number).sort(function (a, b) { return parseInt(a) - parseInt(b) })
+            excludedPokemon = $selectExclude.val().split(',').map(Number).sort(function (a, b) {
+                return parseInt(a) - parseInt(b)
+            })
             buffer = buffer.filter(function (e) {
                 return this.indexOf(e) < 0
             }, excludedPokemon)
@@ -2937,7 +2947,9 @@ $(function () {
         })
         $selectExcludeMinIV.on('change', function (e) {
             buffer = excludedMinIV
-            excludedMinIV = $selectExcludeMinIV.val().split(',').map(Number).sort(function (a, b) { return parseInt(a) - parseInt(b) })
+            excludedMinIV = $selectExcludeMinIV.val().split(',').map(Number).sort(function (a, b) {
+                return parseInt(a) - parseInt(b)
+            })
             buffer = buffer.filter(function (e) {
                 return this.indexOf(e) < 0
             }, excludedMinIV)
@@ -2969,7 +2981,9 @@ $(function () {
         })
 
         $selectPokemonNotify.on('change', function (e) {
-            notifiedPokemon = $selectPokemonNotify.val().split(',').map(Number).sort(function (a, b) { return parseInt(a) - parseInt(b) })
+            notifiedPokemon = $selectPokemonNotify.val().split(',').map(Number).sort(function (a, b) {
+                return parseInt(a) - parseInt(b)
+            })
             Store.set('remember_select_notify', notifiedPokemon)
         })
         $selectRarityNotify.on('change', function (e) {
