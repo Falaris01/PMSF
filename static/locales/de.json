@@ -1088,5 +1088,8 @@
   "Windy":"Windig",
   "Snow":"Schnee",
   "Fog":"Nebel",
-  "Weather Conditions": "Wetterkarte"
+  "Weather Conditions": "Wetterkarte",
+  "Areas": "Städte",
+  "Notification": "Benachrichtigung",
+  "Disable": "Deaktiviert"
 }
