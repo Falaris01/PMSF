@@ -60,6 +60,7 @@ var storeZoom = true
 var scanPath
 var weather
 var moves
+var boostedMons // eslint-disable-line no-unused-vars
 var osmTileServer
 
 var oSwLat
@@ -103,7 +104,7 @@ var cpMultiplier = [0.094, 0.16639787, 0.21573247, 0.25572005, 0.29024988, 0.321
 var weatherArray = []
 var weatherPolys = []
 var weatherMarkers = []
-var weatherColors = ['grey', 'yellow', 'darkblue', 'grey', 'darkgrey', 'purple', 'white', 'black']
+var weatherColors
 
 var S2
 
@@ -2848,7 +2849,8 @@ $(function () {
     })
 
     $.getJSON('static/dist/data/weather.min.json').done(function (data) {
-        weather = data
+        weather = data.weather
+        boostedMons = data.boosted_mons
     })
 
     $selectExclude = $('#exclude-pokemon')

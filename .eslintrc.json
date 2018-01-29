@@ -108,6 +108,7 @@
     "getIv": true,
     "triggerGyms": true,
     "i8ln": false,
-    "languageSite": true
+    "languageSite": true,
+    "boostedMons": true
   }
 }
