@@ -182,6 +182,7 @@ $raidApiKey = '';                                                   // Raid API 
 $sendRaidData = false;                                              // Send Raid data, false to only send gym data
 
 //-----------------------------------------------------
+
 // Weather Config
 //-----------------------------------------------------
 
@@ -198,6 +199,12 @@ $weatherColors = [
     'white',                                                        // snow
     'black'                                                         // fog
 ];
+
+// Areas
+//-----------------------------------------------------
+
+$noAreas = false;
+$areas = [];                                                   // [[latitude,longitude,zoom,name],[latitude,longitude,zoom,name]]
 
 //-----------------------------------------------------
 // DATA MANAGEMENT
