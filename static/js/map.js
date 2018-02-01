@@ -28,6 +28,7 @@ var $selectLocationIconMarker
 var $switchGymSidebar
 
 var language = document.documentElement.lang === '' ? 'en' : document.documentElement.lang
+var languageSite = 'en'
 var idToPokemon = {}
 var i8lnDictionary = {}
 var languageLookups = 0
@@ -539,7 +540,7 @@ function pokemonLabel(item) {
     }
     contentstring += '<span> - </span>' +
         '<small>' +
-        '<a href="https://pokewiki.de/' + name + '" target="_blank" title="' + i8ln('View in Pokedex') + '">#' + id + '</a>' +
+        '<a href="https://pokewiki.' + languageSite + '/' + name + '" target="_blank" title="' + i8ln('View in Pokedex') + '">#' + id + '</a>' +
         weatherIcon +
         '</small>' +
         '</div>' +
