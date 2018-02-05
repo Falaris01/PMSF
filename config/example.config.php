@@ -75,6 +75,8 @@ $noHidePokemon = false;                                             // true/fals
 $hidePokemon = '[10, 13, 16, 19, 21, 29, 32, 41, 46, 48, 50, 52, 56, 74, 77, 96, 111, 133,
                   161, 163, 167, 177, 183, 191, 194, 168]';         // [] for empty
 
+$hidePokemonCoords = false;                                          // true/false
+
 $noExcludeMinIV = false;                                            // true/false
 $excludeMinIV = '[131, 143, 147, 148, 149, 248]';                   // [] for empty
 
@@ -83,6 +85,9 @@ $minIV = '0';                                                       // "0" for e
 
 $noMinLevel = false;                                                // true/false
 $minLevel = '0';                                                    // "0" for empty or a number
+
+$noBigKarp = false;                                               // true/false
+$noTinyRat = false;                                                 // true/false
 
 $noGyms = false;                                                    // true/false
 $enableGyms = 'false';                                              // true/false
@@ -155,11 +160,14 @@ $copyrightSafe = true;
 $noMapStyle = false;                                                // true/false
 $mapStyle = 'style_pgo_dynamic';                                    // roadmap, satellite, hybrid, nolabels_style, dark_style, style_light2, style_pgo, dark_style_nl, style_pgo_day, style_pgo_night, style_pgo_dynamic
 
+$noDirectionProvider = false;                                       // true/false
+$directionProvider = 'google';                                      // google, waze, apple
+
 $noIconSize = false;                                                // true/false
 $iconSize = 0;                                                      // -8, 0, 10, 20
 
 $noIconNotifySizeModifier = false;                                  // true/false | Increase size of notified Pokemon
-$iconNotifySizeModifier = 45;                                       // 0, 15, 30, 45
+$iconNotifySizeModifier = 15;                                       // 0, 15, 30, 45
 
 $noGymStyle = false;                                                // true/false
 $gymStyle = 'ingame';                                               // ingame, shield

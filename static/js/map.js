@@ -26,6 +26,9 @@ var $selectLuredPokestopsOnly
 var $selectGymMarkerStyle
 var $selectLocationIconMarker
 var $switchGymSidebar
+var $switchTinyRat
+var $switchBigKarp
+var $selectDirectionProvider
 
 var language = document.documentElement.lang === '' ? 'en' : document.documentElement.lang
 var languageSite = 'en'
@@ -47,6 +50,7 @@ var minIV = null
 var prevMinIV = null
 var prevMinLevel = null
 var onlyPokemon = 0
+var directionProvider
 
 var buffer = []
 var reincludedPokemon = []
@@ -364,6 +368,8 @@ function initSidebar() {
     $('#last-update-gyms-switch').val(Store.get('showLastUpdatedGymsOnly'))
     $('#pokemon-switch').prop('checked', Store.get('showPokemon'))
     $('#pokemon-filter-wrapper').toggle(Store.get('showPokemon'))
+    $('#big-karp-switch').prop('checked', Store.get('showBigKarp'))
+    $('#tiny-rat-switch').prop('checked', Store.get('showTinyRat'))
     $('#pokestops-switch').prop('checked', Store.get('showPokestops'))
     $('#lured-pokestops-only-switch').val(Store.get('showLuredPokestopsOnly'))
     $('#lured-pokestops-only-wrapper').toggle(Store.get('showPokestops'))
@@ -375,6 +381,7 @@ function initSidebar() {
     $('#scanned-switch').prop('checked', Store.get('showScanned'))
     $('#weather-switch').prop('checked', Store.get('showWeather'))
     $('#spawnpoints-switch').prop('checked', Store.get('showSpawnpoints'))
+    $('#direction-provider').val(Store.get('directionProvider'))
     $('#ranges-switch').prop('checked', Store.get('showRanges'))
     $('#sound-switch').prop('checked', Store.get('playSound'))
     $('#cries-switch').prop('checked', Store.get('playCries'))
@@ -414,6 +421,17 @@ function getTypeSpan(type) {
 
 function openMapDirections(lat, lng) { // eslint-disable-line no-unused-vars
     var url = 'https://www.google.com/maps/dir/?api=1&destination=' + lat + ',' + lng
+    switch (directionProvider) {
+        case 'apple':
+            url = 'https://maps.apple.com/?daddr=' + lat + ',' + lng
+            break
+        case 'waze':
+            url = 'https://waze.com/ul?ll=' + lat + ',' + lng
+            break
+        case 'bing':
+            url = 'https://www.bing.com/maps/?v=2&where1=' + lat + ',' + lng
+            break
+    }
     window.open(url, '_blank')
 }
 
@@ -1319,7 +1337,7 @@ function addListeners(marker) {
 
 function clearStaleMarkers() {
     $.each(mapData.pokemons, function (key, value) {
-        if (mapData.pokemons[key]['disappear_time'] < new Date().getTime() || excludedPokemon.indexOf(mapData.pokemons[key]['pokemon_id']) >= 0 || isTemporaryHidden(mapData.pokemons[key]['pokemon_id']) || ((((mapData.pokemons[key]['individual_attack'] + mapData.pokemons[key]['individual_defense'] + mapData.pokemons[key]['individual_stamina']) / 45 * 100 < minIV) || ((mapType === 'monocle' && mapData.pokemons[key]['level'] < minLevel) || (mapType === 'rm' && !isNaN(minLevel) && (mapData.pokemons[key]['cp_multiplier'] < cpMultiplier[minLevel - 1])))) && !excludedMinIV.includes(mapData.pokemons[key]['pokemon_id']))) {
+        if (mapData.pokemons[key]['disappear_time'] < new Date().getTime() || excludedPokemon.indexOf(mapData.pokemons[key]['pokemon_id']) >= 0 || isTemporaryHidden(mapData.pokemons[key]['pokemon_id']) || ((((mapData.pokemons[key]['individual_attack'] + mapData.pokemons[key]['individual_defense'] + mapData.pokemons[key]['individual_stamina']) / 45 * 100 < minIV) || ((mapType === 'monocle' && mapData.pokemons[key]['level'] < minLevel) || (mapType === 'rm' && !isNaN(minLevel) && (mapData.pokemons[key]['cp_multiplier'] < cpMultiplier[minLevel - 1])))) && !excludedMinIV.includes(mapData.pokemons[key]['pokemon_id'])) || (Store.get('showBigKarp') === true && mapData.pokemons[key]['pokemon_id'] === 129 && (mapData.pokemons[key]['weight'] < 13.14 || mapData.pokemons[key]['weight'] === null)) || (Store.get('showTinyRat') === true && mapData.pokemons[key]['pokemon_id'] === 19 && (mapData.pokemons[key]['weight'] > 2.40 || mapData.pokemons[key]['weight'] === null))) {
             if (mapData.pokemons[key].marker.rangeCircle) {
                 mapData.pokemons[key].marker.rangeCircle.setMap(null)
                 delete mapData.pokemons[key].marker.rangeCircle
@@ -1406,6 +1424,8 @@ function loadRawData() {
     var loadLuredOnly = Boolean(Store.get('showLuredPokestopsOnly'))
     var loadMinIV = Store.get('remember_text_min_iv')
     var loadMinLevel = Store.get('remember_text_min_level')
+    var bigKarp = Boolean(Store.get('showBigKarp'))
+    var tinyRat = Boolean(Store.get('showTinyRat'))
 
     var bounds = map.getBounds()
     var swPoint = bounds.getSouthWest()
@@ -1436,6 +1456,8 @@ function loadRawData() {
             'prevMinIV': prevMinIV,
             'minLevel': loadMinLevel,
             'prevMinLevel': prevMinLevel,
+            'bigKarp': bigKarp,
+            'tinyRat': tinyRat,
             'swLat': swLat,
             'swLng': swLng,
             'neLat': neLat,
@@ -1856,20 +1878,22 @@ function updateMap() {
         lng: position.lng()
     })
 
-    // lets try and get the s2 cell id in the middle
-    var s2CellCenter = S2.keyToId(S2.latLngToKey(position.lat(), position.lng(), 10))
-    if ((s2CellCenter) && (String(s2CellCenter) !== $('#currentWeather').data('current-cell')) && (map.getZoom() > 13)) {
-        loadWeatherCellData(s2CellCenter).done(function (cellWeather) {
-            var currentWeather = cellWeather.weather
-            var currentCell = $('#currentWeather').data('current-cell')
-            if ((currentWeather) && (currentCell !== currentWeather.s2_cell_id)) {
-                $('#currentWeather').data('current-cell', currentWeather.s2_cell_id)
-                $('#currentWeather').html('<img src="static/weather/i-' + currentWeather.condition + '.png" alt="">')
-            } else if (!currentWeather) {
-                $('#currentWeather').data('current-cell', '')
-                $('#currentWeather').html('')
-            }
-        })
+    if (Store.get('showWeather')) {
+        // lets try and get the s2 cell id in the middle
+        var s2CellCenter = S2.keyToId(S2.latLngToKey(position.lat(), position.lng(), 10))
+        if ((s2CellCenter) && (String(s2CellCenter) !== $('#currentWeather').data('current-cell')) && (map.getZoom() > 13)) {
+            loadWeatherCellData(s2CellCenter).done(function (cellWeather) {
+                var currentWeather = cellWeather.weather
+                var currentCell = $('#currentWeather').data('current-cell')
+                if ((currentWeather) && (currentCell !== currentWeather.s2_cell_id)) {
+                    $('#currentWeather').data('current-cell', currentWeather.s2_cell_id)
+                    $('#currentWeather').html('<img src="static/weather/' + currentWeather.condition + '.png" alt="">')
+                } else if (!currentWeather) {
+                    $('#currentWeather').data('current-cell', '')
+                    $('#currentWeather').html('')
+                }
+            })
+        }
     }
 
     loadRawData().done(function (result) {
@@ -2595,6 +2619,7 @@ $(function () {
 $(function () {
     // populate Navbar Style menu
     $selectStyle = $('#map-style')
+    $selectDirectionProvider = $('#direction-provider')
 
     // Load Stylenames, translate entries, and populate lists
     $.getJSON('static/dist/data/mapstyle.min.json').done(function (data) {
@@ -2624,6 +2649,17 @@ $(function () {
         // recall saved mapstyle
         $selectStyle.val(Store.get('map_style')).trigger('change')
     })
+    $selectDirectionProvider.select2({
+        placeholder: 'Select Provider',
+        minimumResultsForSearch: Infinity
+    })
+
+    $selectDirectionProvider.on('change', function () {
+        directionProvider = $selectDirectionProvider.val()
+        Store.set('directionProvider', directionProvider)
+    })
+
+    $selectDirectionProvider.val(Store.get('directionProvider')).trigger('change')
 
     $selectIconSize = $('#pokemon-icon-size')
 
@@ -2862,6 +2898,8 @@ $(function () {
     $textMinLevel = $('#min-level')
     $textLevelNotify = $('#notify-level')
     $raidNotify = $('#notify-raid')
+    $switchTinyRat = $('#tiny-rat-switch')
+    $switchBigKarp = $('#big-karp-switch')
     var numberOfPokemon = 386
 
     $('.select-all').on('click', function (e) {
@@ -2994,7 +3032,16 @@ $(function () {
             $textMinLevel.val(minLevel)
             Store.set('remember_text_min_level', minLevel)
         })
-
+        $switchTinyRat.on('change', function (e) {
+            Store.set('showTinyRat', this.checked)
+            lastpokemon = false
+            updateMap()
+        })
+        $switchBigKarp.on('change', function (e) {
+            Store.set('showBigKarp', this.checked)
+            lastpokemon = false
+            updateMap()
+        })
         $selectPokemonNotify.on('change', function (e) {
             notifiedPokemon = $selectPokemonNotify.val().split(',').map(Number).sort(function (a, b) {
                 return parseInt(a) - parseInt(b)

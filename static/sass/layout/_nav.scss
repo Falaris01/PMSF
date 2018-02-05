@@ -4,7 +4,7 @@
   @include vendor('transform', 'translateX(-20.50em)');
   @include vendor('transition', ('transform #{_duration(nav)} ease', 'box-shadow #{_duration(nav)} ease', 'visibility #{_duration(nav)}'));
   -webkit-overflow-scrolling: touch;
-  background: #F8F8F8;
+  background: #2f3136;
   box-shadow: none;
   color: _palette(accent2, fg-bold);
   height: -webkit-calc(100% - 3.5em);
@@ -21,11 +21,12 @@
   h3 {
     font-size: 18px;
     font-family: 'Quicksand', sans-serif;
-    color: darken(_palette(accent2, bg), 12);
+    color: white;
+    background-color: #2f3136;
   }
   p {
     margin-bottom: 20px;
-    color: darken(_palette(accent2, bg), 12);
+    color: #ffffff;
   }
   > ul {
     margin: 0 0 (_size(element-margin) * 0.5) 0;
@@ -40,7 +41,7 @@
         > a:not(.button) {
           border: 0;
           border-top: solid 1px _palette(accent2, border);
-          color: inherit;
+          color: #36393e;
           display: block;
           letter-spacing: _size(letter-spacing-alt);
           line-height: 3.5em;
@@ -49,6 +50,7 @@
 
         > .button {
           display: block;
+          color: #2a2c31;
           margin: 0.5em 0 0 0;
         }
 
@@ -78,11 +80,12 @@
       box-sizing: border-box;
     }
     .pokemon-icon-sprite{
-      border:1px solid #FFF;
+      border:1px solid #202225;
       width: calc( 20% - 2px);
       margin-bottom: 5px;
       margin-left: 1px;
       margin-right: 1px;
+      color: white;
       .inner-bg{
         width: 48.13px;
         height: 48.13px;
@@ -100,22 +103,23 @@
     #tabs{
       padding:0;
       border:0;
+      background: 36393e;
       &:after{
         display: table;
         content: "";
         clear: both;
       }
       .ui-tabs-nav{
-        background: transparent;
+        background: #36393e;
         border: 0;
         padding: 0;
         li{
           width: 50%;
           box-sizing: border-box;
           margin:0;
-          border-right:1px solid #fff;
+          border-right:1px solid #202225;
           &:last-child{
-            border-right-color:#c5c5c5;
+            border-right-color:#202225;
           }
           &:focus{
 
@@ -123,17 +127,19 @@
           a{
             padding: 0.5em 0.1em;
             text-align: center;
+            color: white;
             width: 100%;
+            background-color: #7e8084;
           }
         }
       }
       .ui-tabs-panel{
         padding:0;
+        background: #484b51;
         .form-control{
           float:none;
           .pokemon-container{
             box-shadow:none!important;
-            border:1px solid #3b3b3b;
             max-height:350px!important;
           }
           a{
@@ -145,7 +151,6 @@
             color: white;
             text-transform: uppercase;
             text-decoration: none;
-            border-right:1px solid #FFF;
             &:last-child{
               border-right:0;
             }
@@ -156,6 +161,7 @@
     .min-stats-row{
       clear:both;
       margin-top:10px;
+      margin-bottom:10px;
       .form-control{
         margin-bottom:0;
       }
@@ -175,6 +181,7 @@
         h3{
           float:left;
           margin-bottom:0;
+          color: #ffffff;
         }
         input{
           float:left;
@@ -185,34 +192,6 @@
       }
     }
   }
-  .area-container{
-    padding:0!important;
-    ul{
-      padding:0;
-    }
-    li{
-      list-style: none;
-      padding-left: 0;
-      width: 50%;
-      float: left;
-      text-align: center;
-      background: #c7c7c7;
-      border-top: 1px solid #d8d8d8;
-      border-left: 1px solid #d8d8d8;
-      border-right: 1px solid #d8d8d8;
-      &:hover{
-        background:grey;
-        a{
-          color:#FFF;
-        }
-      }
-    }
-    a{
-      padding: 10px 5px;
-      display: block;
-      text-decoration: none;
-    }
-  }
 
   label[for="notify-perfection"],label[for="notify-level"]{
     h3{
@@ -221,6 +200,7 @@
       display: -ms-flexbox;
       display: -webkit-flex;
       display: flex;
+      color: #ffffff;
       height: 34px;
       -webkit-align-items:center;
       align-items: center;
@@ -309,17 +289,20 @@
     padding-right: 0.5em;
     padding-bottom: 0.5em;
     padding-left: 0.5em;
+    background-color: #2f3136;
+    color:white;
   }
   .ui-state-active,
   .onoffswitch-checkbox:checked + .onoffswitch-label {
     border-color: #3b3b3b;
-    background-color: #3b3b3b;
+    background-color: #484b51;
+
   }
   .onoffswitch-checkbox:checked + .onoffswitch-label:before {
-    border-color: #c0c0c0;
+    border-color: #202225;
   }
   .ui-accordion-header.ui-state-active {
-    color: #d6d6d6;
+    color: #white;
   }
   .ui-corner-all {
     border-top-left-radius: 0;
