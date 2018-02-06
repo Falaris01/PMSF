@@ -134,7 +134,7 @@ if ($blockIframe) {
         <a href="#nav"><span class="label"><?php echo i8ln('Options') ?></span></a>
         <?php if (!$noWeatherOverlay) {
             ?>
-        <div id="currentWeather" style="position:fixed;right:0;top:100px"></div>
+        <div id="currentWeather"></div>
         <?php
         } ?>
         <a href="#stats" id="statsToggle" class="statsNav" style="float: right;"><span class="label"><?php echo i8ln('Stats') ?></span></a>
