@@ -152,7 +152,7 @@ if ($blockIframe) {
         <div>
             <center>
                 <a href="https://pokemon-go-fans.de/" target="_blank" style="margin-top: 2px; vertical-align: middle;padding:0 5px;">
-                <img src="static/images/news.png" title="https://pokemon-go-fans.de/" border="0" style="display: inline-block; margin-top: 10px; max-width:100%; height:auto;">
+                <img src="static/images/news.png" title="https://pokemon-go-fans.de/" border="0" style="display: inline-block; margin-top: -6px; max-width:100%; height:auto;">
                 </a>
             </center>
         </div>
@@ -160,23 +160,23 @@ if ($blockIframe) {
             <center>
                 <?php
                 echo '<a href="' . $discordUrl . '" target="_blank" style="margin-top: 2px; vertical-align: middle;padding:0 5px;">
-                <img src="static/images/discord.png" border="0" title="Pokémon GO ' . $title . ' Discord" style="display: inline-block; margin-top: 5px; max-width:100%; height:auto;">
-                </a>'; ?>
-            </center>
-        </div>
-        <div>
-            <center>
-                <?php
-                echo '<a href="' . $paypalUrl . '" target="_blank" style="margin-top: 2px; vertical-align: middle;padding:0 5px;">
-                <img src="static/images/spende.png" border="0" title="PayPal Spende" style="display: inline-block; margin-top: 5px; max-width:100%; height:auto;">
+                <img src="static/images/discord.png" border="0" title="Pokémon GO ' . $title . ' Discord" border="0" style="display: inline-block; margin-top: -6px; max-width:100%; height:auto;">
                 </a>'; ?>
             </center>
         </div>
         <div>
             <center>
                 <a href="https://goo.gl/d7cfAo" target="_blank" style="margin-top: 2px; vertical-align: middle;padding:0 5px;">
-                <img src="static/images/nester.png" title="Nest Map by @shimpooky" border="0" style="display: inline-block; margin-top: 10px; max-width:100%; height:auto;">
+                <img src="static/images/nester.png" title="Nest Map by @shimpooky" border="0" style="display: inline-block; margin-top: -6px; max-width:100%; height:auto;">
                 </a>
+            </center>
+        </div>
+        <div>
+            <center>
+                <?php
+                echo '<a href="' . $paypalUrl . '" target="_blank" style="margin-top: 2px; vertical-align: middle;padding:0 5px;">
+                <img src="static/images/spende.png" border="0" title="PayPal Spende" style="display: inline-block; margin-top: -6px; max-width:100%; height:auto;">
+                </a>'; ?>
             </center>
         </div>
         <div id="nav-accordion">
