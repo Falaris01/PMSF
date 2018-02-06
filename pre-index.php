@@ -144,7 +144,7 @@ if ($blockIframe) {
         <div>
             <center>
                 <?php
-                echo '<a href="#" target="_blank" style="margin-top: 5px; vertical-align: middle;padding:0 5px;">
+                echo '<a href="#" style="margin-top: 5px; vertical-align: middle;padding:0 5px;">
                 <img src="static/images/logo_' . $title . '.png" border="0" style="display: inline-block; margin-top: 10px; max-width:100%; height:auto;">
                 </a>'; ?>
             </center>
