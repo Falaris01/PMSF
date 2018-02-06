@@ -172,6 +172,13 @@ if ($blockIframe) {
                 </a>'; ?>
             </center>
         </div>
+        <div>
+            <center>
+                <a href="https://goo.gl/d7cfAo" target="_blank" style="margin-top: 2px; vertical-align: middle;padding:0 5px;">
+                <img src="static/images/nester.png" title="Nest Map by @shimpooky" border="0" style="display: inline-block; margin-top: 10px; max-width:100%; height:auto;">
+                </a>
+            </center>
+        </div>
         <div id="nav-accordion">
             <?php
             if (!$noPokemon) {
