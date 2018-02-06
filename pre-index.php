@@ -166,9 +166,10 @@ if ($blockIframe) {
         </div>
         <div>
             <center>
-                <a href="https://goo.gl/d7cfAo" target="_blank" style="margin-top: 2px; vertical-align: middle;padding:0 5px;">
+                <?php
+                echo '<a href="' . $nestMapUrl . '" target="_blank" style="margin-top: 2px; vertical-align: middle;padding:0 5px;">
                 <img src="static/images/nester.png" title="Nest Map by @shimpooky" border="0" style="display: inline-block; margin-top: -6px; max-width:100%; height:auto;">
-                </a>
+                </a>'; ?>
             </center>
         </div>
         <div>
