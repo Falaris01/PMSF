@@ -134,10 +134,11 @@ if ($blockIframe) {
         <a href="#nav"><span class="label"><?php echo i8ln('Options') ?></span></a>
         <?php if (!$noWeatherOverlay) {
             ?>
-        <div id="currentWeather"></div>
-        <?php
+            <div id="currentWeather"></div>
+            <?php
         } ?>
-        <a href="#stats" id="statsToggle" class="statsNav" style="float: right;"><span class="label"><?php echo i8ln('Stats') ?></span></a>
+        <a href="#stats" id="statsToggle" class="statsNav" style="float: right;"><span
+                class="label"><?php echo i8ln('Stats') ?></span></a>
     </header>
     <!-- NAV -->
     <nav id="nav">
@@ -495,7 +496,7 @@ if ($blockIframe) {
                 <?php
                 if (!$noWeatherOverlay) {
                     echo '<div class="form-control switch-container">
-                    <h3> '.i8ln('Weather Conditions').' </h3>
+                    <h3> ' . i8ln('Weather Conditions') . ' </h3>
                     <div class="onoffswitch">
                         <input id="weather-switch" type="checkbox" name="weather-switch"
                                class="onoffswitch-checkbox">
@@ -506,10 +507,10 @@ if ($blockIframe) {
                     </div>
                 </div>';
                 } ?>
-            <?php
-            if (!$noSpawnPoints) {
-                echo '<div class="form-control switch-container">
-                    <h3> '.i8ln('Spawn Points').' </h3>
+                <?php
+                if (!$noSpawnPoints) {
+                    echo '<div class="form-control switch-container">
+                    <h3> ' . i8ln('Spawn Points') . ' </h3>
                     <div class="onoffswitch">
                         <input id="spawnpoints-switch" type="checkbox" name="spawnpoints-switch"
                                class="onoffswitch-checkbox">
@@ -519,7 +520,7 @@ if ($blockIframe) {
                         </label>
                     </div>
                 </div>';
-            } ?>
+                } ?>
                 <?php
                 if (!$noRanges) {
                     echo '<div class="form-control switch-container">
@@ -711,7 +712,7 @@ if ($blockIframe) {
 
             <?php
             if (!$noMapStyle || !$noDirectionProvider || !$noIconSize || !$noIconNotifySizeModifier || !$noGymStyle || !$noLocationStyle) {
-                echo '<h3>'.i8ln('Style').'</h3>
+                echo '<h3>' . i8ln('Style') . '</h3>
             <div>';
             }
             ?>
@@ -726,12 +727,12 @@ if ($blockIframe) {
             <?php
             if (!$noDirectionProvider) {
                 echo '<div class="form-control switch-container">
-                <h3>'.i8ln('Direction Provider').'</h3>
+                <h3>' . i8ln('Direction Provider') . '</h3>
                 <select name="direction-provider" id="direction-provider">
-                    <option value="apple">'.i8ln('Apple').'</option>
-                    <option value="google">'.i8ln('Google').'</option>
-                    <option value="waze">'.i8ln('Waze').'</option>
-                    <option value="bing">'.i8ln('Bing').'</option>
+                    <option value="apple">' . i8ln('Apple') . '</option>
+                    <option value="google">' . i8ln('Google') . '</option>
+                    <option value="waze">' . i8ln('Waze') . '</option>
+                    <option value="bing">' . i8ln('Bing') . '</option>
                 </select>
             </div>';
             }
@@ -752,12 +753,12 @@ if ($blockIframe) {
             <?php
             if (!$noIconNotifySizeModifier) {
                 echo '<div class="form-control switch-container">
-                <h3>'.i8ln('Increase Notified Icon Size').'</h3>
+                <h3>' . i8ln('Increase Notified Icon Size') . '</h3>
                 <select name="pokemon-icon-notify-size" id="pokemon-icon-notify-size">
-                    <option value="0">'.i8ln('Disable').'</option>
-                    <option value="15">'.i8ln('Large').'</option>
-                    <option value="30">'.i8ln('X-Large').'</option>
-                    <option value="45">'.i8ln('XX-Large').'</option>
+                    <option value="0">' . i8ln('Disable') . '</option>
+                    <option value="15">' . i8ln('Large') . '</option>
+                    <option value="30">' . i8ln('X-Large') . '</option>
+                    <option value="45">' . i8ln('XX-Large') . '</option>
                 </select>
             </div>';
             }
@@ -828,9 +829,15 @@ if ($blockIframe) {
     </nav>
     <nav id="stats">
         <div class="switch-container">
-            <!--<div class="switch-container">
-                <div><center><a href="stats">Full Stats</a></center></div>
-            </div>-->
+            <?php 
+            if ($worldopoleUrl !== "") {
+                ?>
+                <div class="switch-container">
+                    <div><center><a href="<?= $worldopoleUrl ?>">Full Stats</a></center></div>
+                </div>
+                <?php
+            }
+            ?>
             <div class="switch-container">
                 <center><h1 id="stats-ldg-label"><?php echo i8ln('Loading') ?>...</h1></center>
             </div>
@@ -887,6 +894,7 @@ if ($blockIframe) {
     var centerLat = <?= $startingLat; ?>;
     var centerLng = <?= $startingLng; ?>;
     var locationSet = <?= $locationSet; ?>;
+    var motd = <?php echo $noMotd ? 'false' : 'true' ?>;
     var zoom<?php echo $zoom ? " = " . $zoom : null; ?>;
     var minZoom = <?= $maxZoomOut; ?>;
     var maxLatLng = <?= $maxLatLng; ?>;
