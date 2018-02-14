@@ -5,6 +5,7 @@ if (!file_exists('config/config.php')) {
 }
 include('config/config.php');
 $zoom = !empty($_GET['zoom']) ? $_GET['zoom'] : null;
+$encounterId = !empty($_GET['encId']) ? $_GET['encId'] : null;
 if (!empty($_GET['lat']) && !empty($_GET['lon'])) {
     $startingLat = $_GET['lat'];
     $startingLng = $_GET['lon'];
@@ -829,11 +830,13 @@ if ($blockIframe) {
     </nav>
     <nav id="stats">
         <div class="switch-container">
-            <?php 
+            <?php
             if ($worldopoleUrl !== "") {
                 ?>
                 <div class="switch-container">
-                    <div><center><a href="<?= $worldopoleUrl ?>">Full Stats</a></center></div>
+                    <div>
+                        <center><a href="<?= $worldopoleUrl ?>">Full Stats</a></center>
+                    </div>
                 </div>
                 <?php
             }
@@ -896,6 +899,7 @@ if ($blockIframe) {
     var locationSet = <?= $locationSet; ?>;
     var motd = <?php echo $noMotd ? 'false' : 'true' ?>;
     var zoom<?php echo $zoom ? " = " . $zoom : null; ?>;
+    var encounterId<?php echo $encounterId ? " = '" . $encounterId . "'" : null; ?>;
     var minZoom = <?= $maxZoomOut; ?>;
     var maxLatLng = <?= $maxLatLng; ?>;
     var osmTileServer = '<?php echo $osmTileServer; ?>';
@@ -951,7 +955,7 @@ if ($blockIframe) {
 <script src="static/dist/js/map.min.js"></script>
 <script src="static/dist/js/stats.min.js"></script>
 <script defer
-        src="https://maps.googleapis.com/maps/api/js?key=<?= $gmapsKey[mt_rand(0, count($gmapsKey) - 1)] ?>&amp;callback=initMap&amp;libraries=places,geometry"></script>
+        src="https://maps.googleapis.com/maps/api/js?v=3.31&key=<?= $gmapsKey[mt_rand(0, count($gmapsKey) - 1)] ?> ?>&amp;callback=initMap&amp;libraries=places,geometry"></script>
 <script defer src="static/js/vendor/richmarker-compiled.js"></script>
 </body>
 </html>
