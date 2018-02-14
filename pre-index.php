@@ -138,6 +138,7 @@ if ($blockIframe) {
     <!-- Header -->
     <header id="header">
         <a href="#nav"><span class="label"><?php echo i8ln('Options') ?></span></a>
+        <h1><a href="#"><?= $titleBar ?></a></h1>
         <?php if (!$noWeatherOverlay) {
             ?>
             <div id="currentWeather"></div>
