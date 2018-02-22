@@ -99,6 +99,8 @@ $noGymSidebar = false;                                              // true/fals
 $gymSidebar = 'true';                                               // true/false
 $noTrainerName = false;                                             // true/false
 $noPokemonBattleInfo = false;                                       // true/false
+$noExEligible = false;                                               // true/false
+$exEligible = 'false';                                               // true/false
 
 $noRaids = false;                                                   // true/false
 $enableRaids = 'false';                                             // true/false
