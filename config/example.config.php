@@ -221,12 +221,6 @@ $weatherColors = [
     'black'                                                         // fog
 ];
 
-// Areas
-//-----------------------------------------------------
-
-$noAreas = false;
-$areas = [];                                                   // [[latitude,longitude,zoom,name],[latitude,longitude,zoom,name]]
-
 //-----------------------------------------------------
 // DATA MANAGEMENT
 //-----------------------------------------------------
