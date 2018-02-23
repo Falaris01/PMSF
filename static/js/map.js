@@ -121,7 +121,7 @@ var S2
  <def> - defense as number
  <sta> - stamnia as number
  */
-var notifyIvTitle = '<pkm> <prc>% (<atk>/<def>/<sta>)'
+var notifyIvTitle = '<prc>% <pkm>'
 var notifyNoIvTitle = '<pkm>'
 
 /*
@@ -129,7 +129,7 @@ var notifyNoIvTitle = '<pkm>'
  <dist>  - disappear time
  <udist> - time until disappear
  */
-var notifyText = 'disappears at <dist> (<udist>)'
+var notifyText = 'L: <lvl> WP: <cp> IV: (<atk>/<def>/<sta>)\nBis: <dist> (<udist>)'
 
 //
 // Functions
@@ -912,8 +912,8 @@ function getTimeUntil(time) {
 
 function getNotifyText(item) {
     var iv = getIv(item['individual_attack'], item['individual_defense'], item['individual_stamina'])
-    var find = ['<prc>', '<pkm>', '<atk>', '<def>', '<sta>']
-    var replace = [iv ? iv.toFixed(1) : '', item['pokemon_name'], item['individual_attack'], item['individual_defense'], item['individual_stamina']]
+    var find = ['<prc>', '<pkm>', '<atk>', '<def>', '<sta>', '<lvl>', '<cp>']
+    var replace = [iv ? iv.toFixed(1) : '', item['pokemon_name'], item['individual_attack'], item['individual_defense'], item['individual_stamina'], item['level'], item['cp']]
     var ntitle = repArray(iv ? notifyIvTitle : notifyNoIvTitle, find, replace)
     var dist = new Date(item['disappear_time']).toLocaleString([], {
         hour: '2-digit',
@@ -924,8 +924,8 @@ function getNotifyText(item) {
     var until = getTimeUntil(item['disappear_time'])
     var udist = until.hour > 0 ? until.hour + ':' : ''
     udist += lpad(until.min, 2, 0) + 'm' + lpad(until.sec, 2, 0) + 's'
-    find = ['<dist>', '<udist>']
-    replace = [dist, udist]
+    find = ['<dist>', '<udist>', '<atk>', '<def>', '<sta>', '<lvl>', '<cp>']
+    replace = [dist, udist, item['individual_attack'], item['individual_defense'], item['individual_stamina'], item['level'], item['cp']]
     var ntext = repArray(notifyText, find, replace)
 
     return {
