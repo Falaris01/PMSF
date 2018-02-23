@@ -4,6 +4,21 @@
     padding-top: 3.125em;
   }
 
+  #headerlogo {
+    z-index: 10002;
+    color: #ffffff;
+    cursor: default;
+    height: 3.5em;
+    display: inline-box;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin: center;
+    top: 0;
+    z-index: _misc(z-index-base) + 2;
+    @include noSelect();
+  }
+
   #header {
     background-image: linear-gradient(#202225, #2f3136);
     color: #ffffff;

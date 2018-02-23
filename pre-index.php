@@ -233,7 +233,7 @@ if ($blockIframe) {
 <div class="wrapper">
     <!-- Header -->
     <header id="header">
-        <img src="static/images/headerlogo.png" style="float: left; margin: 7px 0px 0px 5px;"/>
+        <img src="static/images/logo_h.png" style="float: left; margin: 7px 0px 0px 5px;"/>
         <a href="#nav"><span class="label"><?php echo i8ln('Options') ?></span></a>
         <!--<h1><a href="#"><?= $titleBar ?></a></h1>-->
         <?php if (!$noWeatherOverlay) {
@@ -242,16 +242,16 @@ if ($blockIframe) {
             <?php
         } ?>
         <a href="#stats" id="statsToggle" class="statsNav" style="float: right;"><span
-                class="label"><?php echo i8ln('Stats') ?></span></a>
+                class="label"><?php echo i8ln('Stats') ?></span></a>   
     </header>
     <!-- NAV -->
     <nav id="nav">
-    <!-- Logo
+    <!-- Logo 
         <div>
             <center>
                 <?php
                 echo '<a href="#" style="margin-top: 5px; vertical-align: middle;padding:0 5px;">
-                <img src="static/images/logo_' . $short . '.png" border="0" style="display: inline-block; margin-top: 10px; max-width:100%; height:auto;">
+                <img src="static/images/logo_' . $short . '.png" border="0" style="float: left; margin: 7px 0px 0px 5px;">
                 </a>'; ?>
             </center>
         </div> -->
