@@ -111,6 +111,8 @@ $noGymSidebar = false;                                              // true/fals
 $gymSidebar = 'true';                                               // true/false
 $noTrainerName = false;                                             // true/false
 $noPokemonBattleInfo = false;                                       // true/false
+$noExEligible = false;                                              // true/false
+$exEligible = 'false';                                               // true/false
 
 $noRaids = false;                                                   // true/false
 $enableRaids = 'false';                                             // true/false
@@ -205,6 +207,13 @@ $noParkInfo = false;                                                // Do not di
 
 $raidApiKey = '';                                                   // Raid API Key, '' to deny access
 $sendRaidData = false;                                              // Send Raid data, false to only send gym data
+
+//-----------------------------------------------------
+// Areas
+//-----------------------------------------------------
+
+$noAreas = true;
+$areas = [];                                                   // [[latitude,longitude,zoom,"name"],[latitude,longitude,zoom,"name"]]
 
 //-----------------------------------------------------
 // Weather Config

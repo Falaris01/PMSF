@@ -420,8 +420,6 @@ if ($blockIframe) {
                                 <?php
                             } ?>
                         </div>
-
-
                     </div>
                 </div>
                 <?php
@@ -563,12 +561,28 @@ if ($blockIframe) {
                             </select>
                         </div>
                     </div>
+                    <div id="gyms-raid-filter-wrapper" style="display:none">
+                        <?php
+                        if ($fork === "alternate" && !$noExEligible) {
+                            echo '<div class="form-control switch-container" id="ex-eligible-wrapper">
+                                <h3>' . i8ln('EX Eligible Only') . '</h3>
+                                <div class="onoffswitch">
+                                    <input id="ex-eligible-switch" type="checkbox" name="ex-eligible-switch"
+                                           class="onoffswitch-checkbox" checked>
+                                    <label class="onoffswitch-label" for="ex-eligible-switch">
+                                        <span class="switch-label" data-on="On" data-off="Off"></span>
+                                        <span class="switch-handle"></span>
+                                    </label>
+                                </div>
+                            </div>';
+                        } ?>
+                    </div>
                 </div>
                 <?php
             }
             ?>
             <?php
-            if (!$noSearchLocation || !$noStartMe || !$noStartLast || !$noFollowMe || !$noPokestops || !$noScannedLocations || !$noSpawnPoints || !$noRanges) {
+            if (!$noSearchLocation || !$noStartMe || !$noStartLast || !$noFollowMe || !$noPokestops || !$noScannedLocations || !$noSpawnPoints || !$noRanges || !$noWeatherOverlay || !$noSpawnArea) {
                 echo '<h3>' . i8ln('Location &amp; Search') . '</h3>
             <div>'; ?>
                 <?php
@@ -1062,10 +1076,11 @@ if ($blockIframe) {
     var noExGyms = <?php echo $noExGyms === true ? 'true' : 'false' ?>;
     var noParkInfo = <?php echo $noParkInfo === true ? 'true' : 'false' ?>;
     var onlyTriggerGyms = <?php echo $onlyTriggerGyms === true ? 'true' : 'false' ?>;
-    var showBigKarp = '<?php echo $noBigKarp === true ? 'true' : 'false' ?>';
-    var showTinyRat = '<?php echo $noTinyRat === true ? 'true' : 'false' ?>';
+    var showBigKarp = <?php echo $noBigKarp === true ? 'true' : 'false' ?>;
+    var showTinyRat = <?php echo $noTinyRat === true ? 'true' : 'false' ?>;
     var hidePokemonCoords = <?php echo $hidePokemonCoords === true ? 'true' : 'false' ?>;
     var directionProvider = '<?php echo $noDirectionProvider === true ? $directionProvider : 'google' ?>';
+    var exEligible = <?php echo $noExEligible === true ? 'false' : $exEligible  ?>;
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 <script src="static/dist/js/map.common.min.js"></script>

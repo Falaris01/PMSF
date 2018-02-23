@@ -133,6 +133,7 @@
           }
         }
       }
+
       .ui-tabs-panel{
         padding:0;
         background: #484b51;
@@ -190,6 +191,34 @@
           margin-left: 5px;
         }
       }
+    }
+  }
+  .area-container{
+    padding:0!important;
+    ul{
+      padding:0;
+    }
+    li{
+      list-style: none;
+      padding-left: 0;
+      width: 50%;
+      float: left;
+      text-align: center;
+      background: #2f3136;
+      border-top: 1px solid #d8d8d8;
+      border-left: 1px solid #d8d8d8;
+      border-right: 1px solid #d8d8d8;
+      &:hover{
+        background:grey;
+        a{
+          color:#FFF;
+        }
+      }
+    }
+    a{
+      padding: 10px 5px;
+      display: block;
+      text-decoration: none;
     }
   }
 

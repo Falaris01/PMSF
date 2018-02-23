@@ -29,6 +29,7 @@ var $switchGymSidebar
 var $switchTinyRat
 var $switchBigKarp
 var $selectDirectionProvider
+var $switchExEligible
 
 var language = document.documentElement.lang === '' ? 'en' : document.documentElement.lang
 var languageSite = 'en'
@@ -120,7 +121,7 @@ var S2
  <def> - defense as number
  <sta> - stamnia as number
  */
-var notifyIvTitle = '<pkm> <prc>% (<atk>/<def>/<sta>)'
+var notifyIvTitle = '<prc>% <pkm> <gender>'
 var notifyNoIvTitle = '<pkm>'
 
 /*
@@ -128,7 +129,7 @@ var notifyNoIvTitle = '<pkm>'
  <dist>  - disappear time
  <udist> - time until disappear
  */
-var notifyText = 'disappears at <dist> (<udist>)'
+var notifyText = 'L: <lvl> WP: <cp> IV: (<atk>/<def>/<sta>)\nBis: <dist> (<udist>)'
 
 //
 // Functions
@@ -157,6 +158,16 @@ function removePokemonMarker(encounterId) { // eslint-disable-line no-unused-var
     mapData.pokemons[encounterId].marker.setMap(null)
     mapData.pokemons[encounterId].hidden = true
 }
+
+function createServiceWorkerReceiver() {
+    navigator.serviceWorker.addEventListener('message', function (event) {
+        const data = JSON.parse(event.data)
+        if (data.action === 'centerMap' && data.lat && data.lon) {
+            centerMap(data.lat, data.lon, 20)
+        }
+    })
+}
+
 
 function initMap() { // eslint-disable-line no-unused-vars
     map = new google.maps.Map(document.getElementById('map'), {
@@ -304,6 +315,10 @@ function initMap() { // eslint-disable-line no-unused-vars
         languageSite = language
     }
 
+    if (Push._agents.chrome.isSupported()) {
+        createServiceWorkerReceiver()
+    }
+
     updateWeatherOverlay()
 }
 
@@ -356,6 +371,7 @@ function createLocationMarker() {
 function initSidebar() {
     $('#gyms-switch').prop('checked', Store.get('showGyms'))
     $('#gym-sidebar-switch').prop('checked', Store.get('useGymSidebar'))
+    $('#ex-eligible-switch').prop('checked', Store.get('exEligible'))
     $('#gym-sidebar-wrapper').toggle(Store.get('showGyms') || Store.get('showRaids'))
     $('#gyms-filter-wrapper').toggle(Store.get('showGyms'))
     $('#team-gyms-only-switch').val(Store.get('showTeamGymsOnly'))
@@ -389,6 +405,10 @@ function initSidebar() {
     $('#cries-switch').prop('checked', Store.get('playCries'))
     $('#cries-switch-wrapper').toggle(Store.get('playSound'))
     $('#cries-type-filter-wrapper').toggle(Store.get('playCries'))
+
+    if (Store.get('showGyms') === true || Store.get('showRaids') === true) {
+        $('#gyms-raid-filter-wrapper').toggle(true)
+    }
     if (document.getElementById('next-location')) {
         var searchBox = new google.maps.places.Autocomplete(document.getElementById('next-location'))
         $('#next-location').css('background-color', $('#geoloc-switch').prop('checked') ? '#e0e0e0' : '#ffffff')
@@ -892,8 +912,8 @@ function getTimeUntil(time) {
 
 function getNotifyText(item) {
     var iv = getIv(item['individual_attack'], item['individual_defense'], item['individual_stamina'])
-    var find = ['<prc>', '<pkm>', '<atk>', '<def>', '<sta>']
-    var replace = [iv ? iv.toFixed(1) : '', item['pokemon_name'], item['individual_attack'], item['individual_defense'], item['individual_stamina']]
+    var find = ['<prc>', '<pkm>', '<atk>', '<def>', '<sta>', '<lvl>', '<cp>', '<gender>']
+    var replace = [iv ? iv.toFixed(1) : '', item['pokemon_name'], item['individual_attack'], item['individual_defense'], item['individual_stamina'], item['level'], item['cp'], genderType[item['gender'] - 1]]
     var ntitle = repArray(iv ? notifyIvTitle : notifyNoIvTitle, find, replace)
     var dist = new Date(item['disappear_time']).toLocaleString([], {
         hour: '2-digit',
@@ -904,8 +924,8 @@ function getNotifyText(item) {
     var until = getTimeUntil(item['disappear_time'])
     var udist = until.hour > 0 ? until.hour + ':' : ''
     udist += lpad(until.min, 2, 0) + 'm' + lpad(until.sec, 2, 0) + 's'
-    find = ['<dist>', '<udist>']
-    replace = [dist, udist]
+    find = ['<dist>', '<udist>', '<atk>', '<def>', '<sta>', '<lvl>', '<cp>']
+    replace = [dist, udist, item['individual_attack'], item['individual_defense'], item['individual_stamina'], item['level'], item['cp']]
     var ntext = repArray(notifyText, find, replace)
 
     return {
@@ -1423,6 +1443,7 @@ function loadRawData() {
     var loadMinLevel = Store.get('remember_text_min_level')
     var bigKarp = Boolean(Store.get('showBigKarp'))
     var tinyRat = Boolean(Store.get('showTinyRat'))
+    var exEligible = Boolean(Store.get('exEligible'))
 
     var bounds = map.getBounds()
     var swPoint = bounds.getSouthWest()
@@ -1445,6 +1466,7 @@ function loadRawData() {
             'luredonly': loadLuredOnly,
             'gyms': loadGyms,
             'lastgyms': lastgyms,
+            'exEligible': exEligible,
             'scanned': loadScanned,
             'lastslocs': lastslocs,
             'spawnpoints': loadSpawnpoints,
@@ -1750,6 +1772,11 @@ function processGyms(i, item) {
     }
 
     if (raidLevel > Store.get('maxRaidLevel') && item.raid_end > Date.now()) {
+        removeGymFromMap(item['gym_id'])
+        return true
+    }
+
+    if (Store.get('exEligible') && item.park === null) {
         removeGymFromMap(item['gym_id'])
         return true
     }
@@ -2098,24 +2125,82 @@ function getPointDistance(pointA, pointB) {
     return google.maps.geometry.spherical.computeDistanceBetween(pointA, pointB)
 }
 
-function sendNotification(title, text, icon, lat, lng) {
-    if (!('Notification' in window)) {
-        return false // Notifications are not present in browser
+function sendNotification(title, text, icon, lat, lon) {
+    var notificationDetails = {
+        icon: icon,
+        body: text,
+        data: {
+            lat: lat,
+            lon: lon
+        }
     }
 
-    if (Push.Permission.has()) {
-        Push.create(title, {
-            icon: icon,
-            body: text,
-            vibrate: 1000,
-            onClick: function () {
+    if (Push._agents.desktop.isSupported()) {
+        /* This will only run in browsers which support the old
+         * Notifications API. Browsers supporting the newer Push API
+         * are handled by serviceWorker.js. */
+        notificationDetails.onClick = function (event) {
+            if (Push._agents.desktop.isSupported()) {
                 window.focus()
-                this.close()
-                centerMap(lat, lng, 20)
+                event.currentTarget.close()
+                centerMap(lat, lon, 20)
             }
-        })
+        }
     }
+
+    /* Push.js requests the Notification permission automatically if
+     * necessary. */
+    Push.create(title, notificationDetails).catch(function () {
+        sendToastrPokemonNotification(title, text, icon, lat, lon)
+    })
 }
+
+function sendToastrPokemonNotification(title, text, icon, lat, lon) {
+    var notification = toastr.info(text, title, {
+        closeButton: true,
+        positionClass: 'toast-top-right',
+        preventDuplicates: true,
+        onclick: function () {
+            centerMap(lat, lon, 20)
+        },
+        showDuration: '300',
+        hideDuration: '500',
+        timeOut: '6000',
+        extendedTimeOut: '1500',
+        showEasing: 'swing',
+        hideEasing: 'linear',
+        showMethod: 'fadeIn',
+        hideMethod: 'fadeOut'
+    })
+    notification.removeClass('toast-info')
+    notification.css({
+        'padding-left': '74px',
+        'background-image': `url('./${icon}')`,
+        'background-size': '48px',
+        'background-color': '#0c5952'
+    })
+}
+
+//
+// Page Ready Execution
+//
+
+$(function () {
+    /* If push.js is unsupported or disabled, fall back to toastr
+     * notifications. */
+    Push.config({
+        serviceWorker: 'serviceWorker.min.js',
+        fallback: function (notification) {
+            sendToastrPokemonNotification(
+                notification.title,
+                notification.body,
+                notification.icon,
+                notification.data.lat,
+                notification.data.lon
+            )
+        }
+    })
+})
 
 function createMyLocationButton() {
     var locationContainer = document.createElement('div')
@@ -2827,6 +2912,24 @@ $(function () {
         })
         updateMap()
     })
+    $switchExEligible = $('#ex-eligible-switch')
+
+    $switchExEligible.on('change', function () {
+        Store.set('exEligible', this.checked)
+        lastgyms = false
+        $.each(['gyms'], function (d, dType) {
+            $.each(mapData[dType], function (key, value) {
+                // for any marker you're turning off, you'll want to wipe off the range
+                if (mapData[dType][key].marker.rangeCircle) {
+                    mapData[dType][key].marker.rangeCircle.setMap(null)
+                    delete mapData[dType][key].marker.rangeCircle
+                }
+                mapData[dType][key].marker.setMap(null)
+            })
+            mapData[dType] = {}
+        })
+        updateMap()
+    })
 
     $selectLocationIconMarker = $('#locationmarker-style')
 
@@ -3163,34 +3266,43 @@ $(function () {
         }
         var wrapper = $('#raids-filter-wrapper')
         var gymSidebarWrapper = $('#gym-sidebar-wrapper')
+        var gymRaidsFilterWrapper = $('#gyms-raid-filter-wrapper')
         if (this.checked) {
             lastgyms = false
             wrapper.show(options)
             gymSidebarWrapper.show(options)
+            gymRaidsFilterWrapper.show(options)
         } else {
             lastgyms = false
             wrapper.hide(options)
             if (!Store.get('showGyms')) {
                 gymSidebarWrapper.hide(options)
+                gymRaidsFilterWrapper.hide(options)
             }
         }
         buildSwitchChangeListener(mapData, ['gyms'], 'showRaids').bind(this)()
     })
+    if (Store.get('showGyms') === true || Store.get('showRaids') === true) {
+        $('#gyms-raid-filter-wrapper').toggle(true)
+    }
     $('#gyms-switch').change(function () {
         var options = {
             'duration': 500
         }
         var wrapper = $('#gyms-filter-wrapper')
         var gymSidebarWrapper = $('#gym-sidebar-wrapper')
+        var gymRaidsFilterWrapper = $('#gyms-raid-filter-wrapper')
         if (this.checked) {
             lastgyms = false
             wrapper.show(options)
             gymSidebarWrapper.show(options)
+            gymRaidsFilterWrapper.show(options)
         } else {
             lastgyms = false
             wrapper.hide(options)
             if (!Store.get('showRaids')) {
                 gymSidebarWrapper.hide(options)
+                gymRaidsFilterWrapper.hide(options)
             }
         }
         buildSwitchChangeListener(mapData, ['gyms'], 'showGyms').bind(this)()
