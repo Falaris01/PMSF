@@ -243,7 +243,7 @@ if ($blockIframe) {
         <div>
             <center>
                 <?php
-                echo '<a href="#" style="margin-top: 5px; vertical-align: middle;padding:0 5px;"><img src="static/images/logo_' . $short . '.png" border="0" style="float: left; margin: 7px 0px 0px 5px;"></a>';
+                echo '<a href="#" style="margin-top: 5px; vertical-align: middle;padding:0 5px;"><img src="static/images/logo_' . $short . '.png" border="0" style="margin: 7px 0px 0px 5px;"></a>';
                  ?>
             </center>
         </div> 
