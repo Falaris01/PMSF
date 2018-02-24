@@ -565,7 +565,7 @@ if ($blockIframe) {
                         <?php
                         if ($fork === "alternate" && !$noExEligible) {
                             echo '<div class="form-control switch-container" id="ex-eligible-wrapper">
-                                <h3>' . i8ln('EX Eligible Only') . '</h3>
+                                <h4>' . i8ln('EX Eligible Only') . '</h4>
                                 <div class="onoffswitch">
                                     <input id="ex-eligible-switch" type="checkbox" name="ex-eligible-switch"
                                            class="onoffswitch-checkbox" checked>
