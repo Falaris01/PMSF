@@ -128,16 +128,9 @@ if ($blockIframe) {
     <script src="static/js/vendor/modernizr.custom.js"></script>
     <!-- Toastr -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
-    
-
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.20&sensor=false"></script>
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/map.js"></script>
-    
 
     <!-- ========================================= Sl1kz - Stylefix =============================================== -->
 
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <style>
 
         body{
@@ -233,9 +226,9 @@ if ($blockIframe) {
 <div class="wrapper">
     <!-- Header -->
     <header id="header">
-        <img src="static/images/logo_h.png" style="float: left; margin: 7px 0px 0px 5px;"/>
+        <!--<img src="static/images/logo_h.png" style="float: left; margin: 7px 0px 0px 5px;"/>-->
         <a href="#nav"><span class="label"><?php echo i8ln('Options') ?></span></a>
-        <!--<h1><a href="#"><?= $titleBar ?></a></h1>-->
+        <h1><a href="#"><?= $titleBar ?></a></h1>
         <?php if (!$noWeatherOverlay) {
             ?>
             <div id="currentWeather" style=" margin: -2px 0px 0px 0px;"></div>
@@ -246,21 +239,21 @@ if ($blockIframe) {
     </header>
     <!-- NAV -->
     <nav id="nav">
-    <!-- Logo 
+        <!-- Logo -->
         <div>
             <center>
                 <?php
-                echo '<a href="#" style="margin-top: 5px; vertical-align: middle;padding:0 5px;">
-                <img src="static/images/logo_' . $short . '.png" border="0" style="float: left; margin: 7px 0px 0px 5px;">
-                </a>'; ?>
+                echo '<a href="#" style="margin-top: 5px; vertical-align: middle;padding:0 5px;"><img src="static/images/logo_' . $short . '.png" border="0" style="float: left; margin: 7px 0px 0px 5px;"></a>';
+                 ?>
             </center>
-        </div> -->
+        </div> 
         </br>
+        <!-- Info-Screens
         <div>
             <center>
                 <img src="static/images/gewinnspiel.png" title="Gewinnspiel!" border="0" style="display: inline-block; margin-top: -4px; padding:-2px -2px 0 0; max-width:100%; height:auto;">
             </center>
-        </div>  
+        </div> -->
         <hr>
         <div id="nav-accordion">
         	<h3><?php echo i8ln('Community') ?></h3>
