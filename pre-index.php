@@ -161,9 +161,7 @@ if ($blockIframe) {
             text-align: center;
         }
         /* links */
-        a{
-            color: #ffffff;
-        }
+        
         /*Scrollbar*/
             /* width */
         ::-webkit-scrollbar {
