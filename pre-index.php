@@ -775,8 +775,8 @@ if ($blockIframe) {
                     echo '<div class="form-control">
                     <label for="notify-perfection">
                         <h4>' . i8ln('Notify of Perfection') . '</h4>
-                        <input id="notify-perfection" type="text" name="notify-perfection"
-                               placeholder="' . i8ln('Minimum perfection') . ' %" style="float: right;width: 75px;text-align:center"/>
+                        <input id="notify-level" type="text" name="notify-level"
+                               placeholder="' . i8ln('z.B. 90') . ' %" style="float: right;width: 75px;text-align:center"/>
                     </label>
                 </div>';
                 }
@@ -787,7 +787,7 @@ if ($blockIframe) {
                     <label for="notify-level">
                         <h4 style="float:left;">' . i8ln('Notify of Level') . '</h4>
                         <input id="notify-level" min="1" max="35" type="number" name="notify-level"
-                               placeholder="' . i8ln('Level') . '" style="float: right;width: 75px;text-align:center"/>
+                               placeholder="' . i8ln('z.B. 30') . '" style="float: right;width: 75px;text-align:center"/>
                     </label>
                 </div>';
                 }
