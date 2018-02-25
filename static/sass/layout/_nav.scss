@@ -194,22 +194,20 @@
     }
   }
   .area-container{
-    padding:0!important;
+    padding:0;
     ul{
       padding:0;
     }
     li{
       list-style: none;
-      padding-left: 0;
+      padding-left: 0px;
       width: 50%;
       float: left;
       text-align: center;
-      background: #2f3136;
-      border-top: 1px solid #d8d8d8;
-      border-left: 1px solid #d8d8d8;
-      border-right: 1px solid #d8d8d8;
+      background: #5b5e63;
+      border: 1px solid #525559;
       &:hover{
-        background:grey;
+        background: #696c70;
         a{
           color:#FFF;
         }

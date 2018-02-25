@@ -140,6 +140,9 @@ if ($blockIframe) {
             background: #42464d;
             color: #ffffff;
         }
+        h3{
+            margin-top: (_size(element-margin) * -0.3);
+        }
         h4{
             font-size: 16px;
             font-family: 'Quicksand', sans-serif;
@@ -150,6 +153,16 @@ if ($blockIframe) {
             font-size: 16px;
             font-family: 'Quicksand', sans-serif;
             color: white;
+        }
+        h6{
+            font-size: 18px;
+            font-family: 'Quicksand', sans-serif;
+            color: white;
+            text-align: center;
+        }
+        /* links */
+        a{
+            color: #ffffff;
         }
         /*Scrollbar*/
             /* width */
@@ -223,6 +236,9 @@ if ($blockIframe) {
         /* Statistics */
 
         /* Gym Details */
+
+        /* Areas */
+
     </style>
 </head>
 <body id="top">
@@ -261,8 +277,7 @@ if ($blockIframe) {
         	<h3><?php echo i8ln('Community') ?></h3>
         	<div>
         		<!-- Social Tab -->
-                <h4>Social Links</h4>
-        		</br></br>
+                <h6>Social Links</h6>
 		        <div>
 		            <center>
 		                <a href="https://pokemon-go-fans.de/" target="_blank" style="margin-top: 2px; vertical-align: middle;padding:0 5px;"><img src="static/images/news.png" title="https://pokemon-go-fans.de/" border="0" style="display: inline-block; margin-top: -4px; padding:-2px -2px 0 0; max-width:100%; height:auto;"></a>
@@ -274,16 +289,14 @@ if ($blockIframe) {
 		                echo '<a href="' . $discordUrl . '" target="_blank" style="margin-top: 2px; vertical-align: middle;padding:0 5px;"><img src="static/images/discord.png" border="0" title="' . $discordServer . '" border="0" style="display: inline-block; margin-top: -4px; padding:-2px -2px 0 0; max-width:100%; height:auto;"></a>'; ?>
 		            </center>
 		        </div>
-		        <h4>Nester</h4>
-           		</br></br>
+		        <h6>Nester</h6>
 		        <div>
 		            <center>
 		                <?php
 		                echo '<a href="' . $nestMapUrl . '" target="_blank" style="margin-top: 2px; vertical-align: middle;padding:0 5px;"><img src="static/images/nester.png" title="Nest Map by @shimpooky" border="0" style="display: inline-block; margin-top: -4px; padding:-2px -2px 0 0; max-width:100%; height:auto;"></a>'; ?>
 		            </center>
 		        </div>
-		        <h4 style="text-align: center">Support</h4>
-		    	</br></br>
+		        <h6>Support</h6>
 		        <div>
 		        	<center>
 		        	    <?php
@@ -917,10 +930,10 @@ if ($blockIframe) {
             <!-- Areas Tab -->
             <?php
             if (!$noAreas) {
-                echo '<h4>' . i8ln('Areas') . '</h4>';
+                echo '<h3>' . i8ln('Areas') . '</h3>';
                 $count = sizeof($areas);
                 if ($count > 0) {
-                    echo '<div class="form-control switch-container area-container"><ul>';
+                    echo '<div class="switch-container area-container"><ul>';
                     for ($i = 0; $i <= $count - 1; $i++) {
                         echo '<li><a href="" data-lat="' . $areas[$i][0] . '" data-lng="' . $areas[$i][1] . '" data-zoom="' . $areas[$i][2] . '" class="area-go-to">' . $areas[$i][3] . '</a></li>';
                     }
@@ -931,32 +944,32 @@ if ($blockIframe) {
             <!-- Settings Tab -->
             <h3><?php echo i8ln('Einstellungen') ?></h3>
             <div>
-		        <div>
-		            <center>
-		                <button class="settings"
-		                        onclick="confirm('Bist du sicher, dass du die Einstellungen resetten willst?') ? (localStorage.clear(), window.location.reload()) : false">
-		                    <i class="fa fa-refresh" aria-hidden="true"></i> <?php echo i8ln('Einstellungen Zurücksetzen') ?>
-		                </button>
-		            </center>
-		        </div>
-		        <div>
-		            <center>
-		                <button class="settings"
-		                        onclick="download('<?= addslashes($title) ?>', JSON.stringify(JSON.stringify(localStorage)))">
-		                    <i class="fa fa-upload" aria-hidden="true"></i> <?php echo i8ln('Einstellungen Exportieren') ?>
-		                </button>
-		            </center>
-		        </div>
-		        <div>
-		            <center>
-		                <input id="fileInput" type="file" style="display:none;" onchange="openFile(event)"/>
-		                <button class="settings"
-		                        onclick="document.getElementById('fileInput').click()">
-		                    <i class="fa fa-download" aria-hidden="true"></i> <?php echo i8ln('Einstellungen Importieren') ?>
-		                </button>
-		            </center>
-		        </div>
-            </div>	
+                <div>
+                    <center>
+                        <button class="settings"
+                                onclick="confirm('Bist du sicher, dass du die Einstellungen resetten willst?') ? (localStorage.clear(), window.location.reload()) : false">
+                            <i class="fa fa-refresh" aria-hidden="true"></i> <?php echo i8ln('Einstellungen Zurücksetzen') ?>
+                        </button>
+                    </center>
+                </div>
+                <div>
+                    <center>
+                        <button class="settings"
+                                onclick="download('<?= addslashes($title) ?>', JSON.stringify(JSON.stringify(localStorage)))">
+                            <i class="fa fa-upload" aria-hidden="true"></i> <?php echo i8ln('Einstellungen Exportieren') ?>
+                        </button>
+                    </center>
+                </div>
+                <div>
+                    <center>
+                        <input id="fileInput" type="file" style="display:none;" onchange="openFile(event)"/>
+                        <button class="settings"
+                                onclick="document.getElementById('fileInput').click()">
+                            <i class="fa fa-download" aria-hidden="true"></i> <?php echo i8ln('Einstellungen Importieren') ?>
+                        </button>
+                    </center>
+                </div>
+            </div>  
         </div>
     </nav>
     <!-- Statistics Navigation -->
