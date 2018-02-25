@@ -266,7 +266,7 @@ if ($blockIframe) {
         </div> 
         <?php
         if ($infoPicUrl != "") {
-            echo '<a href="' . $infoPicUrl . '" target="_blank" style="margin-bottom: 5px; vertical-align: middle;padding:0 5px;"><img src="static/images/infopic.png" title="' . $infoTitle . '" border="0" style="display: inline-block; margin-top: -4px; padding:-2px -2px 0 0; max-width:100%; height:auto;"></a>';
+            echo '<center><a href="' . $infoPicUrl . '" target="_blank" style="margin-bottom: 5px;  vertical-align: middle; padding:0 5px;"><img src="static/images/' . $infoPic . '" title="' . $infoTitle . '" border="0" style="display: inline-block; margin-top: -4px; padding:-2px -2px 0 0; max-width:100%; height:auto;"></center></a>';
         }
         ?>
         <hr>
