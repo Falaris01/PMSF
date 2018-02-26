@@ -740,7 +740,7 @@ if ($blockIframe) {
             ?>
             <!-- Notifications Tab -->
             <?php
-            if (!$noNotifyPokemon || !$noNotifyRarity || !$noNotifyIv || !$noNotifySound || !$noNotifyRaid) {
+            if (!$noNotifyPokemon || !$noNotifyRarity || !$noNotifyIv || !$noNotifyLevel || !$noNotifySound || !$noNotifyRaid || !$noNotifyBounce || !noNotifyNotification) {
                 echo '<h3>' . i8ln('Notification') . '</h3>
             <div>';
             }
@@ -842,9 +842,39 @@ if ($blockIframe) {
                 }
                 ?>
                 <?php
-                if (!$noNotifyPokemon || !$noNotifyRarity || !$noNotifyIv || !$noNotifySound || !$noNotifyRaid) {
-                    echo '</div>';
+                if (!$noNotifyBounce) {
+                    echo '<div class="form-control switch-container">
+                    <h4>' . i8ln('Bounce') . '</h4>
+                    <div class="onoffswitch">
+                        <input id="bounce-switch" type="checkbox" name="bounce-switch" class="onoffswitch-checkbox"
+                               checked>
+                        <label class="onoffswitch-label" for="bounce-switch">
+                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                            <span class="switch-handle"></span>
+                        </label>
+                    </div>
+                </div>';
                 }
+                ?>
+                <?php
+                if (!$noNotifyNotification) {
+                    echo '<div class="form-control switch-container">
+                    <h4>' . i8ln('Push Notifications') . '</h4>
+                    <div class="onoffswitch">
+                        <input id="notification-switch" type="checkbox" name="notification-switch" class="onoffswitch-checkbox"
+                               checked>
+                        <label class="onoffswitch-label" for="notification-switch">
+                            <span class="switch-label" data-on="On" data-off="Off"></span>
+                            <span class="switch-handle"></span>
+                        </label>
+                    </div>
+                </div>';
+                }
+                ?>
+                <?php
+            if (!$noNotifyPokemon || !$noNotifyRarity || !$noNotifyIv || !$noNotifyLevel || !$noNotifySound || !$noNotifyRaid || !$noNotifyBounce || !$noNotifyNotification) {
+                echo '</div>';
+            }
             ?>
             <!-- Style Tab -->
             <?php
@@ -1056,6 +1086,8 @@ if ($blockIframe) {
     var notifyIv = <?php echo $noNotifyIv ? '""' : $notifyIv ?>;
     var notifyLevel = <?php echo $noNotifyLevel ? '""' : $notifyLevel ?>;
     var notifyRaid = <?php echo $noNotifyRaid ? 0 : $notifyRaid ?>;
+    var notifyBounce = <?php echo $notifyBounce ?>;
+    var notifyNotification = <?php echo $notifyNotification ?>;
     var enableRaids = <?php echo $noRaids ? 'false' : $enableRaids ?>;
     var activeRaids = <?php echo $activeRaids ?>;
     var minRaidLevel = <?php echo $minRaidLevel ?>;
