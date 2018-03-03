@@ -2525,13 +2525,9 @@ function showGymDetails(id) { // eslint-disable-line no-unused-vars
                     '<div class="cp">CP ' + pokemon.pokemon_cp + '</div>' +
                     '</td>' +
                     '<td width="190" class="team-' + result.team_id + '-text" align="center">'
-                if (pokemon.trainer_level) {
-                    pokemonHtml +=
-                        '<div class="trainer-level">' + pokemon.trainer_level + '</div>'
-                }
                 if (pokemon.trainer_name) {
                     pokemonHtml +=
-                        '<div style="line-height: 1em">' + pokemon.trainer_name + '</div>'
+                        '<div style="line-height: 1em">' + pokemon.trainer_name + ' (' + pokemon.trainer_level + ')</div>'
                 }
                 if (pokemon.attacked && pokemon.defended) {
                     pokemonHtml +=

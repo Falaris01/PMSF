@@ -205,7 +205,7 @@ class Monocle_Alternate extends Monocle
         }
         global $noTrainerName;
         if (!$noTrainerName) {
-            $select .= ", gd.owner_name AS trainer_name";
+            $select .= ", gd.owner_name AS trainer_name, gd.owner_level as trainer_level";
         }
 
         $gym["pokemon"] = $this->query_gym_defenders($gymId, $select);
