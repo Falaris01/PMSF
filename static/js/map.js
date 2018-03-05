@@ -444,7 +444,7 @@ function getTypeSpan(type) {
 }
 
 function openMapDirections(lat, lng) { // eslint-disable-line no-unused-vars
-    var url = 'https://www.google.com/maps/dir/?api=1&destination=' + lat + ',' + lng
+    var url = 'https://www.google.com/maps?q=' + lat + ',' + lng
     switch (directionProvider) {
         case 'apple':
             url = 'https://maps.apple.com/?daddr=' + lat + ',' + lng
