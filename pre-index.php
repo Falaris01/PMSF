@@ -883,76 +883,76 @@ if ($blockIframe) {
             <div>';
             }
             ?>
-                <?php
-                if (!$noMapStyle) {
-                    echo '<div class="form-control switch-container">
-                    <h4>' . i8ln('Map Style') . '</h4>
-                    <select id="map-style"></select>
-                </div>';
-                }
-                ?>
-                <?php
-                if (!$noDirectionProvider) {
-                    echo '<div class="form-control switch-container">
-                    <h4>' . i8ln('Direction Provider') . '</h4>
-                    <select name="direction-provider" id="direction-provider">
-                        <option value="apple">' . i8ln('Apple') . '</option>
-                        <option value="google">' . i8ln('Google') . '</option>
-                        <option value="waze">' . i8ln('Waze') . '</option>
-                        <option value="bing">' . i8ln('Bing') . '</option>
-                    </select>
-                </div>';
-                }
-                ?>
-                <?php
-                if (!$noIconSize) {
-                    echo '<div class="form-control switch-container">
-                    <h4>' . i8ln('Icon Size') . '</h4>
-                    <select name="pokemon-icon-size" id="pokemon-icon-size">
-                        <option value="-8">' . i8ln('Small') . '</option>
-                        <option value="0">' . i8ln('Normal') . '</option>
-                        <option value="10">' . i8ln('Large') . '</option>
-                        <option value="20">' . i8ln('X-Large') . '</option>
-                    </select>
-                </div>';
-                }
-                ?>
-                <?php
-                if (!$noIconNotifySizeModifier) {
-                    echo '<div class="form-control switch-container">
-                    <h4>' . i8ln('Increase Notified Icon Size') . '</h4>
-                    <select name="pokemon-icon-notify-size" id="pokemon-icon-notify-size">
-                        <option value="0">' . i8ln('Disable') . '</option>
-                        <option value="15">' . i8ln('Large') . '</option>
-                        <option value="30">' . i8ln('X-Large') . '</option>
-                        <option value="45">' . i8ln('XX-Large') . '</option>
-                    </select>
-                </div>';
-                }
-                ?>
-                <?php
-                if (!$noGymStyle) {
-                    echo '<div class="form-control switch-container">
-                    <h4>' . i8ln('Gym Marker Style') . '</h4>
-                    <select name="gym-marker-style" id="gym-marker-style">
-                        <option value="ingame">' . i8ln('In-Game') . '</option>
-                        <option value="shield">' . i8ln('Shield') . '</option>
-                    </select>
-                </div>';
-                }
-                ?>
-                <?php
-                if (!$noLocationStyle) {
-                    echo '<div class="form-control switch-container">
-                    <h4>' . i8ln('Location Icon Marker') . '</h4>
-                    <select name="locationmarker-style" id="locationmarker-style"></select>
-                </div>';
-                }
-                ?>
-                <?php
-                if (!$noMapStyle || !$noDirectionProvider || !$noIconSize || !$noIconNotifySizeModifier || !$noGymStyle || !$noLocationStyle) {
-                    echo '</div>';
-                }
+            <?php
+            if (!$noMapStyle) {
+                echo '<div class="form-control switch-container">
+                <h4>' . i8ln('Map Style') . '</h4>
+                <select id="map-style"></select>
+            </div>';
+            }
+            ?>
+            <?php
+            if (!$noDirectionProvider) {
+                echo '<div class="form-control switch-container">
+                <h4>' . i8ln('Direction Provider') . '</h4>
+                <select name="direction-provider" id="direction-provider">
+                    <option value="apple">' . i8ln('Apple') . '</option>
+                    <option value="google">' . i8ln('Google') . '</option>
+                    <option value="waze">' . i8ln('Waze') . '</option>
+                    <option value="bing">' . i8ln('Bing') . '</option>
+                </select>
+            </div>';
+            }
+            ?>
+            <?php
+            if (!$noIconSize) {
+                echo '<div class="form-control switch-container">
+                <h4>' . i8ln('Icon Size') . '</h4>
+                <select name="pokemon-icon-size" id="pokemon-icon-size">
+                    <option value="-8">' . i8ln('Small') . '</option>
+                    <option value="0">' . i8ln('Normal') . '</option>
+                    <option value="10">' . i8ln('Large') . '</option>
+                    <option value="20">' . i8ln('X-Large') . '</option>
+                </select>
+            </div>';
+            }
+            ?>
+            <?php
+            if (!$noIconNotifySizeModifier) {
+                echo '<div class="form-control switch-container">
+                <h4>' . i8ln('Increase Notified Icon Size') . '</h4>
+                <select name="pokemon-icon-notify-size" id="pokemon-icon-notify-size">
+                    <option value="0">' . i8ln('Disable') . '</option>
+                    <option value="15">' . i8ln('Large') . '</option>
+                    <option value="30">' . i8ln('X-Large') . '</option>
+                    <option value="45">' . i8ln('XX-Large') . '</option>
+                </select>
+            </div>';
+            }
+            ?>
+            <?php
+            if (!$noGymStyle) {
+                echo '<div class="form-control switch-container">
+                <h4>' . i8ln('Gym Marker Style') . '</h4>
+                <select name="gym-marker-style" id="gym-marker-style">
+                    <option value="ingame">' . i8ln('In-Game') . '</option>
+                    <option value="shield">' . i8ln('Shield') . '</option>
+                </select>
+            </div>';
+            }
+            ?>
+            <?php
+            if (!$noLocationStyle) {
+                echo '<div class="form-control switch-container">
+                <h4>' . i8ln('Location Icon Marker') . '</h4>
+                <select name="locationmarker-style" id="locationmarker-style"></select>
+            </div>';
+            }
+            ?>
+            <?php
+            if (!$noMapStyle || !$noDirectionProvider || !$noIconSize || !$noIconNotifySizeModifier || !$noGymStyle || !$noLocationStyle) {
+                echo '</div>';
+            }
             ?>
             <!-- Areas Tab -->
             <?php

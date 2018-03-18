@@ -446,6 +446,9 @@ function getTypeSpan(type) {
 function openMapDirections(lat, lng) { // eslint-disable-line no-unused-vars
     var url = 'https://www.google.com/maps?q=' + lat + ',' + lng
     switch (directionProvider) {
+        case 'google_pin':
+            url = 'https://maps.google.com/maps?q=' + lat + ',' + lng
+            break
         case 'apple':
             url = 'https://maps.apple.com/?daddr=' + lat + ',' + lng
             break
@@ -3123,7 +3126,7 @@ $(function () {
             buffer = buffer.filter(function (e) {
                 return this.indexOf(e) < 0
             }, excludedPokemon)
-            reincludedPokemon = reincludedPokemon.concat(buffer)
+            reincludedPokemon = reincludedPokemon.concat(buffer).map(String)
             clearStaleMarkers()
             Store.set('remember_select_exclude', excludedPokemon)
         })
@@ -3135,7 +3138,7 @@ $(function () {
             buffer = excludedMinIV.filter(function (e) {
                 return this.indexOf(e) < 0
             }, buffer)
-            reincludedPokemon = reincludedPokemon.concat(buffer)
+            reincludedPokemon = reincludedPokemon.concat(buffer).map(String)
             clearStaleMarkers()
             Store.set('remember_select_exclude_min_iv', excludedMinIV)
         })
