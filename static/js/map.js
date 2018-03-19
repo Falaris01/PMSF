@@ -1013,7 +1013,7 @@ function getGymMarkerIcon(item) {
     var team = item.team_id
     var battleIcon = ''
     if (item.is_in_battle) {
-        battleIcon = '<img src="static/images/battle.png" style="position:absolute;height:auto;bottom:8px;left:12px;"/>'
+        battleIcon = '<img src="static/images/battle.png" style="position:absolute;top:5px;right:5px;"/>'
     }
     var teamStr = ''
     if (team === 0) {
