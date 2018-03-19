@@ -1061,6 +1061,9 @@ function setupGymMarker(item) {
     if ((park !== 'None' && park !== undefined) || triggerGyms.includes(item['gym_id'])) {
         zValue += 2
     }
+    if (item.is_in_battle) {
+    	zValue += 3
+    }
     var marker = new RichMarker({
         position: new google.maps.LatLng(item['latitude'], item['longitude']),
         map: map,
