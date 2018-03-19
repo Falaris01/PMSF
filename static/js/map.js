@@ -1062,7 +1062,7 @@ function setupGymMarker(item) {
         zValue += 2
     }
     if (item.is_in_battle) {
-    	zValue += 3
+    	zValue += 30
     }
     var marker = new RichMarker({
         position: new google.maps.LatLng(item['latitude'], item['longitude']),
@@ -2460,7 +2460,7 @@ function showGymDetails(id) { // eslint-disable-line no-unused-vars
 
         var isInBattle = ''
         if (result.is_in_battle) {
-            isInBattle = i8ln('Gym is being attacked')
+            isInBattle = '<div>' + i8ln('Gym is being attacked') + '</div>'
         }
 
         var raidSpawned = result['raid_level'] != null
@@ -2523,8 +2523,8 @@ function showGymDetails(id) { // eslint-disable-line no-unused-vars
             gymLevelStr +
             '<div>' +
             park +
-            isInBattle +
             '</div>' +
+            isInBattle +
             '<div style="font-size: .7em">' +
             i8ln('Last Modified') + ' : ' + lastModifiedStr +
             '</div>' +
