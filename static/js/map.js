@@ -720,6 +720,10 @@ function gymLabel(item) {
             '</div>'
     } else {
         var freeSlots = item['slots_available']
+        var isInBattle = ''
+        if (item.is_in_battle) {
+            isInBattle = i8ln('Gym is being attacked')
+        }
         var gymCp = ''
         if (item['total_gym_cp'] != null) {
             gymCp = '<div>' + i8ln('Total Gym CP') + ' : <b>' + item.total_gym_cp + '</b></div>'
@@ -739,6 +743,7 @@ function gymLabel(item) {
             nameStr +
             raidStr +
             '<div><b>' + freeSlots + ' ' + i8ln('Free Slots') + '</b></div>' +
+            '<div><b>' + isInBattle + '</b></div>' +
             '<div>' +
             park +
             '</div>' +
@@ -997,6 +1002,10 @@ function getGymMarkerIcon(item) {
     var park = item['park']
     var level = item.raid_level
     var team = item.team_id
+    var battleIcon = ''
+    if (item.is_in_battle) {
+        battleIcon = '<img src="static/images/battle.png" style="position:absolute;height:auto;bottom:8px;left:12px;"/>'
+    }
     var teamStr = ''
     if (team === 0 || level === null) {
         teamStr = gymTypes[item['team_id']]
@@ -1012,6 +1021,7 @@ function getGymMarkerIcon(item) {
             '<img src="static/forts/' + Store.get('gymMarkerStyle') + '/' + teamStr + '.png" style="width:55px;height:auto;"/>' +
             '<i class="pokemon-raid-sprite n' + item.raid_pokemon_id + '"></i>' +
             exIcon +
+            battleIcon +
             '</div>'
     } else if (item['raid_level'] !== null && item.raid_end > Date.now()) {
         var raidEgg = ''
@@ -1026,11 +1036,13 @@ function getGymMarkerIcon(item) {
             '<img src="static/forts/' + Store.get('gymMarkerStyle') + '/' + teamStr + '.png" style="width:55px;height:auto;"/>' +
             '<img src="static/raids/egg_' + raidEgg + '.png" style="width:30px;height:auto;position:absolute;top:8px;right:12px;"/>' +
             exIcon +
+            battleIcon +
             '</div>'
     } else {
         return '<div>' +
             '<img src="static/forts/' + Store.get('gymMarkerStyle') + '/' + gymTypes[item['team_id']] + '.png" style="width:48px;height: auto;"/>' +
             exIcon +
+            battleIcon +
             '</div>'
     }
 }
@@ -2429,6 +2441,11 @@ function showGymDetails(id) { // eslint-disable-line no-unused-vars
             }
         }
 
+        var isInBattle = ''
+        if (result.is_in_battle) {
+            isInBattle = i8ln('Gym is being attacked')
+        }
+
         var raidSpawned = result['raid_level'] != null
         var raidStarted = result['raid_pokemon_id'] != null
 
@@ -2489,6 +2506,7 @@ function showGymDetails(id) { // eslint-disable-line no-unused-vars
             gymLevelStr +
             '<div>' +
             park +
+            isInBattle +
             '</div>' +
             '<div style="font-size: .7em">' +
             i8ln('Last Modified') + ' : ' + lastModifiedStr +

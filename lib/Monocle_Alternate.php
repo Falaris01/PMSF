@@ -257,6 +257,7 @@ class Monocle_Alternate extends Monocle
         fs.team AS team_id,
         fs.guard_pokemon_id,
         fs.slots_available,
+        fs.is_in_battle,
         r.level AS raid_level,
         r.pokemon_id AS raid_pokemon_id,
         r.time_battle AS raid_start,
