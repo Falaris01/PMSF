@@ -439,9 +439,9 @@ function initSidebar() {
     iconpath = r.test(Store.get('icons')) ? Store.get('icons') : path + Store.get('icons')
 }
 
-function getTypeSpan(type) {
-    return '<span style="padding: 2px 5px; text-transform: uppercase; color: white; margin-right: 2px; border-radius: 4px; font-size: 0.8em; vertical-align: text-bottom; background-color: ' + type['color'] + ';">' + type['type'] + '</span>'
-}
+// function getTypeSpan(type) {
+//     return '<span style="padding: 2px 5px; text-transform: uppercase; color: white; margin-right: 2px; border-radius: 4px; font-size: 0.8em; vertical-align: text-bottom; background-color: ' + type['color'] + ';">' + type['type'] + '</span>'
+// }
 
 function openMapDirections(lat, lng) { // eslint-disable-line no-unused-vars
     var url = 'https://www.google.com/maps?q=' + lat + ',' + lng
@@ -498,8 +498,8 @@ function isTemporaryHidden(pokemonId) {
 
 function pokemonLabel(item) {
     var name = item['pokemon_name']
-    var types = item['pokemon_types']
-    var typesDisplay = ''
+    // var types = item['pokemon_types']
+    // var typesDisplay = ''
     var encounterId = item['encounter_id']
     var id = item['pokemon_id']
     var latitude = item['latitude']
@@ -519,9 +519,9 @@ function pokemonLabel(item) {
     var weatherBoostedCondition = item['weather_boosted_condition']
     var level = item['level']
 
-    $.each(types, function (index, type) {
-        typesDisplay += getTypeSpan(type)
-    })
+    // $.each(types, function (index, type) {
+    //     typesDisplay += getTypeSpan(type)
+    // })
 
     var details = ''
     if (atk != null && def != null && sta != null) {
@@ -533,46 +533,41 @@ function pokemonLabel(item) {
             } else {
                 pokemonLevel = getPokemonLevel(cpMultiplier)
             }
-            if (iv === 100) {
-                details =
-                '<div>' +
-                '<b>' + iv.toFixed(0) + '%</b> | ' + cp + i8ln('cp') + ' | L: ' + pokemonLevel +
-                '</div>'
-            } else {
-                details =
-                '<div>' +
-                iv.toFixed(0) + '% (' + atk + '/' + def + '/' + sta + ')' + ' | ' + cp + i8ln('cp') + ' | L: ' + pokemonLevel +
-                '</div>'
-            }
-        }
-        details +=
+            details =
+            '<div>' +
+            '<b>IV: ' + iv.toFixed(1) + '% (' + atk + '/' + def + '/' + sta + ')</b>' +
+            '</div>' +
+            '<div>' +
+            '<b>L: ' + pokemonLevel + ' | WP: ' + cp + '</b>' +
+            '</div>' +
             '<div>' +
             pMove1 + ' / ' + pMove2 +
             '</div>'
+        }
     }
-    if (weatherBoostedCondition !== 0) {
+    if (weatherBoostedCondition > 10) {
         details +=
             '<div>' +
             i8ln('Weather') + ': ' + i8ln(weather[weatherBoostedCondition]) +
             '</div>'
-        if (weight != null) {
-            details += i8ln('Weight') + ': ' + weight.toFixed(2) + 'kg'
-        }
-        if (height != null) {
-            details += ' | ' + i8ln('Height') + ': ' + height.toFixed(2) + 'm'
-        }
-        details +=
-            '</div>'
     }
+    if (weight != null) {
+        details += i8ln('Weight') + ': ' + weight.toFixed(2) + 'kg'
+    }
+    if (height != null) {
+        details += ' | ' + i8ln('Height') + ': ' + height.toFixed(2) + 'm'
+    }
+    details +=
+        '</div>'
 
     var weatherIcon = ''
     if (weatherBoostedCondition !== 0) {
-        weatherIcon = ' <img src="static/weather/i-' + weatherBoostedCondition + '.png" style="float:right;margin:auto;width:35px;height:auto;right:10px;"/> '
+        weatherIcon = ' <img src="static/weather/i-' + weatherBoostedCondition + '.png" style="vertical-align:middle;width:30px;height:auto;"/> '
     }
 
     var contentstring =
-        '<div>' +
-        '<b>' + name + '</b>'
+        '<div style="text-align:center;font-size:14.5px;line-height:200%;">' +
+        weatherIcon + '<b>' + name + '</b>'
     if (gender !== undefined && id !== 201) {
         contentstring += ' ' + genderType[gender - 1] + ''
     }
@@ -583,28 +578,27 @@ function pokemonLabel(item) {
     if (notifiedPokemon.indexOf(item['pokemon_id']) > -1) {
         notifyIcon = '<i class="fa fa-volume-up" style="font-size:20px;color:red"></i></a>&nbsp&nbsp&nbsp&nbsp'
     }
-    contentstring += '<span> - </span>' +
+    contentstring += ' ' +
         '<small>' +
-        '<a href="https://pokewiki.' + languageSite + '/' + name + '" target="_blank" title="' + i8ln('View in Pokedex') + '">#' + id + '</a>' +
-        weatherIcon +
+        '<a href="https://pokewiki.' + languageSite + '/' + name + '" target="_blank" title="' + i8ln('View in Pokedex') + '">#' + id + '</a>' + weatherIcon +
         '</small>' +
         '</div>' +
-        '<span>' +
-        typesDisplay +
-        '</span>' +
-        '<div>' +
+        // '<span>' +
+        // typesDisplay +
+        // '</span>' +
+        '<center>' +
+        details +
+        '</center>' +
+        '<div style="line-height:200%;"><center>' +
         i8ln('Disappears at') + ' ' + getTimeStr(disappearTime) +
         ' <span class="label-countdown" disappears-at="' + disappearTime + '">(00m00s)</span>' +
-        '</div>' +
-        details +
-        '<div>' +
-        '<a href="javascript:exMinIV(' + id + ') "title="' + i8ln('Exclude this Pokemon from MinIV/Lvl') + '"><i class="fa fa-thumbs-up" style="font-size:20px;color:black"></i></a>&nbsp&nbsp&nbsp&nbsp' +
-        '<a href="javascript:excludePokemon(' + id + ') "title="' + i8ln('Hide this Pokemon') + '"><i class="fa fa-thumbs-down" style="font-size:20px;color:black"></i></a>&nbsp&nbsp&nbsp&nbsp' +
+        '</div></center>' +
+        '<div><center>' +
         '<a href="javascript:notifyAboutPokemon(' + id + ') "title="' + i8ln('Notifiy about this Pokemon') + '">' + notifyIcon +
         '<a href="javascript:removePokemonMarker(\'' + encounterId + '\') "title="' + i8ln('Remove THIS Pokemon from the map') + '"><i class="fa fa-trash" style="font-size:20px;color:black"></i></a>&nbsp&nbsp&nbsp&nbsp' +
         '<a href="javascript:void(0);" onclick="javascript:toggleOtherPokemon(' + id + ');" title="' + i8ln('Toggle display of other Pokemon') + '"><i class="fa fa-search-minus" style="font-size:20px;color:black"></i></a>&nbsp&nbsp&nbsp&nbsp' +
         '<a href="javascript:void(0)" onclick="javascript:openMapDirections(' + latitude + ', ' + longitude + ')" title="' + i8ln('View in Maps') + '"><i class="fa fa-road" style="font-size:20px;color:black"></a>' +
-        '</div>'
+        '</center></div>'
     return contentstring
 }
 
@@ -1062,7 +1056,7 @@ function setupGymMarker(item) {
         zValue += 2
     }
     if (item.is_in_battle) {
-    	zValue += 30
+        zValue += 30
     }
     var marker = new RichMarker({
         position: new google.maps.LatLng(item['latitude'], item['longitude']),
