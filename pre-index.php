@@ -223,13 +223,53 @@ if ($blockIframe) {
             background: #42464d;
             color: #ffffff;
         }
-        /* Gmaps Info Window */
-        .gm-style .gm-style-iw{
-            color: black;
-            background-color: white;
+         #googleMap { width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; }
+       
+         /*style the box*/  
+         .gm-style .gm-style-iw .gm-style-iw-layout .gm-style-iw-content-bg div{
+            background-color: rgba(100, 0, 0, 0.5);
+            top: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            min-height: 120px !important;
+            padding-top: 10px;
+            border-radius: 10px !important;
+            display: block !important;
+         }    
+     
+         /*style the p tag*/
+         .gm-style .gm-style-iw #google-popup p{
+            padding: 10px;
+            background-color: rgba(200, 0, 0, 1.0);
+         }
+         
+     
+        /*style the arrow*/
+        b{
+            color: #fff;
         }
-        #iw-container{
-            background-color: rgba(54, 54, 54, 0.91);
+        
+        i{
+            color: #fff;
+        }
+        
+        .gm-style div div div div div div div div {
+            background-color: rgba(100, 0, 0, 1.0);
+            border-radius: 10px;
+            padding: 0;
+            margin: 0;
+            padding: 0;
+            top: 0;
+            text-align: center;
+            color: #fff;
+            font-size: 16px;
+        }
+        
+        /*style the link*/
+        .gm-style div div div div div div div div a {
+            color: #f1f1f1;
+            font-weight: bold;
         }
         /* Statistics */
 
