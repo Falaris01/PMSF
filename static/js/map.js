@@ -2534,29 +2534,19 @@ function showGymDetails(id) { // eslint-disable-line no-unused-vars
                 var moveEnergy = Math.round(100 / pokemon.move_2_energy)
 
                 pokemonHtml +=
-                    '<tr onclick=toggleGymPokemonDetails(this)>' +
-                    '<td width="30px">' +
-                    '<i class="pokemon-sprite n' + pokemon.pokemon_id + '"></i>' +
+                    '<tr>' +
+                    '<td width="30">' +
+                    '<i class="pokemon-sprite n' + pokemon.pokemon_id + '" style="transform:scale(1.3)"></i>' +
                     '</td>' +
-                    '<td class="team-' + result.team_id + '-text">' +
-                    '<div style="line-height:1em">' + pokemon.pokemon_name + '</div>' +
-                    '<div class="cp">CP ' + pokemon.pokemon_cp + '</div>' +
-                    '</td>' +
-                    '<td width="190" class="team-' + result.team_id + '-text" align="center">'
+                    '<td style="text-align:center;" class="team-' + result.team_id + '-text">'
                 if (pokemon.trainer_name) {
                     pokemonHtml +=
-                        '<div style="line-height: 1em">' + pokemon.trainer_name + ' (' + pokemon.trainer_level + ')</div>'
-                }
-                if (pokemon.attacked || pokemon.defended) {
-                    pokemonHtml +=
-                        '<div style="line-height: 1em">' + i8ln('A') + ': ' + pokemon.attacked + ' | ' + i8ln('D') + ': ' + pokemon.defended + '</div>'
+                        '<div style="line-height:160%;font-size:105%;font-weight:900;">' + pokemon.trainer_name + ' (' + pokemon.trainer_level + ')</div>'
                 }
                 pokemonHtml +=
-                    '</td>' +
-                    '<td width="10">' +
-                    '<!--<a href="#" onclick="toggleGymPokemonDetails(this)">-->' +
-                    '<i class="team-' + result.team_id + '-text fa fa-angle-double-down"></i>' +
-                    '<!--</a>-->' +
+                    '<div style="line-height:1.1em;font-weight:600;font-size:100%">' + pokemon.pokemon_name + '</div>' +
+                    '<div style="line-height:1.1em;font-weight:500;font-size:100%">' + perfectPercent.toFixed(1) + '% (' + pokemon.iv_attack + '/' + pokemon.iv_defense + '/' + pokemon.iv_stamina + ') | WP: ' + pokemon.pokemon_cp + '</div>' +
+                    '<div style="line-height:1.1em;font-weight:400;font-size:100%">' + pokemon.move_1_name + ' / ' + pokemon.move_2_name + '</div>' +
                     '</td>' +
                     '</tr>' +
                     '<tr class="details">' +

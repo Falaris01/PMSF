@@ -205,10 +205,6 @@ class Monocle_Alternate extends Monocle
         $gym = $gyms[0];
 
         $select = "gd.pokemon_id, gd.cp AS pokemon_cp, gd.move_1, gd.move_2, gd.nickname, gd.atk_iv AS iv_attack, gd.def_iv AS iv_defense, gd.sta_iv AS iv_stamina, gd.cp AS pokemon_cp";
-        global $noPokemonBattleInfo;
-        if (!$noPokemonBattleInfo) {
-            $select .= ", gd.battles_attacked as attacked, gd.battles_defended as defended";
-        }
         global $noTrainerName;
         if (!$noTrainerName) {
             $select .= ", gd.owner_name AS trainer_name, gd.owner_level as trainer_level";
@@ -332,7 +328,7 @@ class Monocle_Alternate extends Monocle
             $pid = $defender["pokemon_id"];
             if ($defender['nickname']) {
                 // If defender has nickname, eg Pippa, put it alongside poke
-                $defender["pokemon_name"] = i8ln($this->data[$pid]["name"]) . "<br><small style='font-size: 70%;'>(" . $defender['nickname'] . ")</small>";
+                $defender["pokemon_name"] = i8ln($this->data[$pid]["name"]) . "<span style='font-size: 85%;'> (" . $defender['nickname'] . ")</span>";
             } else {
                 $defender["pokemon_name"] = i8ln($this->data[$pid]["name"]);
             }

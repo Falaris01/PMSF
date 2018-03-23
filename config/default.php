@@ -110,7 +110,6 @@ $enableGyms = 'false';                                              // true/fals
 $noGymSidebar = false;                                              // true/false
 $gymSidebar = 'true';                                               // true/false
 $noTrainerName = false;                                             // true/false
-$noPokemonBattleInfo = false;                                       // true/false
 $noExEligible = false;                                              // true/false
 $exEligible = 'false';                                              // true/false
 
