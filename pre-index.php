@@ -226,14 +226,82 @@ if ($blockIframe) {
         /* Gmaps Info Window */
         .gm-style .gm-style-iw{
             color: black;
-            background-color: white;
+            padding: 0 !important;
+            
         }
         #iw-container{
-            background-color: rgba(54, 54, 54, 0.91);
+            
+        }
+
+        .gm-style div div div div div div div div {
+            display: block !important;
+            width: 100% !important;
+            height: 100% !important;
+            padding: 0;
+            margin: 0;
+            top: 0;
+        }
+
+        .gm-style div div div div div div div div a {
+            color: #f1f1f1;
+            font-weight: bold;
+            display: block !important;
+            width: 100% !important;
+            height: 100% !important;
         }
         /* Statistics */
-
+        #stats th{
+            color: #fff;
+        }
+        
+        td.dataTables_empty{
+            color: #fff;
+            background-color: #2f3136;
+        }
+        
+        #stats td{
+            color: #f3f3f3;
+        }
+        
+        #pokestopList{
+            color: slategrey;
+        }
         /* Gym Details */
+
+         /*style the box  
+         .gm-style .gm-style-iw {
+            background-color: #3C61AD !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            min-height: 120px !important;
+            padding-top: 10px;
+            display: block !important;
+         }    
+     
+         /*style the p tag
+         .gm-style .gm-style-iw #google-popup p{
+            padding: 10px;
+         }
+         
+     
+        style the arrow
+        .gm-style div div div div div div div div {
+            background-color: #3C61AD !important;
+            padding: 0;
+            margin: 0;
+            padding: 0;
+            top: 0;
+            color: #fff;
+            font-size: 16px;
+        }
+        
+        /*style the link
+        .gm-style div div div div div div div div a {
+            color: #f1f1f1;
+            font-weight: bold;
+        }
 
         /* Areas */
 
