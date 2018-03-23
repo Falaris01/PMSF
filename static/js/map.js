@@ -2541,7 +2541,7 @@ function showGymDetails(id) { // eslint-disable-line no-unused-vars
                     '<td style="text-align:center;" class="team-' + result.team_id + '-text">'
                 if (pokemon.trainer_name) {
                     pokemonHtml +=
-                        '<div style="line-height:160%;font-size:105%;font-weight:900;">' + pokemon.trainer_name + ' (' + pokemon.trainer_level + ')</div>'
+                        '<div style="padding-bottom:1px;font-size:105%;font-weight:900;">' + pokemon.trainer_name + ' (' + pokemon.trainer_level + ')</div>'
                 }
                 pokemonHtml +=
                     '<div style="line-height:1.1em;font-weight:600;font-size:100%">' + pokemon.pokemon_name + '</div>' +
