@@ -351,7 +351,7 @@ function createLocationMarker() {
     locationMarker.setIcon(searchMarkerStyles[Store.get('locationMarkerStyle')].icon)
 
     locationMarker.infoWindow = new google.maps.InfoWindow({
-        content: '<div><b>My Location</b></div>',
+        content: '<div class="iw-container"><b>My Location</b></div>',
         disableAutoPan: true
     })
 

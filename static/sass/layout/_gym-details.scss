@@ -4,7 +4,7 @@
   @include vendor('transform', 'translateX(25em)');
   @include vendor('transition', ('transform #{_duration(stats)} ease', 'box-shadow #{_duration(stats)} ease', 'visibility #{_duration(stats)}'));
   -webkit-overflow-scrolling: touch;
-  background: #F8F8F8;
+  background: #2f3136;
   box-shadow: none;
   color: _palette(accent2, fg-bold);
   height: -webkit-calc(100% - 3.5em);
@@ -23,11 +23,11 @@
   h3 {
     font-size: 18px;
     font-family: 'Quicksand', sans-serif;
-    color: darken(_palette(accent2, bg), 12);
+    color: white;
   }
   p {
     margin-bottom: 20px;
-    color: darken(_palette(accent2, bg), 12);
+    color: white;
   }
   > ul {
     margin: 0 0 (_size(element-margin) * 0.5) 0;
@@ -68,8 +68,9 @@
     @include vendor('transition', 'color #{_duration(transition)} ease-in-out');
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     border: 0;
-    color: _palette(accent2, fg-light);
+    color: white;
     cursor: pointer;
+    background-color: #2f3136;
     height: 3.25em;
     line-height: 3.25em;
     padding-right: 1.25em;
@@ -152,6 +153,7 @@
 
   .level {
     font-weight: bold;
+    color: ghostwhite;
   }
 
   .team-0-text {
@@ -166,7 +168,7 @@
   }
 
   .team-3-text {
-    color: #000000;
+    color: #FED928;
   }
 
   td {
@@ -181,7 +183,7 @@
     .iv {
       text-align: center;
       width: 20px;
-      color: black;
+      color: slategray;
       display: inline-block;
     }
 
@@ -367,6 +369,7 @@
   .cp {
     line-height: 1em;
     font-size: .9em;
+    color: slategray;
     font-weight: bold;
     font-family: 'Quicksand';
   }

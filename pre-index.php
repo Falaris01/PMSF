@@ -134,12 +134,18 @@ if ($blockIframe) {
     <style>
         /* Body & Fonts */
         body{
-            color: #ffffff;   
+            color: #ffffff;  
+            background-color: #2f3136;
         }
         input, select, textarea{
             background: #42464d;
             color: #ffffff;
         }
+        
+        b{
+            color: slategray;
+        }
+        
         h3{
             margin-top: (_size(element-margin) * -0.3);
         }
@@ -224,16 +230,15 @@ if ($blockIframe) {
             color: #ffffff;
         }
         /* Gmaps Info Window */
-        .gm-style .gm-style-iw{
-            color: black;
-            padding: 0 !important;
             
         }
         #iw-container{
-            
+            background-color: #2f3136;
         }
 
         .gm-style div div div div div div div div {
+            background: #2f3136;
+            color: white;
             display: block !important;
             width: 100% !important;
             height: 100% !important;
@@ -243,11 +248,28 @@ if ($blockIframe) {
         }
 
         .gm-style div div div div div div div div a {
-            color: #f1f1f1;
+            color: skyblue;
+            background: #2f3136;
             font-weight: bold;
             display: block !important;
             width: 100% !important;
             height: 100% !important;
+        }
+        div.gm-style-iw{
+            background: #2f3136;
+            color: white;
+        }
+                
+        .gm-style-iw{
+            background-color: #2f3136;
+        }
+        
+        .gm-style{
+            background-color: #2f3136;
+        }
+        
+        #gm-style div div div{
+            background-color: #2f3136;
         }
         /* Statistics */
         #stats th{
