@@ -229,9 +229,16 @@ if ($blockIframe) {
             background: #42464d;
             color: #ffffff;
         }
+
         /* Gmaps Info Window */
-            
+        .gm-style .gm-style-iw{
+            color: black;
+            background-color: white;
         }
+        #iw-container{
+            background-color: rgba(54, 54, 54, 0.91);
+        }
+        /* Gmaps Info Window 
         #iw-container{
             background-color: #2f3136;
         }
