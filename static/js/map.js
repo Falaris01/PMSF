@@ -663,7 +663,7 @@ function gymLabel(item) {
             raidIcon = '<img src="static/raids/egg_' + raidEgg + '.png">'
         }
     }
-    raidStr += '<div class="raid-container"><i class="fa fa-binoculars submit-raid" onclick="openRaidModal(event);" data-id="' + item['gym_id'] + '"></i>' +
+    raidStr += '<div class="raid-container"><i class="fa fa-binoculars submit-raid" onclick="openRaidModal(event);" data-id="' + item['gym_id'] + '" style="font-size:22px;padding-bottom:5px"><br>Raid Melden</i>' +
         '</div>'
 
     var park = ''
@@ -704,7 +704,7 @@ function gymLabel(item) {
             park +
             '</div>' +
             '<div>' +
-            i8ln('Location') + ': <a href="javascript:void(0);" onclick="javascript:openMapDirections(' + latitude + ',' + longitude + ');" title="' + i8ln('View in Maps') + '">' + latitude.toFixed(6) + ' , ' + longitude.toFixed(7) + '</a>' +
+            i8ln('Location') + ': <a href="javascript:void(0);" onclick="javascript:openMapDirections(' + latitude + ',' + longitude + ');" title="' + i8ln('View in Maps') + '" style="color:blue">' + latitude.toFixed(6) + ' , ' + longitude.toFixed(7) + '</a>' +
             '</div>' +
             '</center>' +
             '</div>'
@@ -2780,7 +2780,7 @@ function showGymDetails(id) { // eslint-disable-line no-unused-vars
                 raidIcon = '<img src="static/raids/egg_' + raidEgg + '.png">'
             }
         }
-        raidStr += '<i class="fa fa-binoculars submit-raid" onclick="$(this).toggleClass(\'open\');$(\'.raid-report\').slideToggle()" ></i>'
+        raidStr += '<i class="fa fa-binoculars submit-raid" onclick="$(this).toggleClass(\'open\');$(\'.raid-report\').slideToggle()" style="font-size:30px;padding-bottom:10px"><br>Raid Melden</i>'
         raidStr += '<div class="raid-report">'
         raidStr += '<div style="margin:0px 10px;"><form>'
         raidStr += '<input type="hidden" value="' + id + '" id="gymId" name="gymId">'
@@ -2792,7 +2792,7 @@ function showGymDetails(id) { // eslint-disable-line no-unused-vars
             '<h5 class="timer-name" style="margin-bottom:0;"></h5>' +
             generateTimerLists() +
             '</div>' +
-            '<button type="button" onclick="manualRaidData(event);" class="submitting-raid"><i class="fa fa-binoculars" style="margin-right:10px;"></i> ' + i8ln('Submit Raid') + '</button>' +
+            '<button type="button" onclick="manualRaidData(event);" class="submitting-raid"><i class="fa fa-binoculars" style="margin-right:10px;"></i> ' + i8ln('Raid teilen') + '</button>' +
             '</form>' +
             '</div>' +
             '</div>'
@@ -2802,7 +2802,7 @@ function showGymDetails(id) { // eslint-disable-line no-unused-vars
         var headerHtml =
             '<center class="team-' + result.team_id + '-text">' +
             '<div>' +
-            '<b class="team-' + result.team_id + '-text">' + (result.name || '') + '</b>' +
+            '<b class="team-' + result.team_id + '-text" style="font-size:16px;">' + (result.name || '') + '</b>' +
             '</div>' +
             '<div>' +
             '<img height="60px" style="padding: 5px;" src="static/forts/' + gymTypes[result.team_id] + '_large.png">' +
@@ -2813,11 +2813,6 @@ function showGymDetails(id) { // eslint-disable-line no-unused-vars
             '<div>' +
             park +
             '</div>' +
-            isInBattle +
-            '<div style="font-size: .7em">' +
-            i8ln('Last Modified') + ' : ' + lastModifiedStr +
-            '</div>' +
-            lastScannedStr +
             '<div>' +
             '<a href=\'javascript:void(0)\' onclick=\'javascript:openMapDirections(' + result.latitude + ',' + result.longitude + ')\' title=\'' + i8ln('View in Maps') + '\'>' + i8ln('Get directions') + '</a>' +
             '</div>' +
@@ -2973,9 +2968,9 @@ function pokemonRaidFilter(event) { // eslint-disable-line no-unused-vars
     var par = cont.parent()
     par.find('.mon-name').text(label).show()
     par.find('.timer-cont').show()
-    var text = i8ln('Time Remaining (mins)')
+    var text = i8ln('Zeit verbleibend (mins)')
     if (id.includes('egg')) {
-        text = i8ln('Time Until Hatch (mins)')
+        text = i8ln('Schlüpft in (mins)')
         par.find('.mon_time').hide()
         par.find('.egg_time').show()
     } else {
