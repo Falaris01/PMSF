@@ -48,7 +48,7 @@ $locale = "en";                                                     // Display l
 
 /* Google Maps Key */
 
-$gmapsKey = "";                                                     // Google Maps API Key
+$gmapsKey = [""];                                                     // Google Maps API Key ["KEY1","KEY2"]
 
 /* Google Analytics */
 
@@ -82,6 +82,8 @@ $motdContent = "";
 
 /* Marker Settings */
 
+$pathToImages = '/static/icons-safe/';                              // Path to images. Images must not contain 0s
+
 $noPokemon = false;                                                 // true/false
 $enablePokemon = 'true';                                            // true/false
 $noPokemonNumbers = false;                                          // true/false
@@ -109,6 +111,7 @@ $noGymSidebar = false;                                              // true/fals
 $gymSidebar = 'true';                                               // true/false
 $noTrainerName = false;                                             // true/false
 $noTrainerLevel = false;                                            // true/false
+$noPokemonBattleInfo = false;                                       // true/false
 $noExEligible = false;                                              // true/false
 $exEligible = 'false';                                              // true/false
 
@@ -263,6 +266,12 @@ $weatherColors = [
     'white',
     'black'
 ];
+
+// Areas
+//-----------------------------------------------------
+
+$noAreas = false;
+$areas = [];                                                   // [[latitude,longitude,zoom,name],[latitude,longitude,zoom,name]]
 
 //-----------------------------------------------------
 // DEBUGGING

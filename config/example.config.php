@@ -37,7 +37,7 @@ $locale = "en";                                                     // Display l
 
 /* Google Maps Key */
 
-$gmapsKey = "";                                                     // Google Maps API Key
+$gmapsKey = [""];                                                     // Google Maps API Key ["KEY1","KEY2"]
 
 /* Google Analytics */
 
@@ -98,6 +98,9 @@ $enableGyms = 'false';                                              // true/fals
 $noGymSidebar = false;                                              // true/false
 $gymSidebar = 'true';                                               // true/false
 $noTrainerName = false;                                             // true/false
+$noPokemonBattleInfo = false;                                       // true/false
+$noExEligible = false;                                               // true/false
+$exEligible = 'false';                                               // true/false
 $noExEligible = false;                                              // true/false
 $exEligible = 'false';                                              // true/false
 

@@ -4,28 +4,29 @@
   @include vendor('transform', 'translateX(-20.50em)');
   @include vendor('transition', ('transform #{_duration(nav)} ease', 'box-shadow #{_duration(nav)} ease', 'visibility #{_duration(nav)}'));
   -webkit-overflow-scrolling: touch;
-  background: #F8F8F8;
+  background: #2f3136;
   box-shadow: none;
   color: _palette(accent2, fg-bold);
   height: -webkit-calc(100% - 3.5em);
   height: -moz-calc(100% - 3.5em);
   height: calc(100% - 3.5em);
-  max-width: 80%;
+  max-width: 100%;
   overflow-y: auto;
   position: fixed;
   top: 3.50em;
   left: 0;
   visibility: hidden;
-  width: 20.50em;
+  width: 26em;
   z-index: 500;
   h3 {
     font-size: 18px;
     font-family: 'Quicksand', sans-serif;
-    color: darken(_palette(accent2, bg), 12);
+    color: white;
+    background-color: #2f3136;
   }
   p {
     margin-bottom: 20px;
-    color: darken(_palette(accent2, bg), 12);
+    color: #ffffff;
   }
   > ul {
     margin: 0 0 (_size(element-margin) * 0.5) 0;
@@ -40,7 +41,7 @@
         > a:not(.button) {
           border: 0;
           border-top: solid 1px _palette(accent2, border);
-          color: inherit;
+          color: #36393e;
           display: block;
           letter-spacing: _size(letter-spacing-alt);
           line-height: 3.5em;
@@ -49,6 +50,7 @@
 
         > .button {
           display: block;
+          color: #2a2c31;
           margin: 0.5em 0 0 0;
         }
 
@@ -65,22 +67,23 @@
     #tabs{
       padding:0;
       border:0;
+      background: 36393e;
       &:after{
         display: table;
         content: "";
         clear: both;
       }
       .ui-tabs-nav{
-        background: transparent;
+        background: #36393e;
         border: 0;
         padding: 0;
         li{
           width: 50%;
           box-sizing: border-box;
           margin:0;
-          border-right:1px solid #fff;
+          border-right:1px solid #202225;
           &:last-child{
-            border-right-color:#c5c5c5;
+            border-right-color:#202225;
           }
           &:focus{
 
@@ -88,18 +91,20 @@
           a{
             padding: 0.5em 0.1em;
             text-align: center;
+            color: white;
             width: 100%;
+            background-color: #7e8084;
           }
         }
       }
 
       .ui-tabs-panel{
         padding:0;
+        background: #484b51;
         .form-control{
           float:none;
           .pokemon-container{
             box-shadow:none!important;
-            border:1px solid #3b3b3b;
             max-height:350px!important;
           }
           a{
@@ -111,7 +116,6 @@
             color: white;
             text-transform: uppercase;
             text-decoration: none;
-            border-right:1px solid #FFF;
             &:last-child{
               border-right:0;
             }
@@ -142,6 +146,7 @@
         h3{
           float:left;
           margin-bottom:0;
+          color: #ffffff;
         }
         input{
           float:left;
@@ -153,22 +158,20 @@
     }
   }
   .area-container{
-    padding:0!important;
+    padding:0;
     ul{
       padding:0;
     }
     li{
       list-style: none;
-      padding-left: 0;
+      padding-left: 0px;
       width: 50%;
       float: left;
       text-align: center;
-      background: #c7c7c7;
-      border-top: 1px solid #d8d8d8;
-      border-left: 1px solid #d8d8d8;
-      border-right: 1px solid #d8d8d8;
+      background: #5b5e63;
+      border: 1px solid #525559;
       &:hover{
-        background:grey;
+        background: #696c70;
         a{
           color:#FFF;
         }
@@ -188,6 +191,7 @@
       display: -ms-flexbox;
       display: -webkit-flex;
       display: flex;
+      color: #ffffff;
       height: 34px;
       -webkit-align-items:center;
       align-items: center;
@@ -276,17 +280,19 @@
     padding-right: 0.5em;
     padding-bottom: 0.5em;
     padding-left: 0.5em;
+    background-color: #2f3136;
+    color:white;
   }
-  .ui-state-active,
-  .onoffswitch-checkbox:checked + .onoffswitch-label {
-    border-color: #3b3b3b;
-    background-color: #3b3b3b;
+  .ui-state-active {
+    border-bottom: 2px solid #2f3136;
+    background-color: #484b51;
+
   }
   .onoffswitch-checkbox:checked + .onoffswitch-label:before {
-    border-color: #c0c0c0;
+    background-color: #39ffb2;
   }
   .ui-accordion-header.ui-state-active {
-    color: #d6d6d6;
+    color: #white;
   }
   .ui-corner-all {
     border-top-left-radius: 0;
@@ -298,6 +304,7 @@
     outline: none;
   }
 }
+
 .pokemon-list {
   display: -webkit-box;
   display: -ms-flexbox;

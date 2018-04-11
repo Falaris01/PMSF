@@ -218,9 +218,12 @@ class Monocle_Alternate extends Monocle
         $gym = $gyms[0];
 
         $select = "gd.pokemon_id, gd.cp AS pokemon_cp, gd.move_1, gd.move_2, gd.nickname, gd.atk_iv AS iv_attack, gd.def_iv AS iv_defense, gd.sta_iv AS iv_stamina, gd.cp AS pokemon_cp";
-        global $noTrainerName, $noTrainerLevel;
+        global $noTrainerName, $noTrainerLevel, $noPokemonBattleInfo;
+        if (!$noPokemonBattleInfo) {
+            $select .= ", gd.battles_attacked as attacked, gd.battles_defended as defended";
+        }
         if (!$noTrainerName) {
-            $select .= ", gd.owner_name AS trainer_name";
+            $select .= ", gd.owner_name AS trainer_name, gd.owner_level as trainer_level";
         }
         if (!$noTrainerLevel) {
             $select .= ", gd.owner_level AS trainer_level";
@@ -273,6 +276,7 @@ class Monocle_Alternate extends Monocle
         fs.team AS team_id,
         fs.guard_pokemon_id,
         fs.slots_available,
+        fs.is_in_battle,
         r.level AS raid_level,
         r.pokemon_id AS raid_pokemon_id,
         r.time_battle AS raid_start,

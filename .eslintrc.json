@@ -113,6 +113,7 @@
     "icons": true,
     "getIv": true,
     "mapType": true,
+    "getIv": true,
     "triggerGyms": true,
     "i8ln": false,
     "languageSite": true,
