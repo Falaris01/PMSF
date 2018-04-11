@@ -231,13 +231,70 @@ if ($blockIframe) {
         }
 
         /* Gmaps Info Window */
-        .gm-style .gm-style-iw{
-            color: black;
-            background-color: white;
+        .gm-style-iw {
+            top: 15px !important;
+            text-align: center;
+            background: #060506d6;
+            color: #ffffff;
+            box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
+            border-style: solid;
+            border-color: black;
+            border-width: 2px 4px 2px 4px;
+            border-radius: 50% 50% 10px 10px;
         }
-        #iw-container{
-            background-color: rgba(54, 54, 54, 0.91);
+        .gm-style-iw-spawnpoint {
+            top: 15px !important;
+            text-align: center;
+            background: #060506d6;
+            color: #ffffff;
+            box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
         }
+        .gm-style-iw + div {
+            display: none;
+        }
+        #iw-container {
+            margin-bottom: 10px;
+        }
+        /*#iw-container .iw-title {
+        /*    font-family: 'Open Sans Condensed', sans-serif;
+        /*    font-size: 22px;
+        /*    font-weight: 400;
+        /*    padding: 10px;
+        /*    background-color: #48b5e9;
+        /*    color: white;
+        /*    margin: 0;
+        /*    border-radius: 2px 2px 0 0;
+        /*}*/
+        /*#iw-container .iw-content {
+        /*    font-size: 13px;
+        /*    line-height: 18px;
+        /*    font-weight: 400;
+        /*    margin-right: 1px;
+        /*    padding: 15px 5px 20px 15px;
+        /*    max-height: 140px;
+        /*    overflow-y: auto;
+        /*    overflow-x: hidden;
+        /*}
+        .iw-content img {
+            float: right;
+            margin: 0 5px 5px 10px; 
+        }
+        /*.iw-subTitle {
+        /*    font-size: 16px;
+        /*    font-weight: 700;
+        /*    padding: 5px 0;
+        /*}
+        /*.iw-bottom-gradient {
+        /*    position: absolute;
+        /*    width: 326px;
+        /*    height: 25px;
+        /*    bottom: 10px;
+        /*    right: 18px;
+        /*    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+        /*    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+        /*    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+        /*    background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+        /*}
         /* Gmaps Info Window 
         #iw-container{
             background-color: #2f3136;
@@ -312,19 +369,19 @@ if ($blockIframe) {
          /*style the p tag
          .gm-style .gm-style-iw #google-popup p{
             padding: 10px;
-         }
+         }*/
          
      
-        style the arrow
-        .gm-style div div div div div div div div {
-            background-color: #3C61AD !important;
-            padding: 0;
-            margin: 0;
-            padding: 0;
-            top: 0;
-            color: #fff;
-            font-size: 16px;
-        }
+        /* style the arrow
+        /* .gm-style div div div div div div div div {
+        /*     background-color: #3C61AD !important;
+        /*     padding: 0;
+        /*     margin: 0;
+        /*     padding: 0;
+        /*     top: 0;
+        /*     color: #fff;
+        /*     font-size: 16px;
+        /* }
         
         /*style the link
         .gm-style div div div div div div div div a {

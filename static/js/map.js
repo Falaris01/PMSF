@@ -540,9 +540,9 @@ function pokemonLabel(item) {
             '<div>' +
             '<b>L: ' + pokemonLevel + ' | WP: ' + cp + '</b>' +
             '</div>' +
-            '<div>' +
+            '<div><b>' +
             pMove1 + ' / ' + pMove2 +
-            '</div>'
+            '</div></b>'
         }
     }
     if (weatherBoostedCondition > 10) {
@@ -569,10 +569,10 @@ function pokemonLabel(item) {
         '<div style="text-align:center;font-size:14.5px;line-height:200%;">' +
         weatherIcon + '<b>' + name + '</b>'
     if (gender !== undefined && id !== 201) {
-        contentstring += ' ' + genderType[gender - 1] + ''
+        contentstring += ' <b>' + genderType[gender - 1] + '</b>'
     }
     if (form !== null && form > 0 && forms.length > form) {
-        contentstring += ' (' + forms[item['form']] + ')'
+        contentstring += ' <b>(' + forms[item['form']] + ')</b>'
     }
     var notifyIcon = '<i class="fa fa-volume-up" style="font-size:20px;color:black"></i></a>&nbsp&nbsp&nbsp&nbsp'
     if (notifiedPokemon.indexOf(item['pokemon_id']) > -1) {
@@ -589,10 +589,10 @@ function pokemonLabel(item) {
         '<center>' +
         details +
         '</center>' +
-        '<div style="line-height:200%;"><center>' +
+        '<div style="line-height:200%"><b><center>' +
         i8ln('Disappears at') + ' ' + getTimeStr(disappearTime) +
         ' <span class="label-countdown" disappears-at="' + disappearTime + '">(00m00s)</span>' +
-        '</div></center>' +
+        '</div></b></center>' +
         '<div><center>' +
         '<a href="javascript:notifyAboutPokemon(' + id + ') "title="' + i8ln('Notifiy about this Pokemon') + '">' + notifyIcon +
         '<a href="javascript:removePokemonMarker(\'' + encounterId + '\') "title="' + i8ln('Remove THIS Pokemon from the map') + '"><i class="fa fa-trash" style="font-size:20px;color:black"></i></a>&nbsp&nbsp&nbsp&nbsp' +
@@ -693,9 +693,9 @@ function gymLabel(item) {
     var str
     if (teamId === 0) {
         str =
-            '<div>' +
+            '<div id="iw-container">' +
             '<center>' +
-            '<div>' +
+            '<div class="iw-content">' +
             '<b style="color:rgba(' + gymColor[teamId] + ')">' + i8ln(teamName) + '</b><br>' +
             '<img height="70px" style="padding: 5px;" src="static/forts/' + teamName + '_large.png">' +
             raidIcon +
@@ -728,9 +728,9 @@ function gymLabel(item) {
             gymCp = '<div>' + i8ln('Total Gym CP') + ' : <b>' + item.total_gym_cp + '</b></div>'
         }
         str =
-            '<div>' +
+            '<div id="iw-container">' +
             '<center>' +
-            '<div style="padding-bottom: 2px">' +
+            '<div style="padding-bottom: 2px" class="iw-content">' +
 
             i8ln('Gym owned by') + ' : ' +
             '</div>' +
@@ -805,7 +805,7 @@ function formatSpawnTime(seconds) {
 
 function spawnpointLabel(item) {
     var str =
-        '<div>' +
+        '<div id="iw-container">' +
         '<b>' + i8ln('Spawn Point') + '</b>' +
         '</div>' +
         '<div>' +
@@ -813,7 +813,7 @@ function spawnpointLabel(item) {
         '</div>'
     if (item.duration === 60 || item.kind === 'ssss') {
         str =
-            '<div>' +
+            '<div id="iw-container">' +
             '<b>Spawn Point</b>' +
             '</div>' +
             '<div>' +
@@ -1077,6 +1077,34 @@ function setupGymMarker(item) {
         pixelOffset: new google.maps.Size(0, -20)
     })
 
+    google.maps.event.addListener(marker.infoWindow, 'domready', function () {
+        var iwOuter = $('.gm-style-iw')
+        var iwBackground = iwOuter.prev()
+        iwBackground.children(':nth-child(2)').css({'display': 'none'})
+        iwBackground.children(':nth-child(4)').css({'display': 'none'})
+        // iwOuter.parent().parent().css({left: '115px'})
+        // iwBackground.children(':nth-child(1)').attr('style', function (i, s) { return s + 'left: 76px !important;' })
+        // iwBackground.children(':nth-child(3)').attr('style', function (i, s) { return s + 'left: 76px !important;' })
+        iwBackground.children(':nth-child(3)').find('div').children().css({ 'box-shadow': 'rgba(72, 181, 233, 0.6) 0px 1px 6px', 'z-index': '1', 'background-color': 'black' })
+        // var iwCloseBtn = iwOuter.next()
+        // iwCloseBtn.css({
+        //     opacity: '1', // by default the close button has an opacity of 0.7
+        //     right: '38px', top: '3px', // button repositioning
+        //     border: '7px solid #48b5e9', // increasing button border and new color
+        //     'border-radius': '13px', // circular effect
+        //     'box-shadow': '0 0 5px #3990B9', // 3D effect to highlight the button
+        //     'content': 'X'
+        // });
+        // 
+        // if ($('.iw-content').height() < 140) {
+        //     $('.iw-bottom-gradient').css({ display: 'none' })
+        // }
+        
+        // iwCloseBtn.mouseout(function () {
+        //      $(this).css({ opacity: '1' })
+        // })
+    })
+
     var raidLevel = item.raid_level
     if (raidLevel >= Store.get('remember_raid_notify') && item.raid_end > Date.now() && Store.get('remember_raid_notify') !== 0) {
         var title = 'Raid level: ' + raidLevel
@@ -1204,6 +1232,14 @@ function setupPokestopMarker(item) {
         disableAutoPan: true
     })
 
+    google.maps.event.addListener(marker.infoWindow, 'domready', function () {
+        var iwOuter = $('.gm-style-iw-pokestop')
+        var iwBackground = iwOuter.prev()
+        iwBackground.children(':nth-child(2)').css({'display': 'none'})
+        iwBackground.children(':nth-child(4)').css({'display': 'none'})
+        iwBackground.children(':nth-child(3)').find('div').children().css({ 'box-shadow': 'rgba(72, 181, 233, 0.6) 0px 1px 6px', 'z-index': '1', 'background-color': 'black' })
+    })
+
     addListeners(marker)
     return marker
 }
@@ -1320,6 +1356,14 @@ function setupSpawnpointMarker(item) {
         content: spawnpointLabel(item),
         disableAutoPan: true,
         position: circleCenter
+    })
+
+    google.maps.event.addListener(marker.infoWindow, 'domready', function () {
+        var iwOuter = $('.gm-style-iw')
+        var iwBackground = iwOuter.prev()
+        iwBackground.children(':nth-child(2)').css({'display': 'none'})
+        iwBackground.children(':nth-child(4)').css({'display': 'none'})
+        iwBackground.children(':nth-child(3)').find('div').children().css({ 'box-shadow': 'rgba(72, 181, 233, 0.6) 0px 1px 6px', 'z-index': '1', 'background-color': 'black' })
     })
 
     addListeners(marker)
