@@ -1190,5 +1190,8 @@
   "uncontested":"Nicht umkämpft!",
   "D": "V",
   "Bounce": "Hüpfen",
-  "Push Notifications": "Push Benachrichtigungen"
+  "Push Notifications": "Push Benachrichtigungen",
+  "Search...": "Suche:",
+  "Enter Gym Name":"Arena Name",
+  "Enter Pokestop Name":"Arena Name"
 }
