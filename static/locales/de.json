@@ -1199,5 +1199,16 @@
   "Push Notifications": "Push Benachrichtigungen",
   "Search...": "Suche:",
   "Enter Gym Name":"Arena Name",
-  "Enter Pokestop Name":"Arena Name"
+  "Enter Pokestop Name":"Arena Name",
+  "Submit Data to Map": "Daten an Karte übermitteln",
+  "Submit Nest": "Nest teilen",
+  "Submit Pokestop": "Pokestop teilen",
+  "Submit Gym": "Arena teilen",
+  "Submit Pokemon": "Pokemon teilen",
+  "Choose a Quest": "Aufgabe wählen",
+  "Choose a Reward": "Belohnung wählen",
+  "Submit a Quest": "Aufgabe teilen",
+  "I confirm that I want to delete this gym. This is a permanent deleture": "Ich bestätige, dass diese Arena nicht existiert und gelöscht werden kann.",
+  "I confirm that I want to delete this pokestop. This is a permanent deleture": "Ich bestätige, dass dieser PokeStop nicht existiert und gelöscht werden kann.",
+  "As found on thesilphroad.com": "Übernommen vom TSR Nest-Atlas"
 }

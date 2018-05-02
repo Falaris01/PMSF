@@ -1254,7 +1254,7 @@ if ($blockIframe) {
         </div>
     <?php } ?>
     <?php
-    if ((!$noPokemon && !$noManualPokemon) || (!$noGyms && !$noManualGyms) || (!$noPokestops && !$noManualPokestops)) {
+    if ((!$noPokemon && !$noManualPokemon) || (!$noGyms && !$noManualGyms) || (!$noPokestops && !$noManualPokestops) || !$noManualNests) {
         ?>
         <button class="submit-on-off-button" onclick="$('.submit-on-off-button').toggleClass('on');">
             <i class="fa fa-map-marker submit-to-map" aria-hidden="true"></i>

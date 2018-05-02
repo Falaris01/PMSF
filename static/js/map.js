@@ -352,7 +352,7 @@ function initMap() { // eslint-disable-line no-unused-vars
                 modal: true,
                 maxHeight: 600,
                 buttons: {},
-                title: i8ln('Submit Data to Map'),
+                title: i8ln('Daten an Karte übermitteln'),
                 classes: {
                     'ui-dialog': 'ui-dialog submit-widget-popup'
                 },
@@ -1314,15 +1314,7 @@ function nestLabel(item) {
     var str = '<div>';
     if (item.pokemon_id > 0) {
         var types = item['pokemon_types']
-        var typesDisplay = ''
-        $.each(types, function (index, type) {
-            typesDisplay += getTypeSpan(type)
-        })
-        str += '<b>' + item.pokemon_name  + '</b>' +
-            '</div>' +
-            '<div>' +
-            typesDisplay +
-            '</div>'
+        str += '<b>' + item.pokemon_name  + '</b></div>'
     } else {
         str += '<b>' + i8ln('No Pokemon - Assign One Below') + '</b>'
     }
@@ -1330,7 +1322,7 @@ function nestLabel(item) {
     'Location: <a href="javascript:void(0)" onclick="javascript:openMapDirections(' + item.lat + ',' + item.lon + ')" title="' + i8ln('View in Maps') + '">' + item.lat.toFixed(6) + ', ' + item.lon.toFixed(7) + '</a>' +
     '</div>'
     if(item.type === 1){
-        str += '<div style="margin-bottom:5px;">' + i8ln('As found on thesilphroad.com') + '</div>'
+        str += '<div style="margin-bottom:5px;">' + i8ln('Übernommen vom TSR Nest-Atlas') + '</div>'
     }
     if (!noDeleteNests) {
         str += '<i class="fa fa-trash-o delete-nest" onclick="deleteNest(event);" data-id="' + item['nest_id'] + '"></i>'
