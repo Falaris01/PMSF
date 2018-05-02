@@ -173,15 +173,18 @@ class Monocle_Alternate extends Monocle
 
     public function query_stops($conds, $params)
     {
-        global $db, $noTrainerName;
+        global $db, $noTrainerName, $noManualQuests;
 
         $query = "SELECT external_id AS pokestop_id,
         expires AS lure_expiration,
         deployer AS lure_user,
         name AS pokestop_name,
         lat AS latitude,
-        lon AS longitude
-        FROM pokestops
+        lon AS longitude";
+        if (!$noManualQuests) {
+            $query .= ",quest_id,reward";
+        }
+        $query .= " FROM pokestops
         WHERE :conditions";
 
         $query = str_replace(":conditions", join(" AND ", $conds), $query);
@@ -452,6 +455,69 @@ class Monocle_Alternate extends Monocle
             $data[] = $gym;
 
             unset($gyms[$i]);
+            $i++;
+        }
+        return $data;
+    }
+
+    public function get_nests($swLat, $swLng, $neLat, $neLng, $tstamp = 0, $oSwLat = 0, $oSwLng = 0, $oNeLat = 0, $oNeLng = 0)
+    {
+        $conds = array();
+        $params = array();
+
+        $conds[] = "lat > :swLat AND lon > :swLng AND lat < :neLat AND lon < :neLng";
+        $params[':swLat'] = $swLat;
+        $params[':swLng'] = $swLng;
+        $params[':neLat'] = $neLat;
+        $params[':neLng'] = $neLng;
+
+        if ($oSwLat != 0) {
+            $conds[] = "NOT (lat > :oswLat AND lon > :oswLng AND lat < :oneLat AND lon < :oneLng)";
+            $params[':oswLat'] = $oSwLat;
+            $params[':oswLng'] = $oSwLng;
+            $params[':oneLat'] = $oNeLat;
+            $params[':oneLng'] = $oNeLng;
+        }
+        if ($tstamp > 0) {
+            $conds[] = "updated > :lastUpdated";
+            $params[':lastUpdated'] = $tstamp;
+        }
+
+        return $this->query_nests($conds, $params);
+    }
+
+    public function query_nests($conds, $params)
+    {
+        global $db;
+
+        $query = "SELECT nest_id,
+        lat,
+        lon,
+        pokemon_id,
+        type
+        FROM nests
+        WHERE :conditions";
+
+        $query = str_replace(":conditions", join(" AND ", $conds), $query);
+        $nests = $db->query($query, $params)->fetchAll(\PDO::FETCH_ASSOC);
+
+        $data = array();
+        $i = 0;
+        foreach ($nests as $nest) {
+            $nest["lat"] = floatval($nest["lat"]);
+            $nest["lon"] = floatval($nest["lon"]);
+            $nest["type"] = intval($nest["type"]);
+            if($nest['pokemon_id'] > 0 ){
+                $nest["pokemon_name"] = i8ln($this->data[$nest["pokemon_id"]]['name']);
+                $types = $this->data[$nest["pokemon_id"]]["types"];
+                foreach ($types as $k => $v) {
+                    $types[$k]['type'] = i8ln($v['type']);
+                }
+                $nest["pokemon_types"] = $types;
+            }
+            $data[] = $nest;
+
+            unset($nests[$i]);
             $i++;
         }
         return $data;

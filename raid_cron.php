@@ -1,7 +1,11 @@
 <?php
 include(dirname(__FILE__) . '/config/config.php');
-global $map, $fork, $db, $raidBosses, $webhookUrl, $sendWebhook, $manualFiveStar;
-// get all level 5 raids that are still eggs but haven't hatched
+global $map, $fork, $db, $raidBosses, $webhookUrl, $sendWebhook, $manualFiveStar, $noManualRaids, $noRaids;
+
+if($noManualRaids === true || $noRaids === true){
+    http_response_code(401);
+    die();
+}
 
 if($db->info()['driver'] == 'pgsql'){
     $eggs = $db->query("
@@ -44,7 +48,9 @@ if (count($eggs) > 0) {
                 ],
                 'type' => 'raid'
             ];
-            sendToWebhook($webhookUrl, $webhook);
+            foreach ($webhookUrl as $url) {
+                sendToWebhook($url, $webhook);
+            }
         }
     }
 
