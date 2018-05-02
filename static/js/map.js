@@ -1708,7 +1708,7 @@ function manualRaidData(event) { // eslint-disable-line no-unused-vars
     var monTime = form.find('[name="mon_time"]').val()
     var eggTime = form.find('[name="egg_time"]').val()
     if (pokemonId && pokemonId !== '' && gymId && gymId !== '' && eggTime && eggTime !== '' && monTime && monTime !== '') {
-        if (confirm('I confirm this is an accurate sighting of a raid')) {
+        if (confirm('Ich bestätige, dass dies dies eine gültige Meldung ist.')) {
             return $.ajax({
                 url: 'manual_raid_submit',
                 type: 'POST',
