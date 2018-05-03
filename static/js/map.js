@@ -30,6 +30,9 @@ var $switchTinyRat
 var $switchBigKarp
 var $selectDirectionProvider
 var $switchExEligible
+var noManualQuests
+var noDeleteNests
+var noManualNests
 
 var language = document.documentElement.lang === '' ? 'en' : document.documentElement.lang
 var languageSite = 'en'
@@ -838,20 +841,20 @@ function pokestopLabel(expireTime, latitude, longitude, stopName, lureUser, id, 
         str =
             '<div>' +
             '<b>' + stopName + '</b>' +
-        '</div>';
+        '</div>'
         if (!noManualQuests && quest !== null) {
-            str += '<div>'+
+            str += '<div>' +
                 i8ln('Quest:') + ' ' +
                 i8ln(questList[quest]) +
                 '</div>'
-            if(reward !== null && reward !== "NULL"){
-                str += '<div>'+
+            if (reward !== null && reward !== 'NULL') {
+                str += '<div>' +
                     i8ln('Reward:') + ' ' +
                     i8ln(reward) +
                     '</div>'
             }
         }
-        str +=  '<div>' +
+        str += '<div>' +
             i8ln('Location:') + ' ' + '<a href="javascript:void(0)" onclick="javascript:openMapDirections(' + latitude + ',' + longitude + ')" title="' + i8ln('View in Maps') + '">' + latitude.toFixed(6) + ', ' + longitude.toFixed(7) + '</a>' +
             '</div>'
         if (!noDeletePokestops) {
@@ -860,7 +863,6 @@ function pokestopLabel(expireTime, latitude, longitude, stopName, lureUser, id, 
         if (!noManualQuests) {
             str += '<i class="fa fa-binoculars submit-quest" onclick="openQuestModal(event);" data-id="' + id + '"></i>'
         }
-
     }
     return str
 }
@@ -1277,15 +1279,15 @@ function setupPokestopMarker(item) {
 
     return marker
 }
-function setupNestMarker(item){
-    if(item.pokemon_id > 0){
-        var str = '<div class="marker-nests">' +
+function setupNestMarker(item) {
+    var str = ''
+    if (item.pokemon_id > 0) {
+        str = '<div class="marker-nests">' +
             '<img src="static/images/nest-' + item.pokemon_types[0].type.toLowerCase() + '.png" style="width:36px;height: auto;"/>' +
             '<i class="nest-pokemon-sprite n' + item.pokemon_id + '"></i>' +
             '</div>'
-    }
-    else{
-        var str = '<div class="marker-nests">' +
+    } else {
+        str = '<div class="marker-nests">' +
             '<img src="static/images/nest-empty.png" style="width:36px;height: auto;"/>' +
             '</div>'
     }
@@ -1308,20 +1310,17 @@ function setupNestMarker(item){
     return marker
 }
 
-
 function nestLabel(item) {
-
-    var str = '<div>';
+    var str = '<div>'
     if (item.pokemon_id > 0) {
-        var types = item['pokemon_types']
-        str += '<b>' + item.pokemon_name  + '</b></div>'
+        str += '<b>' + item.pokemon_name + '</b></div>'
     } else {
         str += '<b>' + i8ln('No Pokemon - Assign One Below') + '</b>'
     }
     str += '<div>' +
     'Location: <a href="javascript:void(0)" onclick="javascript:openMapDirections(' + item.lat + ',' + item.lon + ')" title="' + i8ln('View in Maps') + '">' + item.lat.toFixed(6) + ', ' + item.lon.toFixed(7) + '</a>' +
     '</div>'
-    if(item.type === 1){
+    if (item.type === 1) {
         str += '<div style="margin-bottom:5px;">' + i8ln('Übernommen vom TSR Nest-Atlas') + '</div>'
     }
     if (!noDeleteNests) {
@@ -1733,7 +1732,7 @@ function searchAjax(field) { // eslint-disable-line no-unused-vars
                         html += '<span style="background:url(' + element.url + ') no-repeat;" class="i-icon" ></span>'
                     }
                     html += '<div class="cont"><span class="name" >' + element.name + '</span>'
-                    if(sr.hasClass('reward-results')){
+                    if (sr.hasClass('reward-results')) {
                         html += '<span>&nbsp;-&nbsp;</span> <span class="reward" style="font-weight:bold">' + element.reward + '</span>'
                     }
                     html += '</div></div>'
@@ -1760,7 +1759,7 @@ function centerMapOnCoords(event) { // eslint-disable-line no-unused-vars
         point = point.parent().parent().parent()
     } else if (!point.hasClass('search-result')) {
         point = point.parent().parent()
-    }  else{
+    } else {
         point = point.parent().parent().parent()
     }
     var lat = point.data('lat')
@@ -1959,7 +1958,7 @@ function deleteNest(event) { // eslint-disable-line no-unused-vars
 
 function submitNewNest(event) { // eslint-disable-line no-unused-vars
     var cont = $(event.target).parent().parent()
-    var id = cont.find( '.pokemonID' ).val()
+    var id = cont.find('.pokemonID').val()
     var lat = $('.submit-modal.ui-dialog-content .submitLatitude').val()
     var lng = $('.submit-modal.ui-dialog-content .submitLongitude').val()
     if (lat && lat !== '' && lng && lng !== '') {
@@ -1974,7 +1973,7 @@ function submitNewNest(event) { // eslint-disable-line no-unused-vars
                     'action': 'new-nest',
                     'lat': lat,
                     'lng': lng,
-                    'id' : id
+                    'id': id
                 },
                 error: function error() {
                     // Display error toast
@@ -2044,7 +2043,7 @@ function manualQuestData(event) { // eslint-disable-line no-unused-vars
                     'action': 'quest',
                     'questId': questId,
                     'reward': reward,
-                    'pokestopId': pokestopId,
+                    'pokestopId': pokestopId
                 },
                 error: function error() {
                     // Display error toast
@@ -2104,7 +2103,7 @@ function manualRaidData(event) { // eslint-disable-line no-unused-vars
 function openNestModal(event) { // eslint-disable-line no-unused-vars
     $('.ui-dialog').remove()
     var val = $(event.target).data('id')
-    $('.submitting-nests').attr('data-nest',val)
+    $('.submitting-nests').attr('data-nest', val)
     $('.global-nest-modal').clone().dialog({
         modal: true,
         maxHeight: 600,
@@ -2137,7 +2136,7 @@ function openQuestModal(event) { // eslint-disable-line no-unused-vars
         modal: true,
         maxHeight: 600,
         buttons: {},
-        title:i8ln('Submit a Quest'),
+        title: i8ln('Submit a Quest'),
         classes: {
             'ui-dialog': 'ui-dialog raid-widget-popup'
         }
@@ -2352,7 +2351,6 @@ function processNests(i, item) {
         item2.marker.setMap(null)
         item.marker = setupNestMarker(item)
         mapData.nests[item['nest_id']] = item
-
     }
 }
 
@@ -3131,11 +3129,6 @@ function showGymDetails(id) { // eslint-disable-line no-unused-vars
             }
         }
 
-        var isInBattle = ''
-        if (result.is_in_battle) {
-            isInBattle = '<div>' + i8ln('Gym is being attacked') + '</div>'
-        }
-
         var raidSpawned = result['raid_level'] != null
         var raidStarted = result['raid_pokemon_id'] != null
 
@@ -3187,7 +3180,7 @@ function showGymDetails(id) { // eslint-disable-line no-unused-vars
             raidStr += '<i class="fa fa-trash-o delete-gym" onclick="deleteGym(event);" data-id="' + id + '"></i>'
         }
         if (manualRaids) {
-            raidStr += '<i class="fa fa-binoculars submit-raid" onclick="$(this).toggleClass(\'open\');$(\'.raid-report\').slideToggle()" ></i>'
+            raidStr += '<i class="fa fa-binoculars submit-raid" onclick="$(this).toggleClass(\'open\');$(\'.raid-report\').slideToggle()" ><br>Raid melden</i>'
             raidStr += '<div class="raid-report">'
             raidStr += '<div style="margin:0px 10px;"><form>'
             raidStr += '<input type="hidden" value="' + id + '" id="gymId" name="gymId">'
@@ -3795,7 +3788,7 @@ $(function () {
 
     $.getJSON('static/dist/data/quests.min.json').done(function (data) {
         $.each(data, function (key, value) {
-            questList[key] = value['name'];
+            questList[key] = value['name']
         })
     })
 
