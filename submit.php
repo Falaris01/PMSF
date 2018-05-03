@@ -97,7 +97,7 @@ if ( $action === "raid" ) {
 
 // also update fort_sightings so PMSF knows the gym has changed
 // todo: put team stuff in here too
-    $db->query( "UPDATE fort_sightings SET updated = :updated WHERE fort_id = :gymId", [
+    $db->query( "UPDATE fort_sightings SET updated = :updated, last_modified = :updated WHERE fort_id = :gymId", [
         'updated' => time(),
         ':gymId'  => $gymId
     ] );

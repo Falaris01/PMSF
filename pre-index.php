@@ -666,7 +666,7 @@ if ($blockIframe) {
                 <?php
                 if (!$noNests) {
                     echo '<div class="form-control switch-container">
-                    <h3>' . i8ln('Nests') . '</h3>
+                    <h4>' . i8ln('Nests') . '</h4>
                     <div class="onoffswitch">
                         <input id="nests-switch" type="checkbox" name="nests-switch"
                                class="onoffswitch-checkbox" checked>
