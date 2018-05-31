@@ -72,7 +72,8 @@ if ( $action === "raid" ) {
         'cp'          => 0,
         'pokemon_id'  => 0,
         'move_1'      => 0, // struggle
-        'move_2'      => 0
+        'move_2'      => 0,
+        'users'       => $_SESSION['user']->user
 
     ];
     if ( array_key_exists( $pokemonId, $raidBosses ) ) {
@@ -88,6 +89,7 @@ if ( $action === "raid" ) {
         $cols['time_spawn']  = $time_spawn;
         $cols['time_battle'] = $time_battle;
         $cols['time_end']    = $time_end;
+        $cols['users']       = $_SESSION['user']->user;
     } elseif ( $cols['level'] === 0 ) {
         // no boss or egg matched
         http_response_code( 500 );
@@ -97,7 +99,7 @@ if ( $action === "raid" ) {
 
 // also update fort_sightings so PMSF knows the gym has changed
 // todo: put team stuff in here too
-    $db->query( "UPDATE fort_sightings SET updated = :updated WHERE fort_id = :gymId", [
+    $db->query( "UPDATE fort_sightings SET updated = :updated, last_modified = :updated WHERE fort_id = :gymId", [
         'updated' => time(),
         ':gymId'  => $gymId
     ] );
