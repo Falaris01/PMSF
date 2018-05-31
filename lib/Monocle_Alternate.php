@@ -224,9 +224,12 @@ class Monocle_Alternate extends Monocle
         $gym = $gyms[0];
 
         $select = "gd.pokemon_id, gd.cp AS pokemon_cp, gd.move_1, gd.move_2, gd.nickname, gd.atk_iv AS iv_attack, gd.def_iv AS iv_defense, gd.sta_iv AS iv_stamina, gd.cp AS pokemon_cp";
-        global $noTrainerName, $noTrainerLevel;
+        global $noTrainerName, $noTrainerLevel, $noPokemonBattleInfo;
+        if (!$noPokemonBattleInfo) {
+            $select .= ", gd.battles_attacked as attacked, gd.battles_defended as defended";
+        }
         if (!$noTrainerName) {
-            $select .= ", gd.owner_name AS trainer_name";
+            $select .= ", gd.owner_name AS trainer_name, gd.owner_level as trainer_level";
         }
         if (!$noTrainerLevel) {
             $select .= ", gd.owner_level AS trainer_level";
@@ -279,13 +282,15 @@ class Monocle_Alternate extends Monocle
         fs.team AS team_id,
         fs.guard_pokemon_id,
         fs.slots_available,
+        fs.is_in_battle,
         r.level AS raid_level,
         r.pokemon_id AS raid_pokemon_id,
         r.time_battle AS raid_start,
         r.time_end AS raid_end,
         r.cp AS raid_pokemon_cp,
         r.move_1 AS raid_pokemon_move_1,
-        r.move_2 AS raid_pokemon_move_2
+        r.move_2 AS raid_pokemon_move_2,
+        r.users AS raid_users
         FROM forts f
         LEFT JOIN fort_sightings fs ON fs.fort_id = f.id
         LEFT JOIN raids r ON r.fort_id = f.id
@@ -437,7 +442,8 @@ class Monocle_Alternate extends Monocle
         time_end AS raid_end,
         cp AS raid_pokemon_cp,
         move_1 AS raid_pokemon_move_1,
-        move_2 AS raid_pokemon_move_2
+        move_2 AS raid_pokemon_move_2,
+        users AS raid_users
         FROM forts f
         LEFT JOIN raids r ON r.fort_id = f.id
         WHERE :conditions";

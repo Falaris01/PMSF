@@ -48,7 +48,7 @@ $locale = "en";                                                     // Display l
 
 /* Google Maps Key */
 
-$gmapsKey = "";                                                     // Google Maps API Key
+$gmapsKey = [""];                                                     // Google Maps API Key ["KEY1","KEY2"]
 
 /* Google Analytics */
 
@@ -161,6 +161,8 @@ if ($noNativeLogin === true && $noDiscordLogin == true ||  (($noNativeLogin === 
 
 /* Marker Settings */
 
+$pathToImages = '/static/icons-safe/';                              // Path to images. Images must not contain 0s
+
 $noPokemon = false;                                                 // true/false
 $enablePokemon = 'true';                                            // true/false
 $noPokemonNumbers = false;                                          // true/false
@@ -187,6 +189,7 @@ $noGymSidebar = false;                                              // true/fals
 $gymSidebar = 'true';                                               // true/false
 $noTrainerName = false;                                             // true/false
 $noTrainerLevel = false;                                            // true/false
+$noPokemonBattleInfo = false;                                       // true/false
 $noExEligible = false;                                              // true/false
 $exEligible = 'false';                                              // true/false
 
@@ -301,12 +304,12 @@ $raidBosses = [129,361,333,353,103,303,200,302,215,68,94,124,221,210,248,306,359
 $sendWebhook = false;
 $webhookUrl = null;                                             //['url-1','url-2']
 
-$manualFiveStar = [
-    'pokemon_id' => 381,
-    'cp' => 49322,
-    'move_1' => 133,
-    'move_2' => 133
-];
+//$manualFiveStar = [
+//    'pokemon_id' => 381,
+//    'cp' => 49322,
+//    'move_1' => 133,
+//    'move_2' => 133
+//];
 
 //-----------------------------------------------
 // Search
@@ -359,6 +362,12 @@ $weatherColors = [
     'white',
     'black'
 ];
+
+// Areas
+//-----------------------------------------------------
+
+$noAreas = false;
+$areas = [];                                                   // [[latitude,longitude,zoom,name],[latitude,longitude,zoom,name]]
 
 //-----------------------------------------------------
 // DEBUGGING

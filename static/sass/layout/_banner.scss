@@ -2,7 +2,8 @@
 
   #banner {
     @include padding(8em, 0);
-    background: #f6f6f6;
+    background-image: url("static/images/bg_header.png");
+    background-repeat: repeat-x;
     text-align: center;
 
     h2 {

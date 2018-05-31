@@ -7,19 +7,18 @@
   .button {
     @include vendor('appearance', 'none');
     @include vendor('transition', 'background-color #{_duration(transition)} ease-in-out, color #{_duration(transition)} ease-in-out');
-    background-color: _palette(accent2, bg);
-    border-radius: _size(border-radius);
-    border: 0;
-    color: _palette(accent2, fg-bold) !important;
-    cursor: pointer;
     display: inline-block;
-    font-weight: _font(weight-bold);
-    height: 2.85em;
-    line-height: 2.95em;
-    padding: 0 1.5em;
+    border-radius: 7px;
+    background-color: #202225;
+    border: none;
+    color: #FFFFFF;
     text-align: center;
-    text-decoration: none;
-    white-space: nowrap;
+    font-size: 15px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
     margin-top: 1em;
 
     &:hover {

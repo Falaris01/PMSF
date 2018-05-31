@@ -4,7 +4,7 @@
   @include vendor('transform', 'translateX(25em)');
   @include vendor('transition', ('transform #{_duration(stats)} ease', 'box-shadow #{_duration(stats)} ease', 'visibility #{_duration(stats)}'));
   -webkit-overflow-scrolling: touch;
-  background: #F8F8F8;
+  background: #2f3136;
   box-shadow: none;
   color: _palette(accent2, fg-bold);
   height: -webkit-calc(100% - 3.5em);
@@ -22,11 +22,11 @@
   h3 {
     font-size: 18px;
     font-family: 'Quicksand', sans-serif;
-    color: darken(_palette(accent2, bg), 12);
+    color:  #ffffff;
   }
   p {
     margin-bottom: 20px;
-    color: darken(_palette(accent2, bg), 12);
+    color:  #ffffff;
   }
   > ul {
     margin: 0 0 (_size(element-margin) * 0.5) 0;
@@ -118,13 +118,14 @@
     font-weight: bold;
     border-width: 1px 0px;
     border-style: solid;
-    border-color: black;
-    background-color: white;
+    border-color: slategrey;
+    background: #2f3136;
     margin: .75em 0 .25em 0;
   }
 
   .stats-label-container h1 {
     margin: 0.25em;
+    color: #fff;
     font-size: 1.2em;
     font-family: 'Quicksand', sans-serif;
   }
@@ -133,6 +134,8 @@
 
   table.dataTable.display {
     margin-bottom: 2em;
+    background: #2f3136;
+    color: #fff;
   }
   table.dataTable.display tbody tr td,
   table.dataTable.display tbody tr td img {
