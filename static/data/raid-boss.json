@@ -224,10 +224,20 @@
     "level": 3,
     "cp": 11419
   },
+  "138": {
+    "name": "Omanyte",
+    "level": 1,
+    "cp": 1000
+  },
   "139": {
     "name": "Omastar",
     "level": 3,
     "cp": 18915
+  },
+  "140": {
+    "name": "Kabuto",
+    "level": 1,
+    "cp": 1000
   },
   "141": {
     "name": "Kabutops",
@@ -299,6 +309,11 @@
     "level": 3,
     "cp": 8989
   },
+  "185": {
+    "name": "Sudowoodo",
+    "level": 2,
+    "cp": 6000
+  },
   "200": {
     "name": "Misdreavus",
     "level": 2,
@@ -314,6 +329,11 @@
     "level": 3,
     "cp": 15328
   },
+  "213": {
+    "name": "Shuckle",
+    "level": 3,
+    "cp": 3000
+  },
   "215": {
     "name": "Sneasel",
     "level": 2,
@@ -323,6 +343,11 @@
     "name": "Ursaring",
     "level": 4,
     "cp": 27409
+  },
+  "219": {
+    "name": "Magcargo",
+    "level": 2,
+    "cp": 6000
   },
   "221": {
     "name": "Piloswine",
@@ -379,6 +404,11 @@
     "level": 3,
     "cp": 18174
   },
+  "299": {
+    "name": "Nosepass",
+    "level": 2,
+    "cp": 6000
+  },
   "302": {
     "name": "Sableye",
     "level": 2,
@@ -409,10 +439,20 @@
     "level": 1,
     "cp": 2766
   },
+  "337": {
+    "name": "Lunatone",
+    "level": 3,
+    "cp": 20000
+  },
   "344": {
     "name": "Claydol",
     "level": 3,
     "cp": 13450
+  },
+  "345": {
+    "name": "Lileep",
+    "level": 1,
+    "cp": 1350
   },
   "353": {
     "name": "Shuppet",

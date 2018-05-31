@@ -239,12 +239,12 @@ $raidBosses = [361,333,320,129,303,302,256,57,286,107,106,68,359,306,248,62,381,
 $sendWebhook = false;
 $webhookUrl = null;                                             //['url-1','url-2']
 
-$manualFiveStar = [
-    'pokemon_id' => 381,
-    'cp' => 49322,
-    'move_1' => 133,
-    'move_2' => 133
-];
+//$manualFiveStar = [
+//    'pokemon_id' => 381,
+//    'cp' => 49322,
+//    'move_1' => 133,
+//    'move_2' => 133
+//];
 
 //-----------------------------------------------
 // Search
