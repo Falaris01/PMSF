@@ -831,7 +831,7 @@ function gymLabel(item) {
     return str
 }
 
-function pokestopLabel(expireTime, latitude, longitude, stopName, lureUser, id, quest, reward) {
+function pokestopLabel(expireTime, latitude, longitude, stopName, lureUser, id, quest, reward, users) {
     var str
     if (stopName === undefined) {
         stopName = 'Pokéstop'
@@ -873,6 +873,7 @@ function pokestopLabel(expireTime, latitude, longitude, stopName, lureUser, id, 
                     i8ln(reward) +
                     '</div>'
             }
+            str += '<div>Gemeldet von ' + users + '</div>'
         }
         str += '<div>' +
             i8ln('Location:') + ' ' + '<a href="javascript:void(0)" onclick="javascript:openMapDirections(' + latitude + ',' + longitude + ')" title="' + i8ln('View in Maps') + '">' + latitude.toFixed(6) + ', ' + longitude.toFixed(7) + '</a>' +
@@ -1284,7 +1285,7 @@ function setupPokestopMarker(item) {
     }
 
     marker.infoWindow = new google.maps.InfoWindow({
-        content: pokestopLabel(item['lure_expiration'], item['latitude'], item['longitude'], item['pokestop_name'], item['lure_user'], item['pokestop_id'], item['quest_id'], item['reward']),
+        content: pokestopLabel(item['lure_expiration'], item['latitude'], item['longitude'], item['pokestop_name'], item['lure_user'], item['pokestop_id'], item['quest_id'], item['reward'], item['users']),
         disableAutoPan: true
     })
 
@@ -2096,7 +2097,7 @@ function manualRaidData(event) { // eslint-disable-line no-unused-vars
     var monTime = form.find('[name="mon_time"]').val()
     var eggTime = form.find('[name="egg_time"]').val()
     if (pokemonId && pokemonId !== '' && gymId && gymId !== '' && eggTime && eggTime !== '' && monTime && monTime !== '') {
-        if (confirm('Ich bestätige, dass dies dies eine gültige Meldung ist.')) {
+        if (confirm('Ich bestätige, dass dies eine gültige Meldung ist.')) {
             return $.ajax({
                 url: 'submit',
                 type: 'POST',
