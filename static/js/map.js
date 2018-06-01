@@ -99,7 +99,6 @@ var token
 var cries
 
 var pokeList = []
-var raidBoss = {}
 var questList = []
 var gymId
 
@@ -367,13 +366,9 @@ function initMap() { // eslint-disable-line no-unused-vars
                 },
                 open: function (event, ui) {
                     $('.submit-widget-popup #submit-tabs').tabs()
-                    $('.submit-widget-popup .pokemon-list-cont').each(function(index) {
-                        $(this).attr('id','pokemon-list-cont-6' + index);
-                        var options = {
-                            valueNames: ['name', 'types', 'id']
-                        };
-                        var monList = new List('pokemon-list-cont-6' + index, options);
-                    });
+                    $('.submit-widget-popup .pokemon-list-cont').each(function (index) {
+                        $(this).attr('id', 'pokemon-list-cont-6' + index)
+                    })
                 }
             })
         }
@@ -1756,7 +1751,7 @@ function searchAjax(field) { // eslint-disable-line no-unused-vars
                     if (sr.hasClass('nest-results')) {
                         html += '<span class="distance">&nbsp;-&nbsp;' + element.distance + defaultUnit + '</span>'
                     }
-                    if(sr.hasClass('reward-results')){
+                    if (sr.hasClass('reward-results')) {
                         html += '<span>&nbsp;-&nbsp;</span> <span class="reward" style="font-weight:bold">' + element.reward + '</span>'
                     }
                     html += '</div></div>'
@@ -2141,13 +2136,9 @@ function openNestModal(event) { // eslint-disable-line no-unused-vars
             'ui-dialog': 'ui-dialog nest-widget-popup'
         },
         open: function (event, ui) {
-            $('.nest-widget-popup .pokemon-list-cont').each(function(index) {
-                $(this).attr('id','pokemon-list-cont-7' + index);
-                var options = {
-                    valueNames: ['name', 'types', 'id']
-                };
-                var monList = new List('pokemon-list-cont-7' + index, options);
-            });
+            $('.nest-widget-popup .pokemon-list-cont').each(function (index) {
+                $(this).attr('id', 'pokemon-list-cont-7' + index)
+            })
         }
     })
 }
@@ -2396,7 +2387,7 @@ function processPokestops(i, item) {
         return false
     }
 
-    if (Store.get('showLuredPokestopsOnly') == 1 && !item['lure_expiration']) {
+    if (Store.get('showLuredPokestopsOnly') === 1 && !item['lure_expiration']) {
         return true
     }
 
@@ -2445,7 +2436,7 @@ function updatePokestops() {
     })
 
     // remove unlured stops if show lured only is selected
-    if (Store.get('showLuredPokestopsOnly') == 1) {
+    if (Store.get('showLuredPokestopsOnly') === 1) {
         $.each(mapData.pokestops, function (key, value) {
             if (!value['lure_expiration']) {
                 removeStops.push(key)
@@ -2461,7 +2452,7 @@ function updatePokestops() {
             }
         })
     }
-    if (Store.get('showLuredPokestopsOnly') == 2) {
+    if (Store.get('showLuredPokestopsOnly') === 2) {
         $.each(mapData.pokestops, function (key, value) {
             if (!value['quest_id']) {
                 removeStops.push(key)
@@ -3860,9 +3851,7 @@ $(function () {
     $switchTinyRat = $('#tiny-rat-switch')
     $switchBigKarp = $('#big-karp-switch')
 
-
     $.getJSON('static/dist/data/pokemon.min.json').done(function (data) {
-
         $.each(data, function (key, value) {
             if (key > numberOfPokemon) {
                 return false
@@ -3872,8 +3861,8 @@ $(function () {
                 id: key,
                 text: i8ln(value['name']) + ' - #' + key,
                 name: i8ln(value['name']),
-                level: value['level'] != undefined ? value['level'] : 1,
-                cp: value['cp'] != undefined ? value['cp'] : 1
+                level: value['level'] !== undefined ? value['level'] : 1,
+                cp: value['cp'] !== undefined ? value['cp'] : 1
             })
             value['name'] = i8ln(value['name'])
             value['rarity'] = i8ln(value['rarity'])
