@@ -717,6 +717,7 @@ function gymLabel(item) {
         var raidEndStr = getTimeStr(item['raid_end'])
         raidStr += '<div>' + i8ln('Start') + ': <b>' + raidStartStr + '</b> <span class="label-countdown" disappears-at="' + item['raid_start'] + '" start>(00m00s)</span></div>'
         raidStr += '<div>' + i8ln('End') + ': <b>' + raidEndStr + '</b> <span class="label-countdown" disappears-at="' + item['raid_end'] + '" end>(00m00s)</span></div>'
+        raidStr += '<div>Gemeldet von ' + item['raid_users'] + '</b></div>'
 
         if (raidStarted) {
             raidIcon = '<i class="pokemon-sprite-large n' + item.raid_pokemon_id + '"></i>'
@@ -825,7 +826,7 @@ function gymLabel(item) {
     return str
 }
 
-function pokestopLabel(expireTime, latitude, longitude, stopName, lureUser, id, quest, reward) {
+function pokestopLabel(expireTime, latitude, longitude, stopName, lureUser, id, quest, reward, users) {
     var str
     if (stopName === undefined) {
         stopName = 'Pokéstop'
@@ -867,6 +868,7 @@ function pokestopLabel(expireTime, latitude, longitude, stopName, lureUser, id, 
                     i8ln(reward) +
                     '</div>'
             }
+            str += '<div>Gemeldet von ' + users + '</div>'
         }
         str += '<div>' +
             i8ln('Location:') + ' ' + '<a href="javascript:void(0)" onclick="javascript:openMapDirections(' + latitude + ',' + longitude + ')" title="' + i8ln('View in Maps') + '">' + latitude.toFixed(6) + ', ' + longitude.toFixed(7) + '</a>' +
@@ -1285,7 +1287,7 @@ function setupPokestopMarker(item) {
     }
 
     marker.infoWindow = new google.maps.InfoWindow({
-        content: pokestopLabel(item['lure_expiration'], item['latitude'], item['longitude'], item['pokestop_name'], item['lure_user'], item['pokestop_id'], item['quest_id'], item['reward']),
+        content: pokestopLabel(item['lure_expiration'], item['latitude'], item['longitude'], item['pokestop_name'], item['lure_user'], item['pokestop_id'], item['quest_id'], item['reward'], item['users']),
         disableAutoPan: true
     })
 
@@ -3212,6 +3214,7 @@ function showGymDetails(id) { // eslint-disable-line no-unused-vars
             var raidEndStr = getTimeStr(result['raid_end'])
             raidStr += '<div>' + i8ln('Start') + ': <b>' + raidStartStr + '</b> <span class="label-countdown" disappears-at="' + result['raid_start'] + '" start>(00m00s)</span></div>'
             raidStr += '<div>' + i8ln('End') + ': <b>' + raidEndStr + '</b> <span class="label-countdown" disappears-at="' + result['raid_end'] + '" end>(00m00s)</span></div>'
+            raidStr += '<div>Gemeldet von <b>' + result.raid_users + '</b></div>'
 
             if (raidStarted) {
                 raidIcon = '<i class="pokemon-sprite-large n' + result.raid_pokemon_id + '"></i>'

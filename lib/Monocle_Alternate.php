@@ -185,7 +185,7 @@ class Monocle_Alternate extends Monocle
         lat AS latitude,
         lon AS longitude";
         if (!$noManualQuests) {
-            $query .= ",quest_id,reward";
+            $query .= ",quest_id,reward,users";
         }
         $query .= " FROM pokestops
         WHERE :conditions";
@@ -289,7 +289,8 @@ class Monocle_Alternate extends Monocle
         r.time_end AS raid_end,
         r.cp AS raid_pokemon_cp,
         r.move_1 AS raid_pokemon_move_1,
-        r.move_2 AS raid_pokemon_move_2
+        r.move_2 AS raid_pokemon_move_2,
+        r.users AS raid_users
         FROM forts f
         LEFT JOIN fort_sightings fs ON fs.fort_id = f.id
         LEFT JOIN raids r ON r.fort_id = f.id

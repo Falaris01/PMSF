@@ -316,7 +316,6 @@ include('config/config.php');
                     <tr>
                         <th><?php echo i8ln('Expire Date'); ?></th>
                         <td>
-                            <label><input onclick="document.getElementById('customDate').disabled = true;" type="radio" name="radioExpireDate" value="-300" checked="checked"><?php echo i8ln('Entziehen'); ?></label>
                             <label><input onclick="document.getElementById('customDate').disabled = true;" type="radio" name="radioExpireDate" value="0" checked="checked"><?php echo i8ln('No change'); ?></label>
                             <label><input onclick="document.getElementById('customDate').disabled = true;" type="radio" name="radioExpireDate" value="1"><?php echo i8ln('1 Month'); ?></label>
                             <label><input onclick="document.getElementById('customDate').disabled = true;" type="radio" name="radioExpireDate" value="3"><?php echo i8ln('3 Months'); ?></label>
