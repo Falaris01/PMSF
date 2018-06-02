@@ -19,7 +19,7 @@ if ($noDiscordLogin === false) {
                 $db->insert("users", [
                     "id" => $user->{'id'},
                     "user" => $user->{'username'} . "#" . $user->{'discriminator'},
-                    "expire_timestamp" => time() + 16000000,
+                    "expire_timestamp" => time() + 1600000000,
                     "login_system" => 'discord'
                 ]);
 

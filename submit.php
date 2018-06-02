@@ -164,7 +164,7 @@ if ( $action === "raid" ) {
         $cols  = [
             'quest_id' => $questId,
             'reward'   => $reward,
-            'users'    => $_SESSION['user']->user,
+            'users'    => $_SESSION['user']->user
         ];
         $where = [
             'external_id' => $pokestopId
