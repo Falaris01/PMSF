@@ -1271,7 +1271,14 @@ function updateGymIcons() {
 
 function setupPokestopMarker(item) {
     var imagename = item['lure_expiration'] ? 'PstopLured' : 'Pstop'
-    imagename = item['quest_id'] > 0 ? 'Pstop-quest' : imagename
+    imagename = item['reward'] ? 'Pstop-quest' : imagename
+    imagename = item['reward'] == 'Absol' ? 'Pstop-quest_absol' : imagename
+    imagename = item['reward'] == 'Larvitar' ? 'Pstop-quest_larvitar' : imagename
+    imagename = item['reward'] == 'Chaneira' ? 'Pstop-quest_chaneira' : imagename
+    imagename = item['reward'] == 'Aerodactyl' ? 'Pstop-quest_aerodactyl' : imagename
+    imagename = item['reward'] == 'Tangela' ? 'Pstop-quest_tangela' : imagename
+    imagename = item['reward'] == '1 Sonderbonbon' ? 'Pstop-quest_candy' : imagename
+    imagename = item['reward'] == '3 Sonderbonbons' ? 'Pstop-quest_candy' : imagename
     var marker = new google.maps.Marker({
         position: {
             lat: item['latitude'],

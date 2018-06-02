@@ -18,5 +18,17 @@
   "5": {
     "cat": "Würfe",
     "name": "Lande einen fabelhaften Wurf"
-  }
+  },
+  "6": {
+    "cat": "Würfe",
+    "name": "3 großartige Curvebälle in Folge"
+  },
+  "7": {
+    "cat": "Würfe",
+    "name": "3 großartige Curvebälle"
+  },
+  "7": {
+    "cat": "Fangen",
+    "name": "Fange ein Drachen-Pokemon"
+  }  
 }
