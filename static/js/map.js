@@ -1279,6 +1279,8 @@ function setupPokestopMarker(item) {
     imagename = item['reward'] == 'Tangela' ? 'Pstop-quest_tangela' : imagename
     imagename = item['reward'] == '1 Sonderbonbon' ? 'Pstop-quest_candy' : imagename
     imagename = item['reward'] == '3 Sonderbonbons' ? 'Pstop-quest_candy' : imagename
+    imagename = item['reward'] == 'Karpador' ? 'Pstop-quest_karpador' : imagename
+    imagename = item['reward'] == 'Dratini' ? 'Pstop-quest_dratini' : imagename
     var marker = new google.maps.Marker({
         position: {
             lat: item['latitude'],
