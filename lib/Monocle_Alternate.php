@@ -183,10 +183,10 @@ class Monocle_Alternate extends Monocle
         deployer AS lure_user,
         name AS pokestop_name,
         lat AS latitude,
-        lon AS longitude";
-        if (!$noManualQuests) {
-            $query .= ",quest_id,reward,users";
-        }
+        lon AS longitude,
+        quest_id,
+        reward,
+        users";
         $query .= " FROM pokestops
         WHERE :conditions";
 

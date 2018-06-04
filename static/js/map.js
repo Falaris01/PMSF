@@ -857,7 +857,7 @@ function pokestopLabel(expireTime, latitude, longitude, stopName, lureUser, id, 
             '<div>' +
             '<b>' + stopName + '</b>' +
         '</div>'
-        if (!noManualQuests && quest !== null) {
+        if (quest !== null) {
             str += '<div>' +
                 i8ln('Quest:') + ' ' +
                 i8ln(questList[quest]) +
