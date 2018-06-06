@@ -1,29 +1,25 @@
 {
   "1": {
-    "cat": "Abenteuerwoche",
-    "name": "Entwickle Kabuto oder Amonitas"
-  },
-  "2": {
     "cat": "Eier ausbrüten",
     "name": "Brüte 5 Eier aus"
   },
-  "3": {
+  "2": {
     "cat": "Fangen",
     "name": "Fange 3 Myrapla/Knofensa"
   },
-  "4": {
+  "3": {
     "cat": "Würfe",
-    "name": "Lande 3 fabelhafte Curvebälle in Folge"
+    "name": "Lande 3 fabelhafte Würfe in Folge"
   },
-  "5": {
+  "4": {
     "cat": "Würfe",
     "name": "Lande einen fabelhaften Curveball-Wurf"
   },
-  "6": {
+  "5": {
     "cat": "Würfe",
     "name": "3 großartige Curvebälle in Folge"
   },
-  "7": {
+  "6": {
     "cat": "Würfe",
     "name": "3 großartige Curvebälle"
   },
@@ -32,10 +28,6 @@
     "name": "Fange ein Drachen-Pokemon"
 },
   "8": {
-    "cat": "Abenteuerwoche",
-    "name": "Brüte 2 Pokemon aus (Sonderbonbons)"
-  },
-  "9": {
     "cat": "Fangen",
     "name": "Fange 10 Pokemon (Karpador)"
   } 
