@@ -13,10 +13,6 @@ $d           = array();
 $d['status'] = "ok";
 $d["timestamp"] = $now->getTimestamp();
 if ( $action === "raid" ) {
-    if ( $noManualRaids === true || $noRaids === true ) {
-        http_response_code( 401 );
-        die();
-    }
     $raidBosses = json_decode( file_get_contents( "static/dist/data/pokemon.min.json" ), true );
     $pokemonId  = ! empty( $_POST['pokemonId'] ) ? $_POST['pokemonId'] : 0;
     $gymId      = ! empty( $_POST['gymId'] ) ? $_POST['gymId'] : 0;
@@ -117,10 +113,6 @@ if ( $action === "raid" ) {
         }
     }
 } elseif ( $action === "pokemon" ) {
-    if ( $noManualPokemon === true || $noPokemon === true ) {
-        http_response_code( 401 );
-        die();
-    }
     $id = ! empty( $_POST['id'] ) ? $_POST['id'] : 0;
     if ( ! empty( $lat ) && ! empty( $lng ) && ! empty( $id ) ) {
         $spawnID = randomNum();
@@ -137,10 +129,6 @@ if ( $action === "raid" ) {
         $db->insert( "sightings", $cols );
     }
 } elseif ( $action === "gym" ) {
-    if ( $noManualGyms === true || $noGyms === true ) {
-        http_response_code( 401 );
-        die();
-    }
     $gymName = ! empty( $_POST['gymName'] ) ? $_POST['gymName'] : '';
     if ( ! empty( $lat ) && ! empty( $lng ) && ! empty( $gymName ) ) {
         $gymId = randomGymId();
@@ -153,10 +141,6 @@ if ( $action === "raid" ) {
         $db->insert( "forts", $cols );
     }
 } elseif ( $action === "quest" ) {
-    if ( $noManualQuests === true || $noPokestops === true ) {
-        http_response_code( 401 );
-        die();
-    }
     $pokestopId = ! empty( $_POST['pokestopId'] ) ? $_POST['pokestopId'] : '';
     $questId    = $_POST['questId'] == "NULL" ? 0 : $_POST['questId'];
     $reward     = $_POST['reward'] == "NULL" ? 0 : $_POST['reward'];
@@ -172,10 +156,6 @@ if ( $action === "raid" ) {
         $db->update( "pokestops", $cols, $where );
     }
 } elseif ( $action === "nest" ) {
-    if ( $noManualNests === true || $noNests === true ) {
-        http_response_code( 401 );
-        die();
-    }
     $pokemonId = ! empty( $_POST['pokemonId'] ) ? $_POST['pokemonId'] : '';
     $nestId    = ! empty( $_POST['nestId'] ) ? $_POST['nestId'] : '';
     if ( ! empty( $pokemonId ) && ! empty( $nestId ) ) {
@@ -188,10 +168,6 @@ if ( $action === "raid" ) {
         $db->update( "nests", $cols, $where );
     }
 } elseif ( $action === "pokestop" ) {
-    if ( $noManualPokestops === true || $noPokestops === true ) {
-        http_response_code( 401 );
-        die();
-    }
     $pokestopName = ! empty( $_POST['pokestop'] ) ? $_POST['pokestop'] : '';
     if ( ! empty( $lat ) && ! empty( $lng ) && ! empty( $pokestopName ) ) {
         $pokestopId = randomGymId();
@@ -205,10 +181,6 @@ if ( $action === "raid" ) {
         $db->insert( "pokestops", $cols );
     }
 } elseif ( $action === "new-nest" ) {
-    if ( $noManualNests === true || $noNests === true ) {
-        http_response_code( 401 );
-        die();
-    }
     $id = ! empty( $_POST['id'] ) ? $_POST['id'] : 0;
     if ( ! empty( $lat ) && ! empty( $lng ) && ! empty( $id ) ) {
         $cols = [
@@ -221,10 +193,6 @@ if ( $action === "raid" ) {
         $db->insert( "nests", $cols );
     }
 } elseif ( $action === "delete-gym" ) {
-    if ( $noDeleteGyms === true || $noGyms === true ) {
-        http_response_code( 401 );
-        die();
-    }
     $gymId = ! empty( $_POST['id'] ) ? $_POST['id'] : '';
     if ( ! empty( $gymId ) ) {
         $fortid = $db->get( "forts", [ 'id' ], [ 'external_id' => $gymId ] );
@@ -247,10 +215,6 @@ if ( $action === "raid" ) {
         }
     }
 } elseif ( $action === "delete-pokestop" ) {
-    if ( $noDeletePokestops === true || $noDeletePokestops === true ) {
-        http_response_code( 401 );
-        die();
-    }
     $pokestopId = ! empty( $_POST['id'] ) ? $_POST['id'] : '';
     if ( ! empty( $pokestopId ) ) {
         $db->delete( 'pokestops', [
@@ -260,10 +224,6 @@ if ( $action === "raid" ) {
         ] );
     }
 } elseif ( $action === "delete-nest" ) {
-    if ( $noManualNests === true || $noNests === true ) {
-        http_response_code( 401 );
-        die();
-    }
     $nestId = ! empty( $_POST['nestId'] ) ? $_POST['nestId'] : '';
     if ( ! empty( $nestId ) ) {
         $db->delete( 'nests', [
