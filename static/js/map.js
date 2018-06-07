@@ -1282,6 +1282,8 @@ function setupPokestopMarker(item) {
     imagename = item['reward'] == 'Karpador' ? 'Pstop-quest_karpador' : imagename
     imagename = item['reward'] == 'Dratini' ? 'Pstop-quest_dratini' : imagename
     imagename = item['reward'] == 'Elektek' ? 'Pstop-quest_elektek' : imagename
+    imagename = item['reward'] == 'Muschas' ? 'Pstop-quest_muschas' : imagename
+    imagename = item['reward'] == 'Wailmer' ? 'Pstop-quest_wailmer' : imagename
     var marker = new google.maps.Marker({
         position: {
             lat: item['latitude'],
@@ -2081,6 +2083,42 @@ function manualQuestData(event) { // eslint-disable-line no-unused-vars
                 cache: false,
                 data: {
                     'action': 'quest',
+                    'questId': questId,
+                    'reward': reward,
+                    'pokestopId': pokestopId
+                },
+                error: function error() {
+                    // Display error toast
+                    toastr['error'](i8ln('Please check connectivity or reduce marker settings.'), i8ln('Error Submitting Quest'))
+                    toastr.options = toastrOptions
+                },
+                complete: function complete() {
+                    lastpokestops = false
+                    updateMap()
+                    jQuery('label[for="pokestops-switch"]').click()
+                    jQuery('label[for="pokestops-switch"]').click()
+                    $('.ui-dialog-content').dialog('close')
+                }
+            })
+        }
+    }
+}
+
+function manualQuestDelete(event) { // eslint-disable-line no-unused-vars
+    var cont = $(event.target).parent().parent()
+    var questId = cont.find('.questList').val()
+    var reward = cont.find('.rewardList').val()
+    var pokestopId = cont.find('.questPokestop').val()
+    if (pokestopId && pokestopId !== '') {
+        if (confirm(i8ln('I confirm this is an accurate sighting of a quest'))) {
+            return $.ajax({
+                url: 'submit',
+                type: 'POST',
+                timeout: 300000,
+                dataType: 'json',
+                cache: false,
+                data: {
+                    'action': 'delete-quest',
                     'questId': questId,
                     'reward': reward,
                     'pokestopId': pokestopId

@@ -32,7 +32,19 @@
     "name": "Fange 10 Pokemon (Karpador)"
   },
   "9": {
-    "cat": "Kämpfen",
-    "name": "Benutze eine super-effektive Ladeattacke 7 Mal"
+    "cat": "Wasser-Event",
+    "name": "Fange 2 Wasser-Pokmon"
+  },
+  "10": {
+    "cat": "Wasser-Event",
+    "name": "Brüte ein Ei aus"
+  },
+  "11": {
+    "cat": "Wasser-Event",
+    "name": "Benutze 3 Beeren"
+  },
+  "12": {
+    "cat": "Wasser-Event",
+    "name": "Gewinne einen Raid"
   } 
 }
