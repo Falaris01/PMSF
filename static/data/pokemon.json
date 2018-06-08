@@ -1116,6 +1116,8 @@
   "90": {
     "name": "Shellder",
     "rarity": "Rare",
+    "level": 1,
+    "cp": 1,
     "types": [
       {
         "type": "Water",
@@ -1650,6 +1652,8 @@
   "134": {
     "name": "Vaporeon",
     "rarity": "Very Rare",
+    "level": 3,
+    "cp": 3,
     "types": [
       {
         "type": "Water",
@@ -1694,6 +1698,8 @@
   "138": {
     "name": "Omanyte",
     "rarity": "Rare",
+    "level": 1,
+    "cp": 1,
     "types": [
       {
         "type": "Rock",
@@ -1724,6 +1730,8 @@
   "140": {
     "name": "Kabuto",
     "rarity": "Rare",
+    "level": 1,
+    "cp": 1,
     "types": [
       {
         "type": "Rock",
@@ -1964,7 +1972,7 @@
   "159": {
     "name": "Croconaw",
     "rarity": "Rare",
-    "level": 1,
+    "level": 2,
     "cp": 5207,
     "types": [
       {
@@ -3204,6 +3212,8 @@
   "259":{
     "name": "Marshtomp",
     "rarity":"",
+    "level": 2,
+    "cp": 2,
     "types": [
       {
         "type": "Water",
@@ -3942,6 +3952,8 @@
   "319":{
     "name": "Sharpedo",
     "rarity":"",
+    "level": 3,
+    "cp": 3,
     "types": [
       {
         "type": "Water",
