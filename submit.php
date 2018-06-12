@@ -1,7 +1,7 @@
 <?php
 $timing['start'] = microtime( true );
 include( 'config/config.php' );
-global $map, $fork, $db, $raidBosses, $webhookUrl, $sendWebhook, $noManualRaids, $noRaids, $noManualPokemon, $noPokemon, $noPokestops, $noManualPokestops, $noGyms, $noManualGyms, $noManualQuests, $noManualNests, $noNests;
+global $map, $fork, $db, $raidBosses, $webhookUrl, $sendWebhook, $sendWebhookQuest, $noManualRaids, $noRaids, $noManualPokemon, $noPokemon, $noPokestops, $noManualPokestops, $noGyms, $noManualGyms, $noManualQuests, $noManualNests, $noNests, $hostUrl;
 $action = ! empty( $_POST['action'] ) ? $_POST['action'] : '';
 $lat    = ! empty( $_POST['lat'] ) ? $_POST['lat'] : '';
 $lng    = ! empty( $_POST['lng'] ) ? $_POST['lng'] : '';
@@ -144,6 +144,7 @@ if ( $action === "raid" ) {
     $pokestopId = ! empty( $_POST['pokestopId'] ) ? $_POST['pokestopId'] : '';
     $questId    = $_POST['questId'] == "NULL" ? 0 : $_POST['questId'];
     $reward     = $_POST['reward'] == "NULL" ? 0 : $_POST['reward'];
+    $pokestops  = $db->get( "pokestops", [ 'id', 'name', 'lat', 'lon' ], [ 'external_id' => $pokestopId ] );
     if ( ! empty( $pokestopId ) && ! empty( $questId ) && ! empty( $reward ) ) {
         $cols  = [
             'quest_id' => $questId,
@@ -154,6 +155,15 @@ if ( $action === "raid" ) {
             'external_id' => $pokestopId
         ];
         $db->update( "pokestops", $cols, $where );
+    }
+    if ( $sendWebhookQuest === true ) {
+        $webhook = [
+            'content' => 'Belohnung: **'.$reward.'** PokeStop: __**'.$pokestops['name'].'**__ gemeldet von: **'.$_SESSION['user']->user.'** ['.$hostUrl.']('.$hostUrl.'?lat='.$pokestops['lat'].'&lon='.$pokestops['lon'].') | [Google Maps](https://www.google.de/maps/@'.$pokestops['lat'].'&lon='.$pokestops['lon'].')',
+            'username' => $reward
+            ];
+        foreach ( $webhookUrl as $url ) {
+            sendToWebhook( $url, $webhook );
+        }
     }
 } elseif ( $action === "nest" ) {
     $pokemonId = ! empty( $_POST['pokemonId'] ) ? $_POST['pokemonId'] : '';
