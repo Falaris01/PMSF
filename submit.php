@@ -158,7 +158,7 @@ if ( $action === "raid" ) {
     }
     if ( $sendWebhookQuest === true ) {
         $webhook = [
-            'content' => 'Belohnung: **'.$reward.'** PokeStop: __**'.$pokestops['name'].'**__ gemeldet von: **'.$_SESSION['user']->user.'** ['.$hostUrl.']('.$hostUrl.'?lat='.$pokestops['lat'].'&lon='.$pokestops['lon'].') | [Google Maps](https://www.google.de/maps/@'.$pokestops['lat'].'&lon='.$pokestops['lon'].')',
+            'content' => 'Belohnung: **'.$reward.'** PokeStop: __**'.$pokestops['name'].'**__ gemeldet von: **'.$_SESSION['user']->user.'** ['.$hostUrl.']('.$hostUrl.'?lat='.$pokestops['lat'].'&lon='.$pokestops['lon'].') | [Google Maps](https://www.google.com/maps?q='.$pokestops['lat'].','.$pokestops['lon'].')',
             'username' => $reward
             ];
         foreach ( $webhookUrl as $url ) {

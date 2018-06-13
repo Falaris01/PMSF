@@ -58,6 +58,8 @@
     "grunt-usemin": "latest",
     "jit-grunt": "^0.10.0",
     "long": "^3.2.0",
+    "node-opus": "^0.3.0",
+    "opusscript": "0.0.6",
     "phplint": "^1.7.4",
     "push.js": "^1.0.4",
     "webhook-discord": "^2.3.0"

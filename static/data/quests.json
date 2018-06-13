@@ -46,5 +46,13 @@
   "12": {
     "cat": "Wasser-Event",
     "name": "Gewinne einen Raid"
+  },
+  "13": {
+    "cat": "Arenen",
+    "name": "Gewinne 3 Arena-Kämpfe"
+  },
+  "14": {
+    "cat": "Raids",
+    "name": "Gewinne einen 3er Raid oder höher"
   } 
 }
