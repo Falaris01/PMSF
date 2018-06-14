@@ -160,12 +160,13 @@ if ( $action === "raid" ) {
     if (strpos($reward, 'Sonderbonbon') === TRUE) {
         $rewardIcon === 'Candy';
     }
-    $avatarIcon = './static/forts/Pstop-quest_'.$rewardIcon.'.png';
+    $avatarIcon = 'https://raw.githubusercontent.com/Falaris01/PMSF/manual_v5/static/forts/Pstop-quest_'.$rewardIcon.'.png';
     if ( $sendWebhookQuest === true ) {
         $webhook = [
             'content' => 'Belohnung: **'.$reward.'** PokeStop: __**'.$pokestops['name'].'**__ gemeldet von: **'.$_SESSION['user']->user.'** ['.$hostUrl.']('.$hostUrl.'?lat='.$pokestops['lat'].'&lon='.$pokestops['lon'].') | [Google Maps](https://www.google.com/maps?q='.$pokestops['lat'].','.$pokestops['lon'].')',
+            'avatar_url' => $avatarIcon,
             'username' => $reward,
-            'avatar' => $avatarIcon
+            'name' => $reward,
             ];
         foreach ( $webhookUrl as $url ) {
             sendToWebhook( $url, $webhook );
