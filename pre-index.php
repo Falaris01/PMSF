@@ -21,6 +21,14 @@ if ( $blockIframe ) {
 <html lang="<?= $locale ?>">
 <head>
     <meta charset="utf-8">
+    <?php 
+        $eu_cookie_set = $_COOKIE["fuckeu"];
+        if ($eu_cookie_set != "set") {
+    ?>
+    <div id="eu_cookiebox">
+        Cookies erleichtern die Bereitstellung unserer Dienste. Mit der Nutzung unserer Dienste erklärst du dich damit einverstanden, dass wir Cookies verwenden.<button onclick='checkok()'>OK</button>
+    </div>
+    <?php  }; ?>
     <title><?= $title ?></title>
     <meta name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
@@ -137,6 +145,18 @@ if ( $blockIframe ) {
     ?>
     <script>
         var token = '<?php echo ( ! empty( $_SESSION['token'] ) ) ? $_SESSION['token'] : ""; ?>';
+    </script>
+
+    <script language="javascript">
+    function checkok() {
+        var jetzt = new Date();
+        var lebensdauer = jetzt.getTime();
+        var verfall = lebensdauer + 2592000000;
+        jetzt.setTime(verfall);
+        var enddate = jetzt.toUTCString();
+        document.cookie = "fuckeu = set;expires=" + enddate;
+        document.getElementById("eu_cookiebox").style.display = "none";
+    }
     </script>
 
     <link rel="stylesheet" href="static/dist/css/app.min.css">
@@ -318,10 +338,22 @@ if ( $blockIframe ) {
         .gm-style div div div div div div div div a {
             color: #f1f1f1;
             font-weight: bold;
+        } */
+
+        #eu_cookiebox {
+            display: block;
+            z-index: 100;
+            position: fixed;
+            bottom: 0px;
+            min-height: 30px;
+            padding: 5px;
+            margin: 0;
+            width: 100%;
+            color: #555;
+            border: 1px solid black;
+            border-bottom: none;
+            background: #fff;
         }
-
-        /* Areas */
-
     </style>
 </head>
 <body id="top">

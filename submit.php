@@ -156,10 +156,16 @@ if ( $action === "raid" ) {
         ];
         $db->update( "pokestops", $cols, $where );
     }
+    $rewardIcon = $reward;
+    if (strpos($reward, 'Sonderbonbon') === TRUE) {
+        $rewardIcon === 'Candy';
+    }
+    $avatarIcon = './static/forts/Pstop-quest_'.$rewardIcon.'.png';
     if ( $sendWebhookQuest === true ) {
         $webhook = [
             'content' => 'Belohnung: **'.$reward.'** PokeStop: __**'.$pokestops['name'].'**__ gemeldet von: **'.$_SESSION['user']->user.'** ['.$hostUrl.']('.$hostUrl.'?lat='.$pokestops['lat'].'&lon='.$pokestops['lon'].') | [Google Maps](https://www.google.com/maps?q='.$pokestops['lat'].','.$pokestops['lon'].')',
-            'username' => $reward
+            'username' => $reward,
+            'avatar' => $avatarIcon
             ];
         foreach ( $webhookUrl as $url ) {
             sendToWebhook( $url, $webhook );

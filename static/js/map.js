@@ -1272,18 +1272,18 @@ function updateGymIcons() {
 function setupPokestopMarker(item) {
     var imagename = item['lure_expiration'] ? 'PstopLured' : 'Pstop'
     imagename = item['reward'] ? 'Pstop-quest' : imagename
-    imagename = item['reward'] == 'Absol' ? 'Pstop-quest_absol' : imagename
-    imagename = item['reward'] == 'Larvitar' ? 'Pstop-quest_larvitar' : imagename
-    imagename = item['reward'] == 'Chaneira' ? 'Pstop-quest_chaneira' : imagename
-    imagename = item['reward'] == 'Aerodactyl' ? 'Pstop-quest_aerodactyl' : imagename
-    imagename = item['reward'] == 'Tangela' ? 'Pstop-quest_tangela' : imagename
-    imagename = item['reward'] == '1 Sonderbonbon' ? 'Pstop-quest_candy' : imagename
-    imagename = item['reward'] == '3 Sonderbonbons' ? 'Pstop-quest_candy' : imagename
-    imagename = item['reward'] == 'Karpador' ? 'Pstop-quest_karpador' : imagename
-    imagename = item['reward'] == 'Dratini' ? 'Pstop-quest_dratini' : imagename
-    imagename = item['reward'] == 'Elektek' ? 'Pstop-quest_elektek' : imagename
-    imagename = item['reward'] == 'Muschas' ? 'Pstop-quest_muschas' : imagename
-    imagename = item['reward'] == 'Wailmer' ? 'Pstop-quest_wailmer' : imagename
+    imagename = item['reward'] === 'Absol' ? 'Pstop-quest_Absol' : imagename
+    imagename = item['reward'] === 'Larvitar' ? 'Pstop-quest_Larvitar' : imagename
+    imagename = item['reward'] === 'Chaneira' ? 'Pstop-quest_Chaneira' : imagename
+    imagename = item['reward'] === 'Aerodactyl' ? 'Pstop-quest_Aerodactyl' : imagename
+    imagename = item['reward'] === 'Tangela' ? 'Pstop-quest_Tangela' : imagename
+    imagename = item['reward'] === '1 Sonderbonbon' ? 'Pstop-quest_Candy' : imagename
+    imagename = item['reward'] === '3 Sonderbonbons' ? 'Pstop-quest_Candy' : imagename
+    imagename = item['reward'] === 'Karpador' ? 'Pstop-quest_Karpador' : imagename
+    imagename = item['reward'] === 'Dratini' ? 'Pstop-quest_Dratini' : imagename
+    imagename = item['reward'] === 'Elektek' ? 'Pstop-quest_Elektek' : imagename
+    imagename = item['reward'] === 'Muschas' ? 'Pstop-quest_Muschas' : imagename
+    imagename = item['reward'] === 'Wailmer' ? 'Pstop-quest_Wailmer' : imagename
     var marker = new google.maps.Marker({
         position: {
             lat: item['latitude'],
