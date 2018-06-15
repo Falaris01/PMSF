@@ -1,7 +1,7 @@
 <?php
 $timing['start'] = microtime( true );
 include( 'config/config.php' );
-global $map, $fork, $db, $raidBosses, $webhookUrl, $sendWebhook, $sendWebhookQuest, $noManualRaids, $noRaids, $noManualPokemon, $noPokemon, $noPokestops, $noManualPokestops, $noGyms, $noManualGyms, $noManualQuests, $noManualNests, $noNests, $hostUrl;
+global $map, $fork, $db, $raidBosses, $webhookUrl, $sendWebhook, $sendWebhookQuest, $noManualRaids, $noRaids, $noManualPokemon, $noPokemon, $noPokestops, $noManualPokestops, $noGyms, $noManualGyms, $noManualQuests, $noManualNests, $noNests, $hostUrl, $absolUrl, $chaneiraUrl, $tangelaUrl, $questUrl;
 $action = ! empty( $_POST['action'] ) ? $_POST['action'] : '';
 $lat    = ! empty( $_POST['lat'] ) ? $_POST['lat'] : '';
 $lng    = ! empty( $_POST['lng'] ) ? $_POST['lng'] : '';
@@ -156,19 +156,26 @@ if ( $action === "raid" ) {
         ];
         $db->update( "pokestops", $cols, $where );
     }
-    $rewardIcon = $reward;
-    if (strpos($reward, 'Sonderbonbon') === TRUE) {
-        $rewardIcon === 'Candy';
-    }
-    $avatarIcon = 'https://raw.githubusercontent.com/Falaris01/PMSF/manual_v5/static/forts/discord_icons/QuestIcon_'.$rewardIcon.'.png';
     if ( $sendWebhookQuest === true ) {
+        $rewardIcon = $reward;
+        if ($reward == '1 Sonderbonbon' or $reward == '3 Sonderbonbon') {
+            $rewardIcon = 'Candy';
+        }
+        $avatarIcon = 'https://raw.githubusercontent.com/Falaris01/PMSF/manual_v5/static/forts/discord_icons/QuestIcon_'.$rewardIcon.'.png';
         $webhook = [
             'content' => 'Belohnung: **'.$reward.'** PokeStop: __**'.$pokestops['name'].'**__ gemeldet von: **'.$_SESSION['user']->user.'** ['.$hostUrl.']('.$hostUrl.'?lat='.$pokestops['lat'].'&lon='.$pokestops['lon'].') | [Google Maps](https://www.google.com/maps?q='.$pokestops['lat'].','.$pokestops['lon'].')',
             'avatar_url' => $avatarIcon,
             'username' => $reward,
-            'name' => $reward,
+            'name' => $reward
             ];
-        foreach ( $webhookUrl as $url ) {
+        if ($reward == 'Absol') {
+        	$questUrl = $absolUrl;
+        } elseif ($reward == 'Chaneira') {
+            $questUrl = $chaneiraUrl;
+        } elseif ($reward == 'Tangela') {
+            $questUrl = $tangelaUrl;
+        }
+        foreach ( $questUrl as $url ) {
             sendToWebhook( $url, $webhook );
         }
     }
