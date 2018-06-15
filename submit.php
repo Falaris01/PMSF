@@ -168,11 +168,11 @@ if ( $action === "raid" ) {
             'username' => $reward,
             'name' => $reward
             ];
-        if ($reward == 'Absol') {
+        if ($reward == 'Absol' && $absolUrl) {
         	$questUrl = $absolUrl;
-        } elseif ($reward == 'Chaneira') {
+        } elseif ($reward == 'Chaneira' && $chaneiraUrl) {
             $questUrl = $chaneiraUrl;
-        } elseif ($reward == 'Tangela') {
+        } elseif ($reward == 'Tangela' && $tangelaUrl) {
             $questUrl = $tangelaUrl;
         }
         foreach ( $questUrl as $url ) {
