@@ -54,5 +54,13 @@
   "14": {
     "cat": "Raids",
     "name": "Gewinne einen 3er Raid oder höher"
+  },
+  "15": {
+    "cat": "Wasser-Event",
+    "name": "Entwickle 2 Muschas"
+  },
+  "16": {
+    "cat": "Wasser-Event",
+    "name": "Fange 5 Wailmer oder Karpador"
   } 
 }

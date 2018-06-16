@@ -1,35 +1,41 @@
-{
+ {
   "1": {
-    "name": "Chaneira"
-  },
-  "2": {
-    "name": "Tangela"
-  },
-  "3": {
-    "name": "Larvitar"
-  },
-  "4": {
-    "name": "Absol"
-  },
-  "5": {
     "name": "1 Sonderbonbon"
-  },
-  "6": {
+    },
+  "2": {
     "name": "3 Sonderbonbons"
-  },
-  "7": {
+    },
+  "3": {
+    "name": "Absol"
+    },
+  "4": {
+    "name": "Chaneira"
+    },
+  "5": {
     "name": "Dratini"
-  },
-  "8": {
+    },
+  "6": {
+    "name": "Elektek"
+    },
+  "7": {
     "name": "Karpador"
-  },
+    },
+  "8": {
+    "name": "Lapras"
+    },
   "9": {
-    "name": "Wailmer"
-  },
+    "name": "Larvitar"
+    },
   "10": {
     "name": "Muschas"
-  },
+    },
   "11": {
-    "name": "Elektek"
-  }
+    "name": "Tangela"
+    },
+  "12": {
+    "name": "Wailmer"
+    },
+  "12": {
+    "name": "Liebiskus"
+    }
 }
