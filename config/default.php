@@ -158,7 +158,7 @@ if ($noNativeLogin === true && $noDiscordLogin == true ||  (($noNativeLogin === 
     /* Style Settings */
     $iconNotifySizeModifier = 0;                                    // 0, 15, 30, 45
 }
-
+$noDeleteQuests = true;
 /* Marker Settings */
 
 $pathToImages = '/static/icons-safe/';                              // Path to images. Images must not contain 0s
