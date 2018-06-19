@@ -1,7 +1,7 @@
 <?php
 $timing['start'] = microtime( true );
 include( 'config/config.php' );
-global $map, $fork, $db, $raidBosses, $webhookUrl, $sendWebhook, $sendWebhookQuest, $noManualRaids, $noRaids, $noManualPokemon, $noPokemon, $noPokestops, $noManualPokestops, $noGyms, $noManualGyms, $noManualQuests, $noManualNests, $noNests, $hostUrl, $absolUrl, $chaneiraUrl, $tangelaUrl, $questUrl;
+global $map, $fork, $db, $raidBosses, $webhookUrl, $sendWebhook, $sendWebhookQuest, $noManualRaids, $noRaids, $noManualPokemon, $noPokemon, $noPokestops, $noManualPokestops, $noGyms, $noManualGyms, $noManualQuests, $noManualNests, $noNests, $hostUrl, $absolUrl, $chaneiraUrl, $tangelaUrl, $questUrl, $laprasUrl;
 $action = ! empty( $_POST['action'] ) ? $_POST['action'] : '';
 $lat    = ! empty( $_POST['lat'] ) ? $_POST['lat'] : '';
 $lng    = ! empty( $_POST['lng'] ) ? $_POST['lng'] : '';
@@ -174,11 +174,24 @@ if ( $action === "raid" ) {
             $questUrl = $chaneiraUrl;
         } elseif ($reward == 'Tangela' && $tangelaUrl) {
             $questUrl = $tangelaUrl;
+        } elseif ($reward == 'Lapras' && $laprasUrl) {
+            $questUrl = $laprasUrl;
         }
         foreach ( $questUrl as $url ) {
             sendToWebhook( $url, $webhook );
         }
     }
+} elseif ( $action === "delete-quest" ) {
+    $id = ! empty( $_POST['id'] ) ? $_POST['id'] : '';
+    $cols  = [
+        'quest_id' => null,
+        'reward'   => null,
+        'users'    => null
+    ];
+    $where = [
+        'external_id' => $id
+    ];
+    $db->update( "pokestops", $cols, $where );
 } elseif ( $action === "nest" ) {
     $pokemonId = ! empty( $_POST['pokemonId'] ) ? $_POST['pokemonId'] : '';
     $nestId    = ! empty( $_POST['nestId'] ) ? $_POST['nestId'] : '';

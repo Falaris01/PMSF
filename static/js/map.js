@@ -34,6 +34,7 @@ var $switchBigKarp
 var $selectDirectionProvider
 var $switchExEligible
 var noManualQuests
+var noDeleteQuests
 var noDeleteNests
 var noManualNests
 
@@ -869,6 +870,9 @@ function pokestopLabel(expireTime, latitude, longitude, stopName, lureUser, id, 
                     '</div>'
             }
             str += '<div>Gemeldet von ' + users + '</div>'
+            if (!noDeleteQuests) {
+                str += '<div><i class="fa fa-ban delete-quest" onclick="deleteQuest(event);" data-id="' + id + '"></i></div>'
+            }
         }
         str += '<div>' +
             i8ln('Location:') + ' ' + '<a href="javascript:void(0)" onclick="javascript:openMapDirections(' + latitude + ',' + longitude + ')" title="' + i8ln('View in Maps') + '">' + latitude.toFixed(6) + ', ' + longitude.toFixed(7) + '</a>' +
@@ -2106,13 +2110,11 @@ function manualQuestData(event) { // eslint-disable-line no-unused-vars
     }
 }
 
-function manualQuestDelete(event) { // eslint-disable-line no-unused-vars
-    var cont = $(event.target).parent().parent()
-    var questId = cont.find('.questList').val()
-    var reward = cont.find('.rewardList').val()
-    var pokestopId = cont.find('.questPokestop').val()
+function deleteQuest(event) { // eslint-disable-line no-unused-vars
+    var button = $(event.target)
+    var pokestopId = button.data('id')
     if (pokestopId && pokestopId !== '') {
-        if (confirm(i8ln('I confirm this is an accurate sighting of a quest'))) {
+        if (confirm(i8ln('I confirm that I want to delete this Quest.'))) {
             return $.ajax({
                 url: 'submit',
                 type: 'POST',
@@ -2121,21 +2123,16 @@ function manualQuestDelete(event) { // eslint-disable-line no-unused-vars
                 cache: false,
                 data: {
                     'action': 'delete-quest',
-                    'questId': questId,
-                    'reward': reward,
-                    'pokestopId': pokestopId
+                    'id': pokestopId
                 },
                 error: function error() {
                     // Display error toast
-                    toastr['error'](i8ln('Please check connectivity or reduce marker settings.'), i8ln('Error Submitting Quest'))
+                    toastr['error'](i8ln('Please check connectivity or reduce marker settings.'), i8ln('Error Deleting Pokestop'))
                     toastr.options = toastrOptions
                 },
                 complete: function complete() {
-                    lastpokestops = false
-                    updateMap()
                     jQuery('label[for="pokestops-switch"]').click()
                     jQuery('label[for="pokestops-switch"]').click()
-                    $('.ui-dialog-content').dialog('close')
                 }
             })
         }
