@@ -1556,7 +1556,9 @@ if ( $blockIframe ) {
     var noDeleteNests = <?php echo $noDeleteNests === true ? 'true' : 'false' ?>;
     var noManualNests = <?php echo $noManualNests === true ? 'true' : 'false' ?>;
     var noManualQuests = <?php echo $noManualQuests === true ? 'true' : 'false' ?>;
+    var noDeleteQuests = <?php echo $noDeleteQuests === true ? 'true' : 'false' ?>;
     var login = <?php echo $noNativeLogin === false || $noDiscordLogin === false ? 'true' : 'false' ?>;
+    var discordUser = '<?php echo $_SESSION['user']->user ?>';
     var expireTimestamp = <?php echo isset( $_SESSION['user']->expire_timestamp ) ? $_SESSION['user']->expire_timestamp : 0 ?>;
     var timestamp = <?php echo time() ?>;
 </script>

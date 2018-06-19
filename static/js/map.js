@@ -37,6 +37,7 @@ var noManualQuests
 var noDeleteQuests
 var noDeleteNests
 var noManualNests
+var discordUser
 
 var language = document.documentElement.lang === '' ? 'en' : document.documentElement.lang
 var languageSite = 'en'
@@ -870,7 +871,7 @@ function pokestopLabel(expireTime, latitude, longitude, stopName, lureUser, id, 
                     '</div>'
             }
             str += '<div>Gemeldet von ' + users + '</div>'
-            if (!noDeletePokestops) {
+            if (!noDeleteQuests || discordUser == users) {
                 str += '<div><i class="fa fa-ban delete-quest" onclick="deleteQuest(event);" data-id="' + id + '"></i></div>'
             }
         }
