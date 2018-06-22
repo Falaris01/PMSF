@@ -38,5 +38,9 @@
   "10": {
     "cat": "Raids",
     "name": "Gewinne einen 3er Raid oder höher"
+  },
+  "11": {
+    "cat": "Entwickeln",
+    "name": "Entwickel ein Pokemon"
   }
 }
