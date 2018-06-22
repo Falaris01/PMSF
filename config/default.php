@@ -200,8 +200,8 @@ $minRaidLevel = 1;
 $maxRaidLevel = 5;
 
 $noPokestops = false;                                               // true/false
-$enablePokestops = 'false';                                         // true/false
-$enableLured = 1;                                                   // O: all, 1: lured only
+$enablePokestops = 'true';                                         // true/false
+$enableLured = 0;                                                   // O: all, 1: lured only
 
 $noScannedLocations = false;                                        // true/false
 $enableScannedLocations = 'false';                                  // true/false

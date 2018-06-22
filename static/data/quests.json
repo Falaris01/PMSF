@@ -26,41 +26,17 @@
   "7": {
     "cat": "Fangen",
     "name": "Fange ein Drachen-Pokemon"
-},
+  },
   "8": {
     "cat": "Fangen",
     "name": "Fange 10 Pokemon (Karpador)"
   },
   "9": {
-    "cat": "Wasser-Event",
-    "name": "Fange 2 Wasser-Pokmon"
-  },
-  "10": {
-    "cat": "Wasser-Event",
-    "name": "Brüte ein Ei aus"
-  },
-  "11": {
-    "cat": "Wasser-Event",
-    "name": "Benutze 3 Beeren"
-  },
-  "12": {
-    "cat": "Wasser-Event",
-    "name": "Gewinne einen Raid"
-  },
-  "13": {
     "cat": "Arenen",
     "name": "Gewinne 3 Arena-Kämpfe"
   },
-  "14": {
+  "10": {
     "cat": "Raids",
     "name": "Gewinne einen 3er Raid oder höher"
-  },
-  "15": {
-    "cat": "Wasser-Event",
-    "name": "Entwickle 2 Muschas"
-  },
-  "16": {
-    "cat": "Wasser-Event",
-    "name": "Fange 5 Wailmer oder Karpador"
-  } 
+  }
 }
