@@ -1,7 +1,7 @@
 <?php
 $timing['start'] = microtime( true );
 include( 'config/config.php' );
-global $map, $fork, $db, $raidBosses, $webhookUrl, $sendWebhook, $sendWebhookQuest, $noManualRaids, $noRaids, $noManualPokemon, $noPokemon, $noPokestops, $noManualPokestops, $noGyms, $noManualGyms, $noManualQuests, $noManualNests, $noNests, $hostUrl, $absolUrl, $chaneiraUrl, $tangelaUrl, $questUrl, $laprasUrl;
+global $map, $fork, $db, $raidBosses, $webhookUrl, $sendWebhook, $sendWebhookQuest, $noManualRaids, $noRaids, $noManualPokemon, $noPokemon, $noPokestops, $noManualPokestops, $noGyms, $noManualGyms, $noManualQuests, $noManualNests, $noNests, $hostUrl, $absolUrl, $chaneiraUrl, $tangelaUrl, $questUrl, $laprasUrl; $larvitarUrl;
 $action = ! empty( $_POST['action'] ) ? $_POST['action'] : '';
 $lat    = ! empty( $_POST['lat'] ) ? $_POST['lat'] : '';
 $lng    = ! empty( $_POST['lng'] ) ? $_POST['lng'] : '';
@@ -176,6 +176,8 @@ if ( $action === "raid" ) {
             $questUrl = $tangelaUrl;
         } elseif ($reward == 'Lapras' && $laprasUrl) {
             $questUrl = $laprasUrl;
+        } elseif ($reward == 'Larvitar' && $larvitarUrl) {
+            $questUrl = $larvitarUrl;
         }
         foreach ( $questUrl as $url ) {
             sendToWebhook( $url, $webhook );
