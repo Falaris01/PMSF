@@ -1277,21 +1277,28 @@ function updateGymIcons() {
 function setupPokestopMarker(item) {
     var imagename = item['lure_expiration'] ? 'PstopLured' : 'Pstop'
     imagename = item['reward'] ? 'Pstop-quest' : imagename
-    imagename = item['reward'] === 'Absol' ? 'Pstop-quest_Absol' : imagename
-    imagename = item['reward'] === 'Larvitar' ? 'Pstop-quest_Larvitar' : imagename
-    imagename = item['reward'] === 'Chaneira' ? 'Pstop-quest_Chaneira' : imagename
-    imagename = item['reward'] === 'Aerodactyl' ? 'Pstop-quest_Aerodactyl' : imagename
-    imagename = item['reward'] === 'Tangela' ? 'Pstop-quest_Tangela' : imagename
     imagename = item['reward'] === '1 Sonderbonbon' ? 'Pstop-quest_Candy' : imagename
     imagename = item['reward'] === '3 Sonderbonbons' ? 'Pstop-quest_Candy' : imagename
-    imagename = item['reward'] === 'Karpador' ? 'Pstop-quest_Karpador' : imagename
+    imagename = item['reward'] === 'Absol' ? 'Pstop-quest_Absol' : imagename
+    imagename = item['reward'] === 'Aerodactyl' ? 'Pstop-quest_Aerodactyl' : imagename
+    imagename = item['reward'] === 'Bisasam' ? 'Pstop-quest_Bisasam' : imagename
+    imagename = item['reward'] === 'Chaneira' ? 'Pstop-quest_Chaneira' : imagename
     imagename = item['reward'] === 'Dratini' ? 'Pstop-quest_Dratini' : imagename
     imagename = item['reward'] === 'Elektek' ? 'Pstop-quest_Elektek' : imagename
-    imagename = item['reward'] === 'Muschas' ? 'Pstop-quest_Muschas' : imagename
-    imagename = item['reward'] === 'Wailmer' ? 'Pstop-quest_Wailmer' : imagename
-    imagename = item['reward'] === 'Lapras' ? 'Pstop-quest_Lapras' : imagename
     imagename = item['reward'] === 'Evoli' ? 'Pstop-quest_Evoli' : imagename
+    imagename = item['reward'] === 'Glumanda' ? 'Pstop-quest_Glumanda' : imagename
+    imagename = item['reward'] === 'Karpador' ? 'Pstop-quest_Karpador' : imagename
+    imagename = item['reward'] === 'Lapras' ? 'Pstop-quest_Lapras' : imagename
+    imagename = item['reward'] === 'Larvitar' ? 'Pstop-quest_Larvitar' : imagename
     imagename = item['reward'] === 'Liebiskus' ? 'Pstop-quest_Liebiskus' : imagename
+    imagename = item['reward'] === 'Machollo' ? 'Pstop-quest_Machollo' : imagename
+    imagename = item['reward'] === 'Muschas' ? 'Pstop-quest_Muschas' : imagename
+    imagename = item['reward'] === 'Nebulak' ? 'Pstop-quest_Nebulak' : imagename
+    imagename = item['reward'] === 'Owei' ? 'Pstop-quest_Owei' : imagename
+    imagename = item['reward'] === 'Pikachu' ? 'Pstop-quest_Pikachu' : imagename
+    imagename = item['reward'] === 'Schlurp' ? 'Pstop-quest_Schlurp' : imagename
+    imagename = item['reward'] === 'Tangela' ? 'Pstop-quest_Tangela' : imagename
+    imagename = item['reward'] === 'Wailmer' ? 'Pstop-quest_Wailmer' : imagename
     var marker = new google.maps.Marker({
         position: {
             lat: item['latitude'],

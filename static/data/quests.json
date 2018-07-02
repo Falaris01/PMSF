@@ -1,46 +1,82 @@
 {
   "1": {
-    "cat": "Eier ausbrüten",
-    "name": "Brüte 5 Eier aus"
+    "cat": "Arenen",
+    "name": "Gewinne 1 Arena-Kampf"
   },
   "2": {
-    "cat": "Fangen",
-    "name": "Fange 3 Myrapla/Knofensa"
-  },
-  "3": {
-    "cat": "Würfe",
-    "name": "Lande 3 fabelhafte Würfe in Folge"
-  },
-  "4": {
-    "cat": "Würfe",
-    "name": "Lande einen fabelhaften Curveball-Wurf"
-  },
-  "5": {
-    "cat": "Würfe",
-    "name": "3 großartige Curvebälle in Folge"
-  },
-  "6": {
-    "cat": "Würfe",
-    "name": "3 großartige Curvebälle"
-  },
-  "7": {
-    "cat": "Fangen",
-    "name": "Fange ein Drachen-Pokemon"
-  },
-  "8": {
-    "cat": "Fangen",
-    "name": "Fange 10 Pokemon (Karpador)"
-  },
-  "9": {
     "cat": "Arenen",
     "name": "Gewinne 3 Arena-Kämpfe"
   },
+  "3": {
+    "cat": "Arenen",
+    "name": "Kämpfe 5-mal in einer Arena"
+  },
+  "4": {
+    "cat": "Arenen",
+    "name": "Setze 7 effektive Ladeattacken ein"
+  },
+  "5": {
+    "cat": "Eier ausbrüten",
+    "name": "Brüte 1 Ei aus"
+  },
+  "6": {
+    "cat": "Eier ausbrüten",
+    "name": "Brüte 5 Eier aus"
+  },
+  "7": {
+    "cat": "Entwickeln",
+    "name": "Entwickel ein Feuer-Pokemon"
+  },
+  "8": {
+    "cat": "Entwickeln",
+    "name": "Entwickel ein Pflanzen-Pokemon"
+  },
+  "9": {
+    "cat": "Entwickeln",
+    "name": "Entwickel ein Wasser-, Feuer- oder Elektro-Pokemon"
+  },
   "10": {
+    "cat": "Entwickeln",
+    "name": "Entwickel ein Wasser-Pokemon"
+  },
+  "11": {
+    "cat": "Fangen",
+    "name": "Fange 10 Pokemon"
+  },
+  "12": {
+    "cat": "Fangen",
+    "name": "Fange 3 Pflanzen-, Feuer- oder Wasser-Pokemon"
+  },
+  "13": {
+    "cat": "Fangen",
+    "name": "Verwende 5 Beeren beim Fangen"
+  },
+  "14": {
+    "cat": "Power-Up",
+    "name": "5 Power-Ups bei Pokemon einsetzen"
+  },
+  "15": {
     "cat": "Raids",
     "name": "Gewinne einen 3er Raid oder höher"
   },
-  "11": {
-    "cat": "Entwickeln",
-    "name": "Entwickel ein Pokemon"
+  "16": {
+    "cat": "Würfe",
+    "name": "3 großartige Curvebälle in Folge"
+  },
+  "17": {
+    "cat": "Würfe",
+    "name": "3 großartige Curvebälle"
+  },
+  "18": {
+    "cat": "Würfe",
+    "name": "Lande 3 fabelhafte Würfe in Folge"
+  },
+  "19": {
+    "cat": "Würfe",
+    "name": "Lande einen fabelhaften Curveball-Wurf"
+  },
+  "20": {
+    "cat": "Würfe",
+    "name": "Lande einen guten Curveball-Wurf"
   }
 }

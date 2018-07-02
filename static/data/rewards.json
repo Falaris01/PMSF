@@ -9,24 +9,42 @@
     "name": "Absol"
     },
   "4": {
-    "name": "Chaneira"
+    "name": "Bisasam"
     },
   "5": {
-    "name": "Dratini"
+    "name": "Chaneira"
     },
   "6": {
-    "name": "Elektek"
+    "name": "Dratini"
     },
   "7": {
-    "name": "Evoli"
+    "name": "Elektek"
     },
   "8": {
-    "name": "Karpador"
+    "name": "Evoli"
     },
   "9": {
-    "name": "Larvitar"
+    "name": "Glumanda"
     },
   "10": {
-    "name": "Tangela"
+    "name": "Karpador"
+    },
+  "11": {
+    "name": "Larvitar"
+    },
+  "12": {
+    "name": "Machollo"
+    },
+  "13": {
+    "name": "Nebulak"
+    },
+  "14": {
+    "name": "Owei"
+    },
+  "15": {
+    "name": "Pikachu"
+    },
+  "16": {
+    "name": "Schlurp"
     }
 }
