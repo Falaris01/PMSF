@@ -78,5 +78,9 @@
   "20": {
     "cat": "Würfe",
     "name": "Lande einen guten Curveball-Wurf"
+  },
+  "21": {
+    "cat": "Entwickeln",
+    "name": "Entwickel ein Pokemon"
   }
 }

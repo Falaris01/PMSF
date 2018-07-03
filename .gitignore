@@ -32,6 +32,8 @@ fabric.properties
 /node_modules/
 config/*
 /static/images/infopic.png
+/static/images/logo_h.png
+/static/images/logo_bs.png
 !config/example.config.php
 !config/default.php
 /static/dist/

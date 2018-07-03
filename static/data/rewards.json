@@ -6,13 +6,13 @@
     "name": "3 Sonderbonbons"
     },
   "3": {
-    "name": "Absol"
-    },
-  "4": {
     "name": "Bisasam"
     },
+  "4": {
+    "name": "Glumanda"
+    },
   "5": {
-    "name": "Chaneira"
+    "name": "Schiggy"
     },
   "6": {
     "name": "Dratini"
@@ -24,7 +24,7 @@
     "name": "Evoli"
     },
   "9": {
-    "name": "Glumanda"
+    "name": "Absol"
     },
   "10": {
     "name": "Karpador"
@@ -45,6 +45,12 @@
     "name": "Pikachu"
     },
   "16": {
+    "name": "Schiggy"
+    },
+  "17": {
     "name": "Schlurp"
-    }
+    },
+  "18": {
+    "name": "Chaneira"  
+    } 
 }
