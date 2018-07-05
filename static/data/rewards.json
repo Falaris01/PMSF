@@ -9,48 +9,45 @@
     "name": "Bisasam"
     },
   "4": {
-    "name": "Glumanda"
+    "name": "Chaneira"  
     },
   "5": {
-    "name": "Schiggy"
-    },
-  "6": {
     "name": "Dratini"
     },
-  "7": {
+  "6": {
     "name": "Elektek"
     },
-  "8": {
+  "7": {
     "name": "Evoli"
     },
-  "9": {
-    "name": "Absol"
+  "8": {
+    "name": "Glumanda"
     },
-  "10": {
+  "9": {
     "name": "Karpador"
     },
-  "11": {
+  "10": {
     "name": "Larvitar"
     },
-  "12": {
+  "11": {
     "name": "Machollo"
     },
-  "13": {
+  "12": {
     "name": "Nebulak"
     },
-  "14": {
+  "13": {
     "name": "Owei"
     },
-  "15": {
+  "14": {
     "name": "Pikachu"
+    },
+  "15": {
+    "name": "Schiggy"
     },
   "16": {
     "name": "Schiggy"
     },
   "17": {
     "name": "Schlurp"
-    },
-  "18": {
-    "name": "Chaneira"  
     } 
 }
