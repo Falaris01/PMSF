@@ -1,11 +1,11 @@
 {
   "1": {
     "cat": "Arenen",
-    "name": "Gewinne 1 Arena-Kampf"
+    "name": "Gewinne 1 Arenakampf"
   },
   "2": {
     "cat": "Arenen",
-    "name": "Gewinne 3 Arena-Kämpfe"
+    "name": "Gewinne 3 Arenakämpfe"
   },
   "3": {
     "cat": "Arenen",
@@ -13,7 +13,7 @@
   },
   "4": {
     "cat": "Arenen",
-    "name": "Setze 7 effektive Ladeattacken ein"
+    "name": "Setze eine sehr effektive Ladeattacken in 7 Kämpfen ein"
   },
   "5": {
     "cat": "Eier ausbrüten",
@@ -25,19 +25,19 @@
   },
   "7": {
     "cat": "Entwickeln",
-    "name": "Entwickel ein Feuer-Pokemon"
+    "name": "Entwickle ein Pokemon vom Typ Feuer"
   },
   "8": {
     "cat": "Entwickeln",
-    "name": "Entwickel ein Pflanzen-Pokemon"
+    "name": "Entwickle ein Pokemon vom Typ Pflanze"
   },
   "9": {
     "cat": "Entwickeln",
-    "name": "Entwickel ein Wasser-, Feuer- oder Elektro-Pokemon"
+    "name": "Entwickle ein Pokemon vom Typ Elektro, Wasser oder Feuer"
   },
   "10": {
     "cat": "Entwickeln",
-    "name": "Entwickel ein Wasser-Pokemon"
+    "name": "Entwickle ein Pokemon vom Typ Wasser"
   },
   "11": {
     "cat": "Fangen",
@@ -45,42 +45,34 @@
   },
   "12": {
     "cat": "Fangen",
-    "name": "Fange 3 Pflanzen-, Feuer- oder Wasser-Pokemon"
+    "name": "Fange 3 Pokemon vom Typ Pflanze, Wasser oder Feuer"
   },
   "13": {
     "cat": "Fangen",
-    "name": "Verwende 5 Beeren beim Fangen"
+    "name": "Verwende 5 Beeren beim Fangen von Pokemon"
   },
   "14": {
     "cat": "Power-Up",
-    "name": "5 Power-Ups bei Pokemon einsetzen"
+    "name": "Verwende 5 Power-Ups bei Pokemon"
   },
   "15": {
     "cat": "Raids",
-    "name": "Gewinne einen 3er Raid oder höher"
+    "name": "Gewinne einen Level-3-Raid oder höher"
   },
   "16": {
     "cat": "Würfe",
-    "name": "3 großartige Curvebälle in Folge"
+    "name": "Lande 3 großartige Würfe"
   },
   "17": {
     "cat": "Würfe",
-    "name": "3 großartige Curvebälle"
+    "name": "Lande 3 fabelhafte Würfe hintereinander"
   },
   "18": {
     "cat": "Würfe",
-    "name": "Lande 3 fabelhafte Würfe in Folge"
-  },
-  "19": {
-    "cat": "Würfe",
-    "name": "Lande einen fabelhaften Curveball-Wurf"
-  },
-  "20": {
-    "cat": "Würfe",
     "name": "Lande einen guten Curveball-Wurf"
   },
-  "21": {
+  "19": {
     "cat": "Entwickeln",
-    "name": "Entwickel ein Pokemon"
+    "name": "Entwickle ein Pokemon"
   }
 }
