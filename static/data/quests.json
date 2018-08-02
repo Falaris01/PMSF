@@ -1,94 +1,78 @@
 {
   "1": {
     "cat": "Arenen",
-    "name": "Gewinne 1 Arenakampf"
+    "name": "Kämpfe 5-mal in einer Arena"
   },
   "2": {
     "cat": "Arenen",
-    "name": "Gewinne 3 Arenakämpfe"
-  },
-  "3": {
-    "cat": "Arenen",
-    "name": "Kämpfe 5-mal in einer Arena"
-  },
-  "4": {
-    "cat": "Arenen",
     "name": "Setze eine sehr effektive Ladeattacken in 7 Kämpfen ein"
   },
-  "5": {
+  "3": {
     "cat": "Eier ausbrüten",
     "name": "Brüte 1 Ei aus"
   },
-  "6": {
+  "4": {
+    "cat": "Eier ausbrüten",
+    "name": "Brüte 3 Eier aus"
+  },
+  "5": {
     "cat": "Eier ausbrüten",
     "name": "Brüte 5 Eier aus"
   },
-  "7": {
-    "cat": "Entwickeln",
-    "name": "Entwickle ein Pokemon vom Typ Feuer"
-  },
-  "8": {
-    "cat": "Entwickeln",
-    "name": "Entwickle ein Pokemon vom Typ Pflanze"
-  },
-  "9": {
-    "cat": "Entwickeln",
-    "name": "Entwickle ein Pokemon vom Typ Elektro, Wasser oder Feuer"
-  },
-  "10": {
-    "cat": "Entwickeln",
-    "name": "Entwickle ein Pokemon vom Typ Wasser"
-  },
-  "11": {
-    "cat": "Fangen",
-    "name": "Fange 10 Pokemon"
-  },
-  "12": {
-    "cat": "Fangen",
-    "name": "Fange 3 Pokemon vom Typ Pflanze, Wasser oder Feuer"
-  },
-  "13": {
-    "cat": "Fangen",
-    "name": "Fange ein Pokémon vom Typ Drache"
-  },
-  "14": {
-    "cat": "Fangen",
-    "name": "Verwende 5 Beeren beim Fangen von Pokemon"
-  },
-  "15": {
-    "cat": "Power-Up",
-    "name": "Verwende 5 Power-Ups bei Pokemon"
-  },
-  "16": {
-    "cat": "Raids",
-    "name": "Gewinne einen Level-3-Raid oder höher"
-  },
-  "17": {
-    "cat": "Würfe",
-    "name": "Lande 3 großartige Würfe"
-  },
-  "18": {
-    "cat": "Würfe",
-    "name": "Lande 3 fabelhafte Würfe hintereinander"
-  },
-  "19": {
-    "cat": "Würfe",
-    "name": "Lande einen guten Curveball-Wurf"
-  },
-  "20": {
+  "6": {
     "cat": "Entwickeln",
     "name": "Entwickle ein Pokemon"
   },
-  "21": {
-    "cat": "Fangen",
-    "name": "Fange ein Eneco oder Fiffyen"
-  },
-  "22": {
+  "7": {
     "cat": "Entwickeln",
     "name": "Entwickle ein Mauzi"
   },
-  "23": {
+  "8": {
+    "cat": "Fangen",
+    "name": "Fange 10 Pokemon"
+  },
+  "9": {
+    "cat": "Fangen",
+    "name": "Fange 5 Pokemon vom Typ Elektro"
+  },
+  "10": {
+    "cat": "Fangen",
+    "name": "Fange ein Pokémon vom Typ Drache"
+  },
+  "11": {
+    "cat": "Fangen",
+    "name": "Fange ein Eneco oder Fiffyen"
+  },
+  "12": {
+    "cat": "Fangen",
+    "name": "Fange ein Ditto"
+  },
+  "13": {
+    "cat": "Power-Up",
+    "name": "Verwende 5 Power-Ups bei Pokemon"
+  },
+  "14": {
+    "cat": "Raids",
+    "name": "Gewinne einen Level-3-Raid oder höher"
+  },
+  "15": {
     "cat": "Würfe",
-    "name": "Lande 3 Curved Bälle hintereinander"
+    "name": "Lande 3 großartige Würfe"
+  },
+  "16": {
+    "cat": "Würfe",
+    "name": "Lande 3 großartige Curveball-Würfe"
+  },
+  "17": {
+    "cat": "Würfe",
+    "name": "Lande 3 fabelhafte Würfe hintereinander"
+  },
+  "18": {
+    "cat": "Würfe",
+    "name": "Lande 3 Curveball-Würfe hintereinander"
+  },
+  "19": {
+    "cat": "Sonstiges",
+    "name": "Verschicke 10 Pokémon"
   }
 }

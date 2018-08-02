@@ -24,39 +24,39 @@
     "name": "Glumanda"
     },
   "9": {
-    "name": "Karpador"
-    },
-  "10": {
-    "name": "Larvitar"
-    },
-  "11": {
-    "name": "Machollo"
-    },
-  "12": {
-    "name": "Nebulak"
-    },
-  "13": {
-    "name": "Owei"
-    },
-  "14": {
-    "name": "Pikachu"
-    },
-  "15": {
-    "name": "Schiggy"
-    },
-  "16": {
-    "name": "Schiggy"
-    },
-  "17": {
-    "name": "Schlurp"
-    },
-  "18": {
     "name": "Hunduster"
     },
-  "19": {
+  "10": {
+    "name": "Karpador"
+    },
+  "11": {
+    "name": "Larvitar"
+    },
+  "12": {
+    "name": "Machollo"
+    },
+  "13": {
+    "name": "Nebulak"
+    },
+  "14": {
+    "name": "Owei"
+    },
+  "15": {
+    "name": "Pandir"
+    },
+  "16": {
+    "name": "Pikachu"
+    },
+  "17": {
+    "name": "Schiggy"
+    },
+  "18": {
     "name": "Snubbull"
     },
+  "19": {
+    "name": "Traunfugil"
+    },
   "20": {
-    "name": "Pandir"
-    }  
+    "name": "Voltilamm"
+    }
 }
