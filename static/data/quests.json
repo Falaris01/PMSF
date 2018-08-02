@@ -49,30 +49,46 @@
   },
   "13": {
     "cat": "Fangen",
-    "name": "Verwende 5 Beeren beim Fangen von Pokemon"
+    "name": "Fange ein Pokémon vom Typ Drache"
   },
   "14": {
+    "cat": "Fangen",
+    "name": "Verwende 5 Beeren beim Fangen von Pokemon"
+  },
+  "15": {
     "cat": "Power-Up",
     "name": "Verwende 5 Power-Ups bei Pokemon"
   },
-  "15": {
+  "16": {
     "cat": "Raids",
     "name": "Gewinne einen Level-3-Raid oder höher"
   },
-  "16": {
+  "17": {
     "cat": "Würfe",
     "name": "Lande 3 großartige Würfe"
   },
-  "17": {
+  "18": {
     "cat": "Würfe",
     "name": "Lande 3 fabelhafte Würfe hintereinander"
   },
-  "18": {
+  "19": {
     "cat": "Würfe",
     "name": "Lande einen guten Curveball-Wurf"
   },
-  "19": {
+  "20": {
     "cat": "Entwickeln",
     "name": "Entwickle ein Pokemon"
+  },
+  "21": {
+    "cat": "Fangen",
+    "name": "Fange ein Eneco oder Fiffyen"
+  },
+  "22": {
+    "cat": "Entwickeln",
+    "name": "Entwickle ein Mauzi"
+  },
+  "23": {
+    "cat": "Würfe",
+    "name": "Lande 3 Curved Bälle hintereinander"
   }
 }

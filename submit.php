@@ -1,7 +1,7 @@
 <?php
 $timing['start'] = microtime( true );
 include( 'config/config.php' );
-global $map, $fork, $db, $raidBosses, $webhookUrl, $sendWebhook, $sendWebhookQuest, $noManualRaids, $noRaids, $noManualPokemon, $noPokemon, $noPokestops, $noManualPokestops, $noGyms, $noManualGyms, $noManualQuests, $noManualNests, $noNests, $hostUrl, $absolUrl, $chaneiraUrl, $tangelaUrl, $questUrl, $laprasUrl; $larvitarUrl;
+global $map, $fork, $db, $raidBosses, $webhookUrl, $sendWebhook, $sendWebhookQuest, $noManualRaids, $noRaids, $noManualPokemon, $noPokemon, $noPokestops, $noManualPokestops, $noGyms, $noManualGyms, $noManualQuests, $noManualNests, $noNests, $hostUrl, $schlurpUrl, $chaneiraUrl, $tangelaUrl, $questUrl, $laprasUrl, $larvitarUrl, $dratiniUrl, $nebulakUrl, $hundusterUrl, $snubbullUrl, $traunfugilUrl, $pandirUrl;
 $action = ! empty( $_POST['action'] ) ? $_POST['action'] : '';
 $lat    = ! empty( $_POST['lat'] ) ? $_POST['lat'] : '';
 $lng    = ! empty( $_POST['lng'] ) ? $_POST['lng'] : '';
@@ -168,8 +168,8 @@ if ( $action === "raid" ) {
             'username' => $reward,
             'name' => $reward
             ];
-        if ($reward == 'Absol' && $absolUrl) {
-        	$questUrl = $absolUrl;
+        if ($reward == 'Schlurp' && $schlurpUrl) {
+        	$questUrl = $schlurpUrl;
         } elseif ($reward == 'Chaneira' && $chaneiraUrl) {
             $questUrl = $chaneiraUrl;
         } elseif ($reward == 'Tangela' && $tangelaUrl) {
@@ -178,6 +178,18 @@ if ( $action === "raid" ) {
             $questUrl = $laprasUrl;
         } elseif ($reward == 'Larvitar' && $larvitarUrl) {
             $questUrl = $larvitarUrl;
+        } elseif ($reward == 'Dratini' && $dratiniUrl) {
+            $questUrl = $dratiniUrl;
+        } elseif ($reward == 'Nebulak' && $nebulakUrl) {
+            $questUrl = $nebulakUrl;
+        } elseif ($reward == 'Snubbull' && $snubbullUrl) {
+            $questUrl = $snubbullUrl;
+        } elseif ($reward == 'Hunduster' && $hundusterUrl) {
+            $questUrl = $hundusterUrl;
+        } elseif ($reward == 'Pandir' && $pandirUrl) {
+            $questUrl = $pandirUrl;
+        } elseif ($reward == 'traunfugil' && $traunfugilUrl) {
+            $questUrl = $traunfugilUrl;
         }
         foreach ( $questUrl as $url ) {
             sendToWebhook( $url, $webhook );

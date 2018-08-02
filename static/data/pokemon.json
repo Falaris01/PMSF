@@ -322,6 +322,8 @@
   "26": {
     "name": "Raichu",
     "rarity": "Ultra Rare",
+    "level": 3,
+    "cp": 20238,
     "types": [
       {
         "type": "Electric",
@@ -1304,8 +1306,8 @@
   "105": {
     "name": "Marowak",
     "rarity": "Very Rare",
-    "level": 2,
-    "cp": 9891,
+    "level": 4,
+    "cp": 20190,
     "types": [
       {
         "type": "Ground",
@@ -1558,6 +1560,8 @@
   "126": {
     "name": "Magmar",
     "rarity": "Rare",
+    "level": 2,
+    "cp": 12718,
     "types": [
       {
         "type": "Fire",
@@ -1676,6 +1680,8 @@
   "136": {
     "name": "Flareon",
     "rarity": "Ultra Rare",
+    "level": 3,
+    "cp": 21155,
     "types": [
       {
         "type": "Fire",
@@ -1699,7 +1705,7 @@
     "name": "Omanyte",
     "rarity": "Rare",
     "level": 1,
-    "cp": 1,
+    "cp": 5724,
     "types": [
       {
         "type": "Rock",
@@ -2298,6 +2304,8 @@
   "185": {
     "name": "Sudowoodo",
     "rarity": "Uncommon",
+    "level": 2,
+    "cp": 11269,
     "types": [
       {
         "type": "Rock",
@@ -2890,6 +2898,8 @@
   "232": {
     "name": "Donphan",
     "rarity": "Very Rare",
+    "level": 3,
+    "cp": 18980,
     "types": [
       {
         "type": "Ground",
@@ -3490,6 +3500,8 @@
   "281":{
     "name": "Kirlia",
     "rarity":"",
+    "level": 2,
+    "cp": 6005,
     "types": [
       {
         "type": "Psychic",
@@ -3674,6 +3686,8 @@
   "296":{
     "name": "Makuhita",
     "rarity":"",
+    "level": 1,
+    "cp": 2319,
     "types": [
       {
         "type": "Fighting",
@@ -3814,6 +3828,8 @@
   "307":{
     "name": "Meditite",
     "rarity":"",
+    "level": 1,
+    "cp": 2516,
     "types": [
       {
         "type": "Fighting",
