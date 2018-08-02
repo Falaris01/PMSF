@@ -6,54 +6,108 @@
     "name": "3 Sonderbonbons"
     },
   "3": {
-    "name": "Bisasam"
+    "name": "2 goldene Himmihbeeren"
     },
   "4": {
-    "name": "Chaneira"  
+    "name": "200 Sternenstaub"
     },
   "5": {
-    "name": "Dratini"
+    "name": "500 Sternenstaub"
     },
   "6": {
-    "name": "Elektek"
+    "name": "1000 Sternenstaub"
     },
   "7": {
-    "name": "Evoli"
+    "name": "1500 Sternenstaub"
     },
   "8": {
-    "name": "Glumanda"
+    "name": "Bisasam/Glumanda/Schiggy"
     },
   "9": {
-    "name": "Hunduster"
+    "name": "Lanturn/Owei"
     },
   "10": {
-    "name": "Karpador"
+    "name": "Quapsel/Vulpix"
     },
   "11": {
-    "name": "Larvitar"
+    "name": "Bisasam"
     },
   "12": {
-    "name": "Machollo"
+    "name": "Chaneira"  
     },
   "13": {
-    "name": "Nebulak"
+    "name": "Dratini"
     },
   "14": {
-    "name": "Owei"
+    "name": "Elektek"
     },
   "15": {
-    "name": "Pandir"
+    "name": "Evoli"
     },
   "16": {
-    "name": "Schiggy"
+    "name": "Frizelbliz"
     },
   "17": {
-    "name": "Snubbull"
+    "name": "Girafarig"
     },
   "18": {
-    "name": "Traunfugil"
+    "name": "Glumanda"
     },
   "19": {
+    "name": "Hunduster"
+    },
+  "20": {
+    "name": "Karpador"
+    },
+  "21": {
+    "name": "Lanturn"
+    },
+  "22": {
+    "name": "Larvitar"
+    },
+  "23": {
+    "name": "Machollo"
+    },
+  "24": {
+    "name": "Magmar"
+    },
+  "25": {
+    "name": "Menki"
+    },
+  "26": {
+    "name": "Nebulak"
+    },
+  "27": {
+    "name": "Onix"
+    },
+  "28": {
+    "name": "Owei"
+    },
+  "29": {
+    "name": "Pandir"
+    },
+  "30": {
+    "name": "Quapsel"
+    },
+  "31": {
+    "name": "Rossana"
+    },
+  "32": {
+    "name": "Schiggy"
+    },
+  "33": {
+    "name": "Snubbull"
+    },
+  "34": {
+    "name": "Traunfugil"
+    },
+  "35": {
     "name": "Voltilamm"
-    }
+    },
+  "36": {
+    "name": "Voltobal"
+    },
+  "37": {
+    "name": "Vulpix"
+    },
 }

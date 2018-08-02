@@ -1,78 +1,122 @@
 {
   "1": {
     "cat": "Arenen",
-    "name": "Kämpfe 5-mal in einer Arena"
+    "name": "Kämpfe in einer Arena"
   },
   "2": {
     "cat": "Arenen",
-    "name": "Setze eine sehr effektive Ladeattacken in 7 Kämpfen ein"
+    "name": "Kämpfe 5-mal in einer Arena"
   },
   "3": {
+    "cat": "Arenen",
+    "name": "Gewinne 3 Arenakämpfe"
+  },
+  "4": {
+    "cat": "Arenen",
+    "name": "Gewinne 5 Arenakämpfe"
+  },
+  "5": {
+    "cat": "Arenen",
+    "name": "Setze eine sehr effektive Ladeattacken in 7 Kämpfen ein"
+  },
+  "6": {
     "cat": "Eier ausbrüten",
     "name": "Brüte 1 Ei aus"
   },
-  "4": {
+  "7": {
     "cat": "Eier ausbrüten",
     "name": "Brüte 3 Eier aus"
   },
-  "5": {
+  "8": {
     "cat": "Eier ausbrüten",
     "name": "Brüte 5 Eier aus"
   },
-  "6": {
+  "9": {
     "cat": "Entwickeln",
     "name": "Entwickle ein Pokemon"
   },
-  "7": {
+  "10": {
     "cat": "Entwickeln",
     "name": "Entwickle ein Mauzi"
   },
-  "8": {
-    "cat": "Fangen",
-    "name": "Fange 10 Pokemon"
-  },
-  "9": {
-    "cat": "Fangen",
-    "name": "Fange 5 Pokemon vom Typ Elektro"
-  },
-  "10": {
-    "cat": "Fangen",
-    "name": "Fange ein Pokémon vom Typ Drache"
-  },
   "11": {
     "cat": "Fangen",
-    "name": "Fange ein Eneco oder Fiffyen"
+    "name": "Fange 10 Pokémon"
   },
   "12": {
     "cat": "Fangen",
-    "name": "Fange ein Ditto"
+    "name": "Fange 5 Pokémon vom Typ Elektro"
   },
   "13": {
-    "cat": "Power-Up",
-    "name": "Verwende 5 Power-Ups bei Pokemon"
+    "cat": "Fangen",
+    "name": "Fange ein Pokémon vom Typ Drache"
   },
   "14": {
+    "cat": "Fangen",
+    "name": "Fange 5 Pokémon mit Wetter-Boost"
+  },
+  "15": {
+    "cat": "Fangen",
+    "name": "Fange 10 Pokémon mit Wetter-Boost"
+  },
+  "16": {
+    "cat": "Fangen",
+    "name": "Fange ein Eneco oder Fiffyen"
+  },
+  "17": {
+    "cat": "Fangen",
+    "name": "Fange ein Mauzi oder Fukano"
+  },
+  "18": {
+    "cat": "Fangen",
+    "name": "Fange ein Ditto"
+  },
+  "19": {
+    "cat": "Power-Up",
+    "name": "Verwende 5 Power-Ups bei Pokémon"
+  },
+  "20": {
+    "cat": "Raids",
+    "name": "Gewinne einen Raid"
+  },
+  "21": {
+    "cat": "Raids",
+    "name": "Gewinne 3 Raids"
+  },
+  "22": {
     "cat": "Raids",
     "name": "Gewinne einen Level-3-Raid oder höher"
   },
-  "15": {
+  "23": {
+    "cat": "Würfe",
+    "name": "Lande 5 gute Würfe"
+  },
+  "24": {
     "cat": "Würfe",
     "name": "Lande 3 großartige Würfe"
   },
-  "16": {
+  "25": {
+    "cat": "Würfe",
+    "name": "Lande 3 großartige Würfe hintereinander"
+  },
+  "26": {
     "cat": "Würfe",
     "name": "Lande 3 großartige Curveball-Würfe"
   },
-  "17": {
+  "27": {
     "cat": "Würfe",
     "name": "Lande 3 fabelhafte Würfe hintereinander"
   },
-  "18": {
+  "28": {
     "cat": "Würfe",
     "name": "Lande 3 Curveball-Würfe hintereinander"
   },
-  "19": {
+  "29": {
     "cat": "Sonstiges",
     "name": "Verschicke 10 Pokémon"
-  }
+  },
+  "30": {
+    "cat": "Sonstiges",
+    "name": "Benutze 5 Beeren beim Fangen von Pokémon"
+  },
 }
