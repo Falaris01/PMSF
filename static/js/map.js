@@ -871,7 +871,7 @@ function pokestopLabel(expireTime, latitude, longitude, stopName, lureUser, id, 
                     '</div>'
             }
             str += '<div>Gemeldet von ' + users + '</div>'
-            if (!noDeleteQuests || discordUser == users) {
+            if (!noDeleteQuests || discordUser === users) {
                 str += '<div><i class="fa fa-ban delete-quest" onclick="deleteQuest(event);" data-id="' + id + '"></i></div>'
             }
         }
