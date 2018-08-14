@@ -7,6 +7,10 @@
     "cat": "Arenen",
     "name": "Kämpfe 5-mal in einer Arena"
   },
+  "31": {
+    "cat": "Arenen",
+    "name": "Gewinne einen Arenakampf"
+  },
   "3": {
     "cat": "Arenen",
     "name": "Gewinne 3 Arenakämpfe"
