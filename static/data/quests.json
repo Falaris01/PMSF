@@ -19,112 +19,137 @@
     "cat": "Arenen",
     "name": "Gewinne 5 Arenakämpfe"
   },
-  "32": {
+  "6": {
     "cat": "Arenen",
     "name": "Setze eine sehr effektive Lade-Attacke in einem Kampf ein."
   },
-  "6": {
+  "7": {
     "cat": "Arenen",
     "name": "Setze eine sehr effektive Ladeattacken in 7 Kämpfen ein"
   },
-  "7": {
+  "8": {
     "cat": "Eier ausbrüten",
     "name": "Brüte 1 Ei aus"
   },
-  "8": {
+  "9": {
     "cat": "Eier ausbrüten",
     "name": "Brüte 3 Eier aus"
   },
-  "9": {
+  "10": {
     "cat": "Eier ausbrüten",
     "name": "Brüte 5 Eier aus"
   },
-  "10": {
+  "11": {
     "cat": "Entwickeln",
     "name": "Entwickle ein Pokemon"
   },
-  "11": {
+  "12": {
     "cat": "Entwickeln",
     "name": "Entwickle ein Mauzi"
   },
-  "12": {
+  "13": {
     "cat": "Fangen",
     "name": "Fange 10 Pokémon"
   },
-  "13": {
+  "14": {
     "cat": "Fangen",
     "name": "Fange 5 Pokémon vom Typ Elektro"
   },
-  "14": {
+  "15": {
     "cat": "Fangen",
     "name": "Fange ein Pokémon vom Typ Drache"
   },
-  "15": {
+  "16": {
     "cat": "Fangen",
     "name": "Fange 5 Pokémon mit Wetter-Boost"
   },
-  "16": {
+  "17": {
     "cat": "Fangen",
     "name": "Fange 10 Pokémon mit Wetter-Boost"
   },
-  "17": {
+  "18": {
     "cat": "Fangen",
     "name": "Fange ein Eneco oder Fiffyen"
   },
-  "18": {
+  "19": {
     "cat": "Fangen",
     "name": "Fange ein Mauzi oder Fukano"
   },
-  "19": {
+  "20": {
     "cat": "Fangen",
     "name": "Fange ein Ditto"
   },
-  "20": {
+  "21": {
     "cat": "Power-Up",
     "name": "Verwende 5 Power-Ups bei Pokémon"
   },
-  "21": {
+  "22": {
     "cat": "Raids",
     "name": "Gewinne einen Raid"
   },
-  "22": {
+  "23": {
     "cat": "Raids",
     "name": "Gewinne 3 Raids"
   },
-  "23": {
+  "24": {
     "cat": "Raids",
     "name": "Gewinne einen Level-3-Raid oder höher"
   },
-  "24": {
+  "25": {
     "cat": "Würfe",
     "name": "Lande 5 gute Würfe"
   },
-  "25": {
+  "26": {
     "cat": "Würfe",
     "name": "Lande 3 großartige Würfe"
   },
-  "26": {
+  "27": {
     "cat": "Würfe",
     "name": "Lande 3 großartige Würfe hintereinander"
   },
-  "27": {
+  "28": {
     "cat": "Würfe",
     "name": "Lande 3 großartige Curveball-Würfe"
   },
-  "28": {
+  "29": {
     "cat": "Würfe",
     "name": "Lande 3 fabelhafte Würfe hintereinander"
   },
-  "29": {
+  "30": {
     "cat": "Würfe",
     "name": "Lande 3 Curveball-Würfe hintereinander"
   },
-  "30": {
+  "31": {
     "cat": "Sonstiges",
     "name": "Verschicke 10 Pokémon"
   },
-  "31": {
+  "32": {
     "cat": "Sonstiges",
     "name": "Benutze 5 Beeren beim Fangen von Pokémon"
-  }
+  },
+  "33": {
+    "cat": "Johto-Event",
+    "name": "Johto-Event: Entwickle 3 Sonnkern oder Natu"
+  },
+  "34": {
+    "cat": "Johto-Event",
+    "name": "Johto-Event: Lande drei fabelhafte Würfe"
+  },
+  "35": {
+    "cat": "Johto-Event",
+    "name": "Johto-Event: Fange 5 Pokémon vom Typ Wasser"
+  },
+  "36": {
+    "cat": "Johto-Event",
+    "name": "Johto-Event: Gewinne einen Raid"
+  },
+  "37": {
+    "cat": "Johto-Event",
+    "name": "Johto-Event: Fange 3 Sonnkern"
+  },
+  "38": {
+    "cat": "Johto-Event",
+    "name": "Johto-Event: Lande 4 großartige Curveball-Würfe hintereinander"
+  },
+  
 }

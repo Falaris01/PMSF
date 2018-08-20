@@ -21,93 +21,129 @@
     "name": "1500 Sternenstaub"
     },
   "8": {
-    "name": "Bisasam/Glumanda/Schiggy"
+    "name": "Drachenhaut"
     },
   "9": {
-    "name": "Lanturn/Owei"
+    "name": "King-Stein"
     },
   "10": {
-    "name": "Quapsel/Vulpix"
+    "name": "Metallmantel"
     },
   "11": {
-    "name": "Bisasam"
+    "name": "Sonnenstein"
     },
   "12": {
-    "name": "Chaneira"  
+    "name": "Up-Grade"
     },
   "13": {
-    "name": "Dratini"
+    "name": "Bisasam/Glumanda/Schiggy"
     },
   "14": {
-    "name": "Elektek"
+    "name": "Lanturn/Owei"
     },
   "15": {
-    "name": "Evoli"
+    "name": "Onix/Sichlor"
     },
   "16": {
-    "name": "Frizelbliz"
+    "name": "Quapsel/Vulpix"
     },
   "17": {
-    "name": "Girafarig"
+    "name": "Quaputzi/Seemon"
     },
   "18": {
-    "name": "Glumanda"
+    "name": "Bisasam"
     },
   "19": {
-    "name": "Hunduster"
+    "name": "Chaneira"  
     },
   "20": {
-    "name": "Karpador"
+    "name": "Dratini"
     },
   "21": {
-    "name": "Lanturn"
+    "name": "Elektek"
     },
   "22": {
-    "name": "Larvitar"
+    "name": "Evoli"
     },
   "23": {
-    "name": "Machollo"
+    "name": "Frizelbliz"
     },
   "24": {
-    "name": "Magmar"
+    "name": "Girafarig"
     },
   "25": {
-    "name": "Menki"
+    "name": "Glumanda"
     },
   "26": {
-    "name": "Nebulak"
+    "name": "Hunduster"
     },
   "27": {
-    "name": "Onix"
+    "name": "Karpador"
     },
   "28": {
-    "name": "Owei"
+    "name": "Lanturn"
     },
   "29": {
-    "name": "Pandir"
+    "name": "Larvitar"
     },
   "30": {
-    "name": "Quapsel"
+    "name": "Machollo"
     },
   "31": {
-    "name": "Rossana"
+    "name": "Magmar"
     },
   "32": {
-    "name": "Schiggy"
+    "name": "Menki"
     },
   "33": {
-    "name": "Snubbull"
+    "name": "Miltank"
     },
   "34": {
-    "name": "Traunfugil"
+    "name": "Nebulak"
     },
   "35": {
-    "name": "Voltilamm"
+    "name": "Onix"
     },
   "36": {
-    "name": "Voltobal"
+    "name": "Owei"
     },
   "37": {
+    "name": "Pandir"
+    },
+  "38": {
+    "name": "Porygon"
+    },
+  "39": {
+    "name": "Quapsel"
+    },
+  "40": {
+    "name": "Quaputzi"
+    },
+  "41": {
+    "name": "Rossana"
+    },
+  "42": {
+    "name": "Schiggy"
+    },
+  "43": {
+    "name": "Seemon"
+    },
+  "44": {
+    "name": "Sichlor"
+    },
+  "45": {
+    "name": "Tannza"
+    },
+  "46": {
+    "name": "Traunfugil"
+    },
+  "47": {
+    "name": "Voltilamm"
+    },
+  "48": {
+    "name": "Voltobal"
+    },
+  "49": {
     "name": "Vulpix"
     }
 }
