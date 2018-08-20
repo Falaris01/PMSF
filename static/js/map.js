@@ -1287,7 +1287,9 @@ function setupPokestopMarker(item) {
     imagename = item['reward'] === 'Elektek' ? 'Pstop-quest_Elektek' : imagename
     imagename = item['reward'] === 'Evoli' ? 'Pstop-quest_Evoli' : imagename
     imagename = item['reward'] === 'Glumanda' ? 'Pstop-quest_Glumanda' : imagename
+    imagename = item['reward'] === 'Hunduster' ? 'Pstop-quest_Hunduster' : imagename
     imagename = item['reward'] === 'Karpador' ? 'Pstop-quest_Karpador' : imagename
+    imagename = item['reward'] === 'Lanturn' ? 'Pstop-quest_Lanturn' : imagename
     imagename = item['reward'] === 'Lapras' ? 'Pstop-quest_Lapras' : imagename
     imagename = item['reward'] === 'Larvitar' ? 'Pstop-quest_Larvitar' : imagename
     imagename = item['reward'] === 'Liebiskus' ? 'Pstop-quest_Liebiskus' : imagename
@@ -1295,10 +1297,14 @@ function setupPokestopMarker(item) {
     imagename = item['reward'] === 'Muschas' ? 'Pstop-quest_Muschas' : imagename
     imagename = item['reward'] === 'Nebulak' ? 'Pstop-quest_Nebulak' : imagename
     imagename = item['reward'] === 'Owei' ? 'Pstop-quest_Owei' : imagename
+    imagename = item['reward'] === 'Pandir' ? 'Pstop-quest_Pandir' : imagename
     imagename = item['reward'] === 'Pikachu' ? 'Pstop-quest_Pikachu' : imagename
-    imagename = item['reward'] === 'Schlurp' ? 'Pstop-quest_Schiggy' : imagename
+    imagename = item['reward'] === 'Schiggy' ? 'Pstop-quest_Schiggy' : imagename 
     imagename = item['reward'] === 'Schlurp' ? 'Pstop-quest_Schlurp' : imagename
+    imagename = item['reward'] === 'Snubbull' ? 'Pstop-quest_Snubbull' : imagename
     imagename = item['reward'] === 'Tangela' ? 'Pstop-quest_Tangela' : imagename
+    imagename = item['reward'] === 'Traunfugil' ? 'Pstop-quest_Traunfugil' : imagename
+    imagename = item['reward'] === 'Voltilamm' ? 'Pstop-quest_Voltilamm' : imagename
     imagename = item['reward'] === 'Wailmer' ? 'Pstop-quest_Wailmer' : imagename
     var marker = new google.maps.Marker({
         position: {
