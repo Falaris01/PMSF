@@ -1,7 +1,7 @@
 <?php
 $timing['start'] = microtime( true );
 include( 'config/config.php' );
-global $map, $fork, $db, $raidBosses, $webhookUrl, $sendWebhook, $sendWebhookQuest, $noManualRaids, $noRaids, $noManualPokemon, $noPokemon, $noPokestops, $noManualPokestops, $noGyms, $noManualGyms, $noManualQuests, $noManualNests, $noNests, $hostUrl, $schlurpUrl, $chaneiraUrl, $tangelaUrl, $questUrl, $laprasUrl, $larvitarUrl, $dratiniUrl, $nebulakUrl, $hundusterUrl, $snubbullUrl, $traunfugilUrl, $pandirUrl, $voltilammUrl;
+global $map, $fork, $db, $raidBosses, $webhookUrl, $sendWebhook, $sendWebhookQuest, $noManualRaids, $noRaids, $noManualPokemon, $noPokemon, $noPokestops, $noManualPokestops, $noGyms, $noManualGyms, $noManualQuests, $noManualNests, $noNests, $hostUrl, $schlurpUrl, $chaneiraUrl, $tangelaUrl, $questUrl, $laprasUrl, $larvitarUrl, $dratiniUrl, $nebulakUrl, $hundusterUrl, $snubbullUrl, $traunfugilUrl, $pandirUrl, $voltilammUrl, $tannzaUrl, $miltankUrl;
 $action = ! empty( $_POST['action'] ) ? $_POST['action'] : '';
 $lat    = ! empty( $_POST['lat'] ) ? $_POST['lat'] : '';
 $lng    = ! empty( $_POST['lng'] ) ? $_POST['lng'] : '';
@@ -192,6 +192,10 @@ if ( $action === "raid" ) {
             $questUrl = $traunfugilUrl;
         } elseif ($reward == 'Voltilamm' && $voltilammUrl) {
             $questUrl = $voltilammUrl;
+        } elseif ($reward == 'Tannza' && $tannzaUrl) {
+            $questUrl = $tannzaUrl;
+        } elseif ($reward == 'Miltank' && $miltankUrl) {
+            $questUrl = $miltankUrl;
         }
         foreach ( $questUrl as $url ) {
             sendToWebhook( $url, $webhook );

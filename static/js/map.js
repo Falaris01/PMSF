@@ -1306,6 +1306,9 @@ function setupPokestopMarker(item) {
     imagename = item['reward'] === 'Traunfugil' ? 'Pstop-quest_Traunfugil' : imagename
     imagename = item['reward'] === 'Voltilamm' ? 'Pstop-quest_Voltilamm' : imagename
     imagename = item['reward'] === 'Wailmer' ? 'Pstop-quest_Wailmer' : imagename
+    imagename = item['reward'] === 'Tannza' ? 'Pstop-quest_Tannza' : imagename
+    imagename = item['reward'] === 'Miltank' ? 'Pstop-quest_Miltank' : imagename
+    imagename = item['reward'] === 'Porygon' ? 'Pstop-quest_Porygon' : imagename
     var marker = new google.maps.Marker({
         position: {
             lat: item['latitude'],
