@@ -9,141 +9,165 @@
     "name": "2 goldene Himmihbeeren"
     },
   "4": {
-    "name": "200 Sternenstaub"
+    "name": "Silberne Sananabeere"
     },
   "5": {
-    "name": "500 Sternenstaub"
+    "name": "200 Sternenstaub"
     },
   "6": {
-    "name": "1000 Sternenstaub"
+    "name": "500 Sternenstaub"
     },
   "7": {
-    "name": "1500 Sternenstaub"
+    "name": "1000 Sternenstaub"
     },
   "8": {
-    "name": "Drachenhaut"
+    "name": "1500 Sternenstaub"
     },
   "9": {
-    "name": "King-Stein"
+    "name": "Drachenhaut"
     },
   "10": {
-    "name": "Metallmantel"
+    "name": "King-Stein"
     },
   "11": {
-    "name": "Sonnenstein"
+    "name": "Metallmantel"
     },
   "12": {
-    "name": "Up-Grade"
+    "name": "Sonnenstein"
     },
   "13": {
-    "name": "Bisasam/Glumanda/Schiggy"
+    "name": "Up-Grade"
     },
   "14": {
-    "name": "Lanturn/Owei"
+    "name": "Bisasam/Glumanda/Schiggy"
     },
   "15": {
-    "name": "Onix/Sichlor"
+    "name": "Lanturn/Owei"
     },
   "16": {
-    "name": "Quapsel/Vulpix"
+    "name": "Onix/Sichlor"
     },
   "17": {
-    "name": "Quaputzi/Seemon"
+    "name": "Quapsel/Vulpix"
     },
   "18": {
-    "name": "Bisasam"
+    "name": "Quaputzi/Seemon"
     },
   "19": {
-    "name": "Chaneira"  
+    "name": "Bisasam"
     },
   "20": {
-    "name": "Dratini"
+    "name": "Chaneira"  
     },
   "21": {
-    "name": "Elektek"
+    "name": "Camaub"  
     },
   "22": {
-    "name": "Evoli"
+    "name": "Dratini"
     },
   "23": {
-    "name": "Frizelbliz"
+    "name": "Elektek"
     },
   "24": {
-    "name": "Girafarig"
+    "name": "Evoli"
     },
   "25": {
-    "name": "Glumanda"
+    "name": "Frizelbliz"
     },
   "26": {
-    "name": "Hunduster"
+    "name": "Fukano"
     },
   "27": {
-    "name": "Karpador"
+    "name": "Girafarig"
     },
   "28": {
-    "name": "Lanturn"
+    "name": "Glumanda"
     },
   "29": {
-    "name": "Larvitar"
+    "name": "Hunduster"
     },
   "30": {
-    "name": "Machollo"
+    "name": "Karpador"
     },
   "31": {
-    "name": "Magmar"
+    "name": "Lanturn"
     },
   "32": {
-    "name": "Menki"
+    "name": "Larvitar"
     },
   "33": {
-    "name": "Miltank"
+    "name": "Machollo"
     },
   "34": {
-    "name": "Nebulak"
+    "name": "Magmar"
     },
   "35": {
-    "name": "Onix"
+    "name": "Menki"
     },
   "36": {
-    "name": "Owei"
+    "name": "Miltank"
     },
   "37": {
-    "name": "Pandir"
+    "name": "Nebulak"
     },
   "38": {
-    "name": "Porygon"
+    "name": "Onix"
     },
   "39": {
-    "name": "Quapsel"
+    "name": "Owei"
     },
   "40": {
-    "name": "Quaputzi"
+    "name": "Pandir"
     },
   "41": {
-    "name": "Rossana"
+    "name": "Phanpy"
     },
   "42": {
-    "name": "Schiggy"
+    "name": "Porygon"
     },
   "43": {
-    "name": "Seemon"
+    "name": "Quapsel"
     },
   "44": {
-    "name": "Sichlor"
+    "name": "Quaputzi"
     },
   "45": {
-    "name": "Tannza"
+    "name": "Roselia"
     },
   "46": {
-    "name": "Traunfugil"
+    "name": "Rossana"
     },
   "47": {
-    "name": "Voltilamm"
+    "name": "Schiggy"
     },
   "48": {
-    "name": "Voltobal"
+    "name": "Seemon"
     },
   "49": {
+    "name": "Sichlor"
+    },
+  "50": {
+    "name": "Smogon"
+    },
+  "51": {
+    "name": "Snubbull"
+    },
+  "52": {
+    "name": "Tannza"
+    },
+  "53": {
+    "name": "Traunfugil"
+    },
+  "54": {
+    "name": "Voltilamm"
+    },
+  "55": {
+    "name": "Voltobal"
+    },
+  "56": {
     "name": "Vulpix"
+    },
+  "57": {
+    "name": "Vulnona"
     }
 }

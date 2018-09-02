@@ -1279,6 +1279,7 @@ function setupPokestopMarker(item) {
     imagename = item['reward'] ? 'Pstop-quest' : imagename
     imagename = item['reward'] === '1 Sonderbonbon' ? 'Pstop-quest_Candy' : imagename
     imagename = item['reward'] === '3 Sonderbonbons' ? 'Pstop-quest_Candy' : imagename
+    imagename = item['reward'] === 'Silberne Sananabeere' ? 'Pstop-quest_SilberneSananabeere' : imagename
     imagename = item['reward'] === 'Absol' ? 'Pstop-quest_Absol' : imagename
     imagename = item['reward'] === 'Aerodactyl' ? 'Pstop-quest_Aerodactyl' : imagename
     imagename = item['reward'] === 'Bisasam' ? 'Pstop-quest_Bisasam' : imagename
@@ -1309,6 +1310,12 @@ function setupPokestopMarker(item) {
     imagename = item['reward'] === 'Tannza' ? 'Pstop-quest_Tannza' : imagename
     imagename = item['reward'] === 'Miltank' ? 'Pstop-quest_Miltank' : imagename
     imagename = item['reward'] === 'Porygon' ? 'Pstop-quest_Porygon' : imagename
+    imagename = item['reward'] === 'Phanpy' ? 'Pstop-quest_Phanpy' : imagename
+    imagename = item['reward'] === 'Fukano' ? 'Pstop-quest_Fukano' : imagename
+    imagename = item['reward'] === 'Roselia' ? 'Pstop-quest_Roselia' : imagename
+    imagename = item['reward'] === 'Rossana' ? 'Pstop-quest_Rossana' : imagename
+    imagename = item['reward'] === 'Menki' ? 'Pstop-quest_Menki' : imagename
+    imagename = item['reward'] === 'Vulnona' ? 'Pstop-quest_Volnona' : imagename
     var marker = new google.maps.Marker({
         position: {
             lat: item['latitude'],
