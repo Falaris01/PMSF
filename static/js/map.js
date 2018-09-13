@@ -654,7 +654,7 @@ function pokemonLabel(item) {
     } else {
         contentstring += '<div>' +
             i8ln('Disappears at') + ' ' + getTimeStr(disappearTime) +
-            ' <span class="label-countdown" disappears-at="' + disappearTime + '">(00m00s)</span>' +
+            ' <span class="label-countdown" disappears-at="' + disappearTime + '">(00h00m00s)</span>' +
             '</div>'
     }
     contentstring += ' ' +
@@ -670,7 +670,7 @@ function pokemonLabel(item) {
         '</center>' +
         '<div style="line-height:200%;"><center>' +
         i8ln('Disappears at') + ' ' + getTimeStr(disappearTime) +
-        ' <span class="label-countdown" disappears-at="' + disappearTime + '">(00m00s)</span>' +
+        ' <span class="label-countdown" disappears-at="' + disappearTime + '">(00h00m00s)</span>' +
         '</div></center>' +
         '<div><center>' +
         '<a href="javascript:notifyAboutPokemon(' + id + ') "title="' + i8ln('Notifiy about this Pokemon') + '">' + notifyIcon +
@@ -717,8 +717,8 @@ function gymLabel(item) {
 
         var raidStartStr = getTimeStr(item['raid_start'])
         var raidEndStr = getTimeStr(item['raid_end'])
-        raidStr += '<div>' + i8ln('Start') + ': <b>' + raidStartStr + '</b> <span class="label-countdown" disappears-at="' + item['raid_start'] + '" start>(00m00s)</span></div>'
-        raidStr += '<div>' + i8ln('End') + ': <b>' + raidEndStr + '</b> <span class="label-countdown" disappears-at="' + item['raid_end'] + '" end>(00m00s)</span></div>'
+        raidStr += '<div>' + i8ln('Start') + ': <b>' + raidStartStr + '</b> <span class="label-countdown" disappears-at="' + item['raid_start'] + '" start>(00h00m00s)</span></div>'
+        raidStr += '<div>' + i8ln('End') + ': <b>' + raidEndStr + '</b> <span class="label-countdown" disappears-at="' + item['raid_end'] + '" end>(00h00m00s)</span></div>'
         raidStr += '<div>Gemeldet von ' + item['raid_users'] + '</b></div>'
 
         if (raidStarted) {
@@ -848,7 +848,7 @@ function pokestopLabel(expireTime, latitude, longitude, stopName, lureUser, id, 
         str +=
             '<div>' +
             i8ln('Lure expires at') + ' ' + getTimeStr(expireTime) +
-            ' <span class="label-countdown" disappears-at="' + expireTime + '">(00m00s)</span>' +
+            ' <span class="label-countdown" disappears-at="' + expireTime + '">(00h00m00s)</span>' +
             '</div>' +
 
             '<div>' +
@@ -2106,7 +2106,7 @@ function manualQuestData(event) { // eslint-disable-line no-unused-vars
     var reward = cont.find('.rewardList').val()
     var pokestopId = cont.find('.questPokestop').val()
     if (pokestopId && pokestopId !== '') {
-        if (confirm(i8ln('I confirm this is an accurate sighting of a quest'))) {
+        if (confirm(i8ln('Ich bestätige, dass diese Quest-Sichtung korrekt ist! Missbrauch wird mit einem Bann bestraft!'))) {
             return $.ajax({
                 url: 'submit',
                 type: 'POST',
@@ -2140,7 +2140,7 @@ function deleteQuest(event) { // eslint-disable-line no-unused-vars
     var button = $(event.target)
     var pokestopId = button.data('id')
     if (pokestopId && pokestopId !== '') {
-        if (confirm(i8ln('I confirm that I want to delete this Quest.'))) {
+        if (confirm(i8ln('Ich bestätige, dass ich diese Quest entfernen möchte!'))) {
             return $.ajax({
                 url: 'submit',
                 type: 'POST',
@@ -2172,7 +2172,7 @@ function manualRaidData(event) { // eslint-disable-line no-unused-vars
     var monTime = form.find('[name="mon_time"]').val()
     var eggTime = form.find('[name="egg_time"]').val()
     if (pokemonId && pokemonId !== '' && gymId && gymId !== '' && eggTime && eggTime !== '' && monTime && monTime !== '') {
-        if (confirm('Ich bestätige, dass dies dies eine gültige Meldung ist.')) {
+        if (confirm('Ich bestätige, dass dies eine gültige Meldung ist. Missbrauch wird mit einem Bann bestraft!')) {
             return $.ajax({
                 url: 'submit',
                 type: 'POST',
@@ -2332,7 +2332,52 @@ function generateTimerLists() {
         '<option value="1">1</option>' +
         '</select>' +
         '<select name="mon_time" class="mon_time" style="display:none;">' +
-        '<option value="45" selected>45</option>' +
+        '<option value="90" selected>90</option>' +
+        '<option value="89">89</option>' +
+        '<option value="88">88</option>' +
+        '<option value="87">87</option>' +
+        '<option value="86">86</option>' +
+        '<option value="85">85</option>' +
+        '<option value="84">84</option>' +
+        '<option value="83">83</option>' +
+        '<option value="82">82</option>' +
+        '<option value="81">81</option>' +
+        '<option value="80">80</option>' +
+        '<option value="79">79</option>' +
+        '<option value="78">78</option>' +
+        '<option value="77">77</option>' +
+        '<option value="76">76</option>' +
+        '<option value="75">75</option>' +
+        '<option value="74">74</option>' +
+        '<option value="73">73</option>' +
+        '<option value="72">72</option>' +
+        '<option value="71">71</option>' +
+        '<option value="70">70</option>' +
+        '<option value="69">69</option>' +
+        '<option value="68">68</option>' +
+        '<option value="67">67</option>' +
+        '<option value="66">66</option>' +
+        '<option value="65">65</option>' +
+        '<option value="64">64</option>' +
+        '<option value="63">63</option>' +
+        '<option value="62">62</option>' +
+        '<option value="61">61</option>' +
+        '<option value="60">60</option>' +
+        '<option value="59">59</option>' +
+        '<option value="58">58</option>' +
+        '<option value="57">57</option>' +
+        '<option value="56">56</option>' +
+        '<option value="55">55</option>' +
+        '<option value="54">54</option>' +
+        '<option value="53">53</option>' +
+        '<option value="52">52</option>' +
+        '<option value="51">51</option>' +
+        '<option value="50">50</option>' +
+        '<option value="49">49</option>' +
+        '<option value="48">48</option>' +        
+        '<option value="47">47</option>' +
+        '<option value="46">46</option>' +
+        '<option value="45">45</option>' +
         '<option value="44">44</option>' +
         '<option value="43">43</option>' +
         '<option value="42">42</option>' +
@@ -3285,8 +3330,8 @@ function showGymDetails(id) { // eslint-disable-line no-unused-vars
 
             var raidStartStr = getTimeStr(result['raid_start'])
             var raidEndStr = getTimeStr(result['raid_end'])
-            raidStr += '<div>' + i8ln('Start') + ': <b>' + raidStartStr + '</b> <span class="label-countdown" disappears-at="' + result['raid_start'] + '" start>(00m00s)</span></div>'
-            raidStr += '<div>' + i8ln('End') + ': <b>' + raidEndStr + '</b> <span class="label-countdown" disappears-at="' + result['raid_end'] + '" end>(00m00s)</span></div>'
+            raidStr += '<div>' + i8ln('Start') + ': <b>' + raidStartStr + '</b> <span class="label-countdown" disappears-at="' + result['raid_start'] + '" start>(00h00m00s)</span></div>'
+            raidStr += '<div>' + i8ln('End') + ': <b>' + raidEndStr + '</b> <span class="label-countdown" disappears-at="' + result['raid_end'] + '" end>(00h00m00s)</span></div>'
             raidStr += '<div>Gemeldet von <b>' + result.raid_users + '</b></div>'
 
             if (raidStarted) {

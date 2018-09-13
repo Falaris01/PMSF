@@ -21,17 +21,17 @@ if ( $action === "raid" ) {
     if ( $eggTime > 60 ) {
         $eggTime = 60;
     }
-    if ( $monTime > 45 ) {
-        $monTime = 45;
+    if ( $monTime > 90 ) {
+        $monTime = 90;
     }
     if ( $eggTime < 0 ) {
         $eggTime = 0;
     }
     if ( $monTime < 0 ) {
-        $monTime = 45;
+        $monTime = 90;
     }
 // brimful of asha on the:
-    $forty_five = 45 * 60;
+    $forty_five = 90 * 60;
     $hour       = 3600;
 //$db->debug();
 // fetch fort_id
