@@ -438,13 +438,15 @@ if ( $blockIframe ) {
 		                echo '<a href="' . $discordUrl . '" target="_blank" style="margin-top: 2px; vertical-align: middle;padding:0 5px;"><img src="static/images/discord.png" border="0" title="' . $discordServer . '" border="0" style="display: inline-block; margin-top: -4px; padding:-2px -2px 0 0; max-width:100%; height:auto;"></a>'; ?>
 		            </center>
 		        </div>
-		        <h6>Nester</h6>
+            <!--
+                <h6>Nester</h6>
 		        <div>
 		            <center>
 		                <?php
 		                echo '<a href="' . $nestMapUrl . '" target="_blank" style="margin-top: 2px; vertical-align: middle;padding:0 5px;"><img src="static/images/nester.png" title="Nest Map by @shimpooky" border="0" style="display: inline-block; margin-top: -4px; padding:-2px -2px 0 0; max-width:100%; height:auto;"></a>'; ?>
 		            </center>
 		        </div>
+            -->
 		        <h6>Support</h6>
 		        <div>
 		        	<center>
@@ -664,7 +666,7 @@ if ( $blockIframe ) {
                 </div>';
                     } ?>
                     <div id="gyms-filter-wrapper" style="display:none">
-                        <div class="form-control switch-container" id="team-gyms-only-wrapper">
+                    <!--    <div class="form-control switch-container" id="team-gyms-only-wrapper">
                             <h4><?php echo i8ln('Team') ?></h4>
                             <select name="team-gyms-filter-switch" id="team-gyms-only-switch">
                                 <option value="0"><?php echo i8ln( 'All' ) ?></option>
@@ -718,7 +720,7 @@ if ( $blockIframe ) {
                                 <option value="24"><?php echo i8ln( 'Last 24 Hours' ) ?></option>
                                 <option value="168"><?php echo i8ln( 'Last Week' ) ?></option>
                             </select>
-                        </div>
+                        </div> -->
                     </div>
                     <div id="gyms-raid-filter-wrapper" style="display:none">
                         <?php
@@ -907,56 +909,9 @@ if ( $blockIframe ) {
             ?>
             <!-- Notifications Tab -->
             <?php
-            if ( ! $noNotifyPokemon || ! $noNotifyRarity || ! $noNotifyIv || ! $noNotifyLevel || ! $noNotifySound || ! $noNotifyRaid || ! $noNotifyBounce || ! $noNotifyNotification ) {
+            if ( ! $noNotifySound || ! $noNotifyRaid || ! $noNotifyBounce || ! $noNotifyNotification ) {
                 echo '<h3>' . i8ln( 'Notification' ) . '</h3>
             <div>';
-            }
-            ?>
-            <?php
-            if (!$noNotifyPokemon) {
-                echo '<div class="form-control hide-select-2">
-                    <label for="notify-pokemon">
-                        <h5>' . i8ln('Notify of Pokemon') . '</h5><a href="#" class="select-all">Alle wählen</a> / <a href="#" class="hide-all">Keine</a>
-                        <div style="max-height:165px;overflow-y:auto;">
-                            <input id="notify-pokemon" type="text" readonly="true"/>';
-                pokemonFilterImages($noPokemonNumbers);
-                echo '</div>
-                    </label>
-                </div>';
-            }
-            ?>
-            <?php
-            if (!$noNotifyRarity) {
-                echo '<div class="form-control">
-                <label for="notify-rarity">
-                    <h5>' . i8ln('Notify of Rarity') . '</h5>
-                    <div style="max-height:165px;overflow-y:auto">
-                        <select id="notify-rarity" multiple="multiple"></select>
-                    </div>
-                </label>
-            </div>';
-            }
-            ?>
-            <?php
-            if (!$noNotifyIv) {
-                echo '<div class="form-control">
-                <label for="notify-perfection">
-                    <h4>' . i8ln('Notify of Perfection') . '</h4>
-                    <input id="notify-perfection" type="text" name="notify-perfection"
-                           placeholder="' . i8ln('z.B. 90') . ' %" style="float: right;width: 75px;text-align:center"/>
-                </label>
-            </div>';
-            }
-            ?>
-            <?php
-            if (!$noNotifyLevel) {
-                echo '<div class="form-control">
-                <label for="notify-level">
-                    <h4 style="float:left;">' . i8ln('Notify of Level') . '</h4>
-                    <input id="notify-level" min="1" max="35" type="number" name="notify-level"
-                           placeholder="' . i8ln('z.B. 30') . '" style="float: right;width: 75px;text-align:center"/>
-                </label>
-            </div>';
             }
             ?>
             <?php
