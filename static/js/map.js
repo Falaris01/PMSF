@@ -3506,9 +3506,9 @@ function pokemonRaidFilter(event) { // eslint-disable-line no-unused-vars
     var par = cont.parent()
     par.find('.mon-name').text(label).show()
     par.find('.timer-cont').show()
-    var text = i8ln('Zeit verbleibend (mins)')
+    var text = i8ln('Zeit verbleibend (std:min/min)')
     if (id.includes('egg')) {
-        text = i8ln('Schlüpft in (mins)')
+        text = i8ln('Schlüpft in (min)')
         par.find('.mon_time').hide()
         par.find('.egg_time').show()
     } else {
