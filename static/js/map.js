@@ -1300,7 +1300,7 @@ function setupPokestopMarker(item) {
     imagename = item['reward'] === 'Owei' ? 'Pstop-quest_Owei' : imagename
     imagename = item['reward'] === 'Pandir' ? 'Pstop-quest_Pandir' : imagename
     imagename = item['reward'] === 'Pikachu' ? 'Pstop-quest_Pikachu' : imagename
-    imagename = item['reward'] === 'Schiggy' ? 'Pstop-quest_Schiggy' : imagename 
+    imagename = item['reward'] === 'Schiggy' ? 'Pstop-quest_Schiggy' : imagename
     imagename = item['reward'] === 'Schlurp' ? 'Pstop-quest_Schlurp' : imagename
     imagename = item['reward'] === 'Snubbull' ? 'Pstop-quest_Snubbull' : imagename
     imagename = item['reward'] === 'Tangela' ? 'Pstop-quest_Tangela' : imagename
