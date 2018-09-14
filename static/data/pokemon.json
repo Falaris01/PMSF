@@ -998,6 +998,7 @@
   "81": {
     "name": "Magnemite",
     "rarity": "Rare",
+    "level": 2,
     "types": [
       {
         "type": "Electric",
@@ -1846,6 +1847,7 @@
   "147": {
     "name": "Dratini",
     "rarity": "Uncommon",
+    "level": 1,
     "types": [
       {
         "type": "Dragon",
