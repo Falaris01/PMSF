@@ -2329,7 +2329,7 @@ function generateTimerLists() {
         '<option value="51">51</option>' +
         '<option value="50">50</option>' +
         '<option value="49">49</option>' +
-        '<option value="48">48</option>' +        
+        '<option value="48">48</option>' +
         '<option value="47">47</option>' +
         '<option value="46">46</option>' +
         '<option value="45">45</option>' +
