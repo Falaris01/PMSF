@@ -9,8 +9,7 @@ $eggTime = !empty($_POST['eggTime']) ? $_POST['eggTime'] : 0;
 $monTime = !empty($_POST['monTime']) ? $_POST['monTime'] : 0;
 
 // brimful of asha on the:
-$ninety = 90 * 60;
-$forty_five = 90 * 60;
+$battle_duration = 45 * 60;
 $hour = 3600;
 
 // set content type
@@ -29,7 +28,7 @@ $d["timestamp"] = $now->getTimestamp();
 $gym = $db->get("forts", ['id', 'name', 'lat', 'lon'], ['external_id' => $gymId]);
 $gymId = $gym['id'];
 $add_seconds = ($monTime * 60);
-$time_spawn = time() - $forty_five;
+$time_spawn = time() - $battle_duration;
 $level = 0;
 if(strpos($pokemonId,'egg_') !== false){
     $add_seconds = ($eggTime * 60);
@@ -38,7 +37,7 @@ if(strpos($pokemonId,'egg_') !== false){
 }
 
 $time_battle = time() + $add_seconds;
-$time_end = $time_battle + $ninety;
+$time_end = $time_battle + $battle_duration;
 $extId = rand(0, 65535) . rand(0, 65535);
 
 $cols = [
@@ -57,7 +56,7 @@ $cols = [
 if (array_key_exists($pokemonId, $raidBosses)) {
     $time_end = time() + $add_seconds;
     // fake the battle start and spawn times cuz rip hashing :(
-    $time_battle = $time_end - $ninety;
+    $time_battle = $time_end - $battle_duration;
     $time_spawn = $time_battle - $hour;
     $cols['pokemon_id'] = $pokemonId;
     $cols['move_1'] = 133; // struggle :(

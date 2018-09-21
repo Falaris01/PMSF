@@ -21,24 +21,24 @@ if ( $action === "raid" ) {
     if ( $eggTime > 60 ) {
         $eggTime = 60;
     }
-    if ( $monTime > 90 ) {
-        $monTime = 90;
+    if ( $monTime > 45 ) {
+        $monTime = 45;
     }
     if ( $eggTime < 0 ) {
         $eggTime = 0;
     }
     if ( $monTime < 0 ) {
-        $monTime = 90;
+        $monTime = 45;
     }
 // brimful of asha on the:
-    $forty_five = 90 * 60;
+    $battle_duration = 45 * 60;
     $hour       = 3600;
 //$db->debug();
 // fetch fort_id
     $gym         = $db->get( "forts", [ 'id', 'name', 'lat', 'lon' ], [ 'external_id' => $gymId ] );
     $gymId       = $gym['id'];
     $add_seconds = ( $monTime * 60 );
-    $time_spawn  = time() - $forty_five;
+    $time_spawn  = time() - $battle_duration;
     $level       = 0;
     if ( strpos( $pokemonId, 'egg_' ) !== false ) {
         $add_seconds = ( $eggTime * 60 );
@@ -46,7 +46,7 @@ if ( $action === "raid" ) {
         $time_spawn  = time() + $add_seconds;
     }
     $time_battle = time() + $add_seconds;
-    $time_end    = $time_battle + $forty_five;
+    $time_end    = $time_battle + $battle_duration;
     $extId       = rand( 0, 65535 ) . rand( 0, 65535 );
     $cols = [
         'external_id' => $gymId,
@@ -64,7 +64,7 @@ if ( $action === "raid" ) {
     if ( array_key_exists( $pokemonId, $raidBosses ) ) {
         $time_end = time() + $add_seconds;
         // fake the battle start and spawn times cuz rip hashing :(
-        $time_battle         = $time_end - $forty_five;
+        $time_battle         = $time_end - $battle_duration;
         $time_spawn          = $time_battle - $hour;
         $cols['pokemon_id']  = $pokemonId;
         $cols['move_1']      = 133; // struggle :(
