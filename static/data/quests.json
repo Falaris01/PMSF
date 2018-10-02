@@ -17,95 +17,102 @@
   },
   "5": {
     "cat": "Arenen",
-    "name": "Gewinne 5 Arenakämpfe"
+    "name": "Setze eine sehr effektive Lade-Attacke in 7 Arenakämpfen ein"
   },
   "6": {
-    "cat": "Arenen",
-    "name": "Setze eine sehr effektive Ladeattacken in 7 Kämpfen ein"
+    "cat": "Raids",
+    "name": "Kämpfe in einem Raid"
   },
   "7": {
-    "cat": "Eier ausbrüten",
-    "name": "Brüte 1 Ei aus"
+    "cat": "Raids",
+    "name": "Gewinne einen Raid"
   },
   "8": {
     "cat": "Eier ausbrüten",
-    "name": "Brüte 3 Eier aus"
+    "name": "Brüte ein Ei aus"
   },
   "9": {
     "cat": "Eier ausbrüten",
-    "name": "Brüte 5 Eier aus"
+    "name": "Brüte 2 Eier aus"
   },
   "10": {
+    "cat": "Eier ausbrüten",
+    "name": "Brüte 3 Eier aus"
+  },
+  "11": {
+    "cat": "Eier ausbrüten",
+    "name": "Brüte 5 Eier aus"
+  },
+  "12": {
     "cat": "Entwickeln",
     "name": "Entwickle ein Pokemon"
   },
-  "11": {
-    "cat": "Entwickeln",
-    "name": "Entwickle 5 Pokemon vom Typ Feuer"
-  },
-  "12": {
-    "cat": "Fangen",
-    "name": "Fange 10 Pokémon"
-  },
   "13": {
-    "cat": "Fangen",
-    "name": "Fange 5 Pokémon mit Wetterverstärkung"
+    "cat": "Entwickeln",
+    "name": "Entwickle 10 Pokemon vom Typ Wasser"
   },
   "14": {
     "cat": "Fangen",
-    "name": "Fange ein Pokémon vom Typ Drache"
+    "name": "Fange 10 Pokémon"
   },
   "15": {
     "cat": "Fangen",
-    "name": "Fange ein Rattfratz oder Pikachu"
+    "name": "Fange 5 Pokémon vom Typ Wasser"
   },
   "16": {
     "cat": "Fangen",
-    "name": "Fange 5 Pokémon vom Typ Feuer"
+    "name": "Fange 10 Pokémon vom Typ Normal"
   },
   "17": {
-    "cat": "Power-Up",
-    "name": "Verwende 5 Power-Ups bei Pokémon"
+    "cat": "Fangen",
+    "name": "Fange ein Pokémon vom Typ Drache"
   },
   "18": {
-    "cat": "Power-Up",
-    "name": "Verwende 3 Power-Ups bei Pokémon"
+    "cat": "Fangen",
+    "name": "Fange 5 Pokémon mit Wetterverstärkung"
   },
   "19": {
     "cat": "Würfe",
-    "name": "Lande 5 gute Würfe"
+    "name": "Lande 2 gute Curveball-Würfe"
   },
   "20": {
     "cat": "Würfe",
-    "name": "Lande 3 großartige Würfe"
+    "name": "Lande 5 gute Würfe"
   },
   "21": {
     "cat": "Würfe",
-    "name": "Lande 3 großartige Würfe hintereinander"
+    "name": "Lande 3 großartige Würfe"
   },
   "22": {
     "cat": "Würfe",
-    "name": "Lande 3 fabelhafte Würfe hintereinander"
+    "name": "Lande 3 großartige Würfe hintereinander"
   },
   "23": {
     "cat": "Würfe",
-    "name": "Lande einen großartigen Curveball-Wurf"
+    "name": "Lande 3 großartige Curveball-Würfe"
   },
   "24": {
-    "cat": "Sonstiges",
-    "name": "Verdiene ein Bonbon durch Spazieren mit deinem Kumpel"
+    "cat": "Würfe",
+    "name": "Lande 3 fabelhafte Würfe hintereinander"
   },
   "25": {
     "cat": "Sonstiges",
-    "name": "Verschicke 5 Geschenke an Freunde"
+    "name": "Drehe 10 Pokéstops oder Arenen"
   },
   "26": {
     "cat": "Sonstiges",
-    "name": "Verwende 10 Beeren beim Fangen von Pokémon"
+    "name": "Verwende 5 Power-Ups bei Pokémon"
   },
   "27": {
-    "cat": "Fangen",
-    "name": "Fange ein Ditto"
-  }
- 
+    "cat": "Sonstiges",
+    "name": "Verdiene ein Bonbon durch Spazieren mit deinem Kumpel"
+  },
+  "28": {
+    "cat": "Sonstiges",
+    "name": "Tausche ein Pokémon"
+  },
+  "29": {
+    "cat": "Sonstiges",
+    "name": "Benutze 5 Sananabeeren"
+  } 
 }

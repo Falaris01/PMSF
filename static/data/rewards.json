@@ -1,173 +1,134 @@
  {
   "1": {
-    "name": "1 Sonderbonbon"
+    "name": "1 silberne Sananabeere"
     },
   "2": {
-    "name": "3 Sonderbonbons"
+    "name": "1 Sonderbonbon"
     },
   "3": {
-    "name": "2 goldene Himmihbeeren"
+    "name": "3 Sonderbonbons"
     },
   "4": {
-    "name": "Silberne Sananabeere"
+    "name": "2 goldene Himmihbeeren"
     },
   "5": {
-    "name": "200 Sternenstaub"
+    "name": "200/500 Sternenstaub"
     },
   "6": {
-    "name": "500 Sternenstaub"
-    },
-  "7": {
     "name": "1000 Sternenstaub"
     },
-  "8": {
+  "7": {
     "name": "1500 Sternenstaub"
     },
+  "8": {
+    "name": "3/6/9 Himmihbeeren"
+    },
   "9": {
-    "name": "Drachenhaut"
+    "name": "1/2/3 Sananabeeren"
     },
   "10": {
-    "name": "King-Stein"
+    "name": "5/10 Nanabbeeren"
     },
   "11": {
-    "name": "Metallmantel"
+    "name": "5 Tränke"
     },
   "12": {
-    "name": "Sonnenstein"
+    "name": "3 Supertränke"
     },
   "13": {
-    "name": "Up-Grade"
+    "name": "3 Hypertränke"
     },
   "14": {
-    "name": "Bisasam/Glumanda/Schiggy"
+    "name": "2/4/6 Beleber"
     },
   "15": {
-    "name": "Lanturn/Owei"
+    "name": "1 Top-Beleber"
     },
   "16": {
-    "name": "Onix/Sichlor"
+    "name": "5/10 Pokébälle"
     },
   "17": {
-    "name": "Quapsel/Vulpix"
+    "name": "5 Superbälle"
     },
   "18": {
-    "name": "Quaputzi/Seemon"
+    "name": "5/10 Hyperbälle"
     },
   "19": {
-    "name": "Bisasam"
+    "name": "Bisasam/Glumanda/Schiggy"
     },
   "20": {
-    "name": "Chaneira"  
+    "name": "Quapsel/Vulpix"
     },
   "21": {
-    "name": "Camaub"  
+    "name": "Barschwa"  
     },
   "22": {
-    "name": "Dratini"
+    "name": "Bisasam"  
     },
   "23": {
-    "name": "Elektek"
+    "name": "Chaneira"
     },
   "24": {
-    "name": "Evoli"
+    "name": "Dratini"
     },
   "25": {
-    "name": "Frizelbliz"
+    "name": "Elektek"
     },
   "26": {
-    "name": "Fukano"
+    "name": "Evoli"
     },
   "27": {
-    "name": "Girafarig"
-    },
-  "28": {
     "name": "Glumanda"
     },
-  "29": {
-    "name": "Hunduster"
-    },
-  "30": {
+  "28": {
     "name": "Karpador"
     },
-  "31": {
-    "name": "Lanturn"
+  "29": {
+    "name": "Krabby"
     },
-  "32": {
+  "30": {
     "name": "Larvitar"
     },
-  "33": {
+  "31": {
     "name": "Machollo"
     },
-  "34": {
+  "32": {
     "name": "Magmar"
     },
-  "35": {
+  "33": {
     "name": "Menki"
     },
-  "36": {
-    "name": "Miltank"
-    },
-  "37": {
+  "34": {
     "name": "Nebulak"
     },
-  "38": {
+  "35": {
+    "name": "Octillery"
+    },
+  "36": {
     "name": "Onix"
     },
-  "39": {
+  "37": {
     "name": "Owei"
     },
-  "40": {
+  "38": {
     "name": "Pandir"
     },
-  "41": {
-    "name": "Phanpy"
-    },
-  "42": {
-    "name": "Porygon"
-    },
-  "43": {
+  "39": {
     "name": "Quapsel"
     },
-  "44": {
-    "name": "Quaputzi"
-    },
-  "45": {
-    "name": "Roselia"
-    },
-  "46": {
+  "40": {
     "name": "Rossana"
     },
-  "47": {
+  "41": {
     "name": "Schiggy"
     },
-  "48": {
-    "name": "Seemon"
-    },
-  "49": {
-    "name": "Sichlor"
-    },
-  "50": {
-    "name": "Smogon"
-    },
-  "51": {
-    "name": "Snubbull"
-    },
-  "52": {
-    "name": "Tannza"
-    },
-  "53": {
-    "name": "Traunfugil"
-    },
-  "54": {
-    "name": "Voltilamm"
-    },
-  "55": {
+  "42": {
     "name": "Voltobal"
     },
-  "56": {
+  "43": {
     "name": "Vulpix"
     },
-  "57": {
-    "name": "Vulnona"
+  "44": {
+    "name": "Wailmer"
     }
 }
