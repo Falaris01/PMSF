@@ -719,7 +719,7 @@ function gymLabel(item) {
         var raidEndStr = getTimeStr(item['raid_end'])
         raidStr += '<div>' + i8ln('Start') + ': <b>' + raidStartStr + '</b> <span class="label-countdown" disappears-at="' + item['raid_start'] + '" start>(00h00m00s)</span></div>'
         raidStr += '<div>' + i8ln('End') + ': <b>' + raidEndStr + '</b> <span class="label-countdown" disappears-at="' + item['raid_end'] + '" end>(00h00m00s)</span></div>'
-        raidStr += '<div>Gemeldet von ' + item['raid_users'] + '</b></div>'
+        //raidStr += '<div>Gemeldet von ' + item['raid_users'] + '</b></div>'
 
         if (raidStarted) {
             raidIcon = '<i class="pokemon-sprite-large n' + item.raid_pokemon_id + '"></i>'
@@ -870,7 +870,7 @@ function pokestopLabel(expireTime, latitude, longitude, stopName, lureUser, id, 
                     i8ln(reward) +
                     '</div>'
             }
-            str += '<div>Gemeldet von ' + users + '</div>'
+            //str += '<div>Gemeldet von ' + users + '</div>'
             if (!noDeleteQuests || discordUser === users) {
                 str += '<div><i class="fa fa-ban delete-quest" onclick="deleteQuest(event);" data-id="' + id + '"></i></div>'
             }
@@ -3287,7 +3287,7 @@ function showGymDetails(id) { // eslint-disable-line no-unused-vars
             var raidEndStr = getTimeStr(result['raid_end'])
             raidStr += '<div>' + i8ln('Start') + ': <b>' + raidStartStr + '</b> <span class="label-countdown" disappears-at="' + result['raid_start'] + '" start>(00h00m00s)</span></div>'
             raidStr += '<div>' + i8ln('End') + ': <b>' + raidEndStr + '</b> <span class="label-countdown" disappears-at="' + result['raid_end'] + '" end>(00h00m00s)</span></div>'
-            raidStr += '<div>Gemeldet von <b>' + result.raid_users + '</b></div>'
+            //raidStr += '<div>Gemeldet von <b>' + result.raid_users + '</b></div>'
 
             if (raidStarted) {
                 raidIcon = '<i class="pokemon-sprite-large n' + result.raid_pokemon_id + '"></i>'

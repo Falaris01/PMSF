@@ -162,8 +162,11 @@ if ( $action === "raid" ) {
             $rewardIcon = 'Candy';
         } 
         $avatarIcon = 'https://raw.githubusercontent.com/Falaris01/PMSF/manual_v5/static/forts/discord_icons/QuestIcon_'.$rewardIcon.'.png';
+        /*
+        'content' => 'Belohnung: **'.$reward.'** PokeStop: __**'.$pokestops['name'].'**__ gemeldet von: **'.$_SESSION['user']->user.'** ['.$hostUrl.']('.$hostUrl.'?lat='.$pokestops['lat'].'&lon='.$pokestops['lon'].') | [Google Maps](https://www.google.com/maps?q='.$pokestops['lat'].','.$pokestops['lon'].')',
+        */
         $webhook = [
-            'content' => 'Belohnung: **'.$reward.'** PokeStop: __**'.$pokestops['name'].'**__ gemeldet von: **'.$_SESSION['user']->user.'** ['.$hostUrl.']('.$hostUrl.'?lat='.$pokestops['lat'].'&lon='.$pokestops['lon'].') | [Google Maps](https://www.google.com/maps?q='.$pokestops['lat'].','.$pokestops['lon'].')',
+            'content' => 'Belohnung: **'.$reward.'** PokeStop: __**'.$pokestops['name'].'**__ ['.$hostUrl.']('.$hostUrl.'?lat='.$pokestops['lat'].'&lon='.$pokestops['lon'].') | [Google Maps](https://www.google.com/maps?q='.$pokestops['lat'].','.$pokestops['lon'].')',
             'avatar_url' => $avatarIcon,
             'username' => $reward,
             'name' => $reward
