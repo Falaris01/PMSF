@@ -1316,6 +1316,9 @@ function setupPokestopMarker(item) {
     imagename = item['reward'] === 'Rossana' ? 'Pstop-quest_Rossana' : imagename
     imagename = item['reward'] === 'Menki' ? 'Pstop-quest_Menki' : imagename
     imagename = item['reward'] === 'Vulnona' ? 'Pstop-quest_Vulnona' : imagename
+    imagename = item['reward'] === 'Barschwa' ? 'Pstop-quest_Barschwa' : imagename
+    imagename = item['reward'] === 'Krabby' ? 'Pstop-quest_Krabby' : imagename
+    imagename = item['reward'] === 'Voltobal' ? 'Pstop-quest_Voltobal' : imagename
     var marker = new google.maps.Marker({
         position: {
             lat: item['latitude'],
