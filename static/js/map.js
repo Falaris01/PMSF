@@ -732,7 +732,11 @@ function gymLabel(item) {
             } else {
                 raidEgg = 'legendary'
             }
-            raidIcon = '<img src="static/raids/egg_' + raidEgg + '.png">'
+            if (item['raid_start'] < Date.now()) {
+                raidIcon = '<img src="static/raids/egg_hatched_' + raidEgg + '.png">'
+            } else {
+                raidIcon = '<img src="static/raids/egg_' + raidEgg + '.png">'
+            }
         }
     }
     if (manualRaids) {
@@ -1122,9 +1126,17 @@ function getGymMarkerIcon(item) {
             battleIcon +
             '</div>'
     } else if (item['raid_level'] !== null && item.raid_end > Date.now()) {
+        if (item.raid_start > Date.now()) {
+            return '<div style="position:relative;">' +
+                '<img src="static/forts/' + Store.get('gymMarkerStyle') + '/' + teamStr + '.png" style="width:55px;height:auto;"/>' +
+                '<img src="static/raids/egg_' + item['raid_level'] + '.png" style="width:35px;height:auto;position:absolute;top:8px;right:10px;"/>' +
+                exIcon +
+                battleIcon +
+                '</div>'
+        }
         return '<div style="position:relative;">' +
             '<img src="static/forts/' + Store.get('gymMarkerStyle') + '/' + teamStr + '.png" style="width:55px;height:auto;"/>' +
-            '<img src="static/raids/egg_' + item['raid_level'] + '.png" style="width:35px;height:auto;position:absolute;top:8px;right:10px;"/>' +
+            '<img src="static/raids/egg_hatched_' + item['raid_level'] + '.png" style="width:35px;height:auto;position:absolute;top:8px;right:10px;"/>' +
             exIcon +
             battleIcon +
             '</div>'
@@ -1190,7 +1202,11 @@ function setupGymMarker(item) {
             } else {
                 raidEgg = 'legendary'
             }
-            icon = 'static/raids/egg_' + raidEgg + '.png'
+            if (item['raid_start'] < Date.now()) {
+                icon = 'static/raids/egg_hatched_' + raidEgg + '.png'
+            } else {
+                icon = 'static/raids/egg_' + raidEgg + '.png'
+            }
             checkAndCreateSound()
         }
         sendNotification(title, text, icon, item['latitude'], item['longitude'])
@@ -1259,7 +1275,11 @@ function updateGymMarker(item, marker) {
                 } else {
                     raidEgg = 'legendary'
                 }
-                icon = 'static/raids/egg_' + raidEgg + '.png'
+                if (item['raid_start'] < Date.now()) {
+                    icon = 'static/raids/egg_hatched_' + raidEgg + '.png'
+                } else {
+                    icon = 'static/raids/egg_' + raidEgg + '.png'
+                }
             }
             sendNotification(title, text, icon, item['latitude'], item['longitude'])
         }
@@ -3309,7 +3329,11 @@ function showGymDetails(id) { // eslint-disable-line no-unused-vars
                 } else {
                     raidEgg = 'legendary'
                 }
-                raidIcon = '<img src="static/raids/egg_' + raidEgg + '.png">'
+                if (result['raid_start'] < Date.now()) {
+                    raidIcon = '<img src="static/raids/egg_hatched_' + raidEgg + '.png">'
+                } else {
+                    raidIcon = '<img src="static/raids/egg_' + raidEgg + '.png">'
+                }
             }
         }
         if (!noDeleteGyms) {
