@@ -114,5 +114,17 @@
   "29": {
     "cat": "Sonstiges",
     "name": "Benutze 5 Sananabeeren"
-  } 
+  },
+  "30": {
+    "cat": "Psycho-Spektakel",
+    "name": "Fange 10 Pokémon vom Typ Psycho"
+  },
+  "31": {
+    "cat": "Psycho-Spektakel",
+    "name": "Entwickle 3 Flegmon oder Owei"
+  },
+  "32": {
+    "cat": "Psycho-Spektakel",
+    "name": "Fange 5 Abra oder Traumato"
+  }
 }

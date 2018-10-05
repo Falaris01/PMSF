@@ -78,57 +78,60 @@
     "name": "Evoli"
     },
   "27": {
-    "name": "Glumanda"
+    "name": "Girafarig"
     },
   "28": {
-    "name": "Karpador"
+    "name": "Glumanda"
     },
   "29": {
-    "name": "Krabby"
+    "name": "Karpador"
     },
   "30": {
-    "name": "Larvitar"
+    "name": "Krabby"
     },
   "31": {
-    "name": "Machollo"
+    "name": "Larvitar"
     },
   "32": {
-    "name": "Magmar"
+    "name": "Machollo"
     },
   "33": {
-    "name": "Menki"
+    "name": "Magmar"
     },
   "34": {
-    "name": "Nebulak"
+    "name": "Menki"
     },
   "35": {
-    "name": "Octillery"
+    "name": "Nebulak"
     },
   "36": {
-    "name": "Onix"
+    "name": "Octillery"
     },
   "37": {
-    "name": "Owei"
+    "name": "Onix"
     },
   "38": {
-    "name": "Pandir"
+    "name": "Owei"
     },
   "39": {
-    "name": "Quapsel"
+    "name": "Pandir"
     },
   "40": {
-    "name": "Rossana"
+    "name": "Quapsel"
     },
   "41": {
-    "name": "Schiggy"
+    "name": "Rossana"
     },
   "42": {
-    "name": "Voltobal"
+    "name": "Schiggy"
     },
   "43": {
-    "name": "Vulpix"
+    "name": "Voltobal"
     },
   "44": {
+    "name": "Vulpix"
+    },
+  "45": {
     "name": "Wailmer"
     }
 }
