@@ -75,7 +75,6 @@
   "Icon":"Icon",
   "Name":"Name",
   "Count":"Anzahl",
-  "Location":"Position",
   "View in Maps":"Auf der Karte zeigen",
   "Get directions":"Wegbeschreibung",
   "Exclude":"Ausblenden",
@@ -1176,7 +1175,7 @@
   "Location Icon Marker":"Positions-Marker",
   "Hidden":"Versteckt",
   "Moves":"Attacken",
-  "CP":"WP",
+  "cp":"WP",
   "Disappears at":"Bis ",
   "Location":"Standort",
   "Gender":"Geschlecht",
@@ -1190,7 +1189,6 @@
   "Yellow":"Instinct",
   "Total":"Insgesamt",
   "Not Lured":"Ohne Lockmodul",
-  "Location":"Standort",
   "Search":"Suche",
   "markers are disabled":"Marker sind deaktiviert!",
   "uncontested":"Nicht umkämpft!",
@@ -1211,5 +1209,10 @@
   "I confirm that I want to delete this gym. This is a permanent deleture": "Ich bestätige, dass diese Arena nicht existiert und gelöscht werden kann.",
   "I confirm that I want to delete this pokestop. This is a permanent deleture": "Ich bestätige, dass dieser PokeStop nicht existiert und gelöscht werden kann.",
   "As found on thesilphroad.com": "Übernommen vom TSR Nest-Atlas",
-  "Only Quests": "Nur PokeStops mit Aufgaben"
+  "Only Quests": "Nur PokeStops mit Aufgaben",
+  "started": "gestartet",
+  "ended": "beendet",
+  "expired": "abgelaufen",
+  "Reward": "Belohnung",
+  "Quest": "Aufgabe"
 }
