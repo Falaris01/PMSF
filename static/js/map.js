@@ -709,11 +709,12 @@ function gymLabel(item) {
             raidStr += '<br>' + item.raid_pokemon_name + cpStr
         }
         raidStr += '</h3>'
+		/*
         if (raidStarted && item.raid_pokemon_move_1 != null && item.raid_pokemon_move_2 != null) {
             var pMove1 = (moves[item['raid_pokemon_move_1']] !== undefined) ? i8ln(moves[item['raid_pokemon_move_1']]['name']) : 'gen/unknown'
             var pMove2 = (moves[item['raid_pokemon_move_2']] !== undefined) ? i8ln(moves[item['raid_pokemon_move_2']]['name']) : 'gen/unknown'
             raidStr += '<div><b>' + pMove1 + ' / ' + pMove2 + '</b></div>'
-        }
+        }*/
 
         var raidStartStr = getTimeStr(item['raid_start'])
         var raidEndStr = getTimeStr(item['raid_end'])
@@ -3306,11 +3307,12 @@ function showGymDetails(id) { // eslint-disable-line no-unused-vars
                 raidStr += '<br>' + result.raid_pokemon_name + cpStr
             }
             raidStr += '</h3>'
+			/*
             if (raidStarted && result.raid_pokemon_move_1 != null && result.raid_pokemon_move_2 != null) {
                 var pMove1 = (moves[result['raid_pokemon_move_1']] !== undefined) ? i8ln(moves[result['raid_pokemon_move_1']]['name']) : 'gen/unknown'
                 var pMove2 = (moves[result['raid_pokemon_move_2']] !== undefined) ? i8ln(moves[result['raid_pokemon_move_2']]['name']) : 'gen/unknown'
                 raidStr += '<div><b>' + pMove1 + ' / ' + pMove2 + '</b></div>'
-            }
+            }*/
 
             var raidStartStr = getTimeStr(result['raid_start'])
             var raidEndStr = getTimeStr(result['raid_end'])
