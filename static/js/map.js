@@ -709,18 +709,18 @@ function gymLabel(item) {
             raidStr += '<br>' + item.raid_pokemon_name + cpStr
         }
         raidStr += '</h3>'
-		/*
+        /*
         if (raidStarted && item.raid_pokemon_move_1 != null && item.raid_pokemon_move_2 != null) {
             var pMove1 = (moves[item['raid_pokemon_move_1']] !== undefined) ? i8ln(moves[item['raid_pokemon_move_1']]['name']) : 'gen/unknown'
             var pMove2 = (moves[item['raid_pokemon_move_2']] !== undefined) ? i8ln(moves[item['raid_pokemon_move_2']]['name']) : 'gen/unknown'
             raidStr += '<div><b>' + pMove1 + ' / ' + pMove2 + '</b></div>'
-        }*/
+        } */
 
         var raidStartStr = getTimeStr(item['raid_start'])
         var raidEndStr = getTimeStr(item['raid_end'])
         raidStr += '<div>' + i8ln('Start') + ': <b>' + raidStartStr + '</b> <span class="label-countdown" disappears-at="' + item['raid_start'] + '" start>(00h00m00s)</span></div>'
         raidStr += '<div>' + i8ln('End') + ': <b>' + raidEndStr + '</b> <span class="label-countdown" disappears-at="' + item['raid_end'] + '" end>(00h00m00s)</span></div>'
-        //raidStr += '<div>Gemeldet von ' + item['raid_users'] + '</b></div>'
+        // raidStr += '<div>Gemeldet von ' + item['raid_users'] + '</b></div>'
 
         if (raidStarted) {
             raidIcon = '<i class="pokemon-sprite-large n' + item.raid_pokemon_id + '"></i>'
@@ -776,8 +776,8 @@ function gymLabel(item) {
             '<div>' +
             '<center>' +
             '<div>' +
-            //'<b style="color:rgba(' + gymColor[teamId] + ')">' + i8ln(teamName) + '</b><br>' +
-            //'<img height="70px" style="padding: 5px;" src="static/forts/' + teamName + '_large.png">' +
+            // '<b style="color:rgba(' + gymColor[teamId] + ')">' + i8ln(teamName) + '</b><br>' +
+            // '<img height="70px" style="padding: 5px;" src="static/forts/' + teamName + '_large.png">' +
             raidIcon +
             '</div>' +
             nameStr +
@@ -875,7 +875,7 @@ function pokestopLabel(expireTime, latitude, longitude, stopName, lureUser, id, 
                     i8ln(reward) +
                     '</div>'
             }
-            //str += '<div>Gemeldet von ' + users + '</div>'
+            // str += '<div>Gemeldet von ' + users + '</div>'
             if (!noDeleteQuests || discordUser === users) {
                 str += '<div><i class="fa fa-ban delete-quest" onclick="deleteQuest(event);" data-id="' + id + '"></i></div>'
             }
@@ -3307,18 +3307,18 @@ function showGymDetails(id) { // eslint-disable-line no-unused-vars
                 raidStr += '<br>' + result.raid_pokemon_name + cpStr
             }
             raidStr += '</h3>'
-			/*
+            /*
             if (raidStarted && result.raid_pokemon_move_1 != null && result.raid_pokemon_move_2 != null) {
                 var pMove1 = (moves[result['raid_pokemon_move_1']] !== undefined) ? i8ln(moves[result['raid_pokemon_move_1']]['name']) : 'gen/unknown'
                 var pMove2 = (moves[result['raid_pokemon_move_2']] !== undefined) ? i8ln(moves[result['raid_pokemon_move_2']]['name']) : 'gen/unknown'
                 raidStr += '<div><b>' + pMove1 + ' / ' + pMove2 + '</b></div>'
-            }*/
+            } */
 
             var raidStartStr = getTimeStr(result['raid_start'])
             var raidEndStr = getTimeStr(result['raid_end'])
             raidStr += '<div>' + i8ln('Start') + ': <b>' + raidStartStr + '</b> <span class="label-countdown" disappears-at="' + result['raid_start'] + '" start>(00h00m00s)</span></div>'
             raidStr += '<div>' + i8ln('End') + ': <b>' + raidEndStr + '</b> <span class="label-countdown" disappears-at="' + result['raid_end'] + '" end>(00h00m00s)</span></div>'
-            //raidStr += '<div>Gemeldet von <b>' + result.raid_users + '</b></div>'
+            // raidStr += '<div>Gemeldet von <b>' + result.raid_users + '</b></div>'
 
             if (raidStarted) {
                 raidIcon = '<i class="pokemon-sprite-large n' + result.raid_pokemon_id + '"></i>'
@@ -3368,7 +3368,7 @@ function showGymDetails(id) { // eslint-disable-line no-unused-vars
             '<b class="team-' + result.team_id + '-text" style="font-size:16px;">' + (result.name || '') + '</b>' +
             '</div>' +
             '<div>' +
-            //'<img height="60px" style="padding: 5px;" src="static/forts/' + gymTypes[result.team_id] + '_large.png">' +
+            // '<img height="60px" style="padding: 5px;" src="static/forts/' + gymTypes[result.team_id] + '_large.png">' +
             raidIcon +
             '</div>' +
             raidStr +

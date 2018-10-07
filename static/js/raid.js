@@ -39,7 +39,7 @@ function generateRaidBossList() {
     data += '</div>'
     return data
 }
-    
+
 function generateTimerLists() {
     var html = '<select name="egg_time" class="egg_time" style="display:none;">' +
         '<option value="60" selected>1:00</option>' +
