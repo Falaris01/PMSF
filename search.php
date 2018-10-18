@@ -42,7 +42,7 @@ if ( $dbname !== '' ) {
         $mons = json_decode( $json, true );
         $resids = [];
         foreach($mons as $k => $mon){
-            if( $k > 386){
+            if( $k > 493){
                 break;
             }
             if(strpos($mon['name'], $term) !== false){

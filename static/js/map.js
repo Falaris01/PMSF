@@ -65,7 +65,7 @@ var buffer = []
 var reincludedPokemon = []
 var reids = []
 
-var numberOfPokemon = 386
+var numberOfPokemon = 493
 
 var map
 var rawDataIsLoading = false
