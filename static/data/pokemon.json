@@ -2196,6 +2196,8 @@
   "176": {
     "name": "Togetic",
     "rarity": "Ultra Rare",
+    "level": 4,
+    "cp": 19141,
     "types": [
       {
         "type": "Fairy",
@@ -3975,7 +3977,7 @@
     "name": "Sharpedo",
     "rarity":"",
     "level": 3,
-    "cp": 3,
+    "cp": 13989,
     "types": [
       {
         "type": "Water",
@@ -5131,6 +5133,16 @@
       }
     ]
   },
+  "413":{
+    "name": "Wormadam",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Bug",
+        "color": "#a8b820"
+      }
+    ]
+  },
   "414":{
     "name": "Mothim",
     "rarity":"",
@@ -6016,6 +6028,22 @@
       {
         "type": "Normal",
         "color": "#8a8a59"
+      }
+    ]
+  },
+  "487":{
+    "name": "Giratina",
+    "rarity":"rare",
+    "level": 5,
+    "cp": 43546,
+    "types": [
+      {
+        "type": "Ghost",
+        "color": "#705898"
+      },
+      {
+        "type": "Dragon",
+        "color": "#7038f8"
       }
     ]
   },
