@@ -72,59 +72,71 @@
     "name": "Fange 5 Pokémon mit Wetterverstärkung"
   },
   "19": {
-    "cat": "Würfe",
-    "name": "Lande 2 gute Curveball-Würfe"
+    "cat": "Fangen",
+    "name": "Fange ein Ditto"
   },
   "20": {
     "cat": "Würfe",
-    "name": "Lande 5 gute Würfe"
+    "name": "Lande 2 gute Curveball-Würfe"
   },
   "21": {
     "cat": "Würfe",
-    "name": "Lande 3 großartige Würfe"
+    "name": "Lande 5 gute Würfe"
   },
   "22": {
     "cat": "Würfe",
-    "name": "Lande 3 großartige Würfe hintereinander"
+    "name": "Lande 3 großartige Würfe"
   },
   "23": {
     "cat": "Würfe",
-    "name": "Lande 3 großartige Curveball-Würfe"
+    "name": "Lande 3 großartige Würfe hintereinander"
   },
   "24": {
     "cat": "Würfe",
-    "name": "Lande 3 fabelhafte Würfe hintereinander"
+    "name": "Lande 3 großartige Curveball-Würfe"
   },
   "25": {
-    "cat": "Sonstiges",
-    "name": "Drehe 10 Pokéstops oder Arenen"
+    "cat": "Würfe",
+    "name": "Lande 3 fabelhafte Würfe hintereinander"
   },
   "26": {
     "cat": "Sonstiges",
-    "name": "Verwende 5 Power-Ups bei Pokémon"
+    "name": "Drehe 10 Pokéstops oder Arenen"
   },
   "27": {
     "cat": "Sonstiges",
-    "name": "Verdiene ein Bonbon durch Spazieren mit deinem Kumpel"
+    "name": "Verwende 5 Power-Ups bei Pokémon"
   },
   "28": {
     "cat": "Sonstiges",
-    "name": "Tausche ein Pokémon"
+    "name": "Verdiene ein Bonbon durch Spazieren mit deinem Kumpel"
   },
   "29": {
     "cat": "Sonstiges",
-    "name": "Benutze 5 Sananabeeren"
+    "name": "Tausche ein Pokémon"
   },
   "30": {
-    "cat": "Psycho-Spektakel",
-    "name": "Fange 10 Pokémon vom Typ Psycho"
+    "cat": "Sonstiges",
+    "name": "Benutze 5 Sananabeeren"
   },
   "31": {
-    "cat": "Psycho-Spektakel",
-    "name": "Entwickle 3 Flegmon oder Owei"
+    "cat": "Halloween-Event",
+    "name": "Fange 10 Pokémon vom Typ Geist"
   },
   "32": {
-    "cat": "Psycho-Spektakel",
-    "name": "Fange 5 Abra oder Traumato"
+    "cat": "Halloween-Event",
+    "name": "Fange 5 Pokémon vom Typ Unlicht"
+  },
+  "33": {
+    "cat": "Halloween-Event",
+    "name": "Entwickle 3 Duskull oder Shuppet"
+  },
+  "34": {
+    "cat": "Halloween-Event",
+    "name": "Fange 5 Fiffyen oder Hunduster"
+  },
+  "35": {
+    "cat": "Halloween-Event",
+    "name": "Verschicke 10 Pokémon"
   }
 }
