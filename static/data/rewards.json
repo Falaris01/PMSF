@@ -1,146 +1,140 @@
  {
   "1": {
-    "name": "1 silberne Sananabeere"
-    },
-  "2": {
-    "name": "1 Sonderbonbon"
-    },
-  "3": {
-    "name": "3 Sonderbonbons"
-    },
-  "4": {
-    "name": "2 goldene Himmihbeeren"
-    },
-  "5": {
-    "name": "200/500 Sternenstaub"
-    },
-  "6": {
-    "name": "1000 Sternenstaub"
-    },
-  "7": {
-    "name": "1500 Sternenstaub"
-    },
-  "8": {
-    "name": "3/6/9 Himmihbeeren"
-    },
-  "9": {
-    "name": "1/2/3 Sananabeeren"
-    },
-  "10": {
-    "name": "5/10 Nanabbeeren"
-    },
-  "11": {
-    "name": "5 Tränke"
-    },
-  "12": {
-    "name": "3 Supertränke"
-    },
-  "13": {
-    "name": "3 Hypertränke"
-    },
-  "14": {
-    "name": "2/4/6 Beleber"
-    },
-  "15": {
-    "name": "1 Top-Beleber"
-    },
-  "16": {
-    "name": "5/10 Pokébälle"
-    },
-  "17": {
-    "name": "5 Superbälle"
-    },
-  "18": {
-    "name": "5/10 Hyperbälle"
-    },
-  "19": {
     "name": "Bisasam/Glumanda/Schiggy"
     },
-  "20": {
+  "2": {
     "name": "Quapsel/Vulpix"
     },
-  "21": {
-    "name": "Barschwa"  
-    },
-  "22": {
+  "3": {
     "name": "Bisasam"  
     },
-  "23": {
+  "4": {
     "name": "Chaneira"
     },
-  "24": {
+  "5": {
     "name": "Dratini"
     },
-  "25": {
+  "6": {
     "name": "Elektek"
     },
-  "26": {
+  "7": {
     "name": "Evoli"
     },
-  "27": {
-    "name": "Girafarig"
-    },
-  "28": {
+  "8": {
     "name": "Glumanda"
     },
-  "29": {
+  "9": {
+    "name": "Golbat"
+    },
+  "10": {
     "name": "Karpador"
     },
-  "30": {
-    "name": "Krabby"
+  "11": {
+    "name": "Knuddeluff"
     },
-  "31": {
+  "12": {
     "name": "Larvitar"
     },
-  "32": {
+  "13": {
     "name": "Machollo"
     },
-  "33": {
+  "14": {
     "name": "Magmar"
     },
-  "34": {
+  "15": {
     "name": "Menki"
     },
-  "35": {
+  "16": {
     "name": "Nebulak"
     },
-  "36": {
-    "name": "Octillery"
+  "17": {
+    "name": "Nincada"
     },
-  "37": {
+  "18": {
     "name": "Onix"
     },
-  "38": {
+  "19": {
     "name": "Owei"
     },
-  "39": {
+  "20": {
     "name": "Pandir"
     },
-  "40": {
+  "21": {
+    "name": "Pinsir"
+    },
+  "22": {
+    "name": "Pixi"
+    },
+  "23": {
     "name": "Quapsel"
     },
-  "41": {
+  "24": {
+    "name": "Raupy"
+    },
+  "25": {
     "name": "Rossana"
     },
-  "42": {
+  "26": {
     "name": "Schiggy"
     },
-  "43": {
-    "name": "Sniebel"
+  "27": {
+    "name": "Tannza"
     },
-  "44": {
-    "name": "Traunfugil"
-    },
-  "45": {
+  "28": {
     "name": "Voltobal"
     },
-  "46": {
+  "29": {
     "name": "Vulpix"
     },
-  "47": {
-    "name": "Wailmer"
+  "30": {
+    "name": "1 Sonderbonbon"
     },
-  "48": {
-    "name": "Zobiris"
+  "31": {
+    "name": "3 Sonderbonbons"
+    },
+  "32": {
+    "name": "2 goldene Himmihbeeren"
+    },
+  "33": {
+    "name": "200/500 Sternenstaub"
+    },
+  "34": {
+    "name": "1000 Sternenstaub"
+    },
+  "35": {
+    "name": "1500 Sternenstaub"
+    },
+  "36": {
+    "name": "Himmihbeeren"
+    },
+  "37": {
+    "name": "Sananabeeren"
+    },
+  "38": {
+    "name": "Nanabbeeren"
+    },
+  "39": {
+    "name": "5 Tränke"
+    },
+  "40": {
+    "name": "3 Supertränke"
+    },
+  "41": {
+    "name": "3 Hypertränke"
+    },
+  "42": {
+    "name": "Beleber"
+    },
+  "43": {
+    "name": "1 Top-Beleber"
+    },
+  "44": {
+    "name": "Pokébälle"
+    },
+  "45": {
+    "name": "Superbälle"
+    },
+  "46": {
+    "name": "Hyperbälle"
     }
 }

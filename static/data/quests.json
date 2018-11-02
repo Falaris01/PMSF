@@ -17,11 +17,11 @@
   },
   "5": {
     "cat": "Arenen",
-    "name": "Setze eine sehr effektive Lade-Attacke in 7 Arenakämpfen ein"
+    "name": "Gewinne 5 Arenakämpfe"
   },
   "6": {
-    "cat": "Raids",
-    "name": "Kämpfe in einem Raid"
+    "cat": "Arenen",
+    "name": "Setze eine sehr effektive Lade-Attacke in 7 Arenakämpfen ein"
   },
   "7": {
     "cat": "Raids",
@@ -33,31 +33,31 @@
   },
   "9": {
     "cat": "Eier ausbrüten",
-    "name": "Brüte 2 Eier aus"
+    "name": "Brüte 3 Eier aus"
   },
   "10": {
     "cat": "Eier ausbrüten",
-    "name": "Brüte 3 Eier aus"
+    "name": "Brüte 5 Eier aus"
   },
   "11": {
-    "cat": "Eier ausbrüten",
-    "name": "Brüte 5 Eier aus"
+    "cat": "Entwickeln",
+    "name": "Entwickle ein Pokémon"
   },
   "12": {
     "cat": "Entwickeln",
-    "name": "Entwickle ein Pokemon"
+    "name": "Entwickle 2 Taubsi"
   },
   "13": {
-    "cat": "Entwickeln",
-    "name": "Entwickle 10 Pokemon vom Typ Wasser"
-  },
-  "14": {
     "cat": "Fangen",
     "name": "Fange 10 Pokémon"
   },
+  "14": {
+    "cat": "Fangen",
+    "name": "Fange 5 Pokémon vom Typ Normal"
+  },
   "15": {
     "cat": "Fangen",
-    "name": "Fange 5 Pokémon vom Typ Wasser"
+    "name": "Fange 5 Pokémon vom Typ Käfer"
   },
   "16": {
     "cat": "Fangen",
@@ -69,7 +69,7 @@
   },
   "18": {
     "cat": "Fangen",
-    "name": "Fange 5 Pokémon mit Wetterverstärkung"
+    "name": "Fange 5 Pokémon mit Wetterboost"
   },
   "19": {
     "cat": "Fangen",
@@ -77,11 +77,11 @@
   },
   "20": {
     "cat": "Würfe",
-    "name": "Lande 2 gute Curveball-Würfe"
+    "name": "Lande 5 gute Würfe"
   },
   "21": {
     "cat": "Würfe",
-    "name": "Lande 5 gute Würfe"
+    "name": "Lande 3 gute Curveball-Würfe hintereinander"
   },
   "22": {
     "cat": "Würfe",
@@ -93,50 +93,30 @@
   },
   "24": {
     "cat": "Würfe",
-    "name": "Lande 3 großartige Curveball-Würfe"
+    "name": "Lande 5 großartige Würfe hintereinander"
   },
   "25": {
     "cat": "Würfe",
     "name": "Lande 3 fabelhafte Würfe hintereinander"
   },
   "26": {
-    "cat": "Sonstiges",
-    "name": "Drehe 10 Pokéstops oder Arenen"
+    "cat": "Würfe",
+    "name": "Lande 5 Curveball-Würfe hintereinander"
   },
   "27": {
     "cat": "Sonstiges",
-    "name": "Verwende 5 Power-Ups bei Pokémon"
+    "name": "Verschicke 5 Geschenke"
   },
   "28": {
     "cat": "Sonstiges",
-    "name": "Verdiene ein Bonbon durch Spazieren mit deinem Kumpel"
+    "name": "Verwende 5 Beeren beim Fangen von Pokémon"
   },
   "29": {
     "cat": "Sonstiges",
-    "name": "Tausche ein Pokémon"
+    "name": "Verdiene ein Bonbon durch Spazieren mit deinem Kumpel"
   },
   "30": {
     "cat": "Sonstiges",
-    "name": "Benutze 5 Sananabeeren"
-  },
-  "31": {
-    "cat": "Halloween-Event",
-    "name": "Fange 10 Pokémon vom Typ Geist"
-  },
-  "32": {
-    "cat": "Halloween-Event",
-    "name": "Fange 5 Pokémon vom Typ Unlicht"
-  },
-  "33": {
-    "cat": "Halloween-Event",
-    "name": "Entwickle 3 Zwirrlicht oder Shuppet"
-  },
-  "34": {
-    "cat": "Halloween-Event",
-    "name": "Fange 5 Fiffyen oder Hunduster"
-  },
-  "35": {
-    "cat": "Halloween-Event",
-    "name": "Verschicke 10 Pokémon"
+    "name": "Verwende 5 Power-Ups bei Pokémon"
   }
 }
