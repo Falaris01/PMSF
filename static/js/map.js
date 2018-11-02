@@ -1345,7 +1345,13 @@ function setupPokestopMarker(item) {
     imagename = item['reward'] === 'Vulpix' ? 'Pstop-quest_Vulpix' : imagename
     imagename = item['reward'] === 'Wailmer' ? 'Pstop-quest_Wailmer' : imagename
     imagename = item['reward'] === 'Tannza' ? 'Pstop-quest_Tannza' : imagename
-
+    imagename = item['reward'] === 'Raupy' ? 'Pstop-quest_Raupy' : imagename
+    imagename = item['reward'] === 'Nincada' ? 'Pstop-quest_Nincada' : imagename
+    imagename = item['reward'] === 'Pinsir' ? 'Pstop-quest_Pinsir' : imagename
+    imagename = item['reward'] === 'Golbat' ? 'Pstop-quest_Golbat' : imagename
+    imagename = item['reward'] === 'Knuddeluff' ? 'Pstop-quest_Knuddeluff' : imagename
+    imagename = item['reward'] === 'Pixi' ? 'Pstop-quest_Pixi' : imagename
+    
     var marker = new google.maps.Marker({
         position: {
             lat: item['latitude'],

@@ -1,7 +1,7 @@
 <?php
 $timing['start'] = microtime( true );
 include( 'config/config.php' );
-global $map, $fork, $db, $raidBosses, $webhookUrl, $sendWebhook, $sendWebhookQuest, $noManualRaids, $noRaids, $noManualPokemon, $noPokemon, $noPokestops, $noManualPokestops, $noGyms, $noManualGyms, $noManualQuests, $noManualNests, $noNests, $hostUrl, $schlurpUrl, $chaneiraUrl, $tangelaUrl, $questUrl, $laprasUrl, $larvitarUrl, $dratiniUrl, $nebulakUrl, $hundusterUrl, $snubbullUrl, $traunfugilUrl, $pandirUrl, $voltilammUrl, $tannzaUrl, $miltankUrl, $porygonUrl, $phanpyUrl, $fukanoUrl, $krabbyUrl, $barschwaUrl;
+global $map, $fork, $db, $raidBosses, $webhookUrl, $sendWebhook, $sendWebhookQuest, $noManualRaids, $noRaids, $noManualPokemon, $noPokemon, $noPokestops, $noManualPokestops, $noGyms, $noManualGyms, $noManualQuests, $noManualNests, $noNests, $hostUrl, $schlurpUrl, $chaneiraUrl, $tangelaUrl, $questUrl, $laprasUrl, $larvitarUrl, $dratiniUrl, $nebulakUrl, $hundusterUrl, $snubbullUrl, $traunfugilUrl, $pandirUrl, $voltilammUrl, $tannzaUrl, $miltankUrl, $porygonUrl, $phanpyUrl, $fukanoUrl, $krabbyUrl, $barschwaUrl, $pinsirUrl, $raupyUrl, $nincadaUrl;
 $action = ! empty( $_POST['action'] ) ? $_POST['action'] : '';
 $lat    = ! empty( $_POST['lat'] ) ? $_POST['lat'] : '';
 $lng    = ! empty( $_POST['lng'] ) ? $_POST['lng'] : '';
@@ -209,6 +209,12 @@ if ( $action === "raid" ) {
             $questUrl = $krabbyUrl;
         } elseif ($reward == 'Barschwa' && $barschwaUrl) {
             $questUrl = $barschwaUrl;
+        } elseif ($reward == 'Nincada' && $nincadaUrl) {
+            $questUrl = $nincadaUrl;
+        } elseif ($reward == 'Raupy' && $raupyUrl) {
+            $questUrl = $raupyUrl;
+        } elseif ($reward == 'Pinsir' && $pinsirUrl) {
+            $questUrl = $pinsirUrl;
         }
         foreach ( $questUrl as $url ) {
             sendToWebhook( $url, $webhook );
