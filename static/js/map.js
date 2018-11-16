@@ -905,7 +905,7 @@ function spawnpointLabel(item) {
         '<b>' + i8ln('Spawn Point') + '</b>' +
         '</div>' +
         '<div>' +
-        i8ln('Every hour from') + ' ' + formatSpawnTime(item.time + 1800) + ' ' + i8ln('to') + ' ' + formatSpawnTime(item.time) +
+        i8ln('Every hour from') + ' x:' + formatSpawnTime(item.time + 1800) + ' ' + i8ln('to') + ' x:' + formatSpawnTime(item.time) +
         '</div>'
     if (item.duration === 60 || item.kind === 'ssss') {
         str =
@@ -913,9 +913,12 @@ function spawnpointLabel(item) {
             '<b>Spawn Point</b>' +
             '</div>' +
             '<div>' +
-            i8ln('Every hour from') + ' ' + formatSpawnTime(item.time) +
+            i8ln('Every hour from') + ' x:' + formatSpawnTime(item.time) +
             '</div>'
     }
+    str += '<div>' +
+            '<a href="javascript:void(0)" onclick="javascript:openMapDirections(' + item['latitude'] + ',' + item['longitude'] + ')" title="' + i8ln('View in Maps') + '">' + item['latitude'].toFixed(6) + ', ' + item['longitude'].toFixed(7) + '</a>' +
+            '</div>'
     return str
 }
 
