@@ -819,7 +819,7 @@
     "name": "Machamp",
     "rarity": "Ultra Rare",
     "level": 3,
-    "cp": 18144,
+    "cp": 17990,
     "types": [
       {
         "type": "Fighting",
@@ -1176,7 +1176,7 @@
     "name": "Gengar",
     "rarity": "Ultra Rare",
     "level": 3,
-    "cp": 19768,
+    "cp": 19359,
     "types": [
       {
         "type": "Ghost",
@@ -1308,7 +1308,7 @@
     "name": "Marowak",
     "rarity": "Very Rare",
     "level": 4,
-    "cp": 20190,
+    "cp": 19522,
     "types": [
       {
         "type": "Ground",
@@ -2197,7 +2197,7 @@
     "name": "Togetic",
     "rarity": "Ultra Rare",
     "level": 4,
-    "cp": 19141,
+    "cp": 18671,
     "types": [
       {
         "type": "Fairy",
@@ -2495,7 +2495,7 @@
     "name": "Misdreavus",
     "rarity": "Rare",
     "level": 2,
-    "cp": 10417,
+    "cp": 10038,
     "types": [
       {
         "type": "Ghost",
@@ -2615,7 +2615,7 @@
     "name": "Granbull",
     "rarity": "Rare",
     "level": 3,
-    "cp": 15328,
+    "cp": 15023,
     "types": [
       {
         "type": "Fairy",
@@ -2683,7 +2683,7 @@
     "name": "Sneasel",
     "rarity": "Rare",
     "level": 2,
-    "cp": 11350,
+    "cp": 10981,
     "types": [
       {
         "type": "Dark",
@@ -2865,7 +2865,7 @@
     "name": "Houndoom",
     "rarity": "Very Rare",
     "level": 4,
-    "cp": 27302,
+    "cp": 26099,
     "types": [
       {
         "type": "Dark",
@@ -3085,7 +3085,7 @@
     "name": "Tyranitar",
     "rarity": "Ultra Rare",
     "level": 4,
-    "cp": 34707,
+    "cp": 34323,
     "types": [
       {
         "type": "Rock",
@@ -3507,7 +3507,7 @@
     "name": "Kirlia",
     "rarity":"",
     "level": 2,
-    "cp": 6005,
+    "cp": 5738,
     "types": [
       {
         "type": "Psychic",
@@ -3759,7 +3759,7 @@
     "name": "Sableye",
     "rarity":"",
     "level": 2,
-    "cp": 8266,
+    "cp": 8132,
     "types": [
       {
         "type": "Dark",
@@ -3775,7 +3775,7 @@
     "name": "Mawile",
     "rarity":"",
     "level": 2,
-    "cp": 9403,
+    "cp": 9008,
     "types": [
       {
         "type": "Steel",
@@ -4401,7 +4401,7 @@
     "name": "Shuppet",
     "rarity":"",
     "level": 1,
-    "cp": 3372,
+    "cp": 3352,
     "types": [
       {
         "type": "Ghost",
@@ -5197,6 +5197,8 @@
   },
   "418":{
     "name": "Buizel",
+    "level": 1,
+	"cp": 3260,
     "rarity":"",
     "types": [
       {

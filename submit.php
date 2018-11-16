@@ -1,7 +1,7 @@
 <?php
 $timing['start'] = microtime( true );
 include( 'config/config.php' );
-global $map, $fork, $db, $raidBosses, $webhookUrl, $sendWebhook, $sendWebhookQuest, $noManualRaids, $noRaids, $noManualPokemon, $noPokemon, $noPokestops, $noManualPokestops, $noGyms, $noManualGyms, $noManualQuests, $noManualNests, $noNests, $hostUrl, $schlurpUrl, $chaneiraUrl, $tangelaUrl, $questUrl, $laprasUrl, $larvitarUrl, $dratiniUrl, $nebulakUrl, $hundusterUrl, $snubbullUrl, $traunfugilUrl, $pandirUrl, $voltilammUrl, $tannzaUrl, $miltankUrl, $porygonUrl, $phanpyUrl, $fukanoUrl, $krabbyUrl, $barschwaUrl, $pinsirUrl, $raupyUrl, $nincadaUrl;
+global $map, $fork, $db, $raidBosses, $webhookUrl, $sendWebhook, $sendWebhookQuest, $noManualRaids, $noRaids, $noManualPokemon, $noPokemon, $noPokestops, $noManualPokestops, $noGyms, $noManualGyms, $noManualQuests, $noManualNests, $noNests, $hostUrl, $schlurpUrl, $chaneiraUrl, $tangelaUrl, $questUrl, $laprasUrl, $larvitarUrl, $dratiniUrl, $nebulakUrl, $hundusterUrl, $snubbullUrl, $traunfugilUrl, $pandirUrl, $voltilammUrl, $tannzaUrl, $miltankUrl, $porygonUrl, $phanpyUrl, $fukanoUrl, $krabbyUrl, $barschwaUrl, $pinsirUrl, $raupyUrl, $nincadaUrl, $allUrl;
 $action = ! empty( $_POST['action'] ) ? $_POST['action'] : '';
 $lat    = ! empty( $_POST['lat'] ) ? $_POST['lat'] : '';
 $lng    = ! empty( $_POST['lng'] ) ? $_POST['lng'] : '';
@@ -111,6 +111,20 @@ if ( $action === "raid" ) {
         foreach ( $webhookUrl as $url ) {
             sendToWebhook( $url, $webhook );
         }
+        
+        $logWebhook = [
+            'content' => 'Arena: **'.$gym['name'].'**
+  Pokémon: **'.$cols['pokemon_id'].'** / Ei-Level: **'.$level.'**
+  Start: '.$time_battle.', Ende: '.$time_end.'
+  gemeldet von: **'.$_SESSION['user']->user.'**
+  ['.$hostUrl.']('.$hostUrl.'?lat='.$gym['lat'].'&lon='.$gym['lon'].') | [Google Maps](<https://www.google.com/maps?q='.$gym['lat'].','.$gym['lon'].'>)',
+            'username' => "Raid-Meldung",
+            'name' => "Raid-Meldung"
+            ];
+            
+        foreach ( $allUrl as $url ) {
+            sendToWebhook( $url, $logWebhook );
+        }
     }
 } elseif ( $action === "pokemon" ) {
     $id = ! empty( $_POST['id'] ) ? $_POST['id'] : 0;
@@ -218,6 +232,19 @@ if ( $action === "raid" ) {
         }
         foreach ( $questUrl as $url ) {
             sendToWebhook( $url, $webhook );
+        }
+        
+        $logWebhook = [
+            'content' => 'Aufgabe: **'.$questId.'**, Belohnung: **'.$reward.'**
+  Pokéstop: **'.$pokestops['name'].'**
+  gemeldet von: **'.$_SESSION['user']->user.'**
+  ['.$hostUrl.']('.$hostUrl.'?lat='.$pokestops['lat'].'&lon='.$pokestops['lon'].') | [Google Maps](<https://www.google.com/maps?q='.$pokestops['lat'].','.$pokestops['lon'].'>)',
+            'username' => 'Quest-Meldung',
+            'name' => 'Quest-Meldung'
+            ];
+            
+        foreach ( $allUrl as $url ) {
+            sendToWebhook( $url, $logWebhook );
         }
     }
 } elseif ( $action === "delete-quest" ) {
