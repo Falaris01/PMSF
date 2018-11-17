@@ -323,7 +323,7 @@
     "name": "Raichu",
     "rarity": "Ultra Rare",
     "level": 3,
-    "cp": 20238,
+    "cp": 15380,
     "types": [
       {
         "type": "Electric",
@@ -998,7 +998,8 @@
   "81": {
     "name": "Magnemite",
     "rarity": "Rare",
-    "level": 2,
+    "level": 1,
+    "cp": 5141,
     "types": [
       {
         "type": "Electric",
@@ -1281,8 +1282,8 @@
   "103": {
     "name": "Exeggutor",
     "rarity": "Very Rare",
-    "level": 2,
-    "cp": 13839,
+    "level": 4,
+    "cp": 27501,
     "types": [
       {
         "type": "Grass",
@@ -1552,7 +1553,7 @@
     "name": "Electabuzz",
     "rarity": "Rare",
     "level": 2,
-    "cp": 12390,
+    "cp": 11886,
     "types": [
       {
         "type": "Electric",
@@ -1672,7 +1673,7 @@
     "name": "Jolteon",
     "rarity": "Very Rare",
     "level": 3,
-    "cp": 19883,
+    "cp": 18988,
     "types": [
       {
         "type": "Electric",
@@ -2138,6 +2139,8 @@
   "171": {
     "name": "Lanturn",
     "rarity": "Rare",
+    "level": 2,
+    "cp": 8421,
     "types": [
       {
         "type": "Water",
@@ -2240,6 +2243,8 @@
   "179": {
     "name": "Mareep",
     "rarity": "Very Rare",
+    "level": 1,
+    "cp": 3063,
     "types": [
       {
         "type": "Electric",
@@ -2836,6 +2841,8 @@
   "227": {
     "name": "Skarmory",
     "rarity": "Rare",
+    "level": 3,
+    "cp": 13859,
     "types": [
       {
         "type": "Steel",
@@ -3819,7 +3826,7 @@
     "name": "Aggron",
     "rarity":"",
     "level": 4,
-    "cp": 33458,
+    "cp": 30422,
     "types": [
       {
         "type": "Steel",
