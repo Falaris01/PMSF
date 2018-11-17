@@ -6,135 +6,144 @@
     "name": "Quapsel/Vulpix"
     },
   "3": {
-    "name": "Bisasam"  
+    "name": "Aerodactyl"
     },
   "4": {
-    "name": "Chaneira"
+    "name": "Bisasam"  
     },
   "5": {
-    "name": "Dratini"
+    "name": "Chaneira"
     },
   "6": {
-    "name": "Elektek"
+    "name": "Ditto (als Taubsi)"
     },
   "7": {
-    "name": "Evoli"
+    "name": "Dratini"
     },
   "8": {
-    "name": "Glumanda"
+    "name": "Elektek"
     },
   "9": {
-    "name": "Golbat"
+    "name": "Evoli"
     },
   "10": {
-    "name": "Karpador"
+    "name": "Glumanda"
     },
   "11": {
-    "name": "Knuddeluff"
+    "name": "Golbat"
     },
   "12": {
-    "name": "Larvitar"
+    "name": "Karpador"
     },
   "13": {
-    "name": "Machollo"
+    "name": "Knuddeluff"
     },
   "14": {
-    "name": "Magmar"
+    "name": "Larvitar"
     },
   "15": {
-    "name": "Menki"
+    "name": "Machollo"
     },
   "16": {
-    "name": "Nebulak"
+    "name": "Magmar"
     },
   "17": {
-    "name": "Nincada"
+    "name": "Menki"
     },
   "18": {
-    "name": "Onix"
+    "name": "Nebulak"
     },
   "19": {
-    "name": "Owei"
+    "name": "Nincada"
     },
   "20": {
-    "name": "Pandir"
+    "name": "Onix"
     },
   "21": {
-    "name": "Pinsir"
+    "name": "Owei"
     },
   "22": {
-    "name": "Pixi"
+    "name": "Pandir"
     },
   "23": {
-    "name": "Quapsel"
+    "name": "Pinsir"
     },
   "24": {
-    "name": "Raupy"
+    "name": "Pixi"
     },
   "25": {
-    "name": "Rossana"
+    "name": "Quapsel"
     },
   "26": {
-    "name": "Schiggy"
+    "name": "Raupy"
     },
   "27": {
-    "name": "Tannza"
+    "name": "Rossana"
     },
   "28": {
-    "name": "Voltobal"
+    "name": "Schiggy"
     },
   "29": {
-    "name": "Vulpix"
+    "name": "Sichlor"
     },
   "30": {
-    "name": "1 Sonderbonbon"
+    "name": "Tannza"
     },
   "31": {
-    "name": "3 Sonderbonbons"
+    "name": "Voltobal"
     },
   "32": {
-    "name": "2 goldene Himmihbeeren"
+    "name": "Vulpix"
     },
   "33": {
-    "name": "200/500 Sternenstaub"
+    "name": "1 Sonderbonbon"
     },
   "34": {
-    "name": "1000 Sternenstaub"
+    "name": "3 Sonderbonbons"
     },
   "35": {
-    "name": "1500 Sternenstaub"
+    "name": "2 goldene Himmihbeeren"
     },
   "36": {
-    "name": "Himmihbeeren"
+    "name": "200/500 Sternenstaub"
     },
   "37": {
-    "name": "Sananabeeren"
+    "name": "1000 Sternenstaub"
     },
   "38": {
-    "name": "Nanabbeeren"
+    "name": "1500 Sternenstaub"
     },
   "39": {
-    "name": "5 Tränke"
+    "name": "Himmihbeeren"
     },
   "40": {
-    "name": "3 Supertränke"
+    "name": "Sananabeeren"
     },
   "41": {
-    "name": "3 Hypertränke"
+    "name": "Nanabbeeren"
     },
   "42": {
-    "name": "Beleber"
+    "name": "5 Tränke"
     },
   "43": {
-    "name": "1 Top-Beleber"
+    "name": "3 Supertränke"
     },
   "44": {
-    "name": "Pokébälle"
+    "name": "3 Hypertränke"
     },
   "45": {
-    "name": "Superbälle"
+    "name": "Beleber"
     },
   "46": {
+    "name": "1 Top-Beleber"
+    },
+  "47": {
+    "name": "Pokébälle"
+    },
+  "48": {
+    "name": "Superbälle"
+    },
+  "49": {
     "name": "Hyperbälle"
     }
 }
