@@ -243,8 +243,7 @@ if ( $action === "raid" ) {
             'content' => 'Aufgabe: **'.$questId.'**, Belohnung: **'.$reward.'**
   Pokéstop: **'.$pokestops['name'].'**
   gemeldet von: **'.$_SESSION['user']->user.'**
-  ['.$hostUrl.']('.$hostUrl.'?lat='.$pokestops['lat'].'&lon='.$pokestops['lon'].') | [Google Maps](<https://www.google.com/maps?q='.$pokestops['lat'].','.$pokestops['lon'].'>)
-  Benutzter Webhook: '.$questUrl[0].$avatarIcon,
+  ['.$hostUrl.']('.$hostUrl.'?lat='.$pokestops['lat'].'&lon='.$pokestops['lon'].') | [Google Maps](<https://www.google.com/maps?q='.$pokestops['lat'].','.$pokestops['lon'].'>),
             'username' => 'Quest-Meldung',
             'name' => 'Quest-Meldung'
             ];
