@@ -172,10 +172,13 @@ if ( $action === "raid" ) {
     }
     if ( $sendWebhookQuest === true ) {
         $rewardIcon = $reward;
-        if ($reward == '1 Sonderbonbon' or $reward == '3 Sonderbonbon') {
+        if (strpos($reward, 'Sonderbonbon') !== false) {
             $rewardIcon = 'Candy';
         } 
         $avatarIcon = 'https://raw.githubusercontent.com/Falaris01/PMSF/manual_v5/static/forts/discord_icons/QuestIcon_'.$rewardIcon.'.png';
+		if (!file_exists($avatarIcon)) {
+			$avatarIcon = 'https://raw.githubusercontent.com/Falaris01/PMSF/manual_v5/static/forts/discord_icons/QuestIcon_Discord.png';
+		}
         /*
         'content' => 'Belohnung: **'.$reward.'** PokeStop: __**'.$pokestops['name'].'**__ gemeldet von: **'.$_SESSION['user']->user.'** ['.$hostUrl.']('.$hostUrl.'?lat='.$pokestops['lat'].'&lon='.$pokestops['lon'].') | [Google Maps](https://www.google.com/maps?q='.$pokestops['lat'].','.$pokestops['lon'].')',
         */
@@ -229,7 +232,7 @@ if ( $action === "raid" ) {
             $questUrl = $raupyUrl;
         } elseif ($reward == 'Pinsir' && $pinsirUrl) {
             $questUrl = $pinsirUrl;
-        } elseif ($reward == 'Ditto' && $dittoUrl) {
+        } elseif (strpos($reward, 'Ditto') !== false && $dittoUrl) {
             $questUrl = $dittoUrl;
         }
         foreach ( $questUrl as $url ) {
@@ -240,7 +243,8 @@ if ( $action === "raid" ) {
             'content' => 'Aufgabe: **'.$questId.'**, Belohnung: **'.$reward.'**
   Pokéstop: **'.$pokestops['name'].'**
   gemeldet von: **'.$_SESSION['user']->user.'**
-  ['.$hostUrl.']('.$hostUrl.'?lat='.$pokestops['lat'].'&lon='.$pokestops['lon'].') | [Google Maps](<https://www.google.com/maps?q='.$pokestops['lat'].','.$pokestops['lon'].'>)',
+  ['.$hostUrl.']('.$hostUrl.'?lat='.$pokestops['lat'].'&lon='.$pokestops['lon'].') | [Google Maps](<https://www.google.com/maps?q='.$pokestops['lat'].','.$pokestops['lon'].'>)
+  Benutzter Webhook: '.$questUrl[0].$avatarIcon,
             'username' => 'Quest-Meldung',
             'name' => 'Quest-Meldung'
             ];
