@@ -1302,61 +1302,60 @@ function setupPokestopMarker(item) {
     var imagename = item['lure_expiration'] ? 'PstopLured' : 'Pstop'
     if (item['reward']) {
 		imagename = 'Pstop-quest'
-		imagename = item['reward'] === '1 Sonderbonbon' ? 'Pstop-quest_Candy' : imagename
-		imagename = item['reward'] === '3 Sonderbonbons' ? 'Pstop-quest_Candy' : imagename
-		imagename = item['reward'] === '1 silberne Sananabeere' ? 'Pstop-quest_Silbernesanana' : imagename
-		imagename = item['reward'] === 'Absol' ? 'Pstop-quest_Absol' : imagename
-		imagename = item['reward'] === 'Aerodactyl' ? 'Pstop-quest_Aerodactyl' : imagename
-		imagename = item['reward'] === 'Bisasam' ? 'Pstop-quest_Bisasam' : imagename
-		imagename = item['reward'] === 'Barschwa' ? 'Pstop-quest_Barschwa' : imagename
-		imagename = item['reward'] === 'Chaneira' ? 'Pstop-quest_Chaneira' : imagename
+		imagename = item['reward'].includes('Sonderbonbon') ? 'Pstop-quest_Candy' : imagename
+		imagename = item['reward'].includes('silberne Sananabeere') ? 'Pstop-quest_Silbernesanana' : imagename
+		imagename = item['reward'].includes('Absol') ? 'Pstop-quest_Absol' : imagename
+		imagename = item['reward'].includes('Aerodactyl') ? 'Pstop-quest_Aerodactyl' : imagename
+		imagename = item['reward'].includes('Bisasam') ? 'Pstop-quest_Bisasam' : imagename
+		imagename = item['reward'].includes('Barschwa') ? 'Pstop-quest_Barschwa' : imagename
+		imagename = item['reward'].includes('Chaneira') ? 'Pstop-quest_Chaneira' : imagename
 		imagename = item['reward'].includes('Ditto') ? 'Pstop-quest_Ditto' : imagename
-		imagename = item['reward'] === 'Dratini' ? 'Pstop-quest_Dratini' : imagename
-		imagename = item['reward'] === 'Elektek' ? 'Pstop-quest_Elektek' : imagename
-		imagename = item['reward'] === 'Evoli' ? 'Pstop-quest_Evoli' : imagename
-		imagename = item['reward'] === 'Fukano' ? 'Pstop-quest_Fukano' : imagename
-		imagename = item['reward'] === 'Glumanda' ? 'Pstop-quest_Glumanda' : imagename
-		imagename = item['reward'] === 'Golbat' ? 'Pstop-quest_Golbat' : imagename
-		imagename = item['reward'] === 'Hunduster' ? 'Pstop-quest_Hunduster' : imagename
-		imagename = item['reward'] === 'Karpador' ? 'Pstop-quest_Karpador' : imagename
-		imagename = item['reward'] === 'Knuddeluff' ? 'Pstop-quest_Knuddeluff' : imagename
-		imagename = item['reward'] === 'Krabby' ? 'Pstop-quest_Krabby' : imagename
-		imagename = item['reward'] === 'Lanturn' ? 'Pstop-quest_Lanturn' : imagename
-		imagename = item['reward'] === 'Lapras' ? 'Pstop-quest_Lapras' : imagename
-		imagename = item['reward'] === 'Larvitar' ? 'Pstop-quest_Larvitar' : imagename
-		imagename = item['reward'] === 'Liebiskus' ? 'Pstop-quest_Liebiskus' : imagename
-		imagename = item['reward'] === 'Machollo' ? 'Pstop-quest_Machollo' : imagename
-		imagename = item['reward'] === 'Magmar' ? 'Pstop-quest_Magmar' : imagename
-		imagename = item['reward'] === 'Menki' ? 'Pstop-quest_Menki' : imagename
-		imagename = item['reward'] === 'Muschas' ? 'Pstop-quest_Muschas' : imagename
-		imagename = item['reward'] === 'Miltank' ? 'Pstop-quest_Miltank' : imagename
-		imagename = item['reward'] === 'Nebulak' ? 'Pstop-quest_Nebulak' : imagename
-		imagename = item['reward'] === 'Nincada' ? 'Pstop-quest_Nincada' : imagename
-		imagename = item['reward'] === 'Octillery' ? 'Pstop-quest_Octillery' : imagename
-		imagename = item['reward'] === 'Onix' ? 'Pstop-quest_Onix' : imagename
-		imagename = item['reward'] === 'Owei' ? 'Pstop-quest_Owei' : imagename
-		imagename = item['reward'] === 'Pandir' ? 'Pstop-quest_Pandir' : imagename
-		imagename = item['reward'] === 'Phanpy' ? 'Pstop-quest_Phanpy' : imagename
-		imagename = item['reward'] === 'Pikachu' ? 'Pstop-quest_Pikachu' : imagename
-		imagename = item['reward'] === 'Pinsir' ? 'Pstop-quest_Pinsir' : imagename
-		imagename = item['reward'] === 'Pixi' ? 'Pstop-quest_Pixi' : imagename
-		imagename = item['reward'] === 'Porygon' ? 'Pstop-quest_Porygon' : imagename
-		imagename = item['reward'] === 'Quapsel' ? 'Pstop-quest_Quapsel' : imagename
-		imagename = item['reward'] === 'Raupy' ? 'Pstop-quest_Raupy' : imagename
-		imagename = item['reward'] === 'Roselia' ? 'Pstop-quest_Roselia' : imagename
-		imagename = item['reward'] === 'Rossana' ? 'Pstop-quest_Rossana' : imagename
-		imagename = item['reward'] === 'Schiggy' ? 'Pstop-quest_Schiggy' : imagename
-		imagename = item['reward'] === 'Schlurp' ? 'Pstop-quest_Schlurp' : imagename
-		imagename = item['reward'] === 'Sichlor' ? 'Pstop-quest_Sichlor' : imagename
-		imagename = item['reward'] === 'Snubbull' ? 'Pstop-quest_Snubbull' : imagename
-		imagename = item['reward'] === 'Tangela' ? 'Pstop-quest_Tangela' : imagename
-		imagename = item['reward'] === 'Tannza' ? 'Pstop-quest_Tannza' : imagename
-		imagename = item['reward'] === 'Traunfugil' ? 'Pstop-quest_Traunfugil' : imagename
-		imagename = item['reward'] === 'Voltilamm' ? 'Pstop-quest_Voltilamm' : imagename
-		imagename = item['reward'] === 'Voltobal' ? 'Pstop-quest_Voltobal' : imagename
-		imagename = item['reward'] === 'Vulnona' ? 'Pstop-quest_Vulnona' : imagename
-		imagename = item['reward'] === 'Vulpix' ? 'Pstop-quest_Vulpix' : imagename
-		imagename = item['reward'] === 'Wailmer' ? 'Pstop-quest_Wailmer' : imagename
+		imagename = item['reward'].includes('Dratini') ? 'Pstop-quest_Dratini' : imagename
+		imagename = item['reward'].includes('Elektek') ? 'Pstop-quest_Elektek' : imagename
+		imagename = item['reward'].includes('Evoli') ? 'Pstop-quest_Evoli' : imagename
+		imagename = item['reward'].includes('Fukano') ? 'Pstop-quest_Fukano' : imagename
+		imagename = item['reward'].includes('Glumanda') ? 'Pstop-quest_Glumanda' : imagename
+		imagename = item['reward'].includes('Golbat') ? 'Pstop-quest_Golbat' : imagename
+		imagename = item['reward'].includes('Hunduster') ? 'Pstop-quest_Hunduster' : imagename
+		imagename = item['reward'].includes('Karpador') ? 'Pstop-quest_Karpador' : imagename
+		imagename = item['reward'].includes('Knuddeluff') ? 'Pstop-quest_Knuddeluff' : imagename
+		imagename = item['reward'].includes('Krabby') ? 'Pstop-quest_Krabby' : imagename
+		imagename = item['reward'].includes('Lanturn') ? 'Pstop-quest_Lanturn' : imagename
+		imagename = item['reward'].includes('Lapras') ? 'Pstop-quest_Lapras' : imagename
+		imagename = item['reward'].includes('Larvitar') ? 'Pstop-quest_Larvitar' : imagename
+		imagename = item['reward'].includes('Liebiskus') ? 'Pstop-quest_Liebiskus' : imagename
+		imagename = item['reward'].includes('Machollo') ? 'Pstop-quest_Machollo' : imagename
+		imagename = item['reward'].includes('Magmar') ? 'Pstop-quest_Magmar' : imagename
+		imagename = item['reward'].includes('Menki') ? 'Pstop-quest_Menki' : imagename
+		imagename = item['reward'].includes('Muschas') ? 'Pstop-quest_Muschas' : imagename
+		imagename = item['reward'].includes('Miltank') ? 'Pstop-quest_Miltank' : imagename
+		imagename = item['reward'].includes('Nebulak') ? 'Pstop-quest_Nebulak' : imagename
+		imagename = item['reward'].includes('Nincada') ? 'Pstop-quest_Nincada' : imagename
+		imagename = item['reward'].includes('Octillery') ? 'Pstop-quest_Octillery' : imagename
+		imagename = item['reward'].includes('Onix') ? 'Pstop-quest_Onix' : imagename
+		imagename = item['reward'].includes('Owei') ? 'Pstop-quest_Owei' : imagename
+		imagename = item['reward'].includes('Pandir') ? 'Pstop-quest_Pandir' : imagename
+		imagename = item['reward'].includes('Phanpy') ? 'Pstop-quest_Phanpy' : imagename
+		imagename = item['reward'].includes('Pikachu') ? 'Pstop-quest_Pikachu' : imagename
+		imagename = item['reward'].includes('Pinsir') ? 'Pstop-quest_Pinsir' : imagename
+		imagename = item['reward'].includes('Pixi') ? 'Pstop-quest_Pixi' : imagename
+		imagename = item['reward'].includes('Porygon') ? 'Pstop-quest_Porygon' : imagename
+		imagename = item['reward'].includes('Quapsel') ? 'Pstop-quest_Quapsel' : imagename
+		imagename = item['reward'].includes('Raupy') ? 'Pstop-quest_Raupy' : imagename
+		imagename = item['reward'].includes('Roselia') ? 'Pstop-quest_Roselia' : imagename
+		imagename = item['reward'].includes('Rossana') ? 'Pstop-quest_Rossana' : imagename
+		imagename = item['reward'].includes('Schiggy') ? 'Pstop-quest_Schiggy' : imagename
+		imagename = item['reward'].includes('Schlurp') ? 'Pstop-quest_Schlurp' : imagename
+		imagename = item['reward'].includes('Sichlor') ? 'Pstop-quest_Sichlor' : imagename
+		imagename = item['reward'].includes('Snubbull') ? 'Pstop-quest_Snubbull' : imagename
+		imagename = item['reward'].includes('Tangela') ? 'Pstop-quest_Tangela' : imagename
+		imagename = item['reward'].includes('Tannza') ? 'Pstop-quest_Tannza' : imagename
+		imagename = item['reward'].includes('Traunfugil') ? 'Pstop-quest_Traunfugil' : imagename
+		imagename = item['reward'].includes('Voltilamm') ? 'Pstop-quest_Voltilamm' : imagename
+		imagename = item['reward'].includes('Voltobal') ? 'Pstop-quest_Voltobal' : imagename
+		imagename = item['reward'].includes('Vulnona') ? 'Pstop-quest_Vulnona' : imagename
+		imagename = item['reward'].includes('Vulpix') ? 'Pstop-quest_Vulpix' : imagename
+		imagename = item['reward'].includes('Wailmer') ? 'Pstop-quest_Wailmer' : imagename
 	}
     
     var marker = new google.maps.Marker({

@@ -188,53 +188,58 @@ if ( $action === "raid" ) {
             'username' => $reward,
             'name' => $reward
             ];
-        if ($reward == 'Schlurp' && $schlurpUrl) {
-        	$questUrl = $schlurpUrl;
-        } elseif ($reward == 'Chaneira' && $chaneiraUrl) {
-            $questUrl = $chaneiraUrl;
-        } elseif ($reward == 'Tangela' && $tangelaUrl) {
-            $questUrl = $tangelaUrl;
-        } elseif ($reward == 'Lapras' && $laprasUrl) {
-            $questUrl = $laprasUrl;
-        } elseif ($reward == 'Larvitar' && $larvitarUrl) {
-            $questUrl = $larvitarUrl;
-        } elseif ($reward == 'Dratini' && $dratiniUrl) {
-            $questUrl = $dratiniUrl;
-        } elseif ($reward == 'Nebulak' && $nebulakUrl) {
-            $questUrl = $nebulakUrl;
-        } elseif ($reward == 'Snubbull' && $snubbullUrl) {
-            $questUrl = $snubbullUrl;
-        } elseif ($reward == 'Hunduster' && $hundusterUrl) {
-            $questUrl = $hundusterUrl;
-        } elseif ($reward == 'Pandir' && $pandirUrl) {
-            $questUrl = $pandirUrl;
-        } elseif ($reward == 'Traunfugil' && $traunfugilUrl) {
-            $questUrl = $traunfugilUrl;
-        } elseif ($reward == 'Voltilamm' && $voltilammUrl) {
-            $questUrl = $voltilammUrl;
-        } elseif ($reward == 'Tannza' && $tannzaUrl) {
-            $questUrl = $tannzaUrl;
-        } elseif ($reward == 'Miltank' && $miltankUrl) {
-            $questUrl = $miltankUrl;
-        } elseif ($reward == 'Porygon' && $porygonUrl) {
-            $questUrl = $porygonUrl;
-        } elseif ($reward == 'Fukano' && $fukanoUrl) {
-            $questUrl = $fukanoUrl;
-        } elseif ($reward == 'Phanpy' && $phanpyUrl) {
-            $questUrl = $phanpyUrl;
-        } elseif ($reward == 'Krabby' && $krabbyUrl) {
-            $questUrl = $krabbyUrl;
-        } elseif ($reward == 'Barschwa' && $barschwaUrl) {
+        if (strpos($reward, 'Barschwa') !== false && $barschwaUrl) {
             $questUrl = $barschwaUrl;
-        } elseif ($reward == 'Nincada' && $nincadaUrl) {
-            $questUrl = $nincadaUrl;
-        } elseif ($reward == 'Raupy' && $raupyUrl) {
-            $questUrl = $raupyUrl;
-        } elseif ($reward == 'Pinsir' && $pinsirUrl) {
-            $questUrl = $pinsirUrl;
+        } elseif (strpos($reward, 'Chaneira') !== false && $chaneiraUrl) {
+            $questUrl = $chaneiraUrl;
         } elseif (strpos($reward, 'Ditto') !== false && $dittoUrl) {
             $questUrl = $dittoUrl;
+        } elseif (strpos($reward, 'Dratini') !== false && $dratiniUrl) {
+            $questUrl = $dratiniUrl;
+        } elseif (strpos($reward, 'Fukano') !== false && $fukanoUrl) {
+            $questUrl = $fukanoUrl;
+        } elseif (strpos($reward, 'Hunduster') !== false && $hundusterUrl) {
+            $questUrl = $hundusterUrl;
+        } elseif (strpos($reward, 'Krabby') !== false && $krabbyUrl) {
+            $questUrl = $krabbyUrl;
+        } elseif (strpos($reward, 'Lapras') !== false && $laprasUrl) {
+            $questUrl = $laprasUrl;
+        } elseif (strpos($reward, 'Larvitar') !== false && $larvitarUrl) {
+            $questUrl = $larvitarUrl;
+        } elseif (strpos($reward, 'Miltank') !== false && $miltankUrl) {
+            $questUrl = $miltankUrl;
+        } elseif (strpos($reward, 'Nebulak') !== false && $nebulakUrl) {
+            $questUrl = $nebulakUrl;
+        } elseif (strpos($reward, 'Nincada') !== false && $nincadaUrl) {
+            $questUrl = $nincadaUrl;
+        } elseif (strpos($reward, 'Pandir') !== false && $pandirUrl) {
+            $questUrl = $pandirUrl;
+        } elseif (strpos($reward, 'Phanpy') !== false && $phanpyUrl) {
+            $questUrl = $phanpyUrl;
+        } elseif (strpos($reward, 'Pinsir') !== false && $pinsirUrl) {
+            $questUrl = $pinsirUrl;
+        } elseif (strpos($reward, 'Porygon') !== false && $porygonUrl) {
+            $questUrl = $porygonUrl;
+        } elseif (strpos($reward, 'Raupy') !== false && $raupyUrl) {
+            $questUrl = $raupyUrl;
+        } elseif (strpos($reward, 'Schlurp') !== false && $schlurpUrl) {
+        	$questUrl = $schlurpUrl;
+        } elseif (strpos($reward, 'Snubbull') !== false && $snubbullUrl) {
+            $questUrl = $snubbullUrl;
+        } elseif (strpos($reward, 'Tangela') !== false && $tangelaUrl) {
+            $questUrl = $tangelaUrl;
+        } elseif (strpos($reward, 'Tannza') !== false && $tannzaUrl) {
+            $questUrl = $tannzaUrl;
+        } elseif (strpos($reward, 'Traunfugil') !== false && $traunfugilUrl) {
+            $questUrl = $traunfugilUrl;
+        } elseif (strpos($reward, 'Voltilamm') !== false && $voltilammUrl) {
+            $questUrl = $voltilammUrl;
         }
+        /* template
+        elseif (strpos($reward, '<pkm/item>') !== false && $<pkm/item>Url) {
+            $questUrl = $dittoUrl;
+        }
+        */
         foreach ( $questUrl as $url ) {
             sendToWebhook( $url, $webhook );
         }
