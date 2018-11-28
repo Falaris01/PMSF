@@ -3,7 +3,7 @@
     "name": "Bulbasaur",
     "rarity": "Uncommon",
     "level": 1,
-    "cp": 3757,
+    "cp": 3656,
     "types": [
       {
         "type": "Grass",
@@ -19,7 +19,7 @@
     "name": "Ivysaur",
     "rarity": "Rare",
     "level": 1,
-    "cp": 5238,
+    "cp": 5111,
     "types": [
       {
         "type": "Grass",
@@ -49,7 +49,7 @@
     "name": "Charmander",
     "rarity": "Rare",
     "level": 1,
-    "cp": 3380,
+    "cp": 3334,
     "types": [
       {
         "type": "Fire",
@@ -61,7 +61,7 @@
     "name": "Charmeleon",
     "rarity": "Very Rare",
     "level": 1,
-    "cp": 5085,
+    "cp": 5031,
     "types": [
       {
         "type": "Fire",
@@ -73,7 +73,7 @@
     "name": "Charizard",
     "rarity": "Very Rare",
     "level": 4,
-    "cp": 28485,
+    "cp": 28260,
     "types": [
       {
         "type": "Fire",
@@ -89,7 +89,7 @@
     "name": "Squirtle",
     "rarity": "Uncommon",
     "level": 1,
-    "cp": 3125,
+    "cp": 3113,
     "types": [
       {
         "type": "Water",
@@ -133,7 +133,7 @@
     "name": "Metapod",
     "rarity": "Rare",
     "level": 1,
-    "cp": 1534,
+    "cp": 1432,
     "types": [
       {
         "type": "Bug",
@@ -311,7 +311,7 @@
     "name": "Pikachu",
     "rarity": "Uncommon",
     "level": 4,
-    "cp": 11845,
+    "cp": 11587,
     "types": [
       {
         "type": "Electric",
@@ -345,7 +345,7 @@
     "name": "Sandslash",
     "rarity": "Ultra Rare",
     "level": 2,
-    "cp": 12312,
+    "cp": 11520,
     "types": [
       {
         "type": "Ground",
@@ -377,7 +377,7 @@
     "name": "Nidoqueen",
     "rarity": "Very Rare",
     "level": 4,
-    "cp": 23216,
+    "cp": 23154,
     "types": [
       {
         "type": "Poison",
@@ -413,7 +413,7 @@
     "name": "Nidoking",
     "rarity": "Very Rare",
     "level": 4,
-    "cp": 24873,
+    "cp": 24801,
     "types": [
       {
         "type": "Poison",
@@ -459,7 +459,7 @@
     "name": "Ninetales",
     "rarity": "Ultra Rare",
     "level": 3,
-    "cp": 14914,
+    "cp": 14429,
     "types": [
       {
         "type": "Fire",
@@ -611,7 +611,7 @@
     "name": "Venomoth",
     "rarity": "Rare",
     "level": 2,
-    "cp": 10572,
+    "cp": 10345,
     "types": [
       {
         "type": "Bug",
@@ -647,7 +647,7 @@
     "name": "Meowth",
     "rarity": "Rare",
     "level": 4,
-    "cp": 9079,
+    "cp": 9520,
     "types": [
       {
         "type": "Normal",
@@ -699,7 +699,7 @@
     "name": "Primeape",
     "rarity": "Very Rare",
     "level": 2,
-    "cp": 11876,
+    "cp": 11650,
     "types": [
       {
         "type": "Fighting",
@@ -751,7 +751,7 @@
     "name": "Poliwrath",
     "rarity": "Ultra Rare",
     "level": 4,
-    "cp": 24247,
+    "cp": 24067,
     "types": [
       {
         "type": "Water",
@@ -787,7 +787,7 @@
     "name": "Alakazam",
     "rarity": "Ultra Rare",
     "level": 3,
-    "cp": 22646,
+    "cp": 21133,
     "types": [
       {
         "type": "Psychic",
@@ -859,7 +859,7 @@
     "name": "Victreebel",
     "rarity": "Ultra Rare",
     "level": 4,
-    "cp": 23780,
+    "cp": 23546,
     "types": [
       {
         "type": "Grass",
@@ -889,7 +889,7 @@
     "name": "Tentacruel",
     "rarity": "Very Rare",
     "level": 2,
-    "cp": 12190,
+    "cp": 11493,
     "types": [
       {
         "type": "Water",
@@ -933,7 +933,7 @@
     "name": "Golem",
     "rarity": "Ultra Rare",
     "level": 4,
-    "cp": 30572,
+    "cp": 28564,
     "types": [
       {
         "type": "Rock",
@@ -983,7 +983,7 @@
     "name": "Slowbro",
     "rarity": "Very Rare",
     "level": 2,
-    "cp": 11776,
+    "cp": 11375,
     "types": [
       {
         "type": "Water",
@@ -1015,7 +1015,7 @@
     "name": "Magneton",
     "rarity": "Ultra Rare",
     "level": 2,
-    "cp": 14172,
+    "cp": 13696,
     "types": [
       {
         "type": "Electric",
@@ -1083,7 +1083,7 @@
     "name": "Dewgong",
     "rarity": "Ultra Rare",
     "level": 2,
-    "cp": 9216,
+    "cp": 9053,
     "types": [
       {
         "type": "Water",
@@ -1109,7 +1109,7 @@
     "name": "Muk",
     "rarity": "Ultra Rare",
     "level": 2,
-    "cp": 12269,
+    "cp": 11893,
     "types": [
       {
         "type": "Poison",
@@ -1121,7 +1121,7 @@
     "name": "Shellder",
     "rarity": "Rare",
     "level": 1,
-    "cp": 1,
+    "cp": 3916,
     "types": [
       {
         "type": "Water",
@@ -1133,7 +1133,7 @@
     "name": "Cloyster",
     "rarity": "Ultra Rare",
     "level": 2,
-    "cp": 15678,
+    "cp": 14038,
     "types": [
       {
         "type": "Water",
@@ -1193,7 +1193,7 @@
     "name": "Onix",
     "rarity": "Rare",
     "level": 3,
-    "cp": 9534,
+    "cp": 8608,
     "types": [
       {
         "type": "Rock",
@@ -1283,7 +1283,7 @@
     "name": "Exeggutor",
     "rarity": "Very Rare",
     "level": 4,
-    "cp": 27501,
+    "cp": 27504,
     "types": [
       {
         "type": "Grass",
@@ -1321,7 +1321,7 @@
     "name": "Hitmonlee",
     "rarity": "Very Rare",
     "level": 3,
-    "cp": 19679,
+    "cp": 18326,
     "types": [
       {
         "type": "Fighting",
@@ -1333,7 +1333,7 @@
     "name": "Hitmonchan",
     "rarity": "Rare",
     "level": 3,
-    "cp": 17164,
+    "cp": 16587,
     "types": [
       {
         "type": "Fighting",
@@ -1367,7 +1367,7 @@
     "name": "Weezing",
     "rarity": "Very Rare",
     "level": 2,
-    "cp": 12318,
+    "cp": 11675,
     "types": [
       {
         "type": "Poison",
@@ -1393,7 +1393,7 @@
     "name": "Rhydon",
     "rarity": "Very Rare",
     "level": 4,
-    "cp": 30512,
+    "cp": 27992,
     "types": [
       {
         "type": "Ground",
@@ -1419,7 +1419,7 @@
     "name": "Tangela",
     "rarity": "Rare",
     "level": 3,
-    "cp": 16085,
+    "cp": 14710,
     "types": [
       {
         "type": "Grass",
@@ -1537,7 +1537,7 @@
     "name": "Jynx",
     "rarity": "Rare",
     "level": 3,
-    "cp": 18296,
+    "cp": 16795,
     "types": [
       {
         "type": "Ice",
@@ -1565,7 +1565,7 @@
     "name": "Magmar",
     "rarity": "Rare",
     "level": 2,
-    "cp": 12718,
+    "cp": 12189,
     "types": [
       {
         "type": "Fire",
@@ -1577,7 +1577,7 @@
     "name": "Pinsir",
     "rarity": "Uncommon",
     "level": 3,
-    "cp": 20176,
+    "cp": 19449,
     "types": [
       {
         "type": "Bug",
@@ -1599,7 +1599,7 @@
     "name": "Magikarp",
     "rarity": "Uncommon",
     "level": 1,
-    "cp": 1165,
+    "cp": 1077,
     "types": [
       {
         "type": "Water",
@@ -1625,7 +1625,7 @@
     "name": "Lapras",
     "rarity": "Very Rare",
     "level": 4,
-    "cp": 21768,
+    "cp": 21430,
     "types": [
       {
         "type": "Water",
@@ -1697,7 +1697,7 @@
     "name": "Porygon",
     "rarity": "Very Rare",
     "level": 3,
-    "cp": 11419,
+    "cp": 11307,
     "types": [
       {
         "type": "Normal",
@@ -1709,7 +1709,7 @@
     "name": "Omanyte",
     "rarity": "Rare",
     "level": 1,
-    "cp": 5724,
+    "cp": 5397,
     "types": [
       {
         "type": "Rock",
@@ -1725,7 +1725,7 @@
     "name": "Omastar",
     "rarity": "Ultra Rare",
     "level": 3,
-    "cp": 18915,
+    "cp": 17870,
     "types": [
       {
         "type": "Rock",
@@ -1741,7 +1741,7 @@
     "name": "Kabuto",
     "rarity": "Rare",
     "level": 1,
-    "cp": 1,
+    "cp": 4970,
     "types": [
       {
         "type": "Rock",
@@ -1757,7 +1757,7 @@
     "name": "Kabutops",
     "rarity": "Ultra Rare",
     "level": 3,
-    "cp": 19004,
+    "cp": 18248,
     "types": [
       {
         "type": "Rock",
@@ -1773,7 +1773,7 @@
     "name": "Aerodactyl",
     "rarity": "Very Rare",
     "level": 3,
-    "cp": 17294,
+    "cp": 17050,
     "types": [
       {
         "type": "Rock",
@@ -1789,7 +1789,7 @@
     "name": "Snorlax",
     "rarity": "Very Rare",
     "level": 4,
-    "cp": 25419,
+    "cp": 24082,
     "types": [
       {
         "type": "Normal",
@@ -1801,7 +1801,7 @@
     "name": "Articuno",
     "rarity": "Ultra Rare",
     "level": 5,
-    "cp": 37603,
+    "cp": 36665,
     "types": [
       {
         "type": "Ice",
@@ -1817,7 +1817,7 @@
     "name": "Zapdos",
     "rarity": "Ultra Rare",
     "level": 5,
-    "cp": 42691,
+    "cp": 42374,
     "types": [
       {
         "type": "Electric",
@@ -1833,7 +1833,7 @@
     "name": "Moltres",
     "rarity": "Ultra Rare",
     "level": 5,
-    "cp": 41953,
+    "cp": 41635,
     "types": [
       {
         "type": "Fire",
@@ -1870,7 +1870,7 @@
     "name": "Dragonite",
     "rarity": "Very Rare",
     "level": 4,
-    "cp": 35383,
+    "cp": 35137,
     "types": [
       {
         "type": "Dragon",
@@ -1952,7 +1952,7 @@
     "name": "Quilava",
     "rarity": "Very Rare",
     "level": 1,
-    "cp": 5085,
+    "cp": 5031,
     "types": [
       {
         "type": "Fire",
@@ -1983,8 +1983,8 @@
   "159": {
     "name": "Croconaw",
     "rarity": "Rare",
-    "level": 2,
-    "cp": 5207,
+    "level": 1,
+    "cp": 5064,
     "types": [
       {
         "type": "Water",
@@ -1996,7 +1996,7 @@
     "name": "Feraligatr",
     "rarity": "Very Rare",
     "level": 4,
-    "cp": 27740,
+    "cp": 27145,
     "types": [
       {
         "type": "Water",
@@ -2316,7 +2316,7 @@
     "name": "Sudowoodo",
     "rarity": "Uncommon",
     "level": 2,
-    "cp": 11269,
+    "cp": 10671,
     "types": [
       {
         "type": "Rock",
@@ -2768,7 +2768,7 @@
     "name": "Piloswine",
     "rarity": "Ultra Rare",
     "level": 3,
-    "cp": 13663,
+    "cp": 13278,
     "types": [
       {
         "type": "Ice",
@@ -2916,7 +2916,7 @@
     "name": "Donphan",
     "rarity": "Very Rare",
     "level": 3,
-    "cp": 18980,
+    "cp": 17738,
     "types": [
       {
         "type": "Ground",
@@ -3032,7 +3032,7 @@
     "name": "Raikou",
     "rarity": "Ultra Rare",
     "level": 5,
-    "cp": 42932,
+    "cp": 41476,
     "types": [
       {
         "type": "Electric",
@@ -3044,7 +3044,7 @@
     "name": "Entei",
     "rarity": "Ultra Rare",
     "level": 5,
-    "cp": 38628,
+    "cp": 38119,
     "types": [
       {
         "type": "Fire",
@@ -3112,7 +3112,7 @@
     "name": "Lugia",
     "rarity": "Ultra Rare",
     "level": 5,
-    "cp": 42753,
+    "cp": 41923,
     "types": [
       {
         "type": "Psychic",
@@ -3128,7 +3128,7 @@
     "name": "Ho-Oh",
     "rarity": "Ultra Rare",
     "level": 5,
-    "cp": 48276,
+    "cp": 45702,
     "types": [
       {
         "type": "Fire",
@@ -3144,7 +3144,7 @@
     "name": "Celebi",
     "rarity": "Ultra Rare",
     "level": 5,
-    "cp": 37726,
+    "cp": 37733,
     "types": [
       {
         "type": "Psychic",
@@ -3240,7 +3240,7 @@
     "name": "Marshtomp",
     "rarity":"",
     "level": 2,
-    "cp": 2,
+    "cp": 8825,
     "types": [
       {
         "type": "Water",
@@ -3586,7 +3586,7 @@
     "name": "Breloom",
     "rarity":"",
     "level": 3,
-    "cp": 18174,
+    "cp": 17680,
     "types": [
       {
         "type": "Grass",
@@ -3938,7 +3938,7 @@
     "name": "Roselia",
     "rarity":"",
     "level": 2,
-    "cp": 10887,
+    "cp": 10304,
     "types": [
       {
         "type": "Grass",
@@ -4156,7 +4156,7 @@
     "name": "Swablu",
     "rarity":"",
     "level": 1,
-    "cp": 2766,
+    "cp": 2702,
     "types": [
       {
         "type": "Normal",
@@ -4300,7 +4300,7 @@
     "name": "Claydol",
     "rarity":"",
     "level": 3,
-    "cp": 13450,
+    "cp": 13261,
     "types": [
       {
         "type": "Ground",
@@ -4698,7 +4698,7 @@
     "name": "Regirock",
     "rarity":"",
     "level": 5,
-    "cp": 41777,
+    "cp": 39041,
     "types": [
       {
         "type": "Rock",
@@ -4710,7 +4710,7 @@
     "name": "Regice",
     "rarity":"",
     "level": 5,
-    "cp": 41777,
+    "cp": 39041,
     "types": [
       {
         "type": "Ice",
@@ -4734,7 +4734,7 @@
     "name": "Latias",
     "rarity":"",
     "level": 5,
-    "cp": 45704,
+    "cp": 43891,
     "types": [
       {
         "type": "Dragon",
@@ -4750,7 +4750,7 @@
     "name": "Latios",
     "rarity":"",
     "level": 5,
-    "cp": 49322,
+    "cp": 47671,
     "types": [
       {
         "type": "Dragon",
@@ -4766,7 +4766,7 @@
     "name": "Kyogre",
     "rarity":"",
     "level": 5,
-    "cp": 51968,
+    "cp": 49671,
     "types": [
       {
         "type": "Water",
@@ -4778,7 +4778,7 @@
     "name": "Groudon",
     "rarity":"",
     "level": 5,
-    "cp": 51968,
+    "cp": 49671,
     "types": [
       {
         "type": "Ground",
@@ -4822,7 +4822,7 @@
     "name": "Deoxys",
     "rarity":"",
     "level": 5,
-    "cp": "",
+    "cp": 45891,
     "types": [
       {
         "type": "Psychic",
