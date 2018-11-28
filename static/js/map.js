@@ -1356,6 +1356,12 @@ function setupPokestopMarker(item) {
 		imagename = item['reward'].includes('Vulnona') ? 'Pstop-quest_Vulnona' : imagename
 		imagename = item['reward'].includes('Vulpix') ? 'Pstop-quest_Vulpix' : imagename
 		imagename = item['reward'].includes('Wailmer') ? 'Pstop-quest_Wailmer' : imagename
+        if (item['reward'].includes('Vulpix') && item['reward'].includes('Quapsel')) {
+            imagename = 'Pstop-quest'
+        }
+        if (item['reward'].includes('Bisasam') && item['reward'].includes('Glumanda') && item['reward'].includes('Schiggy')) {
+            imagename = 'Pstop-quest'
+        }
 	}
     
     var marker = new google.maps.Marker({
