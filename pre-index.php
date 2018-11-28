@@ -1522,7 +1522,7 @@ if ( $blockIframe ) {
 <script src="static/dist/js/map.min.js"></script>
 <script src="static/dist/js/stats.min.js"></script>
 <script defer
-        src="https://maps.googleapis.com/maps/api/js?v=3.31&amp;key=<?= $gmapsKey[mt_rand(0, count($gmapsKey) - 1)] ?>&amp;callback=initMap&amp;libraries=places,geometry"></script>
+        src="https://maps.googleapis.com/maps/api/js?v=weekly&amp;key=<?= $gmapsKey[mt_rand(0, count($gmapsKey) - 1)] ?>&amp;callback=initMap&amp;libraries=places,geometry"></script>
 <script defer src="static/js/vendor/richmarker-compiled.js"></script>
 </body>
 </html>
