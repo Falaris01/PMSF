@@ -5285,6 +5285,8 @@
   "425":{
     "name": "Drifloon",
     "rarity":"",
+    "level": 1,
+	"cp": 3151,
     "types": [
       {
         "type": "Ghost",
