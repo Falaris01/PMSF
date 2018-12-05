@@ -31,7 +31,8 @@ foreach ( $nestCoords as $c ) {
     $result  = file_get_contents( $url, false, $context );
     if ( $result === false ) { /* Handle error */
     }
-
+    
+    $db->query("DELETE FROM nests");
     $nests = json_decode( $result, true )['localMarkers'];
     foreach ( $nests as $nest ) {
         if($db->info()['driver'] === 'pgsql'){
