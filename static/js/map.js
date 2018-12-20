@@ -1359,6 +1359,9 @@ function setupPokestopMarker(item) {
         if (item['reward'].includes('Vulpix') && item['reward'].includes('Quapsel')) {
             imagename = 'Pstop-quest'
         }
+        if (item['reward'].includes('Lanturn') && item['reward'].includes('Owei')) {
+            imagename = 'Pstop-quest'
+        }
         if (item['reward'].includes('Bisasam') && item['reward'].includes('Glumanda') && item['reward'].includes('Schiggy')) {
             imagename = 'Pstop-quest'
         }
