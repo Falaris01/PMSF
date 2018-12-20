@@ -6025,6 +6025,8 @@
   "485":{
     "name": "Heatran",
     "rarity":"",
+    "level": 5,
+    "cp": 44905,
     "types": [
       {
         "type": "Fire",
