@@ -1,128 +1,137 @@
  {
   "1": {
-    "name": "Bisasam/Glumanda/Schiggy"
-    },
-  "2": {
-    "name": "Lanturn/Owei"
-    },
-  "3": {
-    "name": "Quapsel/Vulpix"
-    },
-  "4": {
-    "name": "Barschwa"  
-    },
-  "5": {
-    "name": "Bisasam"  
-    },
-  "6": {
-    "name": "Camaub"  
-    },
-  "7": {
-    "name": "Chaneira"
-    },
-  "8": {
-    "name": "Dratini"
-    },
-  "9": {
-    "name": "Elektek"
-    },
-  "10": {
-    "name": "Entoron"  
-    },
-  "11": {
-    "name": "Evoli"
-    },
-  "12": {
-    "name": "Glumanda"
-    },
-  "13": {
-    "name": "Golbat"
-    },
-  "14": {
-    "name": "Karpador"
-    },
-  "15": {
-    "name": "Lanturn"  
-    },
-  "16": {
-    "name": "Larvitar"
-    },
-  "17": {
-    "name": "Machollo"
-    },
-  "18": {
-    "name": "Magmar"
-    },
-  "19": {
-    "name": "Menki"
-    },
-  "20": {
-    "name": "Nebulak"
-    },
-  "21": {
-    "name": "Onix"
-    },
-  "22": {
-    "name": "Owei"
-    },
-  "23": {
-    "name": "Pandir"
-    },
-  "24": {
-    "name": "Porygon"
-    },
-  "25": {
-    "name": "Quapsel"
-    },
-  "26": {
-    "name": "Rossana"
-    },
-  "27": {
-    "name": "Schiggy"
-    },
-  "28": {
-    "name": "Traunfugil"
-    },
-  "29": {
-    "name": "Voltobal"
-    },
-  "30": {
-    "name": "Vulpix"
-    },
-  "31": {
-    "name": "1 Sonderbonbon"
-    },
-  "32": {
     "name": "3 Sonderbonbons"
     },
+  "2": {
+    "name": "5 silberne Sananabeeren"
+    },
+  "3": {
+    "name": "Bidiza/Voltobal"
+    },
+  "4": {
+    "name": "Bisasam/Glumanda/Schiggy"
+    },
+  "5": {
+    "name": "Evoli/Sonnkern"
+    },
+  "6": {
+    "name": "Machollo/Menki"
+    },
+  "7": {
+    "name": "Owei/Snubbull"
+    },
+  "8": {
+    "name": "Quapsel/Vulpix"
+    },
+  "9": {
+    "name": "Aerodactyl"  
+    },
+  "10": {
+    "name": "Amonitas"  
+    },
+  "11": {
+    "name": "Anorith"  
+    },
+  "12": {
+    "name": "Bidiza"  
+    },
+  "13": {
+    "name": "Bisasam"  
+    },
+  "14": {
+    "name": "Chaneira"
+    },
+  "15": {
+    "name": "Dratini"
+    },
+  "16": {
+    "name": "Elektek"
+    },
+  "17": {
+    "name": "Evoli"
+    },
+  "18": {
+    "name": "Fukano"  
+    },
+  "19": {
+    "name": "Glumanda"
+    },
+  "20": {
+    "name": "Hunduster"  
+    },
+  "21": {
+    "name": "Kabuto"  
+    },
+  "22": {
+    "name": "Karpador"
+    },
+  "23": {
+    "name": "Lapras"  
+    },
+  "24": {
+    "name": "Larvitar"
+    },
+  "25": {
+    "name": "Machollo"
+    },
+  "26": {
+    "name": "Magmar"
+    },
+  "27": {
+    "name": "Magnetilo"
+    },
+  "28": {
+    "name": "Menki"  
+    },
+  "29": {
+    "name": "Nebulak"
+    },
+  "30": {
+    "name": "Onix"
+    },
+  "31": {
+    "name": "Owei"
+    },
+  "32": {
+    "name": "Pandir"
+    },
   "33": {
-    "name": "2 goldene Himmihbeeren"
+    "name": "Quapsel"
     },
   "34": {
-    "name": "3 silberne Sananabeeren"
+    "name": "Rossana"
     },
   "35": {
-    "name": "200/500 Sternenstaub"
+    "name": "Sandan"  
     },
   "36": {
-    "name": "1000/1500 Sternenstaub"
+    "name": "Schiggy"
     },
   "37": {
-    "name": "Himmihbeeren"
+    "name": "Snubbull"  
     },
   "38": {
-    "name": "Sananabeeren"
+    "name": "Sonnkern"  
     },
   "39": {
-    "name": "Nanabbeeren"
+    "name": "Starmie"  
     },
   "40": {
-    "name": "5 Tränke"
+    "name": "Tentoxa"  
     },
   "41": {
-    "name": "3 Supertränke"
+    "name": "Tragosso"
     },
   "42": {
-    "name": "3 Hypertränke"
+    "name": "Traumato"  
+    },
+  "43": {
+    "name": "Voltenso"  
+    },
+  "44": {
+    "name": "Voltobal"
+    },
+  "45": {
+    "name": "Vulpix"
     }
 }
