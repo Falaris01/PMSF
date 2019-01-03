@@ -1356,24 +1356,31 @@ function setupPokestopMarker(item) {
 		imagename = item['reward'].includes('Vulnona') ? 'Pstop-quest_Vulnona' : imagename
 		imagename = item['reward'].includes('Vulpix') ? 'Pstop-quest_Vulpix' : imagename
 		imagename = item['reward'].includes('Wailmer') ? 'Pstop-quest_Wailmer' : imagename
+		
+		if (item['reward'].includes('Anorith') && item['reward'].includes('Nebulak') && item['reward'].includes('Liliep')) {
+            imagename = 'Pstop-quest'
+        }
+		if (item['reward'].includes('Bidiza') && item['reward'].includes('Voltobal')) {
+            imagename = 'Pstop-quest'
+        }
+		if (item['reward'].includes('Bisasam') && item['reward'].includes('Glumanda') && item['reward'].includes('Schiggy')) {
+            imagename = 'Pstop-quest'
+        }
+		if (item['reward'].includes('Evoli') && item['reward'].includes('Sonnkern')) {
+            imagename = 'Pstop-quest'
+        }
+		if (item['reward'].includes('Karpador') && item['reward'].includes('Hunduster') {
+            imagename = 'Pstop-quest'
+        }
+		if (item['reward'].includes('Machollo') && item['reward'].includes('Menki')) {
+            imagename = 'Pstop-quest'
+        }
+		if (item['reward'].includes('Snubbull') && item['reward'].includes('Owei')) {
+            imagename = 'Pstop-quest'
+        }
         if (item['reward'].includes('Vulpix') && item['reward'].includes('Quapsel')) {
             imagename = 'Pstop-quest'
-        }
-        if (item['reward'].includes('Bidiza') && item['reward'].includes('Voltobal')) {
-            imagename = 'Pstop-quest'
-        }
-        if (item['reward'].includes('Snubbull') && item['reward'].includes('Owei')) {
-            imagename = 'Pstop-quest'
-        }
-        if (item['reward'].includes('Bisasam') && item['reward'].includes('Glumanda') && item['reward'].includes('Schiggy')) {
-            imagename = 'Pstop-quest'
-        }
-        if (item['reward'].includes('Evoli') && item['reward'].includes('Sonnkern')) {
-            imagename = 'Pstop-quest'
-        }
-        if (item['reward'].includes('Machollo') && item['reward'].includes('Menki')) {
-            imagename = 'Pstop-quest'
-        }
+        } 
 	}
     
     var marker = new google.maps.Marker({
