@@ -29,105 +29,109 @@
   },
   "8": {
     "cat": "Raids",
-    "name": "Gewinne einen Level 3 oder höher Raid"
+    "name": "Gewinne 5 Raids"
   },
   "9": {
-    "cat": "Eier ausbrüten",
-    "name": "Brüte ein Ei aus"
+    "cat": "Raids",
+    "name": "Gewinne einen Level 3 oder höher Raid"
   },
   "10": {
     "cat": "Eier ausbrüten",
-    "name": "Brüte 3 Eier aus"
+    "name": "Brüte ein Ei aus"
   },
   "11": {
     "cat": "Eier ausbrüten",
-    "name": "Brüte 5 Eier aus"
+    "name": "Brüte 3 Eier aus"
   },
   "12": {
-    "cat": "Fangen",
-    "name": "Fange 10 Pokémon"
+    "cat": "Eier ausbrüten",
+    "name": "Brüte 5 Eier aus"
   },
   "13": {
     "cat": "Fangen",
-    "name": "Fange 10 Pokémon vom Typ Eis"
+    "name": "Fange 10 Pokémon"
   },
   "14": {
     "cat": "Fangen",
-    "name": "Fange 10 Pokémon vom Typ Boden"
+    "name": "Fange 10 Pokémon vom Typ Eis"
   },
   "15": {
     "cat": "Fangen",
-    "name": "Fange 5 Pokémon vom Typ Kampf"
+    "name": "Fange 10 Pokémon vom Typ Boden"
   },
   "16": {
     "cat": "Fangen",
-    "name": "quest_type_b_catch_plurals"
+    "name": "Fange 7 Pokémon vom Typ Flug, Psycho oder Unlicht"
   },
   "17": {
     "cat": "Fangen",
-    "name": "quest_type_c_catch_plurals"
+    "name": "Fange 5 Pokémon vom Typ Kampf"
   },
   "18": {
     "cat": "Fangen",
-    "name": "Fange ein Pokémon vom Typ Drache"
+    "name": "Fange 5 Pokémon vom Typ Elektro, Normal oder Gift"
   },
   "19": {
     "cat": "Fangen",
     "name": "Fange 5 Pokémon mit Wetterboost"
   },
   "20": {
-    "cat": "Würfe",
-    "name": "Lande 5 gute Würfe"
+    "cat": "Fangen",
+    "name": "Fange ein Pokémon vom Typ Drache"
   },
   "21": {
     "cat": "Würfe",
-    "name": "Lande 3 großartige Würfe"
+    "name": "Lande 5 gute Würfe"
   },
   "22": {
     "cat": "Würfe",
-    "name": "Lande 3 großartige Würfe hintereinander"
+    "name": "Lande 3 großartige Würfe"
   },
   "23": {
     "cat": "Würfe",
-    "name": "Lande 5 großartige Curveball-Würfe hintereinander"
+    "name": "Lande 3 großartige Würfe hintereinander"
   },
   "24": {
     "cat": "Würfe",
-    "name": "Lande 3 fabelhafte Würfe hintereinander"
+    "name": "Lande 5 großartige Curveball-Würfe hintereinander"
   },
   "25": {
-    "cat": "Sonstiges",
-    "name": "Verschicke 2 Geschenke"
+    "cat": "Würfe",
+    "name": "Lande 3 fabelhafte Würfe hintereinander"
   },
   "26": {
     "cat": "Sonstiges",
-    "name": "Verwende 5 Beeren beim Fangen von Pokémon"
+    "name": "Verschicke 2 Geschenke"
   },
   "27": {
     "cat": "Sonstiges",
-    "name": "Verwende 5 Himmihbeeren beim Fangen von Pokémon"
+    "name": "Verwende 5 Beeren beim Fangen von Pokémon"
   },
   "28": {
     "cat": "Sonstiges",
-    "name": "Verwende 10 Sananabeeren beim Fangen von Pokémon"
+    "name": "Verwende 5 Himmihbeeren beim Fangen von Pokémon"
   },
   "29": {
     "cat": "Sonstiges",
-    "name": "Entwickle ein Pokémon"
+    "name": "Verwende 10 Sananabeeren beim Fangen von Pokémon"
   },
   "30": {
     "cat": "Sonstiges",
-    "name": "Verwende 5 Power-Ups bei Pokémon"
+    "name": "Entwickle ein Pokémon"
   },
   "31": {
     "cat": "Sonstiges",
-    "name": "Verschicke 3 Pokémon"
+    "name": "Verwende 5 Power-Ups bei Pokémon"
   },
   "32": {
     "cat": "Sonstiges",
-    "name": "Tausche ein Pokémon"
+    "name": "Verschicke 3 Pokémon"
   },
   "33": {
+    "cat": "Sonstiges",
+    "name": "Tausche ein Pokémon"
+  },
+  "34": {
     "cat": "Sonstiges",
     "name": "Verdiene 5 Bonbons durch Spazieren mit deinem Kumpel"
   }
