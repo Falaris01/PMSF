@@ -29,109 +29,133 @@
   },
   "8": {
     "cat": "Raids",
-    "name": "Gewinne 5 Raids"
+    "name": "Gewinne 3 Raids"
   },
   "9": {
     "cat": "Raids",
-    "name": "Gewinne einen Level 3 oder höher Raid"
+    "name": "Gewinne 5 Raids"
   },
   "10": {
-    "cat": "Eier ausbrüten",
-    "name": "Brüte ein Ei aus"
+    "cat": "Raids",
+    "name": "Gewinne einen Level 3 oder höher Raid"
   },
   "11": {
     "cat": "Eier ausbrüten",
-    "name": "Brüte 3 Eier aus"
+    "name": "Brüte ein Ei aus"
   },
   "12": {
     "cat": "Eier ausbrüten",
-    "name": "Brüte 5 Eier aus"
+    "name": "Brüte 3 Eier aus"
   },
   "13": {
-    "cat": "Fangen",
-    "name": "Fange 10 Pokémon"
+    "cat": "Eier ausbrüten",
+    "name": "Brüte 5 Eier aus"
   },
   "14": {
     "cat": "Fangen",
-    "name": "Fange 10 Pokémon vom Typ Eis"
+    "name": "Fange 10 Pokémon"
   },
   "15": {
     "cat": "Fangen",
-    "name": "Fange 10 Pokémon vom Typ Boden"
+    "name": "Fange 10 Pokémon vom Typ Eis"
   },
   "16": {
     "cat": "Fangen",
-    "name": "Fange 7 Pokémon vom Typ Flug, Psycho oder Unlicht"
+    "name": "Fange 10 Pokémon vom Typ Boden"
   },
   "17": {
     "cat": "Fangen",
-    "name": "Fange 5 Pokémon vom Typ Kampf"
+    "name": "Fange 7 Pokémon vom Typ Flug, Psycho oder Unlicht"
   },
   "18": {
     "cat": "Fangen",
-    "name": "Fange 5 Pokémon vom Typ Elektro, Normal oder Gift"
+    "name": "Fange 5 Pokémon vom Typ Kampf"
   },
   "19": {
     "cat": "Fangen",
-    "name": "Fange 5 Pokémon mit Wetterboost"
+    "name": "Fange 5 Pokémon vom Typ Elektro, Normal oder Gift"
   },
   "20": {
     "cat": "Fangen",
-    "name": "Fange ein Pokémon vom Typ Drache"
+    "name": "Fange 5 Pokémon mit Wetterboost"
   },
   "21": {
-    "cat": "Würfe",
-    "name": "Lande 5 gute Würfe"
+    "cat": "Fangen",
+    "name": "Fange 3 Pokémon vom Typ Pflanze, Wasser oder Feuer"
   },
   "22": {
-    "cat": "Würfe",
-    "name": "Lande 3 großartige Würfe"
+    "cat": "Fangen",
+    "name": "Fange ein Pokémon vom Typ Drache"
   },
   "23": {
-    "cat": "Würfe",
-    "name": "Lande 3 großartige Würfe hintereinander"
+    "cat": "Fangen",
+    "name": "Fange ein Ditto"
   },
   "24": {
     "cat": "Würfe",
-    "name": "Lande 5 großartige Curveball-Würfe hintereinander"
+    "name": "Lande 5 gute Würfe"
   },
   "25": {
     "cat": "Würfe",
-    "name": "Lande 3 fabelhafte Würfe hintereinander"
+    "name": "Lande 3 großartige Würfe"
   },
   "26": {
-    "cat": "Sonstiges",
-    "name": "Verschicke 2 Geschenke"
+    "cat": "Würfe",
+    "name": "Lande 3 großartige Würfe hintereinander"
   },
   "27": {
-    "cat": "Sonstiges",
-    "name": "Verwende 5 Beeren beim Fangen von Pokémon"
+    "cat": "Würfe",
+    "name": "Lande 3 großartige Curveball-Würfe hintereinander"
   },
   "28": {
-    "cat": "Sonstiges",
-    "name": "Verwende 5 Himmihbeeren beim Fangen von Pokémon"
+    "cat": "Würfe",
+    "name": "Lande 5 großartige Curveball-Würfe hintereinander"
   },
   "29": {
-    "cat": "Sonstiges",
-    "name": "Verwende 10 Sananabeeren beim Fangen von Pokémon"
+    "cat": "Würfe",
+    "name": "Lande 3 fabelhafte Würfe hintereinander"
   },
   "30": {
     "cat": "Sonstiges",
-    "name": "Entwickle ein Pokémon"
+    "name": "Verschicke 2 Geschenke"
   },
   "31": {
     "cat": "Sonstiges",
-    "name": "Verwende 5 Power-Ups bei Pokémon"
+    "name": "Verwende 5 Beeren beim Fangen von Pokémon"
   },
   "32": {
     "cat": "Sonstiges",
-    "name": "Verschicke 3 Pokémon"
+    "name": "Verwende 5 Himmihbeeren beim Fangen von Pokémon"
   },
   "33": {
     "cat": "Sonstiges",
-    "name": "Tausche ein Pokémon"
+    "name": "Verwende 10 Sananabeeren beim Fangen von Pokémon"
   },
   "34": {
+    "cat": "Sonstiges",
+    "name": "Entwickle ein Pokémon"
+  },
+  "35": {
+    "cat": "Sonstiges",
+    "name": "Entwickle ein Pokémon, indem du ein Entwicklungsitem benutzt"
+  },
+  "36": {
+    "cat": "Sonstiges",
+    "name": "Verwende 5 Power-Ups bei Pokémon"
+  },
+  "37": {
+    "cat": "Sonstiges",
+    "name": "Verschicke 3 Pokémon"
+  },
+  "38": {
+    "cat": "Sonstiges",
+    "name": "Tausche ein Pokémon"
+  },
+  "39": {
+    "cat": "Sonstiges",
+    "name": "Drehe 10 PokéStops oder Arenen"
+  },
+  "40": {
     "cat": "Sonstiges",
     "name": "Verdiene 5 Bonbons durch Spazieren mit deinem Kumpel"
   }
