@@ -1369,7 +1369,7 @@ function setupPokestopMarker(item) {
 		if (item['reward'].includes('Evoli') && item['reward'].includes('Sonnkern')) {
             imagename = 'Pstop-quest'
         }
-		if (item['reward'].includes('Karpador') && item['reward'].includes('Hunduster') {
+		if (item['reward'].includes('Karpador') && item['reward'].includes('Hunduster')) {
             imagename = 'Pstop-quest'
         }
 		if (item['reward'].includes('Machollo') && item['reward'].includes('Menki')) {
