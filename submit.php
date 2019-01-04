@@ -1,7 +1,7 @@
 <?php
 $timing['start'] = microtime( true );
 include( 'config/config.php' );
-global $map, $fork, $db, $raidBosses, $webhookUrl, $sendWebhook, $sendWebhookQuest, $noManualRaids, $noRaids, $noManualPokemon, $noPokemon, $noPokestops, $noManualPokestops, $noGyms, $noManualGyms, $noManualQuests, $noManualNests, $noNests, $hostUrl, $schlurpUrl, $chaneiraUrl, $tangelaUrl, $questUrl, $laprasUrl, $larvitarUrl, $dratiniUrl, $nebulakUrl, $hundusterUrl, $snubbullUrl, $traunfugilUrl, $pandirUrl, $voltilammUrl, $tannzaUrl, $miltankUrl, $porygonUrl, $phanpyUrl, $fukanoUrl, $krabbyUrl, $barschwaUrl, $pinsirUrl, $raupyUrl, $nincadaUrl, $dittoUrl, $allUrl;
+global $map, $fork, $db, $raidBosses, $webhookUrl, $sendWebhook, $sendWebhookQuest, $noManualRaids, $noRaids, $noManualPokemon, $noPokemon, $noPokestops, $noManualPokestops, $noGyms, $noManualGyms, $noManualQuests, $noManualNests, $noNests, $hostUrl, $schlurpUrl, $chaneiraUrl, $tangelaUrl, $questUrl, $laprasUrl, $larvitarUrl, $dratiniUrl, $nebulakUrl, $hundusterUrl, $snubbullUrl, $traunfugilUrl, $pandirUrl, $voltilammUrl, $tannzaUrl, $miltankUrl, $porygonUrl, $phanpyUrl, $fukanoUrl, $krabbyUrl, $barschwaUrl, $pinsirUrl, $raupyUrl, $nincadaUrl, $dittoUrl, $aerodactylUrl; $allUrl;
 $action = ! empty( $_POST['action'] ) ? $_POST['action'] : '';
 $lat    = ! empty( $_POST['lat'] ) ? $_POST['lat'] : '';
 $lng    = ! empty( $_POST['lng'] ) ? $_POST['lng'] : '';
@@ -190,6 +190,8 @@ if ( $action === "raid" ) {
             ];
         if (strpos($reward, 'Barschwa') !== false && $barschwaUrl) {
             $questUrl = $barschwaUrl;
+        } elseif (strpos($reward, 'Aerodactyl') !== false && $aerodactylUrl) {
+            $questUrl = $aerodactylUrl;
         } elseif (strpos($reward, 'Chaneira') !== false && $chaneiraUrl) {
             $questUrl = $chaneiraUrl;
         } elseif (strpos($reward, 'Ditto') !== false && $dittoUrl) {
@@ -234,7 +236,7 @@ if ( $action === "raid" ) {
             $questUrl = $traunfugilUrl;
         } elseif (strpos($reward, 'Voltilamm') !== false && $voltilammUrl) {
             $questUrl = $voltilammUrl;
-        }
+        } 
         /* template
         elseif (strpos($reward, '<pkm/item>') !== false && $<pkm/item>Url) {
             $questUrl = $dittoUrl;
