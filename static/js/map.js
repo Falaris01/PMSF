@@ -1303,7 +1303,7 @@ function setupPokestopMarker(item) {
     if (item['reward']) {
 		imagename = 'Pstop-quest'
 		imagename = item['reward'].includes('Sonderbonbon') ? 'Pstop-quest_Candy' : imagename
-		imagename = item['reward'].includes('silberne Sananabeere') ? 'Pstop-quest_Silbernesanana' : imagename
+		imagename = item['reward'].includes('ilberne Sananabeere') ? 'Pstop-quest_Silbernesanana' : imagename
 		imagename = item['reward'].includes('Absol') ? 'Pstop-quest_Absol' : imagename
 		imagename = item['reward'].includes('Aerodactyl') ? 'Pstop-quest_Aerodactyl' : imagename
         imagename = item['reward'].includes('Amonitas') ? 'Pstop-quest_Amonitas' : imagename
