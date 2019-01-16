@@ -9,7 +9,7 @@
     "name": "Goldene Himmihbeeren"
     },
   "4": {
-    "name": "Sofort-TM"
+    "name": "Sternenstaub"
     },
   "5": {
     "name": "Anorith/Liliep/Nebulak"
@@ -78,75 +78,81 @@
     "name": "Karpador"
     },
   "27": {
-    "name": "Lapras"  
+    "name": "Krebscorps"
     },
   "28": {
-    "name": "Larvitar"
+    "name": "Lapras"  
     },
   "29": {
-    "name": "Liliep"
+    "name": "Larvitar"
     },
   "30": {
-    "name": "Machollo"
+    "name": "Liliep"
     },
   "31": {
-    "name": "Magmar"
+    "name": "Machollo"
     },
   "32": {
-    "name": "Magnetilo"
+    "name": "Magmar"
     },
   "33": {
-    "name": "Menki"  
+    "name": "Magnetilo"
     },
   "34": {
-    "name": "Nebulak"
+    "name": "Menki"  
     },
   "35": {
-    "name": "Onix"
+    "name": "Nasgnet"  
     },
   "36": {
-    "name": "Owei"
+    "name": "Nebulak"
     },
   "37": {
-    "name": "Pandir"
+    "name": "Onix"
     },
   "38": {
-    "name": "Quapsel"
+    "name": "Owei"
     },
   "39": {
-    "name": "Rossana"
+    "name": "Pandir"
     },
   "40": {
-    "name": "Sandan"  
+    "name": "Quapsel"
     },
   "41": {
-    "name": "Schiggy"
+    "name": "Rossana"
     },
   "42": {
-    "name": "Snubbull"  
+    "name": "Sandan"  
     },
   "43": {
-    "name": "Sonnkern"  
+    "name": "Schiggy"
     },
   "44": {
-    "name": "Starmie"  
+    "name": "Snubbull"  
     },
   "45": {
-    "name": "Tentoxa"  
+    "name": "Sonnkern"  
     },
   "46": {
-    "name": "Tragosso"
+    "name": "Starmie"  
     },
   "47": {
-    "name": "Traumato"  
+    "name": "Tentoxa"  
     },
   "48": {
-    "name": "Voltenso"  
+    "name": "Tragosso"
     },
   "49": {
-    "name": "Voltobal"
+    "name": "Traumato"  
     },
   "50": {
+    "name": "Voltenso"  
+    },
+  "51": {
+    "name": "Voltobal"
+    },
+  "52": {
     "name": "Vulpix"
     }
 }
