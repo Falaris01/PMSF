@@ -3169,6 +3169,8 @@
   "253":{
     "name": "Grovyle",
     "rarity":"",
+    "level": 2,
+    "cp": 9218,
     "types": [
       {
         "type": "Grass",
@@ -3433,6 +3435,8 @@
   "275":{
     "name": "Shiftry",
     "rarity":"",
+    "level": 4,
+    "cp": 21713,
     "types": [
       {
         "type": "Grass",
@@ -3475,6 +3479,8 @@
   "278":{
     "name": "Wingull",
     "rarity":"",
+    "level": 1,
+    "cp": 2583,
     "types": [
       {
         "type": "Water",
@@ -3896,6 +3902,8 @@
   },
   "311":{
     "name": "Plusle",
+    "level": 1,
+    "cp": 5349,
     "rarity":"",
     "types": [
       {
@@ -3907,6 +3915,8 @@
   "312":{
     "name": "Minun",
     "rarity":"",
+    "level": 1,
+    "cp": 5097,
     "types": [
       {
         "type": "Electric",
@@ -4205,6 +4215,8 @@
   "337":{
     "name": "Lunatone",
     "rarity":"",
+    "level": 3,
+    "cp": 13701,
     "types": [
       {
         "type": "Rock",
@@ -4219,6 +4231,8 @@
   "338":{
     "name": "Solrock",
     "rarity":"",
+    "level": 3,
+    "cp": 13701,
     "types": [
       {
         "type": "Rock",
@@ -4271,6 +4285,8 @@
   "342":{
     "name": "Crawdaunt",
     "rarity":"",
+    "level": 3,
+    "cp": 16402,
     "types": [
       {
         "type": "Water",
@@ -4683,6 +4699,8 @@
   "376":{
     "name": "Metagross",
     "rarity":"",
+    "level": 4,
+    "cp": 36720,
     "types": [
       {
         "type": "Steel",
