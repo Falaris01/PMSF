@@ -12,147 +12,150 @@
     "name": "Sternenstaub"
     },
   "5": {
-    "name": "Anorith/Liliep/Nebulak"
+    "name": "Amonitas/Kabuto"
     },
   "6": {
-    "name": "Bidiza/Voltobal"
+    "name": "Anorith/Liliep/Nebulak"
     },
   "7": {
-    "name": "Bisasam/Glumanda/Schiggy"
+    "name": "Bidiza/Voltobal"
     },
   "8": {
-    "name": "Evoli/Sonnkern"
+    "name": "Bisasam/Glumanda/Schiggy"
     },
   "9": {
-    "name": "Hunduster/Karpador"
+    "name": "Evoli/Sonnkern"
     },
   "10": {
-    "name": "Machollo/Menki"
+    "name": "Hunduster/Karpador"
     },
   "11": {
-    "name": "Owei/Snubbull"
+    "name": "Machollo/Menki"
     },
   "12": {
-    "name": "Quapsel/Vulpix"
+    "name": "Owei/Snubbull"
     },
   "13": {
-    "name": "Aerodactyl"  
+    "name": "Quapsel/Vulpix"
     },
   "14": {
-    "name": "Amonitas"  
+    "name": "Aerodactyl"  
     },
   "15": {
-    "name": "Anorith"  
+    "name": "Amonitas"  
     },
   "16": {
-    "name": "Bidiza"  
+    "name": "Anorith"  
     },
   "17": {
-    "name": "Bisasam"  
+    "name": "Bidiza"  
     },
   "18": {
-    "name": "Chaneira"
+    "name": "Bisasam"  
     },
   "19": {
-    "name": "Dratini"
+    "name": "Chaneira"
     },
   "20": {
-    "name": "Elektek"
+    "name": "Dratini"
     },
   "21": {
-    "name": "Evoli"
+    "name": "Elektek"
     },
   "22": {
-    "name": "Fukano"  
+    "name": "Evoli"
     },
   "23": {
-    "name": "Glumanda"
+    "name": "Fukano"  
     },
   "24": {
-    "name": "Hunduster"  
+    "name": "Glumanda"
     },
   "25": {
-    "name": "Kabuto"  
+    "name": "Hunduster"  
     },
   "26": {
-    "name": "Karpador"
+    "name": "Kabuto"  
     },
   "27": {
-    "name": "Knacklion"
+    "name": "Karpador"
     },
   "28": {
-    "name": "Lapras"  
+    "name": "Knacklion"
     },
   "29": {
-    "name": "Larvitar"
+    "name": "Lapras"  
     },
   "30": {
-    "name": "Liliep"
+    "name": "Larvitar"
     },
   "31": {
-    "name": "Machollo"
+    "name": "Liliep"
     },
   "32": {
-    "name": "Magmar"
+    "name": "Machollo"
     },
   "33": {
-    "name": "Magnetilo"
+    "name": "Magmar"
     },
   "34": {
-    "name": "Menki"  
+    "name": "Magnetilo"
     },
   "35": {
-    "name": "Nasgnet"  
+    "name": "Menki"  
     },
   "36": {
-    "name": "Nebulak"
+    "name": "Nasgnet"  
     },
   "37": {
-    "name": "Onix"
+    "name": "Nebulak"
     },
   "38": {
-    "name": "Owei"
+    "name": "Onix"
     },
   "39": {
-    "name": "Pandir"
+    "name": "Owei"
     },
   "40": {
-    "name": "Quapsel"
+    "name": "Pandir"
     },
   "41": {
-    "name": "Rossana"
+    "name": "Quapsel"
     },
   "42": {
-    "name": "Sandan"  
+    "name": "Rossana"
     },
   "43": {
-    "name": "Schiggy"
+    "name": "Sandan"  
     },
   "44": {
-    "name": "Snubbull"  
+    "name": "Schiggy"
     },
   "45": {
-    "name": "Sonnkern"  
+    "name": "Snubbull"  
     },
   "46": {
-    "name": "Starmie"  
+    "name": "Sonnkern"  
     },
   "47": {
-    "name": "Tentoxa"  
+    "name": "Starmie"  
     },
   "48": {
-    "name": "Tragosso"
+    "name": "Tentoxa"  
     },
   "49": {
-    "name": "Traumato"  
+    "name": "Tragosso"
     },
   "50": {
-    "name": "Voltenso"  
+    "name": "Traumato"  
     },
   "51": {
-    "name": "Voltobal"
+    "name": "Voltenso"  
     },
   "52": {
+    "name": "Voltobal"
+    },
+  "53": {
     "name": "Vulpix"
     }
 }
