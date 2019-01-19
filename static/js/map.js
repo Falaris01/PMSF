@@ -1304,12 +1304,14 @@ function setupPokestopMarker(item) {
 		imagename = 'Pstop-quest'
 		imagename = item['reward'].includes('Sonderbonbon') ? 'Pstop-quest_Candy' : imagename
 		imagename = item['reward'].includes('ilberne Sananabeere') ? 'Pstop-quest_Silbernesanana' : imagename
+        imagename = item['reward'].includes('Sternenstaub') ? 'Pstop-quest_Sternenstaub' : imagename
 		imagename = item['reward'].includes('Absol') ? 'Pstop-quest_Absol' : imagename
 		imagename = item['reward'].includes('Aerodactyl') ? 'Pstop-quest_Aerodactyl' : imagename
         imagename = item['reward'].includes('Amonitas') ? 'Pstop-quest_Amonitas' : imagename
         imagename = item['reward'].includes('Anorith') ? 'Pstop-quest_Anorith' : imagename
 		imagename = item['reward'].includes('Bisasam') ? 'Pstop-quest_Bisasam' : imagename
 		imagename = item['reward'].includes('Barschwa') ? 'Pstop-quest_Barschwa' : imagename
+        imagename = item['reward'].includes('Shiny Barschwa') ? 'Pstop-quest_ShinyBarschwa' : imagename
 		imagename = item['reward'].includes('Chaneira') ? 'Pstop-quest_Chaneira' : imagename
 		imagename = item['reward'].includes('Ditto') ? 'Pstop-quest_Ditto' : imagename
 		imagename = item['reward'].includes('Dratini') ? 'Pstop-quest_Dratini' : imagename
@@ -1321,6 +1323,7 @@ function setupPokestopMarker(item) {
 		imagename = item['reward'].includes('Hunduster') ? 'Pstop-quest_Hunduster' : imagename
 		imagename = item['reward'].includes('Kabuto') ? 'Pstop-quest_Kabuto' : imagename
         imagename = item['reward'].includes('Karpador') ? 'Pstop-quest_Karpador' : imagename
+        imagename = item['reward'].includes('Knacklion') ? 'Pstop-quest_Knacklion' : imagename
 		imagename = item['reward'].includes('Knuddeluff') ? 'Pstop-quest_Knuddeluff' : imagename
 		imagename = item['reward'].includes('Krabby') ? 'Pstop-quest_Krabby' : imagename
 		imagename = item['reward'].includes('Lanturn') ? 'Pstop-quest_Lanturn' : imagename
@@ -1332,6 +1335,7 @@ function setupPokestopMarker(item) {
 		imagename = item['reward'].includes('Menki') ? 'Pstop-quest_Menki' : imagename
 		imagename = item['reward'].includes('Muschas') ? 'Pstop-quest_Muschas' : imagename
 		imagename = item['reward'].includes('Miltank') ? 'Pstop-quest_Miltank' : imagename
+        imagename = item['reward'].includes('Nasgnet') ? 'Pstop-quest_Nasgnet' : imagename
 		imagename = item['reward'].includes('Nebulak') ? 'Pstop-quest_Nebulak' : imagename
 		imagename = item['reward'].includes('Nincada') ? 'Pstop-quest_Nincada' : imagename
 		imagename = item['reward'].includes('Octillery') ? 'Pstop-quest_Octillery' : imagename
@@ -1365,6 +1369,7 @@ function setupPokestopMarker(item) {
 		imagename = item['reward'].includes('Vulnona') ? 'Pstop-quest_Vulnona' : imagename
 		imagename = item['reward'].includes('Vulpix') ? 'Pstop-quest_Vulpix' : imagename
 		imagename = item['reward'].includes('Wailmer') ? 'Pstop-quest_Wailmer' : imagename
+
 		
 		if (item['reward'].includes('Anorith') && item['reward'].includes('Nebulak') && item['reward'].includes('Liliep')) {
             imagename = 'Pstop-quest'
