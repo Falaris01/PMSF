@@ -192,67 +192,10 @@ if ( $action === "raid" ) {
         $specialRewards = ["Aerodactyl", "Amonitas", "Anorith", "Kabuto", "Liliep", "Tragosso"];
         $interestingRewards = ["Chaneira", "Dratini", "Lapras", "Larvitar", "Pandir", "Sandan", "Shiny Barschwa"];
         
-        if ($specialQuestUrl and $interestingQuestUrl) {
-            if ($specialQuestUrl and in_array($reward, $specialRewards)) {
-                $questUrl = $specialQuestUrl;
-            } elseif ($interestingQuestUrl and in_array($reward, $interestingRewards)) {
-                $questUrl = $interestingQuestUrl;
-            }
-        } else {
-            if (strpos($reward, 'Barschwa') !== false && $barschwaUrl) {
-                $questUrl = $barschwaUrl;
-            } elseif (strpos($reward, 'Aerodactyl') !== false && $aerodactylUrl) {
-                $questUrl = $aerodactylUrl;
-            } elseif (strpos($reward, 'Chaneira') !== false && $chaneiraUrl) {
-                $questUrl = $chaneiraUrl;
-            } elseif (strpos($reward, 'Ditto') !== false && $dittoUrl) {
-                $questUrl = $dittoUrl;
-            } elseif (strpos($reward, 'Dratini') !== false && $dratiniUrl) {
-                $questUrl = $dratiniUrl;
-            } elseif (strpos($reward, 'Fukano') !== false && $fukanoUrl) {
-                $questUrl = $fukanoUrl;
-            } elseif (strpos($reward, 'Hunduster') !== false && $hundusterUrl) {
-                $questUrl = $hundusterUrl;
-            } elseif (strpos($reward, 'Krabby') !== false && $krabbyUrl) {
-                $questUrl = $krabbyUrl;
-            } elseif (strpos($reward, 'Lapras') !== false && $laprasUrl) {
-                $questUrl = $laprasUrl;
-            } elseif (strpos($reward, 'Larvitar') !== false && $larvitarUrl) {
-                $questUrl = $larvitarUrl;
-            } elseif (strpos($reward, 'Miltank') !== false && $miltankUrl) {
-                $questUrl = $miltankUrl;
-            } elseif (strpos($reward, 'Nebulak') !== false && $nebulakUrl) {
-                $questUrl = $nebulakUrl;
-            } elseif (strpos($reward, 'Nincada') !== false && $nincadaUrl) {
-                $questUrl = $nincadaUrl;
-            } elseif (strpos($reward, 'Pandir') !== false && $pandirUrl) {
-                $questUrl = $pandirUrl;
-            } elseif (strpos($reward, 'Phanpy') !== false && $phanpyUrl) {
-                $questUrl = $phanpyUrl;
-            } elseif (strpos($reward, 'Pinsir') !== false && $pinsirUrl) {
-                $questUrl = $pinsirUrl;
-            } elseif (strpos($reward, 'Porygon') !== false && $porygonUrl) {
-                $questUrl = $porygonUrl;
-            } elseif (strpos($reward, 'Raupy') !== false && $raupyUrl) {
-                $questUrl = $raupyUrl;
-            } elseif (strpos($reward, 'Schlurp') !== false && $schlurpUrl) {
-                $questUrl = $schlurpUrl;
-            } elseif (strpos($reward, 'Snubbull') !== false && $snubbullUrl) {
-                $questUrl = $snubbullUrl;
-            } elseif (strpos($reward, 'Tangela') !== false && $tangelaUrl) {
-                $questUrl = $tangelaUrl;
-            } elseif (strpos($reward, 'Tannza') !== false && $tannzaUrl) {
-                $questUrl = $tannzaUrl;
-            } elseif (strpos($reward, 'Traunfugil') !== false && $traunfugilUrl) {
-                $questUrl = $traunfugilUrl;
-            } elseif (strpos($reward, 'Voltilamm') !== false && $voltilammUrl) {
-                $questUrl = $voltilammUrl;
-            }
-            /* template
-            elseif (strpos($reward, '<pkm/item>') !== false && $<pkm/item>Url) {
-                $questUrl = $<pkm/item>Url;
-            }
-            */
+        if ($specialQuestUrl and in_array($reward, $specialRewards)) {
+            $questUrl = $specialQuestUrl;
+        } elseif ($interestingQuestUrl and in_array($reward, $interestingRewards)) {
+            $questUrl = $interestingQuestUrl;
         }
         foreach ( $questUrl as $url ) {
             sendToWebhook( $url, $webhook );
