@@ -1377,6 +1377,9 @@ function setupPokestopMarker(item) {
 		if (item['reward'].includes('Bidiza') && item['reward'].includes('Voltobal')) {
             imagename = 'Pstop-quest'
         }
+		if (item['reward'].includes('Amonitas') && item['reward'].includes('Kabuto')) {
+            imagename = 'Pstop-quest'
+        }
 		if (item['reward'].includes('Bisasam') && item['reward'].includes('Glumanda') && item['reward'].includes('Schiggy')) {
             imagename = 'Pstop-quest'
         }
