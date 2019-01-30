@@ -1849,6 +1849,7 @@
     "name": "Dratini",
     "rarity": "Uncommon",
     "level": 1,
+    "cp": 3379,
     "types": [
       {
         "type": "Dragon",
@@ -4387,6 +4388,8 @@
   "349":{
     "name": "Feebas",
     "rarity":"",
+    "level": 1,
+    "cp": 1077,
     "types": [
       {
         "type": "Water",
@@ -6029,6 +6032,8 @@
   "484":{
     "name": "Palkia",
     "rarity":"",
+    "level": 5,
+    "cp": 50019,
     "types": [
       {
         "type": "Water",
@@ -12915,8 +12920,8 @@
   "1103":{
     "name": "Exeggutor Alola",
     "rarity":"",
-    "level": 4,
-    "cp": 27501,
+    "level": 2,
+    "cp": 13472,
     "types": [
       {
         "type": "Grass",
