@@ -196,10 +196,15 @@
   },
   "40": {
     "cat": "Sonstiges",
+    "name": "Tausche 10 Pokémon",
+    "rewards": ["Panflam"]
+  },
+  "41": {
+    "cat": "Sonstiges",
     "name": "Drehe 10 PokéStops oder Arenen",
     "rewards": ["5 silberne Sananabeeren"]
   },
-  "41": {
+  "42": {
     "cat": "Sonstiges",
     "name": "Verdiene 5 Bonbons durch Spazieren mit deinem Kumpel",
     "rewards": ["Tentoxa"]

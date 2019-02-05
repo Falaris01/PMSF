@@ -123,42 +123,45 @@
     "name": "Pandir"
     },
   "42": {
-    "name": "Quapsel"
+    "name": "Panflam"
     },
   "43": {
-    "name": "Rossana"
+    "name": "Quapsel"
     },
   "44": {
-    "name": "Sandan"  
+    "name": "Rossana"
     },
   "45": {
-    "name": "Schiggy"
+    "name": "Sandan"  
     },
   "46": {
-    "name": "Snubbull"  
+    "name": "Schiggy"
     },
   "47": {
-    "name": "Sonnkern"  
+    "name": "Snubbull"  
     },
   "48": {
-    "name": "Starmie"  
+    "name": "Sonnkern"  
     },
   "49": {
-    "name": "Tentoxa"  
+    "name": "Starmie"  
     },
   "50": {
-    "name": "Tragosso"
+    "name": "Tentoxa"  
     },
   "51": {
-    "name": "Traumato"  
+    "name": "Tragosso"
     },
   "52": {
-    "name": "Voltenso"  
+    "name": "Traumato"  
     },
   "53": {
-    "name": "Voltobal"
+    "name": "Voltenso"  
     },
   "54": {
+    "name": "Voltobal"
+    },
+  "55": {
     "name": "Vulpix"
     }
 }
