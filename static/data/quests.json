@@ -1,210 +1,255 @@
 {
   "1": {
-    "cat": "Arenen",
-    "name": "Kämpfe in einer Arena",
-    "rewards": ["Machollo", "Menki", "Machollo/Menki"]
+    "cat": "Event",
+    "name": "Valentinstag: Fange 20 Liebiskus",
+    "rewards": ["Chaneira"]
   },
   "2": {
-    "cat": "Arenen",
-    "name": "Kämpfe 5-mal in einer Arena",
-    "rewards": ["Machollo"]
+    "cat": "Event",
+    "name": "Valentinstag: Fange ein Chaneira",
+    "rewards": ["Sonderbonbon(s)"]
   },
   "3": {
     "cat": "Arenen",
-    "name": "Gewinne einen Arenakampf",
-    "rewards": ["Bisasam", "Glumanda", "Schiggy", "Bisasam/Glumanda/Schiggy"]
+    "name": "Kämpfe in einer Arena",
+    "rewards": ["Machollo/Menki", "Machollo", "Menki", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
   },
   "4": {
     "cat": "Arenen",
-    "name": "Gewinne 3 Arenakämpfe",
-    "rewards": ["1000 Sternenstaub", "1 Sonderbonbon", "Rossana"]
+    "name": "Kämpfe 5-mal in einer Arena",
+    "rewards": ["Machollo", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
   },
   "5": {
+    "cat": "Arenen",
+    "name": "Gewinne einen Arenakampf",
+    "rewards": ["Bisasam/Glumanda/Schiggy", "Bisasam", "Glumanda", "Schiggy", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
+  },
+  "6": {
+    "cat": "Arenen",
+    "name": "Gewinne 3 Arenakämpfe",
+    "rewards": ["Rossana", "Sternenstaub", "Sonderbonbon(s)", "Beeren/Tränke/Bälle/Beleber"]
+  },
+  "7": {
     "cat": "Arenen",
     "name": "Gewinne 5 Arenakämpfe",
     "rewards": ["Lapras"]
   },
-  "6": {
-    "cat": "Arenen",
-    "name": "Setze eine sehr effektive Lade-Attacke in 7 Arenakämpfen ein",
-    "rewards": ["1000 Sternenstaub", "1 Sonderbonbon", "Elektek"]
-  },
-  "7": {
-    "cat": "Raids",
-    "name": "Kämpfe in einem Raid",
-    "rewards": ["Traumato"]
-  },
   "8": {
-    "cat": "Raids",
-    "name": "Gewinne 3 Raids",
-    "rewards": ["1500 Sternenstaub"]
+    "cat": "Arenen",
+    "name": "Setze eine sehr effektive Lade-Attacke in einem Arenakampf ein",
+    "rewards": ["Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
   },
   "9": {
+    "cat": "Arenen",
+    "name": "Setze eine sehr effektive Lade-Attacke in 7 Arenakämpfen ein",
+    "rewards": ["Elektek", "Sternenstaub", "Sonderbonbon(s)", "Beeren/Tränke/Bälle/Beleber"]
+  },
+  "10": {
+    "cat": "Raids",
+    "name": "Kämpfe in einem Raid",
+    "rewards": ["Traumato", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
+  },
+  "11": {
+    "cat": "Raids",
+    "name": "Gewinne einen Raid",
+    "rewards": ["Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
+  },
+  "12": {
+    "cat": "Raids",
+    "name": "Gewinne 3 Raids",
+    "rewards": ["Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
+  },
+  "13": {
     "cat": "Raids",
     "name": "Gewinne 5 Raids",
     "rewards": ["Aerodactyl"]
   },
-  "10": {
+  "14": {
     "cat": "Raids",
     "name": "Gewinne einen Level 3 oder höher Raid",
-    "rewards": ["1000 Sternenstaub", "1 Sonderbonbon", "Amonitas", "Kabuto", "Amonitas/Kabuto"]
-  },
-  "11": {
-    "cat": "Eier ausbrüten",
-    "name": "Brüte ein Ei aus",
-    "rewards": ["Owei", "Snubbull", "Owei/Snubbull"]
-  },
-  "12": {
-    "cat": "Eier ausbrüten",
-    "name": "Brüte 3 Eier aus",
-    "rewards": ["1000 Sternenstaub", "Magmar"]
-  },
-  "13": {
-    "cat": "Eier ausbrüten",
-    "name": "Brüte 5 Eier aus",
-    "rewards": ["3 Sonderbonbons", "Chaneira"]
-  },
-  "14": {
-    "cat": "Fangen",
-    "name": "Fange 10 Pokémon",
-    "rewards": ["Karpador", "Hunduster", "Karpador/Hunduster"]
+    "rewards": ["Amonitas/Kabuto", "Amonitas", "Kabuto", "Sternenstaub", "Sonderbonbon(s)", "Beeren/Tränke/Bälle/Beleber"]
   },
   "15": {
+    "cat": "Eier ausbrüten",
+    "name": "Brüte ein Ei aus",
+    "rewards": ["Owei/Snubbull", "Owei", "Snubbull", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
+  },
+  "16": {
+    "cat": "Eier ausbrüten",
+    "name": "Brüte 3 Eier aus",
+    "rewards": ["Magmar", "Sonderbonbon(s)", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
+  },
+  "17": {
+    "cat": "Eier ausbrüten",
+    "name": "Brüte 5 Eier aus",
+    "rewards": ["Chaneira", "Sonderbonbon(s)"]
+  },
+  "18": {
+    "cat": "Fangen",
+    "name": "Fange 10 Pokémon",
+    "rewards": ["Karpador/Hunduster", "Karpador", "Hunduster", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
+  },
+  "19": {
     "cat": "Fangen",
     "name": "Fange 10 Pokémon vom Typ Eis",
     "rewards": ["Kabuto"]
   },
-  "16": {
+  "20": {
     "cat": "Fangen",
     "name": "Fange 10 Pokémon vom Typ Boden",
     "rewards": ["Sandan"]
   },
-  "17": {
+  "21": {
+    "cat": "Fangen",
+    "name": "Fange 10 Pokémon vom Typ Normal",
+    "rewards": ["Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
+  },
+  "22": {
+    "cat": "Fangen",
+    "name": "Fange 10 Pokémon mit Wetterboost",
+    "rewards": ["Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
+  },
+  "23": {
     "cat": "Fangen",
     "name": "Fange 7 Pokémon vom Typ Flug, Psycho oder Unlicht",
     "rewards": ["Anorith"]
   },
-  "18": {
+  "24": {
     "cat": "Fangen",
     "name": "Fange 5 Pokémon vom Typ Kampf",
     "rewards": ["Magnetilo"]
   },
-  "19": {
+  "25": {
     "cat": "Fangen",
     "name": "Fange 5 Pokémon vom Typ Elektro, Normal oder Gift",
     "rewards": ["Starmie"]
   },
-  "20": {
+  "26": {
     "cat": "Fangen",
     "name": "Fange 5 Pokémon mit Wetterboost",
-    "rewards": ["Quapsel", "Vulpix", "Quapsel/Vulpix"]
-  },
-  "21": {
-    "cat": "Fangen",
-    "name": "Fange 3 Pokémon vom Typ Pflanze, Wasser oder Feuer",
-    "rewards": ["5 silbere Sananabeeren"]
-  },
-  "22": {
-    "cat": "Fangen",
-    "name": "Fange ein Pokémon vom Typ Drache",
-    "rewards": ["1500 Sternenstaub", "3 Sonderbonbons", "2 goldene Himmihbeeren", "Dratini"]
-  },
-  "23": {
-    "cat": "Fangen",
-    "name": "Fange ein Ditto",
-    "rewards": ["1500 Sternenstaub", "3 Sonderbonbons", "2 goldene Himmihbeeren"]
-  },
-  "24": {
-    "cat": "Würfe",
-    "name": "Lande 5 gute Würfe",
-    "rewards": ["Voltobal", "Bidiza", "Voltobal/Bidiza"]
-  },
-  "25": {
-    "cat": "Würfe",
-    "name": "Lande 3 großartige Würfe",
-    "rewards": ["Nebulak", "Liliep", "Anorith", "Nebulak/Liliep/Anorith"]
-  },
-  "26": {
-    "cat": "Würfe",
-    "name": "Lande 3 großartige Würfe hintereinander",
-    "rewards": ["1000 Sternenstaub", "1 Sonderbonbon", "Onix"]
+    "rewards": ["Quapsel/Vulpix", "Quapsel", "Vulpix", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
   },
   "27": {
-    "cat": "Würfe",
-    "name": "Lande 3 großartige Curveball-Würfe",
-    "rewards": ["1000 Sternenstaub", "1 Sonderbonbon"]
+    "cat": "Fangen",
+    "name": "Fange 3 Pokémon vom Typ Pflanze, Wasser oder Feuer",
+    "rewards": ["Silbere Sananabeere(n)"]
   },
   "28": {
-    "cat": "Würfe",
-    "name": "Lande 3 großartige Curveball-Würfe hintereinander",
-    "rewards": ["1500 Sternenstaub", "3 Sonderbonbons", "2 goldene Himmihbeeren"]
+    "cat": "Fangen",
+    "name": "Fange ein Pokémon vom Typ Drache",
+    "rewards": ["Dratini", "Sonderbonbon(s)", "Goldene Himmihbeere(n)", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
   },
   "29": {
+    "cat": "Fangen",
+    "name": "Fange ein Ditto",
+    "rewards": ["Sonderbonbon(s)", "Goldene Himmihbeere(n)", "Sternenstaub"]
+  },
+  "30": {
+    "cat": "Würfe",
+    "name": "Lande 5 Curveball-Würfe hintereinander",
+    "rewards": ["Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
+  },
+  "31": {
+    "cat": "Würfe",
+    "name": "Lande 5 gute Würfe",
+    "rewards": ["Voltobal/Bidiza", "Voltobal", "Bidiza", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
+  },
+  "32": {
+    "cat": "Würfe",
+    "name": "Lande 3 gute Würfe hintereinander",
+    "rewards": ["Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
+  },
+  "33": {
+    "cat": "Würfe",
+    "name": "Lande 2 gute Curveball-Würfe hintereinander",
+    "rewards": ["Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
+  },
+  "34": {
+    "cat": "Würfe",
+    "name": "Lande 3 großartige Würfe",
+    "rewards": ["Nebulak/Liliep/Anorith", "Nebulak", "Liliep", "Anorith", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
+  },
+  "35": {
+    "cat": "Würfe",
+    "name": "Lande 3 großartige Würfe hintereinander",
+    "rewards": ["Onix", "Sonderbonbon(s)", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
+  },
+  "36": {
+    "cat": "Würfe",
+    "name": "Lande 3 großartige Curveball-Würfe",
+    "rewards": ["Sonderbonbon(s)", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
+  },
+  "37": {
+    "cat": "Würfe",
+    "name": "Lande 3 großartige Curveball-Würfe hintereinander",
+    "rewards": ["Sonderbonbon(s)", "Goldene Himmihbeere(n)", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
+  },
+  "38": {
     "cat": "Würfe",
     "name": "Lande 5 großartige Curveball-Würfe hintereinander",
     "rewards": ["Pandir"]
   },
-  "30": {
+  "39": {
+    "cat": "Würfe",
+    "name": "Lande einen fabelhaften Wurf",
+    "rewards": ["Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
+  },
+  "40": {
     "cat": "Würfe",
     "name": "Lande 3 fabelhafte Würfe hintereinander",
     "rewards": ["Larvitar"]
   },
-  "31": {
+  "41": {
     "cat": "Sonstiges",
     "name": "Verschicke 2 Geschenke",
     "rewards": ["Nebulak"]
   },
-  "32": {
+  "42": {
     "cat": "Sonstiges",
     "name": "Verwende 5 Beeren beim Fangen von Pokémon",
-    "rewards": ["Fukano"]
+    "rewards": ["Fukano", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
   },
-  "33": {
+  "43": {
     "cat": "Sonstiges",
     "name": "Verwende 5 Himmihbeeren beim Fangen von Pokémon",
     "rewards": ["Tragosso"]
   },
-  "34": {
+  "44": {
     "cat": "Sonstiges",
     "name": "Verwende 10 Sananabeeren beim Fangen von Pokémon",
     "rewards": ["Karpador"]
   },
-  "35": {
+  "45": {
     "cat": "Sonstiges",
     "name": "Entwickle ein Pokémon",
-    "rewards": ["Evoli", "Sonnkern", "Evoli/Sonnkern"]
+    "rewards": ["Evoli/Sonnkern", "Evoli", "Sonnkern"]
   },
-  "36": {
+  "46": {
     "cat": "Sonstiges",
     "name": "Entwickle ein Pokémon, indem du ein Entwicklungsitem benutzt",
     "rewards": ["Aerodactyl"]
   },
-  "37": {
+  "47": {
     "cat": "Sonstiges",
     "name": "Verwende 5 Power-Ups bei Pokémon",
-    "rewards": ["Bisasam", "Glumanda", "Schiggy", "Bisasam/Glumanda/Schiggy"]
+    "rewards": ["Bisasam/Glumanda/Schiggy", "Bisasam", "Glumanda", "Schiggy"]
   },
-  "38": {
+  "48": {
     "cat": "Sonstiges",
     "name": "Verschicke 3 Pokémon",
     "rewards": ["Vulpix"]
   },
-  "39": {
+  "49": {
     "cat": "Sonstiges",
     "name": "Tausche ein Pokémon",
     "rewards": ["Voltenso"]
   },
-  "40": {
-    "cat": "Sonstiges",
-    "name": "Tausche 10 Pokémon",
-    "rewards": ["Panflam"]
-  },
-  "41": {
+  "50": {
     "cat": "Sonstiges",
     "name": "Drehe 10 PokéStops oder Arenen",
-    "rewards": ["5 silberne Sananabeeren"]
+    "rewards": ["Silberne Sananabeere(n)", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
   },
-  "42": {
+  "51": {
     "cat": "Sonstiges",
     "name": "Verdiene 5 Bonbons durch Spazieren mit deinem Kumpel",
     "rewards": ["Tentoxa"]

@@ -459,7 +459,7 @@
     "name": "Ninetales",
     "rarity": "Ultra Rare",
     "level": 3,
-    "cp": 14429,
+    "cp": 15806,
     "types": [
       {
         "type": "Fire",
@@ -948,6 +948,8 @@
   "77": {
     "name": "Ponyta",
     "rarity": "Rare",
+    "level": 1,
+    "cp": 5399,
     "types": [
       {
         "type": "Fire",
@@ -1228,6 +1230,8 @@
   "98": {
     "name": "Krabby",
     "rarity": "Uncommon",
+    "level": 1,
+    "cp": 5660,
     "types": [
       {
         "type": "Water",
@@ -1258,6 +1262,8 @@
   "101": {
     "name": "Electrode",
     "rarity": "Ultra Rare",
+    "level": 2,
+    "cp": 10936,
     "types": [
       {
         "type": "Electric",
@@ -1408,6 +1414,8 @@
   "113": {
     "name": "Chansey",
     "rarity": "Very Rare",
+    "level": 3,
+    "cp": 5381,
     "types": [
       {
         "type": "Normal",
@@ -1697,7 +1705,7 @@
     "name": "Porygon",
     "rarity": "Very Rare",
     "level": 3,
-    "cp": 11307,
+    "cp": 12386,
     "types": [
       {
         "type": "Normal",
@@ -1964,6 +1972,8 @@
   "157": {
     "name": "Typhlosion",
     "rarity": "Ultra Rare",
+    "level": 4,
+    "cp": 30958,
     "types": [
       {
         "type": "Fire",
@@ -2201,7 +2211,7 @@
     "name": "Togetic",
     "rarity": "Ultra Rare",
     "level": 4,
-    "cp": 18671,
+    "cp": 20453,
     "types": [
       {
         "type": "Fairy",
@@ -2256,6 +2266,8 @@
   "180": {
     "name": "Flaaffy",
     "rarity": "Ultra Rare",
+    "level": 3,
+    "cp": 10690,
     "types": [
       {
         "type": "Electric",
@@ -2613,6 +2625,8 @@
   },
   "209": {
     "name": "Snubbull",
+    "level": 1,
+    "cp": 3723,
     "rarity": "Uncommon",
     "types": [
       {
@@ -3012,6 +3026,8 @@
   "241": {
     "name": "Miltank",
     "rarity": "Very Rare",
+    "level": 3,
+    "cp": 14883,
     "types": [
       {
         "type": "Normal",
@@ -3097,7 +3113,7 @@
     "name": "Tyranitar",
     "rarity": "Ultra Rare",
     "level": 4,
-    "cp": 34323,
+    "cp": 37599,
     "types": [
       {
         "type": "Rock",
@@ -4499,7 +4515,7 @@
     "name": "Absol",
     "rarity":"",
     "level": 4,
-    "cp": 26262,
+    "cp": 28769,
     "types": [
       {
         "type": "Dark",
@@ -4630,6 +4646,8 @@
   "370":{
     "name": "Luvdisc",
     "rarity":"",
+    "level": 1,
+    "cp": 2811,
     "types": [
       {
         "type": "Water",
@@ -6033,7 +6051,7 @@
     "name": "Palkia",
     "rarity":"",
     "level": 5,
-    "cp": 50019,
+    "cp": 54793,
     "types": [
       {
         "type": "Water",

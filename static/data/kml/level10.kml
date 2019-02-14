@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>S2 Zellen</name>
+    <visibility>1</visibility>
+    <Folder>
+      <name>Level 10 Zellen</name>
+      <visibility>1</visibility>
+      <Placemark>
+        <name>CellId: 47a5510000000000</name>
+        <visibility>1</visibility>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>10.338336,52.078118 10.369627,52.161120 10.257121,52.171038 10.226154,52.087984 10.338336,52.078118</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>CellId: 47a5570000000000</name>
+        <visibility>1</visibility>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>10.369627,52.161120 10.401072,52.244211 10.288239,52.254181 10.257121,52.171038 10.369627,52.161120</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>CellId: 47a5590000000000</name>
+        <visibility>1</visibility>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>10.482237,52.151081 10.514008,52.234120 10.401072,52.244211 10.369627,52.161120 10.482237,52.151081</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>CellId: 47a55b0000000000</name>
+        <visibility>1</visibility>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>10.450622,52.068132 10.482237,52.151081 10.369627,52.161120 10.338336,52.078118 10.450622,52.068132</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>CellId: 47a55d0000000000</name>
+        <visibility>1</visibility>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>10.563010,52.058025 10.594950,52.140921 10.482237,52.151081 10.450622,52.068132 10.563010,52.058025</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>CellId: 47a55f0000000000</name>
+        <visibility>1</visibility>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>10.594950,52.140921 10.627047,52.223906 10.514008,52.234120 10.482237,52.151081 10.594950,52.140921</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>CellId: 47a5610000000000</name>
+        <visibility>1</visibility>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>10.707764,52.130640 10.740186,52.213571 10.627047,52.223906 10.594950,52.140921 10.707764,52.130640</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>CellId: 47a5630000000000</name>
+        <visibility>1</visibility>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>10.820678,52.120237 10.853426,52.203114 10.740186,52.213571 10.707764,52.130640 10.820678,52.120237</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>CellId: 47a57d0000000000</name>
+        <visibility>1</visibility>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>10.933690,52.109712 10.966764,52.192534 10.853426,52.203114 10.820678,52.120237 10.933690,52.109712</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>CellId: 47af890000000000</name>
+        <visibility>1</visibility>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>10.853426,52.203114 10.886335,52.286078 10.772769,52.296590 10.740186,52.213571 10.853426,52.203114</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>CellId: 47af8b0000000000</name>
+        <visibility>1</visibility>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>10.740186,52.213571 10.772769,52.296590 10.659302,52.306980 10.627047,52.223906 10.740186,52.213571</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>CellId: 47af8d0000000000</name>
+        <visibility>1</visibility>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>10.772769,52.296590 10.805511,52.379697 10.691716,52.390141 10.659302,52.306980 10.772769,52.296590</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>CellId: 47af8f0000000000</name>
+        <visibility>1</visibility>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>10.886335,52.286078 10.919406,52.369129 10.805511,52.379697 10.772769,52.296590 10.886335,52.286078</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>CellId: 47aff10000000000</name>
+        <visibility>1</visibility>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>10.545936,52.317247 10.578021,52.400462 10.464428,52.410660 10.432672,52.327391 10.545936,52.317247</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>CellId: 47aff30000000000</name>
+        <visibility>1</visibility>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>10.659302,52.306980 10.691716,52.390141 10.578021,52.400462 10.545936,52.317247 10.659302,52.306980</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>CellId: 47aff50000000000</name>
+        <visibility>1</visibility>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>10.627047,52.223906 10.659302,52.306980 10.545936,52.317247 10.514008,52.234120 10.627047,52.223906</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>CellId: 47aff70000000000</name>
+        <visibility>1</visibility>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>10.514008,52.234120 10.545936,52.317247 10.432672,52.327391 10.401072,52.244211 10.514008,52.234120</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>CellId: 47aff90000000000</name>
+        <visibility>1</visibility>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>10.401072,52.244211 10.432672,52.327391 10.319511,52.337414 10.288239,52.254181 10.401072,52.244211</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>CellId: 47affb0000000000</name>
+        <visibility>1</visibility>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>10.432672,52.327391 10.464428,52.410660 10.350938,52.420735 10.319511,52.337414 10.432672,52.327391</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>CellId: 47affd0000000000</name>
+        <visibility>1</visibility>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>10.319511,52.337414 10.350938,52.420735 10.237552,52.430688 10.206455,52.347315 10.319511,52.337414</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
