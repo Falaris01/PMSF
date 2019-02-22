@@ -787,7 +787,7 @@
     "name": "Alakazam",
     "rarity": "Ultra Rare",
     "level": 3,
-    "cp": 21133,
+    "cp": 23150,
     "types": [
       {
         "type": "Psychic",
@@ -819,7 +819,7 @@
     "name": "Machamp",
     "rarity": "Ultra Rare",
     "level": 3,
-    "cp": 17990,
+    "cp": 19707,
     "types": [
       {
         "type": "Fighting",
@@ -2313,7 +2313,7 @@
     "name": "Azumarill",
     "rarity": "Rare",
     "level": 3,
-    "cp": 8989,
+    "cp": 9847,
     "types": [
       {
         "type": "Water",
@@ -2639,7 +2639,7 @@
     "name": "Granbull",
     "rarity": "Rare",
     "level": 3,
-    "cp": 15023,
+    "cp": 16457,
     "types": [
       {
         "type": "Fairy",
@@ -2733,7 +2733,7 @@
     "name": "Ursaring",
     "rarity": "Rare",
     "level": 4,
-    "cp": 27409,
+    "cp": 30025,
     "types": [
       {
         "type": "Normal",
@@ -4773,7 +4773,7 @@
     "name": "Latias",
     "rarity":"",
     "level": 5,
-    "cp": 43891,
+    "cp": 48080,
     "types": [
       {
         "type": "Dragon",
@@ -4789,7 +4789,7 @@
     "name": "Latios",
     "rarity":"",
     "level": 5,
-    "cp": 47671,
+    "cp": 52220,
     "types": [
       {
         "type": "Dragon",
@@ -12965,7 +12965,7 @@
     "name": "Marowak Alola",
     "rarity":"",
     "level": 4,
-    "cp": 19522,
+    "cp": 21385,
     "types": [
       {
         "type": "Fire",
