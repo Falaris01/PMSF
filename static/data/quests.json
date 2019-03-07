@@ -12,7 +12,7 @@
   "3": {
     "cat": "Event",
     "name": "Fange 5 Pokémon vom Typ Kampf",
-    "rewards": ["Magnetilo", "Maschock"]
+    "rewards": ["Magnetilo", "Maschock", "Magnetilo/Maschock"]
   },
   "4": {
     "cat": "Event",
