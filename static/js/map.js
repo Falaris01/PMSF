@@ -1303,6 +1303,8 @@ function setupPokestopMarker(item) {
     if (item['reward']) {
 		imagename = 'Pstop-quest'
 		imagename = item['reward'].includes('Sonderbonbon') ? 'Pstop-quest_Candy' : imagename
+        imagename = item['reward'].includes('Sofort-TM') ? 'Pstop-quest_soforttm' : imagename
+        imagename = item['reward'].includes('Lade-TM') ? 'Pstop-quest_ladetm' : imagename
 		imagename = item['reward'].includes('ilberne Sananabeere') ? 'Pstop-quest_Silbernesanana' : imagename
         imagename = item['reward'].includes('Sternenstaub') ? 'Pstop-quest_Sternenstaub' : imagename
 		imagename = item['reward'].includes('Absol') ? 'Pstop-quest_Absol' : imagename
@@ -1318,6 +1320,7 @@ function setupPokestopMarker(item) {
 		imagename = item['reward'].includes('Elektek') ? 'Pstop-quest_Elektek' : imagename
 		imagename = item['reward'].includes('Evoli') ? 'Pstop-quest_Evoli' : imagename
 		imagename = item['reward'].includes('Fukano') ? 'Pstop-quest_Fukano' : imagename
+        imagename = item['reward'].includes('Jungglut') ? 'Pstop-quest_Jungglut' : imagename
 		imagename = item['reward'].includes('Glumanda') ? 'Pstop-quest_Glumanda' : imagename
 		imagename = item['reward'].includes('Golbat') ? 'Pstop-quest_Golbat' : imagename
 		imagename = item['reward'].includes('Hunduster') ? 'Pstop-quest_Hunduster' : imagename
@@ -1332,12 +1335,14 @@ function setupPokestopMarker(item) {
 		imagename = item['reward'].includes('Liebiskus') ? 'Pstop-quest_Liebiskus' : imagename
 		imagename = item['reward'].includes('Machollo') ? 'Pstop-quest_Machollo' : imagename
 		imagename = item['reward'].includes('Magmar') ? 'Pstop-quest_Magmar' : imagename
+        imagename = item['reward'].includes('Maschok') ? 'Pstop-quest_Maschok' : imagename
 		imagename = item['reward'].includes('Menki') ? 'Pstop-quest_Menki' : imagename
 		imagename = item['reward'].includes('Muschas') ? 'Pstop-quest_Muschas' : imagename
 		imagename = item['reward'].includes('Miltank') ? 'Pstop-quest_Miltank' : imagename
         imagename = item['reward'].includes('Nasgnet') ? 'Pstop-quest_Nasgnet' : imagename
 		imagename = item['reward'].includes('Nebulak') ? 'Pstop-quest_Nebulak' : imagename
 		imagename = item['reward'].includes('Nincada') ? 'Pstop-quest_Nincada' : imagename
+        imagename = item['reward'].includes('Nockchan') ? 'Pstop-quest_Nockchan' : imagename
 		imagename = item['reward'].includes('Octillery') ? 'Pstop-quest_Octillery' : imagename
 		imagename = item['reward'].includes('Onix') ? 'Pstop-quest_Onix' : imagename
 		imagename = item['reward'].includes('Owei') ? 'Pstop-quest_Owei' : imagename
