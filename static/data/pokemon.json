@@ -863,7 +863,7 @@
     "name": "Victreebel",
     "rarity": "Ultra Rare",
     "level": 4,
-    "cp": 23546,
+    "cp": 25794,
     "types": [
       {
         "type": "Grass",
@@ -1296,8 +1296,8 @@
   "103": {
     "name": "Exeggutor",
     "rarity": "Very Rare",
-    "level": 4,
-    "cp": 27504,
+    "level": 2,
+    "cp": 13474,
     "types": [
       {
         "type": "Grass",
@@ -1435,7 +1435,7 @@
     "name": "Tangela",
     "rarity": "Rare",
     "level": 3,
-    "cp": 14710,
+    "cp": 16114,
     "types": [
       {
         "type": "Grass",
@@ -1926,6 +1926,8 @@
   "152": {
     "name": "Chikorita",
     "rarity": "Uncommon",
+    "level": 1,
+    "cp": 3067,
     "types": [
       {
         "type": "Grass",
@@ -2410,6 +2412,8 @@
   "191": {
     "name": "Sunkern",
     "rarity": "Common",
+    "level": 1,
+    "cp": 1434,
     "types": [
       {
         "type": "Grass",
@@ -3394,6 +3398,8 @@
   "270":{
     "name": "Lotad",
     "rarity":"",
+    "level": 1,
+    "cp": 2020,
     "types": [
       {
         "type": "Water",
@@ -3461,7 +3467,7 @@
     "name": "Shiftry",
     "rarity":"",
     "level": 4,
-    "cp": 21713,
+    "cp": 23786,
     "types": [
       {
         "type": "Grass",
@@ -3616,8 +3622,8 @@
   "286":{
     "name": "Breloom",
     "rarity":"",
-    "level": 2,
-    "cp": 13695,
+    "level": 3,
+    "cp": 19368,
     "types": [
       {
         "type": "Grass",
@@ -4166,6 +4172,8 @@
   "331":{
     "name": "Cacnea",
     "rarity":"",
+    "level": 1,
+    "cp": 3951,
     "types": [
       {
         "type": "Grass",
