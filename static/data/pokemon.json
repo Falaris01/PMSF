@@ -2795,7 +2795,7 @@
     "name": "Piloswine",
     "rarity": "Ultra Rare",
     "level": 3,
-    "cp": 13278,
+    "cp": 14546,
     "types": [
       {
         "type": "Ice",
@@ -2903,7 +2903,7 @@
     "name": "Houndoom",
     "rarity": "Very Rare",
     "level": 4,
-    "cp": 26099,
+    "cp": 28590,
     "types": [
       {
         "type": "Dark",
@@ -4673,6 +4673,8 @@
   },
   "371":{
     "name": "Bagon",
+    "level": 1,
+    "cp": 3792,
     "rarity":"",
     "types": [
       {
@@ -5343,7 +5345,7 @@
     "name": "Drifloon",
     "rarity":"",
     "level": 1,
-	"cp": 3151,
+    "cp": 3151,
     "types": [
       {
         "type": "Ghost",
@@ -6113,7 +6115,7 @@
     "name": "Giratina",
     "rarity":"rare",
     "level": 5,
-    "cp": 43546,
+    "cp": 38326,
     "types": [
       {
         "type": "Ghost",
