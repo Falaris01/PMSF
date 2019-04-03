@@ -51,25 +51,25 @@
     "name": "Quapsel/Vulpix"
     },
   "18": {
-    "name": "Aerodactyl"  
+    "name": "Aerodactyl"
     },
   "19": {
-    "name": "Amonitas"  
+    "name": "Amonitas"
     },
   "20": {
-    "name": "Anorith"  
+    "name": "Anorith"
     },
   "21": {
-    "name": "Barschwa"  
+    "name": "Barschwa"
     },
   "22": {
-    "name": "Bidiza"  
+    "name": "Bidiza"
     },
   "23": {
-    "name": "Bisasam"  
+    "name": "Bisasam"
     },
   "24": {
-    "name": "Bisaflor"  
+    "name": "Bisaflor"
     },
   "25": {
     "name": "Chaneira"
@@ -93,13 +93,13 @@
     "name": "Glumanda"
     },
   "32": {
-    "name": "Hunduster"  
+    "name": "Hunduster"
     },
   "33": {
     "name": "Jungglut"
     },
   "34": {
-    "name": "Kabuto"  
+    "name": "Kabuto"
     },
   "35": {
     "name": "Karpador"
@@ -108,7 +108,7 @@
     "name": "Knacklion"
     },
   "37": {
-    "name": "Lapras"  
+    "name": "Lapras"
     },
   "38": {
     "name": "Larvitar"
@@ -129,69 +129,81 @@
     "name": "Maschock"
     },
   "44": {
-    "name": "Menki"  
+    "name": "Menki"
     },
   "45": {
-    "name": "Nasgnet"  
+    "name": "Nasgnet"
     },
   "46": {
     "name": "Nebulak"
     },
   "47": {
-    "name": "Nockchan"
+    "name": "Nincada"
     },
   "48": {
-    "name": "Onix"
+    "name": "Nockchan"
     },
   "49": {
-    "name": "Owei"
+    "name": "Onix"
     },
   "50": {
-    "name": "Pandir"
+    "name": "Owei"
     },
   "51": {
-    "name": "Pikachu"
+    "name": "Pandir"
     },
   "52": {
-    "name": "Quapsel"
+    "name": "Pikachu"
     },
   "53": {
-    "name": "Rossana"
+    "name": "Quapsel"
     },
   "54": {
-    "name": "Sandan"  
+    "name": "Raupy"
     },
   "55": {
-    "name": "Schiggy"
+    "name": "Rossana"
     },
   "56": {
-    "name": "Snubbull"  
+    "name": "Sandan"
     },
   "57": {
-    "name": "Sonnkern"  
+    "name": "Schiggy"
     },
   "58": {
-    "name": "Starmie"  
+    "name": "Sichlor"
     },
   "59": {
-    "name": "Tangela"  
+    "name": "Snubbull"
     },
   "60": {
-    "name": "Tentoxa"  
+    "name": "Sonnkern"
     },
   "61": {
-    "name": "Tragosso"
+    "name": "Starmie"
     },
   "62": {
-    "name": "Traumato"  
+    "name": "Tangela"
     },
   "63": {
-    "name": "Voltenso"  
+    "name": "Tentoxa"
     },
   "64": {
-    "name": "Voltobal"
+    "name": "Tragosso"
     },
   "65": {
+    "name": "Traumato"
+    },
+  "66": {
+    "name": "Voltenso"
+    },
+  "67": {
+    "name": "Voltobal"
+    },
+  "68": {
     "name": "Vulpix"
+    },
+  "69": {
+    "name": "Yanma"
     }
 }

@@ -122,6 +122,8 @@
   "10": {
     "name": "Caterpie",
     "rarity": "Uncommon",
+    "level": 1,
+    "cp": 1434,
     "types": [
       {
         "type": "Bug",
@@ -1537,7 +1539,7 @@
     "name": "Scyther",
     "rarity": "Rare",
     "level": 3,
-    "cp": 17358,
+    "cp": 19014,
     "types": [
       {
         "type": "Bug",
@@ -1593,7 +1595,7 @@
     "name": "Pinsir",
     "rarity": "Uncommon",
     "level": 3,
-    "cp": 19449,
+    "cp": 21306,
     "types": [
       {
         "type": "Bug",
@@ -2576,6 +2578,8 @@
   "204": {
     "name": "Pineco",
     "rarity": "Very Rare",
+    "level": 2,
+    "cp": 6108,
     "types": [
       {
         "type": "Bug",
@@ -2690,6 +2694,8 @@
   "213": {
     "name": "Shuckle",
     "rarity": "Ultra Rare",
+    "level": 3,
+    "cp": 3892,
     "types": [
       {
         "type": "Bug",
@@ -3598,6 +3604,8 @@
   "284":{
     "name": "Masquerain",
     "rarity":"",
+    "level": 2,
+    "cp": 11281,
     "types": [
       {
         "type": "Bug",
@@ -3682,6 +3690,8 @@
   "291":{
     "name": "Ninjask",
     "rarity":"",
+    "level": 4,
+    "cp": 22878,
     "types": [
       {
         "type": "Bug",
@@ -5065,8 +5075,8 @@
   },
   "401":{
     "name": "Kricketot",
-	"level": 1,
-	"cp": 1386,
+    "level": 1,
+    "cp": 1386,
     "rarity":"Uncommon",
     "types": [
       {
@@ -5230,6 +5240,8 @@
   "415":{
     "name": "Combee",
     "rarity":"",
+    "level": 2,
+    "cp": 3108,
     "types": [
       {
         "type": "Bug",
@@ -5664,6 +5676,8 @@
   "451":{
     "name": "Skorupi",
     "rarity":"",
+    "level": 1,
+    "cp": 3408,
     "types": [
       {
         "type": "Poison",
@@ -6115,7 +6129,7 @@
     "name": "Giratina",
     "rarity":"rare",
     "level": 5,
-    "cp": 38326,
+    "cp": 41776,
     "types": [
       {
         "type": "Ghost",
