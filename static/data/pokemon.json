@@ -6049,6 +6049,8 @@
   },
   "481":{
     "name": "Mesprit",
+    "level": 5,
+    "cp": 41887,
     "rarity":"",
     "types": [
       {
