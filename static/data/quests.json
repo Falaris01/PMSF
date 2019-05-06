@@ -92,7 +92,7 @@
   "19": {
     "cat": "Raid",
     "name": "Kämpfe in einem Raid",
-    "rewards": ["Meditie"]
+    "rewards": ["Meditie", "Sternenstaub"]
   },
   "20": {
     "cat": "Raid",

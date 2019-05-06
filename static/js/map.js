@@ -1302,6 +1302,7 @@ function setupPokestopMarker(item) {
     var imagename = item['lure_expiration'] ? 'PstopLured' : 'Pstop'
     if (item['reward']) {
 		imagename = 'Pstop-quest'
+        imagename = item['reward'].includes('Beeren/Tränke/Bälle/Beleber') ? 'Pstop-quest_boring' : imagename
 		imagename = item['reward'].includes('Sonderbonbon') ? 'Pstop-quest_Candy' : imagename
         imagename = item['reward'].includes('Sofort-TM') ? 'Pstop-quest_soforttm' : imagename
         imagename = item['reward'].includes('Lade-TM') ? 'Pstop-quest_ladetm' : imagename
