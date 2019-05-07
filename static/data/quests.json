@@ -92,7 +92,7 @@
   "19": {
     "cat": "Raid",
     "name": "Kämpfe in einem Raid",
-    "rewards": ["Meditie", "Sternenstaub"]
+    "rewards": ["Meditie", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
   },
   "20": {
     "cat": "Raid",
@@ -253,5 +253,10 @@
     "cat": "Sonstiges",
     "name": "Verdiene 5 Bonbons durch Spazieren mit deinem Kumpel",
     "rewards": ["Bummelz"]
+  },
+  "52": {
+    "cat": "Sonstiges",
+    "name": "-Irgendeine Aufgabe mit uninteressanter Müll-Belohnung-",
+    "rewards": ["Beeren/Tränke/Bälle/Beleber"]
   }
 }
