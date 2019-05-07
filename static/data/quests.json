@@ -117,7 +117,7 @@
   "24": {
     "cat": "Raid",
     "name": "Gewinne einen Level-3-Raid oder höher",
-    "rewards": ["Amonitas/Kabuto", "Amonitas", "Kabuto"]
+    "rewards": ["Amonitas/Kabuto", "Amonitas", "Kabuto", "Sternenstaub", "Sonderbonbon(s)", "Beeren/Tränke/Bälle/Beleber"]
   },
   "25": {
     "cat": "Fange",
