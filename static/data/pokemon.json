@@ -73,7 +73,7 @@
     "name": "Charizard",
     "rarity": "Very Rare",
     "level": 4,
-    "cp": 28260,
+    "cp": 30958,
     "types": [
       {
         "type": "Fire",
@@ -672,6 +672,8 @@
   "54": {
     "name": "Psyduck",
     "rarity": "Rare",
+    "level": 1,
+    "cp": 3519,
     "types": [
       {
         "type": "Water",
@@ -726,6 +728,8 @@
   "59": {
     "name": "Arcanine",
     "rarity": "Very Rare",
+    "level": 3,
+    "cp": 19534,
     "types": [
       {
         "type": "Fire",
@@ -1314,6 +1318,8 @@
   "104": {
     "name": "Cubone",
     "rarity": "Rare",
+    "level": 1,
+    "cp": 3243,
     "types": [
       {
         "type": "Ground",
@@ -1703,7 +1709,7 @@
     "name": "Flareon",
     "rarity": "Ultra Rare",
     "level": 3,
-    "cp": 19911,
+    "cp": 21811,
     "types": [
       {
         "type": "Fire",
@@ -2404,6 +2410,8 @@
   "190": {
     "name": "Aipom",
     "rarity": "Uncommon",
+    "level": 2,
+    "cp": 7219,
     "types": [
       {
         "type": "Normal",
@@ -2840,6 +2848,8 @@
   "224": {
     "name": "Octillery",
     "rarity": "Uncommon",
+    "level": 2,
+    "cp": 11233,
     "types": [
       {
         "type": "Water",
