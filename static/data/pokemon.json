@@ -808,6 +808,8 @@
   "66": {
     "name": "Machop",
     "rarity": "Rare",
+    "level": 1,
+    "cp": 3666,
     "types": [
       {
         "type": "Fighting",
@@ -3656,6 +3658,8 @@
   "287":{
     "name": "Slakoth",
     "rarity":"",
+    "level": 1,
+    "cp": 3015,
     "types": [
       {
         "type": "Normal",
@@ -4440,8 +4444,8 @@
   "349":{
     "name": "Feebas",
     "rarity":"",
-    "level": 1,
-    "cp": 1077,
+    "level": 2,
+    "cp": 1866,
     "types": [
       {
         "type": "Water",
@@ -4638,6 +4642,8 @@
   "366":{
     "name": "Clamperl",
     "rarity":"",
+    "level": 2,
+    "cp": 7690,
     "types": [
       {
         "type": "Water",
@@ -5072,6 +5078,8 @@
   "400":{
     "name": "Bibarel",
     "rarity":"",
+    "level": 2,
+    "cp": 8692,
     "types": [
       {
         "type": "Normal",
@@ -5302,6 +5310,8 @@
   "419":{
     "name": "Floatzel",
     "rarity":"",
+    "level": 3,
+    "cp": 16082,
     "types": [
       {
         "type": "Water",
@@ -5500,6 +5510,8 @@
   "436":{
     "name": "Bronzor",
     "rarity":"",
+    "level": 1,
+    "cp": 1846,
     "types": [
       {
         "type": "Steel",
