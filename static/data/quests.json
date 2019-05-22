@@ -97,17 +97,17 @@
   "20": {
     "cat": "Raid",
     "name": "Gewinne einen Raid",
-    "rewards": ["Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
+    "rewards": ["Bronzel", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
   },
   "21": {
     "cat": "Raid",
     "name": "Gewinne 3 Raids",
-    "rewards": ["Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
+    "rewards": ["Absol", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
   },
   "22": {
     "cat": "Raid",
     "name": "Gewinne 5 Raids",
-    "rewards": ["Aerodactyl"]
+    "rewards": ["Aerodactyl", "Lade-TM"]
   },
   "23": {
     "cat": "Raid",
