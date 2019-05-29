@@ -12080,8 +12080,10 @@
     ]
   },
   "1012":{
-    "name": "None",
+    "name": "Burmy (Plant Cloak)",
     "rarity":"",
+    "level": 1,
+    "cp": 1648,
     "types": [
       {
         "type": "Normal",
@@ -12090,8 +12092,10 @@
     ]
   },
   "1013":{
-    "name": "None",
+    "name": "Burmy (Sandy Cloak)",
     "rarity":"",
+    "level": 1,
+    "cp": 1648,
     "types": [
       {
         "type": "Normal",
@@ -12100,8 +12104,10 @@
     ]
   },
   "1014":{
-    "name": "None",
+    "name": "Burmy (Trash Cloak)",
     "rarity":"",
+    "level": 1,
+    "cp": 1648,
     "types": [
       {
         "type": "Normal",
