@@ -190,7 +190,7 @@ if ( $action === "raid" ) {
             ];
             
         $specialRewards = ["Aerodactyl", "Amonitas", "Anorith", "Kabuto", "Liliep", "Tragosso"];
-        $interestingRewards = ["Bummelz", "Chaneira", "Dratini", "Elektek", "Jurob", "Kokowei", "Lade-TM", "Lapras", "Larvitar", "Nincada", "Pandir", "Sandan", "Sichlor", "Tangela"];
+        $interestingRewards = ["Bummelz", "Chaneira", "Dratini", "Elektek", "Jurob", "Koknodon", "Kokowei", "Lade-TM", "Lapras", "Larvitar", "Nincada", "Pandir", "Sandan", "Schilterus", "Sichlor", "Tangela"];
         
         if ($specialQuestUrl and in_array($reward, $specialRewards)) {
             $questUrl = $specialQuestUrl;

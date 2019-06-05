@@ -1211,7 +1211,7 @@
     "name": "Onix",
     "rarity": "Rare",
     "level": 3,
-    "cp": 8608,
+    "cp": 9429,
     "types": [
       {
         "type": "Rock",
@@ -2782,6 +2782,8 @@
   "219": {
     "name": "Magcargo",
     "rarity": "Very Rare",
+    "level": 2,
+    "cp": 9377,
     "types": [
       {
         "type": "Fire",
@@ -3800,6 +3802,8 @@
   "299":{
     "name": "Nosepass",
     "rarity":"",
+    "level": 2,
+    "cp": 6241,
     "types": [
       {
         "type": "Rock",
@@ -4273,7 +4277,7 @@
     "name": "Lunatone",
     "rarity":"",
     "level": 3,
-    "cp": 13701,
+    "cp": 15009,
     "types": [
       {
         "type": "Rock",
@@ -4289,7 +4293,7 @@
     "name": "Solrock",
     "rarity":"",
     "level": 3,
-    "cp": 13701,
+    "cp": 15009,
     "types": [
       {
         "type": "Rock",
@@ -4388,6 +4392,8 @@
   "345":{
     "name": "Lileep",
     "rarity":"",
+    "level": 1,
+    "cp": 3775,
     "types": [
       {
         "type": "Rock",
@@ -4415,6 +4421,8 @@
   },
   "347":{
     "name": "Anorith",
+    "level": 1,
+    "cp": 5017,
     "rarity":"",
     "types": [
       {
