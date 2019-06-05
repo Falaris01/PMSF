@@ -1,37 +1,37 @@
 {
   "1": {
     "cat": "Abenteuerwoche 2019",
-    "name": "Fange 5 Stollunior",
+    "name": "Abenteuerwoche 2019: Fange 5 Stollunior",
     "rewards": ["Metallmantel"]
   },
   "2": {
-    "cat": "Abenteuerwoche 2019",
-    "name": "Entwickle ein Liliep oder Anorith",
+    "cat": "Event",
+    "name": "Abenteuerwoche 2019: Entwickle ein Liliep oder Anorith",
     "rewards": ["Onix"]
   },
   "3": {
-    "cat": "Abenteuerwoche 2019",
-    "name": "Brüte 2 Eier aus",
+    "cat": "Event",
+    "name": "Abenteuerwoche 2019: Brüte 2 Eier aus",
     "rewards": ["Sonderbonbon(s)", "Liliep"]
   },
   "4": {
-    "cat": "Abenteuerwoche 2019",
-    "name": "Drehe 2 PokéStops, die du noch nicht besucht hast",
+    "cat": "Event",
+    "name": "Abenteuerwoche 2019: Drehe 2 PokéStops, die du noch nicht besucht hast",
     "rewards": ["Schilterus"]
   },
   "5": {
-    "cat": "Abenteuerwoche 2019",
-    "name": "Drehe 25 PokéStops oder Arenen",
+    "cat": "Event",
+    "name": "Abenteuerwoche 2019: Drehe 25 PokéStops oder Arenen",
     "rewards": ["Koknodon"]
   },
   "6": {
-    "cat": "Abenteuerwoche 2019",
-    "name": "Verdiene 3 Bonbons beim Spazieren mit deinem Kumpel",
+    "cat": "Event",
+    "name": "Abenteuerwoche 2019: Verdiene 3 Bonbons beim Spazieren mit deinem Kumpel",
     "rewards": ["Anorith"]
   },
   "7": {
-    "cat": "Abenteuerwoche 2019",
-    "name": "Fange 5 Amonitas oder Kabuto",
+    "cat": "Event",
+    "name": "Abenteuerwoche 2019: Fange 5 Amonitas oder Kabuto",
     "rewards": ["Aerodactyl"]
   },
   "8": {
