@@ -412,15 +412,10 @@ if ( $blockIframe ) {
         <div>
             <center>
                 <?php
-                echo '<a href="#" style="margin-top: 5px; vertical-align: middle;padding:0 5px;"><img src="static/images/logo_' . $short . '.png" border="0" style="margin: 7px 0px 0px 5px;"></a>';
+                echo '<a href="#" style="margin-top: 5px; vertical-align: middle;padding:0 5px;"><img src="static/images/logo_' . $short . '.png" border="0" style="margin: 7px 0px 0px 5px; width: 250px"></a>';
                  ?>
             </center>
         </div> 
-        <?php
-        if ($infoPicUrl != "") {
-            echo '<center><a href="' . $infoPicUrl . '" target="_blank" style="margin-bottom: 5px;  vertical-align: middle; padding:0 5px;"><img src="static/images/' . $infoPic . '" title="' . $infoTitle . '" border="0" style="display: inline-block; margin-top: -4px; padding:-2px -2px 0 0; max-width:100%; height:auto;"></center></a>';
-        }
-        ?>
         <hr>
         <div id="nav-accordion">
         	<h3><?php echo i8ln('Community') ?></h3>
@@ -429,7 +424,7 @@ if ( $blockIframe ) {
                 <h6>Social Links</h6>
 		        <div>
 		            <center>
-		                <a href="https://pokemon-go-fans.de/" target="_blank" style="margin-top: 2px; vertical-align: middle;padding:0 5px;"><img src="static/images/news.png" title="https://pokemon-go-fans.de/" border="0" style="display: inline-block; margin-top: -4px; padding:-2px -2px 0 0; max-width:100%; height:auto;"></a>
+		                <a href="https://pokemongolive.com/" target="_blank" style="margin-top: 2px; vertical-align: middle;padding:0 5px;"><img src="static/images/news.png" title="https://pokemongolive.com" border="0" style="display: inline-block; margin-top: -4px; padding:-2px -2px 0 0; max-width: 250px; height:auto;"></a>
 		            </center>
 		        </div>
 		        <div>
