@@ -34,6 +34,8 @@
   "3": {
     "name": "Venusaur",
     "rarity": "Very Rare",
+    "level": 4,
+    "cp": 28861,
     "types": [
       {
         "type": "Grass",
@@ -1699,7 +1701,7 @@
     "name": "Jolteon",
     "rarity": "Very Rare",
     "level": 3,
-    "cp": 18988,
+    "cp": 20800,
     "types": [
       {
         "type": "Electric",
@@ -3644,8 +3646,8 @@
   "286":{
     "name": "Breloom",
     "rarity":"",
-    "level": 3,
-    "cp": 19368,
+    "level": 2,
+    "cp": 13695,
     "types": [
       {
         "type": "Grass",
