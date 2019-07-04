@@ -397,6 +397,8 @@
   },
   "32": {
     "name": "Nidoran♂",
+    "level": 1,
+    "cp": 2803,
     "rarity": "Uncommon",
     "types": [
       {
@@ -5851,6 +5853,8 @@
   },
   "462":{
     "name": "Magnezone",
+    "level": 1,
+    "cp": 9191,
     "rarity":"",
     "types": [
       {
