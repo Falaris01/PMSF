@@ -2852,6 +2852,10 @@ function updateMap() {
             }
         })
     }
+    destroyS2Cells()
+    
+    //updateS2Cells(position, 14)
+    //updateS2Cells(position, 17)
 
     loadRawData().done(function (result) {
         $.each(result.pokemons, processPokemons)
@@ -2906,6 +2910,25 @@ function updateMap() {
     })
 }
 
+function updateS2Cells(position, level) {
+    var bounds = map.getBounds()
+    var size = google.maps.geometry.spherical.computeDistanceBetween(bounds.getNorthEast(), bounds.getSouthWest()) / 1000 + 1 | 0
+    var count = 2 ** level * size >> 11
+    let cell = S2.S2Cell.FromLatLng({lat: position.lat(), lng: position.lng()}, level)
+    let steps = 1
+    let direction = 0
+    do {
+        for (let i = 0; i < 2; i++) {
+            for (let i = 0; i < steps; i++) {
+                drawS2Cell(cell)
+                cell = cell.getNeighbors()[direction % 4]
+            }
+            direction++
+        }
+        steps++
+    } while (steps < count)
+}
+
 function updateWeatherOverlay() {
     if (Store.get('showWeather')) {
         loadWeather().done(function (result) {
@@ -2919,6 +2942,16 @@ function updateWeatherOverlay() {
             lastWeatherUpdateTime = Date.now()
         })
     }
+}
+
+function drawS2Cell(cell) {
+    map.data.add({geometry: new google.maps.Data.Polygon([cell.getCornerLatLngs()])})
+}
+
+function destroyS2Cells() {
+    map.data.forEach (function(feature) {
+        map.data.remove(feature)
+    });
 }
 
 function drawWeatherOverlay(weather) {
