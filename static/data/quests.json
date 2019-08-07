@@ -1,28 +1,28 @@
 {
   "1": {
     "cat": "Event",
-    "name": "GO Fest Global: Entwickle 3 Pokémon",
-    "rewards": ["Nidoran(m)", "Magnetilo", "Sichlor", "Meditie", "Barschwa", "Nidoran(m)/Magnetilo/Sichlor/Meditie/Barschwa"]
+    "name": "GO Fest Global: Gewinne 3 Arenakämpfe",
+    "rewards": ["Quapsel", "Loturzel", "Schwalbini", "Wablu", "Schneppke", "Quapsel/Loturzel/Schwalbini/Wablu/Schneppke"]
   },
   "2": {
     "cat": "Event",
-    "name": "GO Fest Global: Brüte ein Ei aus",
-    "rewards": ["Nidoran(m)", "Magnetilo", "Sichlor", "Meditie", "Barschwa", "Nidoran(m)/Magnetilo/Sichlor/Meditie/Barschwa"]
+    "name": "GO Fest Global: Entwickle 3 Pokémon",
+    "rewards": ["Quapsel", "Loturzel", "Schwalbini", "Wablu", "Schneppke", "Quapsel/Loturzel/Schwalbini/Wablu/Schneppke"]
   },
   "3": {
     "cat": "Event",
     "name": "GO Fest Global: Lande 2 großartige Curveball-Würfe hintereinander",
-    "rewards": ["Nidoran(m)", "Magnetilo", "Sichlor", "Meditie", "Barschwa", "Nidoran(m)/Magnetilo/Sichlor/Meditie/Barschwa"]
+    "rewards": ["Quapsel", "Loturzel", "Schwalbini", "Wablu", "Schneppke", "Quapsel/Loturzel/Schwalbini/Wablu/Schneppke"]
   },
   "4": {
     "cat": "Event",
-    "name": "GO Fest Global: Gewinne 3 Arenakämpfe",
-    "rewards": ["Nidoran(m)", "Magnetilo", "Sichlor", "Meditie", "Barschwa", "Nidoran(m)/Magnetilo/Sichlor/Meditie/Barschwa"]
+    "name": "GO Fest Global: Brüte ein Ei aus",
+    "rewards": ["Quapsel", "Loturzel", "Schwalbini", "Wablu", "Schneppke", "Quapsel/Loturzel/Schwalbini/Wablu/Schneppke"]
   },
   "5": {
     "cat": "Event",
     "name": "GO Fest Global: Gewinne einen Raid",
-    "rewards": ["Nidoran(m)", "Magnetilo", "Sichlor", "Meditie", "Barschwa", "Nidoran(m)/Magnetilo/Sichlor/Meditie/Barschwa"]
+    "rewards": ["Quapsel", "Loturzel", "Schwalbini", "Wablu", "Schneppke", "Quapsel/Loturzel/Schwalbini/Wablu/Schneppke"]
   },
   "6": {
     "cat": "Lande",

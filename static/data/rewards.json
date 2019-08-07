@@ -48,7 +48,7 @@
     "name": "Minun/Plusle"
   },
   "17": {
-    "name": "Nidoran(m)/Magnetilo/Sichlor/Meditie/Barschwa"
+    "name": "Quapsel/Loturzel/Schwalbini/Wablu/Schneppke"
   },
   "18": {
     "name": "Owei/Spoink"
@@ -147,90 +147,102 @@
     "name": "Liliep"
   },
   "50": {
-    "name": "Machollo"
+    "name": "Loturzel"
   },
   "51": {
-    "name": "Magmar"
+    "name": "Machollo"
   },
   "52": {
-    "name": "Magnetilo"
+    "name": "Magmar"
   },
   "53": {
-    "name": "Makuhita"
+    "name": "Magnetilo"
   },
   "54": {
-    "name": "Meditie"
+    "name": "Makuhita"
   },
   "55": {
-    "name": "Menki"
+    "name": "Meditie"
   },
   "56": {
-    "name": "Minun"
+    "name": "Menki"
   },
   "57": {
-    "name": "Nebulak"
+    "name": "Minun"
   },
   "58": {
-    "name": "Nidoran(m)"
+    "name": "Nebulak"
   },
   "59": {
-    "name": "Onix"
+    "name": "Nidoran(m)"
   },
   "60": {
-    "name": "Owei"
+    "name": "Onix"
   },
   "61": {
-    "name": "Pandir"
+    "name": "Owei"
   },
   "62": {
-    "name": "Panzaeron"
+    "name": "Pandir"
   },
   "63": {
-    "name": "Plusle"
+    "name": "Panzaeron"
   },
   "64": {
-    "name": "Quapsel"
+    "name": "Plusle"
   },
   "65": {
-    "name": "Rossana"
+    "name": "Quapsel"
   },
   "66": {
-    "name": "Schiggy"
+    "name": "Rossana"
   },
   "67": {
-    "name": "Schilterus"
+    "name": "Schiggy"
   },
   "68": {
-    "name": "Schlukwech"
+    "name": "Schilterus"
   },
   "69": {
-    "name": "Shuppet"
+    "name": "Schlukwech"
   },
   "70": {
-    "name": "Sichlor"
+    "name": "Schneppke"
   },
   "71": {
-    "name": "Sleima"
+    "name": "Schwalbini"
   },
   "72": {
-    "name": "Spoink"
+    "name": "Shuppet"
   },
   "73": {
-    "name": "Taubsi"
+    "name": "Sichlor"
   },
   "74": {
-    "name": "Teddiursa"
+    "name": "Sleima"
   },
   "75": {
-    "name": "Ultrigaria"
+    "name": "Spoink"
   },
   "76": {
-    "name": "Voltobal"
+    "name": "Taubsi"
   },
   "77": {
-    "name": "Vulpix"
+    "name": "Teddiursa"
   },
   "78": {
+    "name": "Ultrigaria"
+  },
+  "79": {
+    "name": "Voltobal"
+  },
+  "80": {
+    "name": "Vulpix"
+  },
+  "81": {
+    "name": "Wablu"
+  },
+  "82": {
     "name": "Zobiris"
   }
 }
