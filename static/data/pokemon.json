@@ -113,6 +113,8 @@
   },
   "9": {
     "name": "Blastoise",
+    "level": 4,
+    "cp": 26291,
     "rarity": "Very Rare",
     "types": [
       {
@@ -1092,6 +1094,8 @@
   "86": {
     "name": "Seel",
     "rarity": "Rare",
+    "level": 1,
+    "cp": 2856,
     "types": [
       {
         "type": "Water",
@@ -1693,7 +1697,7 @@
     "name": "Vaporeon",
     "rarity": "Very Rare",
     "level": 3,
-    "cp": 15985,
+    "cp": 17511,
     "types": [
       {
         "type": "Water",
@@ -2682,6 +2686,8 @@
   "211": {
     "name": "Qwilfish",
     "rarity": "Very Rare",
+    "level": 2,
+    "cp": 10433,
     "types": [
       {
         "type": "Water",
