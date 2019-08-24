@@ -72,177 +72,195 @@
     "name": "Arkani"
   },
   "25": {
-    "name": "Barschwa"
+    "name": "Azumarill"
   },
   "26": {
-    "name": "Bisasam"
+    "name": "Barschwa"
   },
   "27": {
-    "name": "Bronzel"
+    "name": "Bisasam"
   },
   "28": {
-    "name": "Bummelz"
+    "name": "Bronzel"
   },
   "29": {
-    "name": "Chaneira"
+    "name": "Bummelz"
   },
   "30": {
-    "name": "Digda"
+    "name": "Chaneira"
   },
   "31": {
-    "name": "Ditto"
+    "name": "Digda"
   },
   "32": {
-    "name": "Dratini"
+    "name": "Ditto"
   },
   "33": {
-    "name": "Driftlon"
+    "name": "Dratini"
   },
   "34": {
-    "name": "Elektek"
+    "name": "Driftlon"
   },
   "35": {
-    "name": "Evoli"
+    "name": "Elektek"
   },
   "36": {
-    "name": "Fiffyen"
+    "name": "Evoli"
   },
   "37": {
-    "name": "Fukano"
+    "name": "Fiffyen"
   },
   "38": {
-    "name": "Geckarbor"
+    "name": "Fukano"
   },
   "39": {
-    "name": "Glumanda"
+    "name": "Geckarbor"
   },
   "40": {
-    "name": "Jurob"
+    "name": "Glumanda"
   },
   "41": {
-    "name": "Kabuto"
+    "name": "Jurob"
   },
   "42": {
-    "name": "Kapilz"
+    "name": "Kabuto"
   },
   "43": {
-    "name": "Karpador"
+    "name": "Kanivanha"
   },
   "44": {
-    "name": "Kleinstein"
+    "name": "Kapilz"
   },
   "45": {
-    "name": "Koknodon"
+    "name": "Karpador"
   },
   "46": {
-    "name": "Kokowei"
+    "name": "Kleinstein"
   },
   "47": {
-    "name": "Krakeelo"
+    "name": "Koknodon"
   },
   "48": {
-    "name": "Larvitar"
+    "name": "Kokowei"
   },
   "49": {
-    "name": "Liliep"
+    "name": "Krabby"
   },
   "50": {
-    "name": "Loturzel"
+    "name": "Krakeelo"
   },
   "51": {
-    "name": "Machollo"
+    "name": "Larvitar"
   },
   "52": {
-    "name": "Magmar"
+    "name": "Liliep"
   },
   "53": {
-    "name": "Magnetilo"
+    "name": "Loturzel"
   },
   "54": {
-    "name": "Makuhita"
+    "name": "Machollo"
   },
   "55": {
-    "name": "Meditie"
+    "name": "Magmar"
   },
   "56": {
-    "name": "Menki"
+    "name": "Magnetilo"
   },
   "57": {
-    "name": "Minun"
+    "name": "Makuhita"
   },
   "58": {
-    "name": "Nebulak"
+    "name": "Meditie"
   },
   "59": {
-    "name": "Nidoran(m)"
+    "name": "Menki"
   },
   "60": {
-    "name": "Onix"
+    "name": "Minun"
   },
   "61": {
-    "name": "Owei"
+    "name": "Nebulak"
   },
   "62": {
-    "name": "Pandir"
+    "name": "Nidoran(m)"
   },
   "63": {
-    "name": "Panzaeron"
+    "name": "Onix"
   },
   "64": {
-    "name": "Plusle"
+    "name": "Owei"
   },
   "65": {
-    "name": "Quapsel"
+    "name": "Pandir"
   },
   "66": {
-    "name": "Rossana"
+    "name": "Panzaeron"
   },
   "67": {
-    "name": "Schiggy"
+    "name": "Perlu"
   },
   "68": {
-    "name": "Schilterus"
+    "name": "Plusle"
   },
   "69": {
-    "name": "Schlukwech"
+    "name": "Quapsel"
   },
   "70": {
-    "name": "Schneppke"
+    "name": "Rossana"
   },
   "71": {
-    "name": "Schwalbini"
+    "name": "Schiggy"
   },
   "72": {
-    "name": "Shuppet"
+    "name": "Schilterus"
   },
   "73": {
-    "name": "Sichlor"
+    "name": "Schlukwech"
   },
   "74": {
-    "name": "Sleima"
+    "name": "Schmerbe"
   },
   "75": {
-    "name": "Spoink"
+    "name": "Schneppke"
   },
   "76": {
-    "name": "Taubsi"
+    "name": "Schwalbini"
   },
   "77": {
-    "name": "Teddiursa"
+    "name": "Shuppet"
   },
   "78": {
-    "name": "Ultrigaria"
+    "name": "Sichlor"
   },
   "79": {
-    "name": "Voltobal"
+    "name": "Sleima"
   },
   "80": {
-    "name": "Vulpix"
+    "name": "Spoink"
   },
   "81": {
-    "name": "Wablu"
+    "name": "Taubsi"
   },
   "82": {
+    "name": "Teddiursa"
+  },
+  "83": {
+    "name": "Turtok"
+  },
+  "84": {
+    "name": "Ultrigaria"
+  },
+  "85": {
+    "name": "Voltobal"
+  },
+  "86": {
+    "name": "Vulpix"
+  },
+  "87": {
+    "name": "Wablu"
+  },
+  "88": {
     "name": "Zobiris"
   }
 }
