@@ -27,240 +27,159 @@
     "name": "Amonitas/Kabuto"
   },
   "10": {
-    "name": "Anorith/Liliep/Nebulak"
+    "name": "Anorith/Haspiror/Liliep/Nebulak"
   },
   "11": {
     "name": "Bisasam/Glumanda/Schiggy"
   },
   "12": {
-    "name": "Evoli/Taubsi"
+    "name": "Hoppspross/Owei"
   },
   "13": {
-    "name": "Karpador/Teddiursa"
-  },
-  "14": {
-    "name": "Kleinstein/Voltobal"
-  },
-  "15": {
     "name": "Makuhita/Menki"
   },
-  "16": {
-    "name": "Minun/Plusle"
-  },
-  "17": {
-    "name": "Quapsel/Loturzel/Schwalbini/Wablu/Schneppke"
-  },
-  "18": {
-    "name": "Owei/Spoink"
-  },
-  "19": {
+  "14": {
     "name": "Quapsel/Vulpix"
   },
-  "20": {
-    "name": "Absol"
-  },
-  "21": {
+  "15": {
     "name": "Aerodactyl"
   },
-  "22": {
+  "16": {
     "name": "Amonitas"
   },
-  "23": {
+  "17": {
     "name": "Anorith"
   },
-  "24": {
-    "name": "Arkani"
-  },
-  "25": {
-    "name": "Azumarill"
-  },
-  "26": {
-    "name": "Barschwa"
-  },
-  "27": {
+  "18": {
     "name": "Bisasam"
   },
-  "28": {
+  "19": {
     "name": "Bronzel"
   },
-  "29": {
-    "name": "Bummelz"
-  },
-  "30": {
+  "20": {
     "name": "Chaneira"
   },
-  "31": {
-    "name": "Digda"
+  "21": {
+    "name": "Dodu"
   },
-  "32": {
-    "name": "Ditto"
-  },
-  "33": {
+  "22": {
     "name": "Dratini"
   },
-  "34": {
-    "name": "Driftlon"
-  },
-  "35": {
+  "23": {
     "name": "Elektek"
   },
-  "36": {
+  "24": {
     "name": "Evoli"
   },
-  "37": {
+  "25": {
     "name": "Fiffyen"
   },
-  "38": {
-    "name": "Fukano"
-  },
-  "39": {
-    "name": "Geckarbor"
-  },
-  "40": {
+  "26": {
     "name": "Glumanda"
   },
-  "41": {
+  "27": {
+    "name": "Haspiror"
+  },
+  "28": {
+    "name": "Hoppspross"
+  },
+  "29": {
     "name": "Jurob"
   },
-  "42": {
+  "30": {
     "name": "Kabuto"
   },
-  "43": {
-    "name": "Kanivanha"
-  },
-  "44": {
-    "name": "Kapilz"
-  },
-  "45": {
+  "31": {
     "name": "Karpador"
   },
-  "46": {
-    "name": "Kleinstein"
-  },
-  "47": {
-    "name": "Koknodon"
-  },
-  "48": {
-    "name": "Kokowei"
-  },
-  "49": {
-    "name": "Krabby"
-  },
-  "50": {
-    "name": "Krakeelo"
-  },
-  "51": {
+  "32": {
     "name": "Larvitar"
   },
-  "52": {
+  "33": {
     "name": "Liliep"
   },
-  "53": {
-    "name": "Loturzel"
-  },
-  "54": {
+  "34": {
     "name": "Machollo"
   },
-  "55": {
+  "35": {
     "name": "Magmar"
   },
-  "56": {
-    "name": "Magnetilo"
-  },
-  "57": {
+  "36": {
     "name": "Makuhita"
   },
-  "58": {
-    "name": "Meditie"
+  "37": {
+    "name": "Marill"
   },
-  "59": {
+  "38": {
     "name": "Menki"
   },
-  "60": {
-    "name": "Minun"
+  "39": {
+    "name": "Natu"
   },
-  "61": {
+  "40": {
     "name": "Nebulak"
   },
-  "62": {
-    "name": "Nidoran(m)"
-  },
-  "63": {
+  "41": {
     "name": "Onix"
   },
-  "64": {
+  "42": {
     "name": "Owei"
   },
-  "65": {
+  "43": {
     "name": "Pandir"
   },
-  "66": {
-    "name": "Panzaeron"
+  "44": {
+    "name": "Ponita"
   },
-  "67": {
-    "name": "Perlu"
-  },
-  "68": {
-    "name": "Plusle"
-  },
-  "69": {
+  "45": {
     "name": "Quapsel"
   },
-  "70": {
+  "46": {
+    "name": "Quiekel"
+  },
+  "47": {
     "name": "Rossana"
   },
-  "71": {
+  "48": {
+    "name": "Sandan"
+  },
+  "49": {
     "name": "Schiggy"
   },
-  "72": {
-    "name": "Schilterus"
+  "50": {
+    "name": "Schluppuck"
   },
-  "73": {
-    "name": "Schlukwech"
-  },
-  "74": {
-    "name": "Schmerbe"
-  },
-  "75": {
+  "51": {
     "name": "Schneppke"
   },
-  "76": {
-    "name": "Schwalbini"
-  },
-  "77": {
-    "name": "Shuppet"
-  },
-  "78": {
+  "52": {
     "name": "Sichlor"
   },
-  "79": {
-    "name": "Sleima"
+  "53": {
+    "name": "Sniebel"
   },
-  "80": {
+  "54": {
     "name": "Spoink"
   },
-  "81": {
-    "name": "Taubsi"
+  "55": {
+    "name": "Tragosso"
   },
-  "82": {
-    "name": "Teddiursa"
+  "56": {
+    "name": "Traumato"
   },
-  "83": {
-    "name": "Turtok"
+  "57": {
+    "name": "Voltenso"
   },
-  "84": {
-    "name": "Ultrigaria"
-  },
-  "85": {
+  "58": {
     "name": "Voltobal"
   },
-  "86": {
+  "59": {
     "name": "Vulpix"
   },
-  "87": {
-    "name": "Wablu"
+  "60": {
+    "name": "Zigzachs"
   },
-  "88": {
+  "61": {
     "name": "Zobiris"
   }
 }
