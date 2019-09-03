@@ -2048,6 +2048,8 @@
   "161": {
     "name": "Sentret",
     "rarity": "Common",
+    "level": 1,
+    "cp": 2159,
     "types": [
       {
         "type": "Normal",
@@ -2522,6 +2524,8 @@
   "198": {
     "name": "Murkrow",
     "rarity": "Uncommon",
+    "level": 1,
+    "cp": 4700,
     "types": [
       {
         "type": "Dark",
@@ -2634,6 +2638,8 @@
   "207": {
     "name": "Gligar",
     "rarity": "Very Rare",
+    "level": 2,
+    "cp": 9456,
     "types": [
       {
         "type": "Ground",
@@ -2920,6 +2926,8 @@
   "228": {
     "name": "Houndour",
     "rarity": "Uncommon",
+    "level": 1,
+    "cp": 4049,
     "types": [
       {
         "type": "Dark",
@@ -3093,7 +3101,7 @@
     "name": "Raikou",
     "rarity": "Ultra Rare",
     "level": 5,
-    "cp": 41476,
+    "cp": 45435,
     "types": [
       {
         "type": "Electric",
@@ -3105,7 +3113,7 @@
     "name": "Entei",
     "rarity": "Ultra Rare",
     "level": 5,
-    "cp": 38119,
+    "cp": 41758,
     "types": [
       {
         "type": "Fire",
@@ -3117,7 +3125,7 @@
     "name": "Suicune",
     "rarity": "Ultra Rare",
     "level": 5,
-    "cp": 34471,
+    "cp": 37761,
     "types": [
       {
         "type": "Water",
