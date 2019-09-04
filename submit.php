@@ -18,20 +18,20 @@ if ( $action === "raid" ) {
     $gymId      = ! empty( $_POST['gymId'] ) ? $_POST['gymId'] : 0;
     $eggTime    = ! empty( $_POST['eggTime'] ) ? $_POST['eggTime'] : 0;
     $monTime    = ! empty( $_POST['monTime'] ) ? $_POST['monTime'] : 0;
-    if ( $eggTime > 60 ) {
-        $eggTime = 60;
+    if ( $eggTime > 15 ) { //raid timing
+        $eggTime = 15;
     }
-    if ( $monTime > 45 ) {
-        $monTime = 45;
+    if ( $monTime > 90 ) {//raid timing
+        $monTime = 90;
     }
     if ( $eggTime < 0 ) {
         $eggTime = 0;
     }
     if ( $monTime < 0 ) {
-        $monTime = 45;
+        $monTime = 90;//raid timing
     }
 // brimful of asha on the:
-    $battle_duration = 45 * 60;
+    $battle_duration = 90 * 60; //raid timing
     $hour       = 3600;
 //$db->debug();
 // fetch fort_id

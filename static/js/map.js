@@ -2361,9 +2361,9 @@ function generateRaidModal() {
     return raidStr
 }
 
-function generateTimerLists() {
+function generateTimerLists() {//raid timing
     var html = '<select name="egg_time" class="egg_time" style="display:none;">' +
-        '<option value="60" selected>1:00</option>' +
+        /*'<option value="60" selected>1:00</option>' +
         '<option value="59">59</option>' +
         '<option value="58">58</option>' +
         '<option value="57">57</option>' +
@@ -2408,7 +2408,8 @@ function generateTimerLists() {
         '<option value="18">18</option>' +
         '<option value="17">17</option>' +
         '<option value="16">16</option>' +
-        '<option value="15">15</option>' +
+        '<option value="15">15</option>' +*/
+        '<option value="15" selected>15</option>' +
         '<option value="14">14</option>' +
         '<option value="13">13</option>' +
         '<option value="12">12</option>' +
@@ -2425,7 +2426,53 @@ function generateTimerLists() {
         '<option value="1">1</option>' +
         '</select>' +
         '<select name="mon_time" class="mon_time" style="display:none;">' +
-        '<option value="45" selected>45</option>' +
+        '<option value="90" selected>1:30</option>' +
+        '<option value="89">1:29</option>' +
+        '<option value="88">1:28</option>' +
+        '<option value="87">1:27</option>' +
+        '<option value="86">1:26</option>' +
+        '<option value="85">1:25</option>' +
+        '<option value="84">1:24</option>' +
+        '<option value="83">1:23</option>' +
+        '<option value="82">1:22</option>' +
+        '<option value="81">1:21</option>' +
+        '<option value="80">1:20</option>' +
+        '<option value="79">1:19</option>' +
+        '<option value="78">1:18</option>' +
+        '<option value="77">1:17</option>' +
+        '<option value="76">1:16</option>' +
+        '<option value="75">1:15</option>' +
+        '<option value="74">1:14</option>' +
+        '<option value="73">1:13</option>' +
+        '<option value="72">1:12</option>' +
+        '<option value="71">1:11</option>' +
+        '<option value="70">1:10</option>' +
+        '<option value="69">1:09</option>' +
+        '<option value="68">1:08</option>' +
+        '<option value="67">1:07</option>' +
+        '<option value="66">1:06</option>' +
+        '<option value="65">1:05</option>' +
+        '<option value="64">1:04</option>' +
+        '<option value="63">1:03</option>' +
+        '<option value="62">1:02</option>' +
+        '<option value="61">1:01</option>' +
+        '<option value="60">1:00</option>' +
+        '<option value="59">59</option>' +
+        '<option value="58">58</option>' +
+        '<option value="57">57</option>' +
+        '<option value="56">56</option>' +
+        '<option value="55">55</option>' +
+        '<option value="54">54</option>' +
+        '<option value="53">53</option>' +
+        '<option value="52">52</option>' +
+        '<option value="51">51</option>' +
+        '<option value="50">50</option>' +
+        '<option value="49">49</option>' +
+        '<option value="48">48</option>' +
+        '<option value="47">47</option>' +
+        '<option value="46">46</option>' +
+        //'<option value="45" selected>45</option>' +
+        '<option value="45">45</option>' +
         '<option value="44">44</option>' +
         '<option value="43">43</option>' +
         '<option value="42">42</option>' +
