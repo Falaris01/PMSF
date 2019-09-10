@@ -1128,7 +1128,8 @@ function getGymMarkerIcon(item) {
             '<i class="pokemon-raid-sprite n' + item.raid_pokemon_id + '"></i>' +
             exIcon +
             battleIcon +
-            '</div>'
+            '</div>' +
+            '<div><span class="raid-countdown gym-icon-countdown" disappears-at="' + item['raid_end'] + '" end>' + generateRemainingTimer(item['raid_end'], 'end') + '</span></div>'
     } else if (item['raid_level'] !== null && item.raid_end > Date.now()) {
         if (item.raid_start > Date.now()) {
             return '<div style="position:relative;">' +
@@ -1136,14 +1137,16 @@ function getGymMarkerIcon(item) {
                 '<img src="static/raids/egg_' + item['raid_level'] + '.png" style="width:35px;height:auto;position:absolute;top:8px;right:10px;"/>' +
                 exIcon +
                 battleIcon +
-                '</div>'
+                '</div>' +
+                '<div><span class="raid-countdown gym-icon-countdown" disappears-at="' + item['raid_start'] + '" end>' + generateRemainingTimer(item['raid_start'], 'end') + '</span></div>'
         }
         return '<div style="position:relative;">' +
             '<img src="static/forts/' + Store.get('gymMarkerStyle') + '/' + teamStr + '.png" style="width:55px;height:auto;"/>' +
             '<img src="static/raids/egg_hatched_' + item['raid_level'] + '.png" style="width:35px;height:auto;position:absolute;top:8px;right:10px;"/>' +
             exIcon +
             battleIcon +
-            '</div>'
+            '</div>' +
+            '<div><span class="raid-countdown gym-icon-countdown" disappears-at="' + item['raid_end'] + '" end>' + generateRemainingTimer(item['raid_end'], 'end') + '</span></div>'
     } else {
         return '<div>' +
             '<img src="static/forts/' + Store.get('gymMarkerStyle') + '/' + teamStr + '.png" style="width:48px;height: auto;"/>' +
@@ -4594,4 +4597,79 @@ function checkAndCreateSound(pokemonId = 0) {
             createjs.Sound.play(pokemonId)
         }
     }
+}
+
+var updateLabelDiffTime = function updateLabelDiffTime() {
+    $('.label-countdown').each(function (index, element) {
+        var disappearsAt = getTimeUntil(parseInt(element.getAttribute('disappears-at')))
+        var hours = disappearsAt.hour
+        var minutes = disappearsAt.min
+        var seconds = disappearsAt.sec
+        var timestring = ''
+        if (disappearsAt.time < disappearsAt.now) {
+            if (element.hasAttribute('start')) {
+                timestring = '(' + i8ln('started') + ')'
+            } else if (element.hasAttribute('end')) {
+                timestring = '(' + i8ln('ended') + ')'
+            } else {
+                timestring = '(' + i8ln('expired') + ')'
+            }
+        } else {
+            timestring = '('
+            if (hours > 0) {
+                timestring += hours + 'h'
+            }
+            timestring += lpad(minutes, 2, 0) + 'm'
+            timestring += lpad(seconds, 2, 0) + 's'
+            timestring += ')'
+        }
+        $(element).text(timestring)
+    })
+    $('.raid-countdown').each(function (index, element) {
+        var disappearsAt = getTimeUntil(parseInt(element.getAttribute('disappears-at')))
+        var hours = disappearsAt.hour
+        var minutes = disappearsAt.min
+        var seconds = disappearsAt.sec
+        var timestring = ''
+        if (disappearsAt.time < disappearsAt.now) {
+            if (element.hasAttribute('start')) {
+                timestring = i8ln('started')
+            } else if (element.hasAttribute('end')) {
+                timestring = i8ln('ended')
+            } else {
+                timestring = i8ln('expired')
+            }
+        } else {
+            if (hours > 0) {
+                timestring += hours + 'h'
+            }
+            timestring += lpad(minutes, 2, 0) + 'm'
+            timestring += lpad(seconds, 2, 0) + 's'
+        }
+        $(element).text(timestring)
+    })
+}
+
+function generateRemainingTimer(timestamp, type) {
+    var disappearsAt = getTimeUntil(parseInt(timestamp))
+    var hours = disappearsAt.hour
+    var minutes = disappearsAt.min
+    var seconds = disappearsAt.sec
+    var timestring = ''
+    if (disappearsAt.time < disappearsAt.now) {
+        if (type === 'start') {
+            timestring = i8ln('started')
+        } else if (type === 'end') {
+            timestring = i8ln('ended')
+        } else {
+            timestring = i8ln('expired')
+        }
+    } else {
+        if (hours > 0) {
+            timestring += hours + 'h'
+        }
+        timestring += lpad(minutes, 2, 0) + 'm'
+        timestring += lpad(seconds, 2, 0) + 's'
+    }
+    return timestring
 }
