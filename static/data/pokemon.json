@@ -6376,6 +6376,8 @@
   "504":{
     "name": "Patrat",
     "rarity":"",
+    "level": 1,
+    "cp": 2596,
     "types": [
       {
         "type": "Normal",
@@ -6396,6 +6398,8 @@
   "506":{
     "name": "Lillipup",
     "rarity":"",
+    "level": 1,
+    "cp": 3003,
     "types": [
       {
         "type": "Normal",
@@ -7494,6 +7498,8 @@
   "599":{
     "name": "Klink",
     "rarity":"",
+    "level": 1,
+    "cp": 3227,
     "types": [
       {
         "type": "Steel",

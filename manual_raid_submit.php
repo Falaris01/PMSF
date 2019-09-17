@@ -9,7 +9,7 @@ $eggTime = !empty($_POST['eggTime']) ? $_POST['eggTime'] : 0;
 $monTime = !empty($_POST['monTime']) ? $_POST['monTime'] : 0;
 
 // brimful of asha on the:
-$battle_duration = 90 * 60;//raid timing
+$battle_duration = 45 * 60;//raid timing
 $hour = 3600;
 
 // set content type
