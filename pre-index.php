@@ -340,6 +340,19 @@ if ( $blockIframe ) {
             color: #f1f1f1;
             font-weight: bold;
         } */
+        
+        .gym-icon-countdown {
+            background-color: #fb7e03;
+            color: #fff;
+            top: 50px;
+            position: absolute;
+            font-weight: 900;
+            border-radius: 10px;
+            border: solid white 1px;
+            padding: 1px 5px;
+            margin-top: 5px;
+            margin-left: 2px;
+        }
 
         #eu_cookiebox {
             display: block;
