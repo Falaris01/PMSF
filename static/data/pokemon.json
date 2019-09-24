@@ -6180,10 +6180,10 @@
     ]
   },
   "487":{
-    "name": "Giratina",
+    "name": "Giratina (Altered Forme)",
     "rarity":"rare",
     "level": 5,
-    "cp": 41776,
+    "cp": 38326,
     "types": [
       {
         "type": "Ghost",
@@ -16028,6 +16028,1012 @@
     ]
   },
   "1400":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1401":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1402":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1403":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1404":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1405":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1406":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1407":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1408":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1409":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1410":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1411":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1412":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1413":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1414":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1415":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1416":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1417":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1418":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1419":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1420":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1421":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1422":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1423":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1424":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1425":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1426":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1427":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1428":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1429":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1430":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1431":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1432":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1433":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1434":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1435":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1436":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1437":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1438":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1439":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1440":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1441":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1442":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1443":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1444":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1445":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1446":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1447":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1448":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1449":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1450":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1451":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1452":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1453":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1454":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1455":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1456":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1457":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1458":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1459":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1460":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1461":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1462":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1463":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1464":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1465":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1466":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1467":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1468":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1469":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1470":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1471":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1472":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1473":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1474":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1475":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1476":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1477":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1478":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1479":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1480":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1481":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1482":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1483":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1484":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1485":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1486":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1487":{
+    "name": "Giratina (Origin Forme)",
+    "rarity":"rare",
+    "level": 5,
+    "cp": 41776,
+    "types": [
+      {
+        "type": "Ghost",
+        "color": "#705898"
+      },
+      {
+        "type": "Dragon",
+        "color": "#7038f8"
+      }
+    ]
+  },
+  "1488":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1489":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1490":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1491":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1492":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1493":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1494":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1495":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1496":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1497":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1498":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1499":{
+    "name": "None",
+    "rarity":"",
+    "types": [
+      {
+        "type": "Normal",
+        "color": "#8a8a59"
+      }
+    ]
+  },
+  "1500":{
     "name": "None",
     "rarity":"",
     "types": [
