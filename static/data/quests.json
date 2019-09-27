@@ -258,5 +258,20 @@
     "cat": "Sonstiges",
     "name": "-Irgendeine Aufgabe mit uninteressanter Müll-Belohnung-",
     "rewards": ["Beeren/Tränke/Bälle/Beleber"]
+  },
+  "53": {
+    "cat": "Welttourismustag",
+    "name": "Event: Tausche Pokémon über 10.000km Distanz ",
+    "rewards": ["Vipitis"]
+  },
+  "54": {
+    "cat": "Welttourismustag",
+    "name": "Event: Schließe eine neue Freundschaft",
+    "rewards": ["Nasgnet"]
+  },
+  "55": {
+    "cat": "Welttourismustag",
+    "name": "Event: Verschicke 25 Geschenke an Freunde",
+    "rewards": ["Lapras"]
   }
 }

@@ -1323,6 +1323,7 @@ function setupPokestopMarker(item) {
 		imagename = item['reward'].includes('Dratini') ? 'Pstop-quest_Dratini' : imagename
 		imagename = item['reward'].includes('Elektek') ? 'Pstop-quest_Elektek' : imagename
 		imagename = item['reward'].includes('Evoli') ? 'Pstop-quest_Evoli' : imagename
+        imagename = item['reward'].includes('Frizelbliz') ? 'Pstop-quest_Frizelbliz' : imagename
 		imagename = item['reward'].includes('Fukano') ? 'Pstop-quest_Fukano' : imagename
         imagename = item['reward'].includes('Jungglut') ? 'Pstop-quest_Jungglut' : imagename
 		imagename = item['reward'].includes('Glumanda') ? 'Pstop-quest_Glumanda' : imagename
@@ -1375,6 +1376,7 @@ function setupPokestopMarker(item) {
 		imagename = item['reward'].includes('Tangela') ? 'Pstop-quest_Tangela' : imagename
 		imagename = item['reward'].includes('Tannza') ? 'Pstop-quest_Tannza' : imagename
 		imagename = item['reward'].includes('Traunfugil') ? 'Pstop-quest_Traunfugil' : imagename
+        imagename = item['reward'].includes('Vipitis') ? 'Pstop-quest_Vipitis' : imagename
         imagename = item['reward'].includes('Voltenso') ? 'Pstop-quest_Voltenso' : imagename
 		imagename = item['reward'].includes('Voltilamm') ? 'Pstop-quest_Voltilamm' : imagename
 		imagename = item['reward'].includes('Voltobal') ? 'Pstop-quest_Voltobal' : imagename

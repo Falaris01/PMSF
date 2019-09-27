@@ -96,90 +96,99 @@
     "name": "Karpador"
   },
   "33": {
-    "name": "Larvitar"
+    "name": "Lapras"
   },
   "34": {
-    "name": "Liliep"
+    "name": "Larvitar"
   },
   "35": {
-    "name": "Machollo"
+    "name": "Liliep"
   },
   "36": {
-    "name": "Magmar"
+    "name": "Machollo"
   },
   "37": {
-    "name": "Makuhita"
+    "name": "Magmar"
   },
   "38": {
-    "name": "Marill"
+    "name": "Makuhita"
   },
   "39": {
-    "name": "Menki"
+    "name": "Marill"
   },
   "40": {
-    "name": "Natu"
+    "name": "Menki"
   },
   "41": {
-    "name": "Nebulak"
+    "name": "Nasgnet"
   },
   "42": {
-    "name": "Onix"
+    "name": "Natu"
   },
   "43": {
-    "name": "Owei"
+    "name": "Nebulak"
   },
   "44": {
-    "name": "Pandir"
+    "name": "Onix"
   },
   "45": {
-    "name": "Ponita"
+    "name": "Owei"
   },
   "46": {
-    "name": "Quapsel"
+    "name": "Pandir"
   },
   "47": {
-    "name": "Quiekel"
+    "name": "Ponita"
   },
   "48": {
-    "name": "Rossana"
+    "name": "Quapsel"
   },
   "49": {
-    "name": "Sandan"
+    "name": "Quiekel"
   },
   "50": {
-    "name": "Schiggy"
+    "name": "Rossana"
   },
   "51": {
-    "name": "Schluppuck"
+    "name": "Sandan"
   },
   "52": {
-    "name": "Schneppke"
+    "name": "Schiggy"
   },
   "53": {
-    "name": "Sichlor"
+    "name": "Schluppuck"
   },
   "54": {
-    "name": "Sniebel"
+    "name": "Schneppke"
   },
   "55": {
-    "name": "Spoink"
+    "name": "Sichlor"
   },
   "56": {
-    "name": "Tragosso"
+    "name": "Sniebel"
   },
   "57": {
-    "name": "Traumato"
+    "name": "Spoink"
   },
   "58": {
-    "name": "Voltobal"
+    "name": "Tragosso"
   },
   "59": {
-    "name": "Vulpix"
+    "name": "Traumato"
   },
   "60": {
-    "name": "Zigzachs"
+    "name": "Vipitis"
   },
   "61": {
+    "name": "Voltobal"
+  },
+  "62": {
+    "name": "Vulpix"
+  },
+  "63": {
+    "name": "Zigzachs"
+  },
+  "64": {
     "name": "Zobiris"
   }
 }
