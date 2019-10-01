@@ -1321,6 +1321,7 @@ function setupPokestopMarker(item) {
         imagename = item['reward'].includes('Bronzel') ? 'Pstop-quest_Bronzel' : imagename
 		imagename = item['reward'].includes('Chaneira') ? 'Pstop-quest_Chaneira' : imagename
 		imagename = item['reward'].includes('Ditto') ? 'Pstop-quest_Ditto' : imagename
+        imagename = item['reward'].includes('Dodu') ? 'Pstop-quest_Dodu' : imagename
 		imagename = item['reward'].includes('Dratini') ? 'Pstop-quest_Dratini' : imagename
 		imagename = item['reward'].includes('Elektek') ? 'Pstop-quest_Elektek' : imagename
 		imagename = item['reward'].includes('Evoli') ? 'Pstop-quest_Evoli' : imagename
