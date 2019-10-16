@@ -350,8 +350,8 @@ if ( $blockIframe ) {
             border-radius: 10px;
             border: solid white 1px;
             padding: 1px 5px;
-            margin-top: 7px;
-            margin-left: 2px;
+            margin-top: -8px;
+            margin-left: 3px;
         }
 
         #eu_cookiebox {
