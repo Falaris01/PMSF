@@ -1309,37 +1309,26 @@ function imageExists(image_url) {
 }
 
 function setupPokestopMarker(item) {
-    var imagename = item['lure_expiration'] ? 'PstopLured' : 'Pstop'
+    var baseIcon = '<img src="static/forts/' + (item['reward'] ? 'Pstop-quest' : 'Pstop') + '.png" />'
+    var rewardIcon = ''
     if (item['reward']) {
-        imagename = 'Pstop-quest'
-        if (item['reward'].includes('Sonderbonbon')) {
-            imagename ='Pstop-quest_Candy';
-        } else if (item['reward'].includes('Sofort-TM')) {
-            imagename = 'Pstop-quest_soforttm';
-        } else if (item['reward'].includes('Lade-TM')) {
-            imagename = 'Pstop-quest_ladetm';
-        } else if (item['reward'].includes('ilberne Sananabeere')) {
-            imagename = 'Pstop-quest_Silbernesanana';
-        } else if (item['reward'].includes('Sternenstaub')) {
-            imagename = 'Pstop-quest_Sternenstaub';
+        if (imageExists('/static/forts/rewards/' + item['reward'] + '.png')) {
+            rewardIcon = '<img src="static/forts/rewards/' + item['reward'] + '.png" style="width:20px;height:auto;position:absolute;top:8px;right:9px;"/>'
         } else {
-            imagename = 'Pstop-quest_' + item['reward']
-        }
-        imagename = item['reward'].includes('/') ? 'Pstop-quest_unknown' : imagename
-        imagename = item['reward'].includes('Beeren/Tränke/Bälle/Beleber') ? 'Pstop-quest_boring' : imagename
-        if (!imageExists('static/forts/' + imagename + '.png')) {
-            console.log('Missing reward icon for "' + item['reward'] + '"')
-            imagename = 'Pstop-quest'
+            var imagename = 'Pstop-quest'
+            imagename = item['reward'].includes('/') ? 'Pstop-quest_unknown' : imagename
+            imagename = item['reward'].includes('Beeren/Tränke/Bälle/Beleber') ? 'Pstop-quest_boring' : imagename
+            baseIcon = '<img src="static/forts/' + imagename + '.png" />'
         }
     }
-    var marker = new google.maps.Marker({
-        position: {
-            lat: item['latitude'],
-            lng: item['longitude']
-        },
+    var content = '<div style="position:relative;">' + baseIcon + rewardIcon + '</div>'
+    var marker = new RichMarker({
+        position: new google.maps.LatLng(item['latitude'], item['longitude']),
         map: map,
-        zIndex: 2,
-        icon: 'static/forts/' + imagename + '.png'
+        content: content,
+        flat: true,
+        anchor: RichMarkerPosition.MIDDLE,
+        zIndex: 2
     })
     if (!marker.rangeCircle && isRangeActive(map)) {
         marker.rangeCircle = addRangeCircle(marker, map, 'pokestop')
