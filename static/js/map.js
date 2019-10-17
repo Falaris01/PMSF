@@ -1312,13 +1312,14 @@ function setupPokestopMarker(item) {
     var baseIcon = '<img src="static/forts/' + (item['reward'] ? 'Pstop-quest' : 'Pstop') + '.png" />'
     var rewardIcon = ''
     if (item['reward']) {
-        if (imageExists('/static/forts/rewards/' + item['reward'] + '.png')) {
-            rewardIcon = '<img src="static/forts/rewards/' + item['reward'] + '.png" style="width:20px;height:auto;position:absolute;top:8px;right:9px;"/>'
-        } else {
-            var imagename = 'Pstop-quest'
-            imagename = item['reward'].includes('/') ? 'Pstop-quest_unknown' : imagename
+        if (item['reward'].includes('/')) {
+            var imagename = 'Pstop-quest_unknown'
             imagename = item['reward'].includes('Beeren/Tränke/Bälle/Beleber') ? 'Pstop-quest_boring' : imagename
             baseIcon = '<img src="static/forts/' + imagename + '.png" />'
+        } else if (imageExists('/static/forts/rewards/' + item['reward'] + '.png')) {
+            rewardIcon = '<img src="static/forts/rewards/' + item['reward'] + '.png" style="position:absolute;top:-5px;right:2px;"/>'
+        } else {
+            baseIcon = '<img src="static/forts/Pstop-quest.png" />'
         }
     }
     var content = '<div style="position:relative;">' + baseIcon + rewardIcon + '</div>'
