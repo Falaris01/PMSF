@@ -1120,7 +1120,7 @@ function getGymMarkerIcon(item) {
     }
     var exIcon = ''
     if ((((park !== 'None' && park !== undefined && onlyTriggerGyms === false && park) || (item['sponsor'] !== undefined && item['sponsor'] > 0) || triggerGyms.includes(item['gym_id'])) && (noExGyms === false))) {
-        exIcon = '<img src="static/images/ex.png" style="position:absolute;left:25px;top:2px;"/>'
+        exIcon = '<img src="static/images/ex.png" style="position:absolute;left:23px;top:1px;"/>'
     }
     if (item['raid_pokemon_id'] != null && item.raid_end > Date.now()) {
         return '<div style="position:relative;">' +
@@ -1317,7 +1317,7 @@ function setupPokestopMarker(item) {
             imagename = item['reward'].includes('Beeren/Tränke/Bälle/Beleber') ? 'Pstop-quest_boring' : imagename
             baseIcon = '<img src="static/forts/' + imagename + '.png" />'
         } else if (imageExists('/static/forts/rewards/' + item['reward'] + '.png')) {
-            rewardIcon = '<img src="static/forts/rewards/' + item['reward'] + '.png" style="position:absolute;top:-5px;right:2px;"/>'
+            rewardIcon = '<img src="static/forts/rewards/' + item['reward'] + '.png" style="position:absolute;top:-5px;right:0px;"/>'
         } else {
             baseIcon = '<img src="static/forts/Pstop-quest.png" />'
         }

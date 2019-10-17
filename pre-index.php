@@ -342,7 +342,7 @@ if ( $blockIframe ) {
         } */
         
         .gym-icon-countdown {
-            background-color: #fb7e03;
+            background-color: #0f131d;
             color: #fff;
             top: 50px;
             position: absolute;
@@ -353,6 +353,12 @@ if ( $blockIframe ) {
             margin-top: -8px;
             margin-left: 3px;
         }
+        
+        .pokemon-raid-sprite {
+            top: 2px;
+            right: 5px;
+        }
+        
 
         #eu_cookiebox {
             display: block;
