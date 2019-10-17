@@ -1379,7 +1379,7 @@ function setupPokestopMarker(item) {
 		imagename = item['reward'].includes('Sichlor') ? 'Pstop-quest_Sichlor' : imagename
         imagename = item['reward'].includes('Sniebel') ? 'Pstop-quest_Sniebel' : imagename
 		imagename = item['reward'].includes('Snubbull') ? 'Pstop-quest_Snubbull' : imagename
-        imagename = item['reward'].includes('Spoink') ? 'Pstop-quest_poink' : imagename
+        imagename = item['reward'].includes('Spoink') ? 'Pstop-quest_Spoink' : imagename
         imagename = item['reward'].includes('Sonnkern') ? 'Pstop-quest_Sonnkern' : imagename
         imagename = item['reward'].includes('Starmie') ? 'Pstop-quest_Starmie' : imagename
         imagename = item['reward'].includes('Tragosso') ? 'Pstop-quest_Tragosso' : imagename
