@@ -81,114 +81,120 @@
     "name": "Glumanda"
   },
   "28": {
-    "name": "Haspiror"
+    "name": "Golbit"
   },
   "29": {
-    "name": "Hoppspross"
+    "name": "Haspiror"
   },
   "30": {
-    "name": "Jurob"
+    "name": "Hoppspross"
   },
   "31": {
-    "name": "Kabuto"
+    "name": "Jurob"
   },
   "32": {
-    "name": "Karpador"
+    "name": "Kabuto"
   },
   "33": {
-    "name": "Lapras"
+    "name": "Karpador"
   },
   "34": {
-    "name": "Larvitar"
+    "name": "Lapras"
   },
   "35": {
-    "name": "Liliep"
+    "name": "Larvitar"
   },
   "36": {
-    "name": "Machollo"
+    "name": "Liliep"
   },
   "37": {
-    "name": "Magmar"
+    "name": "Machollo"
   },
   "38": {
-    "name": "Makuhita"
+    "name": "Magmar"
   },
   "39": {
-    "name": "Marill"
+    "name": "Makabaja"
   },
   "40": {
-    "name": "Menki"
+    "name": "Makuhita"
   },
   "41": {
-    "name": "Nasgnet"
+    "name": "Marill"
   },
   "42": {
-    "name": "Natu"
+    "name": "Menki"
   },
   "43": {
-    "name": "Nebulak"
+    "name": "Nasgnet"
   },
   "44": {
-    "name": "Onix"
+    "name": "Natu"
   },
   "45": {
-    "name": "Owei"
+    "name": "Nebulak"
   },
   "46": {
-    "name": "Pandir"
+    "name": "Onix"
   },
   "47": {
-    "name": "Ponita"
+    "name": "Owei"
   },
   "48": {
-    "name": "Quapsel"
+    "name": "Pandir"
   },
   "49": {
-    "name": "Quiekel"
+    "name": "Ponita"
   },
   "50": {
-    "name": "Rossana"
+    "name": "Quapsel"
   },
   "51": {
-    "name": "Sandan"
+    "name": "Quiekel"
   },
   "52": {
-    "name": "Schiggy"
+    "name": "Rossana"
   },
   "53": {
-    "name": "Schluppuck"
+    "name": "Sandan"
   },
   "54": {
-    "name": "Schneppke"
+    "name": "Schiggy"
   },
   "55": {
-    "name": "Sichlor"
+    "name": "Schluppuck"
   },
   "56": {
-    "name": "Sniebel"
+    "name": "Schneppke"
   },
   "57": {
-    "name": "Spoink"
+    "name": "Sichlor"
   },
   "58": {
-    "name": "Tragosso"
+    "name": "Sniebel"
   },
   "59": {
-    "name": "Traumato"
+    "name": "Spoink"
   },
   "60": {
-    "name": "Vipitis"
+    "name": "Tragosso"
   },
   "61": {
-    "name": "Voltobal"
+    "name": "Traumato"
   },
   "62": {
-    "name": "Vulpix"
+    "name": "Vipitis"
   },
   "63": {
-    "name": "Zigzachs"
+    "name": "Voltobal"
   },
   "64": {
+    "name": "Vulpix"
+  },
+  "65": {
+    "name": "Zigzachs"
+  },
+  "66": {
     "name": "Zobiris"
   }
 }

@@ -2512,8 +2512,8 @@
   "197": {
     "name": "Umbreon",
     "rarity": "Ultra Rare",
-    "level": 3,
-    "cp": 12332,
+    "level": 4,
+    "cp": 21360,
     "types": [
       {
         "type": "Dark",
@@ -2554,8 +2554,8 @@
   "200": {
     "name": "Misdreavus",
     "rarity": "Rare",
-    "level": 2,
-    "cp": 10038,
+    "level": 1,
+    "cp": 5795,
     "types": [
       {
         "type": "Ghost",
@@ -5524,6 +5524,8 @@
   "435":{
     "name": "Skuntank",
     "rarity":"",
+    "level": 3,
+    "cp": 14476,
     "types": [
       {
         "type": "Poison",
@@ -6230,6 +6232,8 @@
   "491":{
     "name": "Darkrai",
     "rarity":"",
+    "level": 5,
+    "cp": 53623,
     "types": [
       {
         "type": "Dark",
@@ -7055,6 +7059,8 @@
   },
   "562":{
     "name": "Yamask",
+    "level": 2,
+    "cp": 5828,
     "rarity":"",
     "types": [
       {
