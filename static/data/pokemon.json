@@ -4809,7 +4809,7 @@
     "name": "Regirock",
     "rarity":"",
     "level": 5,
-    "cp": 39041,
+    "cp": 33128,
     "types": [
       {
         "type": "Rock",
@@ -4821,7 +4821,7 @@
     "name": "Regice",
     "rarity":"",
     "level": 5,
-    "cp": 39041,
+    "cp": 33128,
     "types": [
       {
         "type": "Ice",
@@ -4833,7 +4833,7 @@
     "name": "Registeel",
     "rarity":"",
     "level": 5,
-    "cp": 30596,
+    "cp": 25962,
     "types": [
       {
         "type": "Steel",
