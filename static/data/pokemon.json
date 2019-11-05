@@ -700,6 +700,8 @@
   "56": {
     "name": "Mankey",
     "rarity": "Rare",
+    "level": 1,
+    "cp": 3932,
     "types": [
       {
         "type": "Fighting",
@@ -1990,8 +1992,8 @@
   "156": {
     "name": "Quilava",
     "rarity": "Very Rare",
-    "level": 1,
-    "cp": 5031,
+    "level": 2,
+    "cp": 8715,
     "types": [
       {
         "type": "Fire",
@@ -3285,6 +3287,8 @@
   },
   "257":{
     "name": "Blaziken",
+    "level": 4,
+    "cp": 30215,
     "rarity":"",
     "types": [
       {
@@ -3797,6 +3801,8 @@
   },
   "297":{
     "name": "Hariyama",
+    "level": 3,
+    "cp": 15264,
     "rarity":"",
     "types": [
       {
@@ -5758,6 +5764,8 @@
   "453":{
     "name": "Croagunk",
     "rarity":"",
+    "level": 1,
+    "cp": 3061,
     "types": [
       {
         "type": "Poison",
@@ -7967,6 +7975,8 @@
   },
   "638":{
     "name": "Cobalion",
+    "level": 5,
+    "cp": 39601,
     "rarity":"",
     "types": [
       {
