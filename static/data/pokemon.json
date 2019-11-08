@@ -296,6 +296,8 @@
   "23": {
     "name": "Ekans",
     "rarity": "Uncommon",
+    "level": 1,
+    "cp": 3240,
     "types": [
       {
         "type": "Poison",
@@ -339,8 +341,8 @@
   },
   "27": {
     "name": "Sandshrew",
-    "level": 1,
-    "cp": 4012,
+    "level": 2,
+    "cp": 11520,
     "rarity": "Rare",
     "types": [
       {
@@ -423,7 +425,7 @@
     "name": "Nidoking",
     "rarity": "Very Rare",
     "level": 4,
-    "cp": 24801,
+    "cp": 27168,
     "types": [
       {
         "type": "Poison",
@@ -508,6 +510,8 @@
   "41": {
     "name": "Zubat",
     "rarity": "Common",
+    "level": 1,
+    "cp": 2251,
     "types": [
       {
         "type": "Poison",
@@ -656,8 +660,8 @@
   "52": {
     "name": "Meowth",
     "rarity": "Rare",
-    "level": 4,
-    "cp": 9520,
+    "level": 1,
+    "cp": 2527,
     "types": [
       {
         "type": "Normal",
@@ -668,6 +672,8 @@
   "53": {
     "name": "Persian",
     "rarity": "Very Rare",
+    "level": 3,
+    "cp": 12165,
     "types": [
       {
         "type": "Normal",
@@ -955,7 +961,7 @@
     "name": "Golem",
     "rarity": "Ultra Rare",
     "level": 4,
-    "cp": 28564,
+    "cp": 31291,
     "types": [
       {
         "type": "Rock",
@@ -1268,6 +1274,8 @@
   "99": {
     "name": "Kingler",
     "rarity": "Very Rare",
+    "level": 2,
+    "cp": 15146,
     "types": [
       {
         "type": "Water",
@@ -1390,6 +1398,8 @@
   "109": {
     "name": "Koffing",
     "rarity": "Rare",
+    "level": 1,
+    "cp": 4099,
     "types": [
       {
         "type": "Poison",
