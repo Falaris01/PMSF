@@ -13146,12 +13146,18 @@
     ]
   },
   "1110":{
-    "name": "None",
+    "name": "Weezing Galar",
     "rarity":"",
+    "level": 4,
+    "cp": 26106,
     "types": [
       {
-        "type": "Normal",
-        "color": "#8a8a59"
+        "type": "Poison",
+        "color": "#a040a0"
+      },
+      {
+        "type": "Fairy",
+        "color": "#e898e8"
       }
     ]
   },
