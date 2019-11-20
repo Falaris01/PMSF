@@ -177,24 +177,27 @@
     "name": "Spoink"
   },
   "60": {
-    "name": "Tragosso"
+    "name": "Tentacha"
   },
   "61": {
-    "name": "Traumato"
+    "name": "Tragosso"
   },
   "62": {
-    "name": "Vipitis"
+    "name": "Traumato"
   },
   "63": {
-    "name": "Voltobal"
+    "name": "Vipitis"
   },
   "64": {
-    "name": "Vulpix"
+    "name": "Voltobal"
   },
   "65": {
-    "name": "Zigzachs"
+    "name": "Vulpix"
   },
   "66": {
+    "name": "Zigzachs"
+  },
+  "67": {
     "name": "Zobiris"
   }
 }
