@@ -2096,6 +2096,8 @@
   "164": {
     "name": "Noctowl",
     "rarity": "Rare",
+    "level": 2,
+    "cp": 8876,
     "types": [
       {
         "type": "Normal",
@@ -2513,7 +2515,7 @@
     "name": "Espeon",
     "rarity": "Ultra Rare",
     "level": 3,
-    "cp": 20837,
+    "cp": 22826,
     "types": [
       {
         "type": "Psychic",
@@ -2908,6 +2910,8 @@
   "226": {
     "name": "Mantine",
     "rarity": "Uncommon",
+    "level": 3,
+    "cp": 15182
     "types": [
       {
         "type": "Water",
@@ -2923,7 +2927,7 @@
     "name": "Skarmory",
     "rarity": "Rare",
     "level": 3,
-    "cp": 13859,
+    "cp": 15182,
     "types": [
       {
         "type": "Steel",
@@ -3580,6 +3584,8 @@
   "279":{
     "name": "Pelipper",
     "rarity":"",
+    "level": 3,
+    "cp": 15672,
     "types": [
       {
         "type": "Water",
@@ -3962,6 +3968,8 @@
   "308":{
     "name": "Medicham",
     "rarity":"",
+    "level": 3,
+    "cp": 10545,
     "types": [
       {
         "type": "Fighting",
@@ -4248,6 +4256,8 @@
   "332":{
     "name": "Cacturne",
     "rarity":"",
+    "level": 3,
+    "cp": 16144,
     "types": [
       {
         "type": "Grass",
@@ -4780,6 +4790,8 @@
   "374":{
     "name": "Beldum",
     "rarity":"",
+    "level": 1,
+    "cp": 3296,
     "types": [
       {
         "type": "Steel",
