@@ -1241,6 +1241,8 @@
   },
   "96": {
     "name": "Drowzee",
+    "level": 1,
+    "cp": 3130,
     "rarity": "Uncommon",
     "types": [
       {
@@ -3937,7 +3939,7 @@
     "name": "Aggron",
     "rarity":"",
     "level": 4,
-    "cp": 30422,
+    "cp": 33326,
     "types": [
       {
         "type": "Steel",
@@ -4186,6 +4188,8 @@
   "326":{
     "name": "Grumpig",
     "rarity":"",
+    "level": 2,
+    "cp": 11243,
     "types": [
       {
         "type": "Psychic",
@@ -4423,7 +4427,7 @@
     "name": "Claydol",
     "rarity":"",
     "level": 3,
-    "cp": 13261,
+    "cp": 14527,
     "types": [
       {
         "type": "Ground",
@@ -4982,6 +4986,8 @@
   "388":{
     "name": "Grotle",
     "rarity":"",
+    "level": 2,
+    "cp": 9172,
     "types": [
       {
         "type": "Grass",
@@ -8014,6 +8020,8 @@
   "639":{
     "name": "Terrakion",
     "rarity":"",
+    "level": 5,
+    "cp": 48457,
     "types": [
       {
         "type": "Rock",
