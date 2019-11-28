@@ -2,17 +2,17 @@
   "1": {
     "cat": "Event",
     "name": "Freundschaftsfest: Füge 3 neue Freunde hinzu",
-    "rewards": ["Nidoking", "Nidoqueen"]
+    "rewards": ["Nidoking/Nidoqueen", "Nidoking", "Nidoqueen"]
   },
   "2": {
     "cat": "Event",
     "name": "Freundschaftsfest: Gewinne einen Trainerkampf gegen einen anderen Trainer",
-    "rewards": ["Digdri", "Dodri"]
+    "rewards": ["Digdri/Dodri", "Digdri", "Dodri"]
   },
   "3": {
     "cat": "Event",
     "name": "Freundschaftsfest: Tausche ein Pokemon mit einem Freund",
-    "rewards": ["Sternenstaub", "Nidorina", "Nidorino"]
+    "rewards": ["Nidorina/Nidorino", "Nidorina", "Nidorino", "Sternenstaub"]
   },
   "4": {
     "cat": "Event",
