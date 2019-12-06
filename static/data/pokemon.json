@@ -1466,8 +1466,8 @@
   "114": {
     "name": "Tangela",
     "rarity": "Rare",
-    "level": 3,
-    "cp": 16114,
+    "level": 2,
+    "cp": 11394,
     "types": [
       {
         "type": "Grass",
@@ -2474,6 +2474,8 @@
   "193": {
     "name": "Yanma",
     "rarity": "Uncommon",
+    "level": 2,
+    "cp": 7485,
     "types": [
       {
         "type": "Bug",
@@ -3602,6 +3604,8 @@
   "280":{
     "name": "Ralts",
     "rarity":"",
+    "level": 1,
+    "cp": 1980,
     "types": [
       {
         "type": "Psychic",
@@ -4502,8 +4506,8 @@
   "349":{
     "name": "Feebas",
     "rarity":"",
-    "level": 2,
-    "cp": 1866,
+    "level": 1,
+    "cp": 1077,
     "types": [
       {
         "type": "Water",
@@ -6700,6 +6704,8 @@
   "530":{
     "name": "Excadrill",
     "rarity":"",
+    "level": 4,
+    "cp": 30737,
     "types": [
       {
         "type": "Ground",
