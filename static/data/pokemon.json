@@ -62,8 +62,8 @@
   "5": {
     "name": "Charmeleon",
     "rarity": "Very Rare",
-    "level": 1,
-    "cp": 5031,
+    "level": 2,
+    "cp": 8715,
     "types": [
       {
         "type": "Fire",
@@ -234,6 +234,8 @@
   "18": {
     "name": "Pidgeot",
     "rarity": "Rare",
+    "level": 3,
+    "cp": 14118,
     "types": [
       {
         "type": "Normal",
@@ -282,6 +284,8 @@
   "22": {
     "name": "Fearow",
     "rarity": "Rare",
+    "level": 2,
+    "cp": 10167,
     "types": [
       {
         "type": "Normal",
@@ -3558,6 +3562,8 @@
   "277":{
     "name": "Swellow",
     "rarity":"",
+    "level": 2,
+    "cp": 10003,
     "types": [
       {
         "type": "Normal",
@@ -3620,8 +3626,8 @@
   "281":{
     "name": "Kirlia",
     "rarity":"",
-    "level": 2,
-    "cp": 5738,
+    "level": 1,
+    "cp": 3313,
     "types": [
       {
         "type": "Psychic",
@@ -5118,6 +5124,8 @@
   "398":{
     "name": "Staraptor",
     "rarity":"",
+    "level": 4,
+    "cp": 29409,
     "types": [
       {
         "type": "Normal",
@@ -6352,6 +6360,8 @@
   "498":{
     "name": "Tepig",
     "rarity":"",
+    "level": 1,
+    "cp": 3184,
     "types": [
       {
         "type": "Fire",
@@ -6574,6 +6584,8 @@
   "519":{
     "name": "Pidove",
     "rarity":"",
+    "level": 1,
+    "cp": 2697,
     "types": [
       {
         "type": "Normal",
@@ -7628,6 +7640,8 @@
   "607":{
     "name": "Litwick",
     "rarity":"",
+    "level": 1,
+    "cp": 3202,
     "types": [
       {
         "type": "Ghost",
@@ -8042,6 +8056,8 @@
   "640":{
     "name": "Virizion",
     "rarity":"",
+    "level": 5,
+    "cp": 39601,
     "types": [
       {
         "type": "Grass",
