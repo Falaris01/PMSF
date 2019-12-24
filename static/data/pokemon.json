@@ -334,8 +334,8 @@
   "26": {
     "name": "Raichu",
     "rarity": "Ultra Rare",
-    "level": 3,
-    "cp": 14678,
+    "level": 2,
+    "cp": 11369,
     "types": [
       {
         "type": "Electric",
@@ -1591,7 +1591,7 @@
     "name": "Jynx",
     "rarity": "Rare",
     "level": 3,
-    "cp": 16795,
+    "cp": 18398,
     "types": [
       {
         "type": "Ice",
@@ -2904,6 +2904,8 @@
   "225": {
     "name": "Delibird",
     "rarity": "Ultra Rare",
+    "level": 3,
+    "cp": 8791,
     "types": [
       {
         "type": "Ice",
@@ -3028,6 +3030,8 @@
   "234": {
     "name": "Stantler",
     "rarity": "Rare",
+    "level": 2,
+    "cp": 10611,
     "types": [
       {
         "type": "Normal",
@@ -4695,7 +4699,7 @@
     "name": "Walrein",
     "rarity":"",
     "level": 4,
-    "cp": 23578,
+    "cp": 25828,
     "types": [
       {
         "type": "Ice",
@@ -5892,6 +5896,8 @@
   "460":{
     "name": "Abomasnow",
     "rarity":"",
+    "level": 4,
+    "cp": 24082,
     "types": [
       {
         "type": "Grass",
@@ -7713,6 +7719,8 @@
   },
   "613":{
     "name": "Cubchoo",
+    "level": 1, 
+    "cp": 3304,
     "rarity":"",
     "types": [
       {

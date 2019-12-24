@@ -1,68 +1,28 @@
 {
   "1": {
     "cat": "Event",
-    "name": "Entwicklungsevent: Entwickle ein Onix",
-    "rewards": ["Sichlor"]
+    "name": "Festtags-Event: Mache 5 Schnappschüsse von Pokemon vom Typ Eis",
+    "rewards": ["Petznief"]
   },
   "2": {
     "cat": "Event",
-    "name": "Entwicklungsevent: Verwende ein Item um ein Pokemon zu entwickeln",
-    "rewards": ["Perlu"]
+    "name": "Festtags-Event: Brüte 7 Eier aus",
+    "rewards": ["Lapras"]
   },
   "3": {
     "cat": "Event",
-    "name": "Entwicklungsevent: Gewinne 5 Raids",
-    "rewards": ["Gletscher-Lockmodul", "Magnet-Lockmodul", "Moos-Lockmodul"]
+    "name": "Festtags-Event: Fange 5 Botogel oder Shnebedeck",
+    "rewards": ["Pikachu"]
   },
   "4": {
     "cat": "Event",
-    "name": "Entwicklungsevent: Gewinne 3-mal gegen einen Team Go Rocket Boss",
-    "rewards": ["Einall-Stein"]
+    "name": "Festtags-Event: Fange 5 Pokemon vom Typ Eis",
+    "rewards": ["Shnebedeck"]
   },
   "5": {
     "cat": "Event",
-    "name": "Entwicklungsevent: Entwickle 5 Pokemon",
+    "name": "Festtags-Event: Fange 10 Pokemon vom Typ Eis",
     "rewards": ["Sternenstaub"]
-  },
-  "6": {
-    "cat": "Event",
-    "name": "Entwicklungsevent: Brüte 7 Eier aus",
-    "rewards": ["Sinnoh-Stein"]
-  },
-  "7": {
-    "cat": "Event",
-    "name": "Entwicklungsevent: Entwickle 10 Pokemon",
-    "rewards": ["Burmy (gelb)/Burmy (grün)/Burmy (rosa)", "Burmy (gelb)", "Burmy (grün)", "Burmy (rosa)"]
-  },
-  "8": {
-    "cat": "Event",
-    "name": "Entwicklungsevent: Fange 10 Seeper",
-    "rewards": ["Drachenhaut"]
-  },
-  "9": {
-    "cat": "Event",
-    "name": "Entwicklungsevent: Entwickle ein Barschwa",
-    "rewards": ["Sonderbonbon(s)"]
-  },
-  "10": {
-    "cat": "Event",
-    "name": "Entwicklungsevent: Fange 5 Onix",
-    "rewards": ["Metallmantel"]
-  },
-  "11": {
-    "cat": "Event",
-    "name": "Entwicklungsevent: Fange 10 Quapsel oder Flegmon",
-    "rewards": ["King-Stein"]
-  },
-  "12": {
-    "cat": "Event",
-    "name": "Entwicklungsevent: Fange 5 Porygon",
-    "rewards": ["Up-Grade"]
-  },
-  "13": {
-    "cat": "Event",
-    "name": "Entwicklungsevent: Fange 10 Sonnkern",
-    "rewards": ["Sonnenstein"]
   },
   "14": {
     "cat": "Würfe",
