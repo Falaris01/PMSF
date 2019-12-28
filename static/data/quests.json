@@ -24,6 +24,11 @@
     "name": "Festtags-Event: Fange 10 Pokemon vom Typ Eis",
     "rewards": ["Sternenstaub"]
   },
+  "6": {
+    "cat": "Event",
+    "name": "Festtags-Event: Entwickle 10 Pokemon vom Typ Eis (nur 28.12. 11-19 Uhr)",
+    "rewards": ["Gletscher-Lockmodul"]
+  },
   "14": {
     "cat": "Würfe",
     "name": "Lande 3 großartige Würfe",
