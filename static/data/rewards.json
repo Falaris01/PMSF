@@ -54,210 +54,126 @@
     "name": "Amonitas/Kabuto"
   },
   "19": {
-    "name": "Anorith/Haspiror/Liliep/Nebulak"
+    "name": "Anorith/Liliep/Nebulak"
   },
   "20": {
     "name": "Bisasam/Glumanda/Schiggy"
   },
   "21": {
-    "name": "Burmy (gelb)/Burmy (grün)/Burmy (rosa)"
+    "name": "Evoli/Petznief"
   },
   "22": {
-    "name": "Digdri/Dodri"
+    "name": "Quapsel/Vulpix (Normal-Form)"
   },
   "23": {
-    "name": "Hoppspross/Owei"
-  },
-  "24": {
-    "name": "Makuhita/Menki"
-  },
-  "25": {
-    "name": "Quapsel/Vulpix"
-  },
-  "26": {
     "name": "Aerodactyl"
   },
-  "27": {
+  "24": {
     "name": "Amonitas"
   },
-  "28": {
+  "25": {
     "name": "Anorith"
   },
-  "29": {
+  "26": {
     "name": "Bisasam"
   },
-  "30": {
-    "name": "Bronzel"
-  },
-  "31": {
-    "name": "Burmy (gelb)"
-  },
-  "32": {
-    "name": "Burmy (grün)"
-  },
-  "33": {
-    "name": "Burmy (rosa)"
-  },
-  "34": {
+  "27": {
     "name": "Chaneira"
   },
-  "35": {
-    "name": "Digdri"
+  "28": {
+    "name": "Damhirplex"
   },
-  "36": {
-    "name": "Dodri"
-  },
-  "37": {
-    "name": "Dodu"
-  },
-  "38": {
+  "29": {
     "name": "Dratini"
   },
-  "39": {
+  "30": {
     "name": "Elektek"
   },
-  "40": {
+  "31": {
     "name": "Evoli"
   },
-  "41": {
-    "name": "Fiffyen"
+  "32": {
+    "name": "Firnontor"
   },
-  "42": {
-    "name": "Frizelbliz"
-  },
-  "43": {
+  "33": {
     "name": "Glumanda"
   },
-  "44": {
-    "name": "Golbit"
+  "34": {
+    "name": "Jugong"
   },
-  "45": {
-    "name": "Haspiror"
-  },
-  "46": {
-    "name": "Hoppspross"
-  },
-  "47": {
-    "name": "Jurob"
-  },
-  "48": {
+  "35": {
     "name": "Kabuto"
   },
-  "49": {
+  "36": {
     "name": "Karpador"
   },
-  "50": {
-    "name": "Lapras"
-  },
-  "51": {
+  "37": {
     "name": "Larvitar"
   },
-  "52": {
+  "38": {
     "name": "Liliep"
   },
-  "53": {
+  "39": {
+    "name": "Loturzel"
+  },
+  "40": {
     "name": "Machollo"
   },
-  "54": {
+  "41": {
     "name": "Magmar"
   },
-  "55": {
-    "name": "Makabaja"
-  },
-  "56": {
-    "name": "Makuhita"
-  },
-  "57": {
-    "name": "Marill"
-  },
-  "58": {
+  "42": {
     "name": "Menki"
   },
-  "59": {
-    "name": "Nasgnet"
+  "43": {
+    "name": "Muschas"
   },
-  "60": {
-    "name": "Natu"
-  },
-  "61": {
+  "44": {
     "name": "Nebulak"
   },
-  "62": {
+  "45": {
     "name": "Onix"
   },
-  "63": {
+  "46": {
     "name": "Owei"
   },
-  "64": {
+  "47": {
     "name": "Pandir"
   },
-  "65": {
+  "48": {
     "name": "Perlu"
   },
-  "66": {
+  "49": {
     "name": "Petznief"
   },
-  "67": {
-    "name": "Pikachu"
-  },
-  "68": {
-    "name": "Ponita"
-  },
-  "69": {
+  "50": {
     "name": "Quapsel"
   },
-  "70": {
+  "51": {
     "name": "Quiekel"
   },
-  "71": {
+  "52": {
     "name": "Rossana"
   },
-  "72": {
-    "name": "Sandan"
-  },
-  "73": {
+  "53": {
     "name": "Schiggy"
   },
-  "74": {
-    "name": "Schluppuck"
-  },
-  "75": {
+  "54": {
     "name": "Schneppke"
   },
-  "76": {
+  "55": {
     "name": "Shnebedeck"
   },
-  "77": {
-    "name": "Sichlor"
-  },
-  "78": {
+  "56": {
     "name": "Sniebel"
   },
-  "79": {
-    "name": "Spoink"
-  },
-  "80": {
-    "name": "Tentacha"
-  },
-  "81": {
-    "name": "Tragosso"
-  },
-  "82": {
-    "name": "Traumato"
-  },
-  "83": {
-    "name": "Vipitis"
-  },
-  "84": {
+  "57": {
     "name": "Voltobal"
   },
-  "85": {
-    "name": "Vulpix"
+  "58": {
+    "name": "Vulpix (Alola-Form)"
   },
-  "86": {
-    "name": "Zigzachs"
-  },
-  "87": {
-    "name": "Zobiris"
+  "59": {
+    "name": "Vulpix (Normal-Form)"
   }
 }
