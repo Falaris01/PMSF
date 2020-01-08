@@ -260,6 +260,8 @@
   "20": {
     "name": "Raticate",
     "rarity": "Rare",
+    "level": 2,
+    "cp": 9266,
     "types": [
       {
         "type": "Normal",
@@ -345,8 +347,8 @@
   },
   "27": {
     "name": "Sandshrew",
-    "level": 2,
-    "cp": 11520,
+    "level": 1,
+    "cp": 4012,
     "rarity": "Rare",
     "types": [
       {
@@ -1356,8 +1358,8 @@
   "105": {
     "name": "Marowak",
     "rarity": "Very Rare",
-    "level": 4,
-    "cp": 19522,
+    "level": 2,
+    "cp": 9563,
     "types": [
       {
         "type": "Ground",
@@ -2598,8 +2600,8 @@
   "202": {
     "name": "Wobbuffet",
     "rarity": "Very Rare",
-    "level": 4,
-    "cp": 7144,
+    "level": 2,
+    "cp": 3500,
     "types": [
       {
         "type": "Psychic",
@@ -5076,6 +5078,8 @@
   "394":{
     "name": "Prinplup",
     "rarity":"",
+    "level": 2,
+    "cp": 8687,
     "types": [
       {
         "type": "Water",
@@ -6213,7 +6217,7 @@
     "name": "Heatran",
     "rarity":"",
     "level": 5,
-    "cp": 44905,
+    "cp": 49192,
     "types": [
       {
         "type": "Fire",
@@ -6406,6 +6410,8 @@
   "501":{
     "name": "Oshawott",
     "rarity":"",
+    "level": 1,
+    "cp": 3233,
     "types": [
       {
         "type": "Water",
