@@ -182,12 +182,7 @@
   "602": {
     "cat": "Brüte",
     "name": "Brüte 5 Eier aus",
-    "rewards": ["Chaneira", "Sonderbonbon(s)"]
-  },
-  "603": {
-    "cat": "Brüte",
-    "name": "Brüte 7 Eier aus",
-    "rewards": ["Vulpix (Alola-Form)", "Sonderbonbon(s)"]
+    "rewards": ["Chaneira/Vulpix (Alola-Form)", "Chaneira", "Vulpix (Alola-Form)", "Sonderbonbon(s)"]
   },
   "700": {
     "cat": "Sonstiges",
