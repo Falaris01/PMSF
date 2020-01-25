@@ -993,6 +993,8 @@
   },
   "78": {
     "name": "Rapidash",
+    "level": 2,
+    "cp": 12530,
     "rarity": "Very Rare",
     "types": [
       {
@@ -1665,6 +1667,8 @@
   },
   "130": {
     "name": "Gyarados",
+    "level": 4,
+    "cp": 33893,
     "rarity": "Ultra Rare",
     "types": [
       {
@@ -6885,6 +6889,8 @@
   },
   "543":{
     "name": "Venipede",
+    "level": 1,
+    "cp": 2563,
     "rarity":"",
     "types": [
       {
@@ -7057,6 +7063,8 @@
   },
   "557":{
     "name": "Dwebble",
+    "level": 1,
+    "cp": 3895,
     "rarity":"",
     "types": [
       {
