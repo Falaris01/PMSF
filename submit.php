@@ -18,8 +18,8 @@ if ( $action === "raid" ) {
     $gymId      = ! empty( $_POST['gymId'] ) ? $_POST['gymId'] : 0;
     $eggTime    = ! empty( $_POST['eggTime'] ) ? $_POST['eggTime'] : 0;
     $monTime    = ! empty( $_POST['monTime'] ) ? $_POST['monTime'] : 0;
-    if ( $eggTime > 60 ) { //raid timing
-        $eggTime = 60;
+    if ( $eggTime > 30 ) { //raid timing
+        $eggTime = 30;
     }
     if ( $monTime > 45 ) {//raid timing
         $monTime = 45;

@@ -2275,7 +2275,7 @@ function generateRaidModal() {
 
 function generateTimerLists() {//raid timing
     var html = '<select name="egg_time" class="egg_time" style="display:none;">' +
-        '<option value="60" selected>1:00</option>' +
+        /*'<option value="60" selected>1:00</option>' +
         '<option value="59">59</option>' +
         '<option value="58">58</option>' +
         '<option value="57">57</option>' +
@@ -2305,7 +2305,8 @@ function generateTimerLists() {//raid timing
         '<option value="33">33</option>' +
         '<option value="32">32</option>' +
         '<option value="31">31</option>' +
-        '<option value="30">30</option>' +
+        '<option value="30">30</option>' +*/
+        '<option value="30" selected>30</option>' +
         '<option value="29">29</option>' +
         '<option value="28">28</option>' +
         '<option value="27">27</option>' +
