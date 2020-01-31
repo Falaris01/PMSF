@@ -1,4 +1,24 @@
 {
+  "1": {
+    "cat": "Voting",
+    "name": "Community Day: Dratini",
+    "rewards": ["Sternenstaub"]
+  },
+  "2": {
+    "cat": "Voting",
+    "name": "Community Day: Machollo",
+    "rewards": ["Sternenstaub"]
+  },
+  "3": {
+    "cat": "Voting",
+    "name": "Community Day: Rihorn",
+    "rewards": ["Sternenstaub"]
+  },
+  "4": {
+    "cat": "Voting",
+    "name": "Community Day: Vulpix",
+    "rewards": ["Sternenstaub"]
+  },
   "100": {
     "cat": "Würfe",
     "name": "Lande 3 großartige Würfe",
@@ -190,48 +210,48 @@
     "rewards": ["Chaneira", "Sonderbonbon(s)"]
   },
   "700": {
-    "cat": "Sonstiges",
-    "name": "Entwickle ein Pokemon",
-    "rewards": ["Petznief", "Evoli"]
-  },
-  "701": {
-    "cat": "Sonstiges",
-    "name": "Tausche ein Pokemon",
-    "rewards": ["Firnontor"]
-  },
-  "702": {
-    "cat": "Sonstiges",
-    "name": "Verschicke 10 Geschenke",
-    "rewards": ["Perlu"]
-  },   
-  "703": {
-    "cat": "Sonstiges",
-    "name": "Drehe 10 PokeStops oder Arenen",
-    "rewards": ["Silberne Sananabeere(n)", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
-  },
-  "704": {
-    "cat": "Sonstiges",
-    "name": "Verwende 5 Power-Ups bei Pokemon",
-    "rewards": ["Bisasam", "Glumanda", "Schiggy", "Bisasam/Glumanda/Schiggy"]
-  },
-  "705": {
-    "cat": "Sonstiges",
-    "name": "Verschicke 3 Pokemon",
-    "rewards": ["Loturzel"]
-  },
-  "750": {
-    "cat": "Sonstiges",
-    "name": "-Irgendeine Aufgabe mit uninteressanter Müll-Belohnung-",
-    "rewards": ["Beeren/Tränke/Bälle/Beleber"]
-  },
-  "800": {
     "cat": "Kumpel",
     "name": "Erhalte 5 Herzen bei deinem Kumpel",
     "rewards": ["Damhirplex"]
   },
-  "801": {
+  "701": {
     "cat": "Kumpel",
     "name": "Mache einen Schnappschuss von deinem Kumpel",
     "rewards": ["Shnebedeck"]
+  },
+  "800": {
+    "cat": "Sonstiges",
+    "name": "Entwickle ein Pokemon",
+    "rewards": ["Petznief", "Evoli"]
+  },
+  "801": {
+    "cat": "Sonstiges",
+    "name": "Tausche ein Pokemon",
+    "rewards": ["Firnontor"]
+  },
+  "802": {
+    "cat": "Sonstiges",
+    "name": "Verschicke 10 Geschenke",
+    "rewards": ["Perlu"]
+  },   
+  "803": {
+    "cat": "Sonstiges",
+    "name": "Drehe 10 PokeStops oder Arenen",
+    "rewards": ["Silberne Sananabeere(n)", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
+  },
+  "804": {
+    "cat": "Sonstiges",
+    "name": "Verwende 5 Power-Ups bei Pokemon",
+    "rewards": ["Bisasam", "Glumanda", "Schiggy", "Bisasam/Glumanda/Schiggy"]
+  },
+  "805": {
+    "cat": "Sonstiges",
+    "name": "Verschicke 3 Pokemon",
+    "rewards": ["Loturzel"]
+  },
+  "1000": {
+    "cat": "Sonstiges",
+    "name": "-Irgendeine Aufgabe mit uninteressanter Müll-Belohnung-",
+    "rewards": ["Beeren/Tränke/Bälle/Beleber"]
   }
 }
