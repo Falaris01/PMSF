@@ -60,7 +60,7 @@
     "name": "Bisasam/Glumanda/Schiggy"
   },
   "54": {
-    "name": "Evoli/Petznief"
+    "name": "Evoli/Pummeluff"
   },
   "55": {
     "name": "Quapsel/Vulpix (Normal-Form)"
@@ -81,7 +81,7 @@
     "name": "Chaneira"
   },
   "105": {
-    "name": "Damhirplex"
+    "name": "Barschwa"
   },
   "106": {
     "name": "Dratini"
@@ -93,64 +93,64 @@
     "name": "Evoli"
   },
   "109": {
-    "name": "Firnontor"
-  },
-  "110": {
     "name": "Glumanda"
   },
-  "111": {
-    "name": "Jugong"
-  },
-  "112": {
+  "110": {
     "name": "Kabuto"
   },
-  "113": {
+  "111": {
     "name": "Karpador"
   },
-  "114": {
+  "112": {
     "name": "Larvitar"
   },
-  "115": {
+  "113": {
     "name": "Liliep"
   },
-  "116": {
-    "name": "Loturzel"
-  },
-  "117": {
+  "114": {
     "name": "Machollo"
   },
-  "118": {
+  "115": {
     "name": "Magmar"
   },
-  "119": {
+  "116": {
+    "name": "Mauzi (Alola-Form)"
+  },
+  "117": {
     "name": "Menki"
   },
-  "120": {
-    "name": "Muschas"
+  "118": {
+    "name": "Nachtara"
   },
-  "121": {
+  "119": {
     "name": "Nebulak"
   },
-  "122": {
+  "120": {
     "name": "Onix"
   },
-  "123": {
+  "121": {
     "name": "Owei"
   },
-  "124": {
+  "122": {
     "name": "Pandir"
   },
-  "125": {
+  "123": {
     "name": "Perlu"
   },
+  "124": {
+    "name": "Piepi"
+  },
+  "125": {
+    "name": "Psiana"
+  },
   "126": {
-    "name": "Petznief"
+    "name": "Pummeluff"
   },
   "127": {
     "name": "Quapsel"
   },
   "128": {
-    "name": "Quiekel"
+    "name": "Roselia"
   },
   "129": {
     "name": "Rossana"
@@ -159,21 +159,18 @@
     "name": "Schiggy"
   },
   "131": {
-    "name": "Schneppke"
+    "name": "Trasla"
   },
   "132": {
-    "name": "Shnebedeck"
-  },
-  "133": {
-    "name": "Sniebel"
-  },
-  "134": {
     "name": "Voltobal"
   },
-  "135": {
+  "133": {
     "name": "Vulpix (Alola-Form)"
   },
-  "136": {
+  "134": {
     "name": "Vulpix (Normal-Form)"
+  },
+  "135": {
+    "name": "Zubat"
   }
 }

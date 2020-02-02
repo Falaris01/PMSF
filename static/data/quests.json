@@ -1,24 +1,4 @@
 {
-  "1": {
-    "cat": "Voting",
-    "name": "Community Day: Dratini",
-    "rewards": ["Sternenstaub"]
-  },
-  "2": {
-    "cat": "Voting",
-    "name": "Community Day: Machollo",
-    "rewards": ["Sternenstaub"]
-  },
-  "3": {
-    "cat": "Voting",
-    "name": "Community Day: Rihorn",
-    "rewards": ["Sternenstaub"]
-  },
-  "4": {
-    "cat": "Voting",
-    "name": "Community Day: Vulpix",
-    "rewards": ["Sternenstaub"]
-  },
   "100": {
     "cat": "Würfe",
     "name": "Lande 3 großartige Würfe",
@@ -77,7 +57,7 @@
   "200": {
     "cat": "Arena",
     "name": "Kämpfe in einer Arena",
-    "rewards": ["Makuhita", "Menki", "Makuhita/Menki", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
+    "rewards": ["Menki", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
   },
   "201": {
     "cat": "Arena",
@@ -107,7 +87,7 @@
   "300": {
     "cat": "Raid",
     "name": "Kämpfe in einem Raid",
-    "rewards": ["Quiekel", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
+    "rewards": ["Nachtara", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
   },
   "301": {
     "cat": "Raid",
@@ -131,13 +111,8 @@
   },
   "400": {
     "cat": "Kampf",
-    "name": "Kämpfe 3 mal gegen einen anderen Trainer",
-    "rewards": ["Muschas"]
-  },
-  "401": {
-    "cat": "Kampf",
-    "name": "Besiege einen Team GO Rocket Rüpel",
-    "rewards": ["Sniebel"]
+    "name": "Besiege 3 Team GO Rocket Rüpel",
+    "rewards": ["Psiana"]
   },  
   "500": {
     "cat": "Fangen",
@@ -146,17 +121,17 @@
   },
   "501": {
     "cat": "Fangen",
-    "name": "Fange 3 Pokemon vom Typ Normal, Wasser oder Eis",
-    "rewards": ["Jurob"]
+    "name": "Fange 3 Pokemon vom Typ Flug, Psycho oder Unlicht",
+    "rewards": ["Roselia", "Sonderbonbon(s)"]
   },
   "502": {
     "cat": "Fangen",
-    "name": "Fange 5 Pokemon vom Typ Feuer",
-    "rewards": ["Schneppke"]
+    "name": "Fange 5 Pokemon vom Typ Psycho",
+    "rewards": ["Trasla"]
   },
   "503": {
     "cat": "Fangen",
-    "name": "Fange 3 verschiedene Pokemon vom Typ Eis",
+    "name": "Fange 7 verschiedene Pokemon vom Typ Flug",
     "rewards": ["Sonderbonbon(s)"]
   },
   "504": {
@@ -192,7 +167,7 @@
   "600": {
     "cat": "Brüte",
     "name": "Brüte ein Ei aus",
-    "rewards": ["Hoppspross", "Owei", "Hoppspross/Owei", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
+    "rewards": ["Owei", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
   },
   "601": {
     "cat": "Brüte",
@@ -212,22 +187,22 @@
   "700": {
     "cat": "Kumpel",
     "name": "Erhalte 5 Herzen bei deinem Kumpel",
-    "rewards": ["Damhirplex"]
+    "rewards": ["Barschwa"]
   },
   "701": {
     "cat": "Kumpel",
     "name": "Mache einen Schnappschuss von deinem Kumpel",
-    "rewards": ["Shnebedeck"]
+    "rewards": ["Zapdos"]
   },
   "800": {
     "cat": "Sonstiges",
     "name": "Entwickle ein Pokemon",
-    "rewards": ["Petznief", "Evoli"]
+    "rewards": ["Evoli", "Pummeluff", "Evoli/Pummeluff"]
   },
   "801": {
     "cat": "Sonstiges",
     "name": "Tausche ein Pokemon",
-    "rewards": ["Firnontor"]
+    "rewards": ["Mauzi (Alola-Form)"]
   },
   "802": {
     "cat": "Sonstiges",
@@ -246,8 +221,8 @@
   },
   "805": {
     "cat": "Sonstiges",
-    "name": "Verschicke 3 Pokemon",
-    "rewards": ["Loturzel"]
+    "name": "Verschicke 5 Pokemon",
+    "rewards": ["Piepi"]
   },
   "1000": {
     "cat": "Sonstiges",
