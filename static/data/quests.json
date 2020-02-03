@@ -113,7 +113,12 @@
     "cat": "Kampf",
     "name": "Besiege 3 Team GO Rocket Rüpel",
     "rewards": ["Psiana"]
-  },  
+  },
+  "401": {
+    "cat": "Kampf",
+    "name": "Kämpfe gegen einen anderen Trainer",
+    "rewards": ["Marill"]
+  },    
   "500": {
     "cat": "Fangen",
     "name": "Fange 10 Pokemon",

@@ -114,63 +114,66 @@
     "name": "Magmar"
   },
   "116": {
-    "name": "Mauzi (Alola-Form)"
+    "name": "Marill"
   },
   "117": {
-    "name": "Menki"
+    "name": "Mauzi (Alola-Form)"
   },
   "118": {
-    "name": "Nachtara"
+    "name": "Menki"
   },
   "119": {
-    "name": "Nebulak"
+    "name": "Nachtara"
   },
   "120": {
-    "name": "Onix"
+    "name": "Nebulak"
   },
   "121": {
-    "name": "Owei"
+    "name": "Onix"
   },
   "122": {
-    "name": "Pandir"
+    "name": "Owei"
   },
   "123": {
-    "name": "Perlu"
+    "name": "Pandir"
   },
   "124": {
-    "name": "Piepi"
+    "name": "Perlu"
   },
   "125": {
-    "name": "Psiana"
+    "name": "Piepi"
   },
   "126": {
-    "name": "Pummeluff"
+    "name": "Psiana"
   },
   "127": {
-    "name": "Quapsel"
+    "name": "Pummeluff"
   },
   "128": {
-    "name": "Roselia"
+    "name": "Quapsel"
   },
   "129": {
-    "name": "Rossana"
+    "name": "Roselia"
   },
   "130": {
-    "name": "Schiggy"
+    "name": "Rossana"
   },
   "131": {
-    "name": "Trasla"
+    "name": "Schiggy"
   },
   "132": {
-    "name": "Voltobal"
+    "name": "Trasla"
   },
   "133": {
-    "name": "Vulpix (Alola-Form)"
+    "name": "Voltobal"
   },
   "134": {
-    "name": "Vulpix (Normal-Form)"
+    "name": "Vulpix (Alola-Form)"
   },
   "135": {
+    "name": "Vulpix (Normal-Form)"
+  },
+  "136": {
     "name": "Zubat"
   }
 }
