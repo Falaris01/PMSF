@@ -1,4 +1,29 @@
 {
+  "1": {
+    "cat": "Event",
+    "name": "Sinnoh-Feier: Fange 5 Zirpurze",
+    "rewards": ["Wadribie"]
+  },
+  "2": {
+    "cat": "Event",
+    "name": "Sinnoh-Feier: Gewinne einen Raid",
+    "rewards": ["Hippopotas"]
+  },
+  "3": {
+    "cat": "Event",
+    "name": "Sinnoh-Feier: Nutze einen Sinnoh-Stein, um ein Pokémon zu entwickeln",
+    "rewards": ["Koknodon"]
+  },
+  "4": {
+    "cat": "Event",
+    "name": "Sinnoh-Feier: Brüte 5 Eier aus",
+    "rewards": ["Sinnoh-Stein"]
+  },
+  "5": {
+    "cat": "Event",
+    "name": "Sinnoh-Feier: Fange 5 Chelast, Panflam oder Plinfa",
+    "rewards": ["Sternenstaub"]
+  },
   "100": {
     "cat": "Würfe",
     "name": "Lande 3 großartige Würfe",

@@ -96,84 +96,93 @@
     "name": "Glumanda"
   },
   "110": {
-    "name": "Kabuto"
+    "name": "Hippopotas"
   },
   "111": {
-    "name": "Karpador"
+    "name": "Kabuto"
   },
   "112": {
-    "name": "Larvitar"
+    "name": "Karpador"
   },
   "113": {
-    "name": "Liliep"
+    "name": "Koknodon"
   },
   "114": {
-    "name": "Machollo"
+    "name": "Larvitar"
   },
   "115": {
-    "name": "Magmar"
+    "name": "Liliep"
   },
   "116": {
-    "name": "Marill"
+    "name": "Machollo"
   },
   "117": {
-    "name": "Mauzi (Alola-Form)"
+    "name": "Magmar"
   },
   "118": {
-    "name": "Menki"
+    "name": "Marill"
   },
   "119": {
-    "name": "Nachtara"
+    "name": "Mauzi (Alola-Form)"
   },
   "120": {
-    "name": "Nebulak"
+    "name": "Menki"
   },
   "121": {
-    "name": "Onix"
+    "name": "Nachtara"
   },
   "122": {
-    "name": "Owei"
+    "name": "Nebulak"
   },
   "123": {
-    "name": "Pandir"
+    "name": "Onix"
   },
   "124": {
-    "name": "Perlu"
+    "name": "Owei"
   },
   "125": {
-    "name": "Piepi"
+    "name": "Pandir"
   },
   "126": {
-    "name": "Psiana"
+    "name": "Perlu"
   },
   "127": {
-    "name": "Pummeluff"
+    "name": "Piepi"
   },
   "128": {
-    "name": "Quapsel"
+    "name": "Psiana"
   },
   "129": {
-    "name": "Roselia"
+    "name": "Pummeluff"
   },
   "130": {
-    "name": "Rossana"
+    "name": "Quapsel"
   },
   "131": {
-    "name": "Schiggy"
+    "name": "Roselia"
   },
   "132": {
-    "name": "Trasla"
+    "name": "Rossana"
   },
   "133": {
-    "name": "Voltobal"
+    "name": "Schiggy"
   },
   "134": {
-    "name": "Vulpix (Alola-Form)"
+    "name": "Trasla"
   },
   "135": {
-    "name": "Vulpix (Normal-Form)"
+    "name": "Voltobal"
   },
   "136": {
+    "name": "Vulpix (Alola-Form)"
+  },
+  "137": {
+    "name": "Vulpix (Normal-Form)"
+  },
+  "138": {
+    "name": "Wadribie"
+  },
+  "139": {
     "name": "Zubat"
   }
 }
