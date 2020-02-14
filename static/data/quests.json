@@ -1,27 +1,27 @@
 {
   "1": {
     "cat": "Event",
-    "name": "Sinnoh-Feier: Fange 5 Zirpurze",
-    "rewards": ["Wadribie"]
+    "name": "Valentinstag: Fange 14 Liebiskus",
+    "rewards": ["Mamolida"]
   },
   "2": {
     "cat": "Event",
-    "name": "Sinnoh-Feier: Gewinne einen Raid",
-    "rewards": ["Hippopotas"]
+    "name": "Valentinstag: Besiege 3 Tean GO Rocket Rüpel",
+    "rewards": ["Chaneira"]
   },
   "3": {
     "cat": "Event",
-    "name": "Sinnoh-Feier: Nutze einen Sinnoh-Stein, um ein Pokémon zu entwickeln",
-    "rewards": ["Koknodon"]
+    "name": "Valentinstag: Brüte 3 Eier aus",
+    "rewards": ["Schlurp"]
   },
   "4": {
     "cat": "Event",
-    "name": "Sinnoh-Feier: Brüte 5 Eier aus",
-    "rewards": ["Sinnoh-Stein"]
+    "name": "Valentinstag: Entwickle ein Hoppspross",
+    "rewards": ["Kikugi"]
   },
   "5": {
     "cat": "Event",
-    "name": "Sinnoh-Feier: Fange 5 Chelast, Panflam oder Plinfa",
+    "name": "Valentinstag: Fange 5 Flegmon oder Flurmel",
     "rewards": ["Sternenstaub"]
   },
   "100": {

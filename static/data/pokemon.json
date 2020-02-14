@@ -1462,8 +1462,8 @@
   "113": {
     "name": "Chansey",
     "rarity": "Very Rare",
-    "level": 3,
-    "cp": 5381,
+    "level": 4,
+    "cp": 8508,
     "types": [
       {
         "type": "Normal",
@@ -3112,8 +3112,8 @@
   "241": {
     "name": "Miltank",
     "rarity": "Very Rare",
-    "level": 3,
-    "cp": 14883,
+    "level": 2,
+    "cp": 10524,
     "types": [
       {
         "type": "Normal",
@@ -8095,6 +8095,8 @@
   },
   "641":{
     "name": "Tornadus",
+    "level": 5,
+    "cp": 46044,
     "rarity":"",
     "types": [
       {
