@@ -1,38 +1,13 @@
 {
-  "1": {
-    "cat": "Event",
-    "name": "Valentinstag: Fange 14 Liebiskus",
-    "rewards": ["Mamolida"]
-  },
-  "2": {
-    "cat": "Event",
-    "name": "Valentinstag: Besiege 3 Tean GO Rocket Rüpel",
-    "rewards": ["Chaneira"]
-  },
-  "3": {
-    "cat": "Event",
-    "name": "Valentinstag: Brüte 3 Eier aus",
-    "rewards": ["Schlurp"]
-  },
-  "4": {
-    "cat": "Event",
-    "name": "Valentinstag: Entwickle ein Hoppspross",
-    "rewards": ["Kikugi"]
-  },
-  "5": {
-    "cat": "Event",
-    "name": "Valentinstag: Fange 5 Flegmon oder Flurmel",
-    "rewards": ["Sternenstaub"]
-  },
   "100": {
     "cat": "Würfe",
-    "name": "Lande 3 großartige Würfe",
-    "rewards": ["Anorith", "Liliep", "Nebulak", "Anorith/Liliep/Nebulak", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
+    "name": "Lande 5 Curveball-Würfe hintereinander",
+    "rewards": ["Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
   },
   "101": {
     "cat": "Würfe",
-    "name": "Lande 5 gute Würfe",
-    "rewards": ["Voltobal", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
+    "name": "Lande 2 gute Curveball-Würfe hintereinander",
+    "rewards": ["Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
   },
   "102": {
     "cat": "Würfe",
@@ -41,43 +16,43 @@
   },
   "103": {
     "cat": "Würfe",
-    "name": "Lande 2 gute Curveball-Würfe hintereinander",
-    "rewards": ["Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
+    "name": "Lande 5 gute Würfe",
+    "rewards": ["Voltobal", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
   },
   "104": {
+    "cat": "Würfe",
+    "name": "Lande 3 großartige Würfe",
+    "rewards": ["Anorith", "Liliep", "Nebulak", "Anorith/Liliep/Nebulak", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
+  },
+  "105": {
     "cat": "Würfe",
     "name": "Lande 3 großartige Würfe hintereinander",
     "rewards": ["Onix", "Sonderbonbon(s)", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
   },
-  "105": {
+  "106": {
     "cat": "Würfe",
     "name": "Lande 3 großartige Curveball-Würfe",
     "rewards": ["Sonderbonbon(s)", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
   },
-  "106": {
+  "107": {
     "cat": "Würfe",
     "name": "Lande 3 großartige Curveball-Würfe hintereinander",
     "rewards": ["Sonderbonbon(s)", "Sternenstaub", "Goldene Himmihbeere(n)", "Beeren/Tränke/Bälle/Beleber"]
   },
-  "107": {
+  "108": {
     "cat": "Würfe",
     "name": "Lande 5 großartige Curveball-Würfe hintereinander",
     "rewards": ["Pandir"]
   },
-  "108": {
+  "109": {
     "cat": "Würfe",
     "name": "Lande einen fabelhaften Wurf",
     "rewards": ["Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
   },
-  "109": {
+  "110": {
     "cat": "Würfe",
     "name": "Lande 3 fabelhafte Würfe hintereinander",
     "rewards": ["Larvitar"]
-  },
-  "110": {
-    "cat": "Würfe",
-    "name": "Lande 5 Curveball-Würfe hintereinander",
-    "rewards": ["Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
   },
   "200": {
     "cat": "Arena",
@@ -112,7 +87,7 @@
   "300": {
     "cat": "Raid",
     "name": "Kämpfe in einem Raid",
-    "rewards": ["Nachtara", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
+    "rewards": ["Pinsir", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
   },
   "301": {
     "cat": "Raid",
@@ -126,53 +101,53 @@
   },
   "303": {
     "cat": "Raid",
-    "name": "Gewinne einen Raid Level 3 oder höher",
-    "rewards": ["Amonitas", "Kabuto", "Amonitas/Kabuto", "Sonderbonbon(s)", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
+    "name": "Gewinne 5 Raids",
+    "rewards": ["Aerodactyl"]
   },
   "304": {
     "cat": "Raid",
-    "name": "Gewinne 5 Raids",
-    "rewards": ["Aerodactyl"]
+    "name": "Gewinne einen Raid Level 3 oder höher",
+    "rewards": ["Amonitas", "Kabuto", "Amonitas/Kabuto", "Sonderbonbon(s)", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
   },
   "400": {
     "cat": "Kampf",
     "name": "Besiege 3 Team GO Rocket Rüpel",
-    "rewards": ["Psiana"]
+    "rewards": ["Fukano"]
   },
   "401": {
     "cat": "Kampf",
     "name": "Kämpfe gegen einen anderen Trainer",
     "rewards": ["Marill"]
-  },    
+  },
   "500": {
-    "cat": "Fangen",
-    "name": "Fange 10 Pokemon",
-    "rewards": ["Karpador", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
-  },
-  "501": {
-    "cat": "Fangen",
-    "name": "Fange 3 Pokemon vom Typ Flug, Psycho oder Unlicht",
-    "rewards": ["Roselia", "Sonderbonbon(s)"]
-  },
-  "502": {
-    "cat": "Fangen",
-    "name": "Fange 5 Pokemon vom Typ Psycho",
-    "rewards": ["Trasla"]
-  },
-  "503": {
-    "cat": "Fangen",
-    "name": "Fange 7 verschiedene Pokemon vom Typ Flug",
-    "rewards": ["Sonderbonbon(s)"]
-  },
-  "504": {
     "cat": "Fangen",
     "name": "Fange ein Ditto",
     "rewards": ["Sonderbonbon(s)", "Goldene Himmihbeere(n)", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
   },
+  "501": {
+    "cat": "Fangen",
+    "name": "Fange ein Pokemon vom Typ Drache",
+    "rewards": ["Dratini", "Sonderbonbon(s)", "Goldene Himmihbeere(n)", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
+  },
+  "502": {
+    "cat": "Fangen",
+    "name": "Fange 3 Pokemon vom Typ Pflanze, Feuer oder Boden",
+    "rewards": ["Roselia", "Sonderbonbon(s)"]
+  },
+  "503": {
+    "cat": "Fangen",
+    "name": "Fange 5 Pokemon vom Typ Feuer",
+    "rewards": ["Flemmli"]
+  },
+  "504": {
+    "cat": "Fangen",
+    "name": "Fange 7 verschiedene Pokemon vom Typ Pflanze",
+    "rewards": ["Sonderbonbon(s)"]
+  },
   "505": {
     "cat": "Fangen",
-    "name": "Fange 10 Pokemon mit Wetterverstärkung",
-    "rewards": ["Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
+    "name": "Fange 10 Pokemon",
+    "rewards": ["Karpador", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
   },
   "506": {
     "cat": "Fangen",
@@ -181,17 +156,12 @@
   },
   "507": {
     "cat": "Fangen",
-    "name": "Fange ein Pokemon vom Typ Drache",
-    "rewards": ["Dratini", "Sonderbonbon(s)", "Goldene Himmihbeere(n)", "Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
+    "name": "Fange 10 Pokemon mit Wetterverstärkung",
+    "rewards": ["Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
   },
   "508": {
     "cat": "Fangen",
-    "name": "Verwende 5 Beeren beim fangen von Pokemon",
-    "rewards": ["Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
-  },
-  "509": {
-    "cat": "Fangen",
-    "name": "Fange 10 Pokemon vom Typ Normal",
+    "name": "Verwende 5 Beeren beim Fangen von Pokemon",
     "rewards": ["Sternenstaub", "Beeren/Tränke/Bälle/Beleber"]
   },
   "600": {
@@ -206,38 +176,38 @@
   },
   "602": {
     "cat": "Brüte",
-    "name": "Brüte 4 Eier aus",
-    "rewards": ["Vulpix (Alola-Form)"]
+    "name": "Brüte 5 Eier aus",
+    "rewards": ["Chaneira", "Sonderbonbon(s)"]
   },
   "603": {
     "cat": "Brüte",
-    "name": "Brüte 5 Eier aus",
-    "rewards": ["Chaneira", "Sonderbonbon(s)"]
+    "name": "Brüte 7 Eier aus",
+    "rewards": ["Moos-Lockmodul"]
   },
   "700": {
     "cat": "Kumpel",
     "name": "Erhalte 5 Herzen bei deinem Kumpel",
-    "rewards": ["Barschwa"]
+    "rewards": ["Kinoso (Sonnenform)"]
   },
   "701": {
     "cat": "Kumpel",
     "name": "Mache einen Schnappschuss von deinem Kumpel",
-    "rewards": ["Zubat"]
+    "rewards": ["Sonnkern"]
   },
   "800": {
     "cat": "Sonstiges",
     "name": "Entwickle ein Pokemon",
-    "rewards": ["Evoli", "Pummeluff", "Evoli/Pummeluff"]
+    "rewards": ["Evoli", "Duflor", "Evoli/Duflor"]
   },
   "801": {
     "cat": "Sonstiges",
     "name": "Tausche ein Pokemon",
-    "rewards": ["Mauzi (Alola-Form)"]
+    "rewards": ["Tangela"]
   },
   "802": {
     "cat": "Sonstiges",
     "name": "Verschicke 10 Geschenke",
-    "rewards": ["Pikachu"]
+    "rewards": ["Skorgla"]
   },   
   "803": {
     "cat": "Sonstiges",
@@ -251,8 +221,8 @@
   },
   "805": {
     "cat": "Sonstiges",
-    "name": "Verschicke 5 Pokemon",
-    "rewards": ["Piepi"]
+    "name": "Verschicke 3 Pokemon",
+    "rewards": ["Digda"]
   },
   "1000": {
     "cat": "Sonstiges",
