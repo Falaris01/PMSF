@@ -5904,8 +5904,8 @@
   "460":{
     "name": "Abomasnow",
     "rarity":"",
-    "level": 4,
-    "cp": 24082,
+    "level": 3,
+    "cp": 15231,
     "types": [
       {
         "type": "Grass",
@@ -6673,6 +6673,8 @@
   },
   "525":{
     "name": "Boldore",
+    "level": 2,
+    "cp": 10079,
     "rarity":"",
     "types": [
       {
@@ -8108,6 +8110,8 @@
   "642":{
     "name": "Thundurus",
     "rarity":"",
+    "level": 5,
+    "cp": 46044,
     "types": [
       {
         "type": "Electric",
@@ -8122,6 +8126,8 @@
   "643":{
     "name": "Reshiram",
     "rarity":"",
+    "level": 5,
+    "cp": 53394,
     "types": [
       {
         "type": "Dragon",
@@ -8136,6 +8142,8 @@
   "644":{
     "name": "Zekrom",
     "rarity":"",
+    "level": 5,
+    "cp": 53394,
     "types": [
       {
         "type": "Dragon",
@@ -8150,6 +8158,8 @@
   "645":{
     "name": "Landorus",
     "rarity":"",
+    "level": 5,
+    "cp": 47444,
     "types": [
       {
         "type": "Ground",
@@ -12842,7 +12852,7 @@
     ]
   },
   "1074":{
-    "name": "None",
+    "name": "Geodude Alola",
     "rarity":"",
     "types": [
       {
@@ -12852,7 +12862,9 @@
     ]
   },
   "1075":{
-    "name": "None",
+    "name": "Graveler Alola",
+    "level": 2,
+    "cp": 10160,
     "rarity":"",
     "types": [
       {
@@ -12862,7 +12874,7 @@
     ]
   },
   "1076":{
-    "name": "None",
+    "name": "Golem Alola",
     "rarity":"",
     "types": [
       {
