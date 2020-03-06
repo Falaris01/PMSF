@@ -2540,8 +2540,8 @@
   "197": {
     "name": "Umbreon",
     "rarity": "Ultra Rare",
-    "level": 4,
-    "cp": 21360,
+    "level": 3,
+    "cp": 13509,
     "types": [
       {
         "type": "Dark",
@@ -3386,6 +3386,8 @@
   "262":{
     "name": "Mightyena",
     "rarity":"",
+    "level": 2,
+    "cp": 9567,
     "types": [
       {
         "type": "Dark",
@@ -4108,6 +4110,8 @@
   "318":{
     "name": "Carvanha",
     "rarity":"",
+    "level": 2,
+    "cp": 5798,
     "types": [
       {
         "type": "Water",
@@ -4417,7 +4421,7 @@
     "name": "Crawdaunt",
     "rarity":"",
     "level": 3,
-    "cp": 16402,
+    "cp": 17967,
     "types": [
       {
         "type": "Water",
@@ -7216,6 +7220,8 @@
   "568":{
     "name": "Trubbish",
     "rarity":"",
+    "level": 1,
+    "cp": 3182,
     "types": [
       {
         "type": "Poison",
@@ -12632,8 +12638,10 @@
     ]
   },
   "1052":{
-    "name": "None",
+    "name": "Meowth Alola",
     "rarity":"",
+    "level": 1,
+    "cp": 2692,
     "types": [
       {
         "type": "Normal",
@@ -12642,7 +12650,7 @@
     ]
   },
   "1053":{
-    "name": "None",
+    "name": "Persian Alola",
     "rarity":"",
     "types": [
       {
@@ -12994,8 +13002,10 @@
     ]
   },
   "1088":{
-    "name": "None",
+    "name": "Grimer Alola",
     "rarity":"",
+    "level": 1,
+    "cp": 3764,
     "types": [
       {
         "type": "Normal",
@@ -13004,7 +13014,7 @@
     ]
   },
   "1089":{
-    "name": "None",
+    "name": "Muk Alola",
     "rarity":"",
     "types": [
       {
