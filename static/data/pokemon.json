@@ -456,6 +456,8 @@
   "36": {
     "name": "Clefable",
     "rarity": "Very Rare",
+    "level": 3,
+    "cp": 15406,
     "types": [
       {
         "type": "Fairy",
@@ -1204,6 +1206,8 @@
   "93": {
     "name": "Haunter",
     "rarity": "Rare",
+    "level": 2,
+    "cp": 11153,
     "types": [
       {
         "type": "Ghost",
@@ -2540,8 +2544,8 @@
   "197": {
     "name": "Umbreon",
     "rarity": "Ultra Rare",
-    "level": 3,
-    "cp": 13509,
+    "level": 4,
+    "cp": 21360,
     "types": [
       {
         "type": "Dark",
@@ -3362,6 +3366,8 @@
   "260":{
     "name": "Swampert",
     "rarity":"",
+    "level": 4,
+    "cp": 29161,
     "types": [
       {
         "type": "Water",
@@ -3638,8 +3644,8 @@
   "281":{
     "name": "Kirlia",
     "rarity":"",
-    "level": 1,
-    "cp": 3313,
+    "level": 2,
+    "cp": 5738,
     "types": [
       {
         "type": "Psychic",
@@ -4396,6 +4402,8 @@
   "340":{
     "name": "Whiscash",
     "rarity":"",
+    "level": 2,
+    "cp": 8796,
     "types": [
       {
         "type": "Water",
@@ -4889,7 +4897,7 @@
     "name": "Registeel",
     "rarity":"",
     "level": 5,
-    "cp": 25962,
+    "cp": 33516,
     "types": [
       {
         "type": "Steel",
@@ -5286,6 +5294,8 @@
   "410":{
     "name": "Shieldon",
     "rarity":"",
+    "level": 1,
+    "cp": 3230,
     "types": [
       {
         "type": "Rock",
@@ -6266,7 +6276,7 @@
   "488":{
     "name": "Cresselia",
     "level": 5,
-    "cp": 30849,
+    "cp": 33794,
     "rarity":"",
     "types": [
       {
